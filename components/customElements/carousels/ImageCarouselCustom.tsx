@@ -5,22 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
-
-const placeholders: ImageTextItem[] = [
-  {
-    image: "/images/phimg1.jpg",
-    text: "Image 1",
-  },
-  {
-    image: "/images/phimg2.jpg",
-    text: "Image 2",
-  },
-  {
-    image: "/images/phimg3.jpg",
-    text: "Image 3",
-  },
-  // Add more images as needed
-];
+import { Skeleton } from "@/components/ui/skeleton";
 
 export type ImageTextItem = {
   image: string;
@@ -30,7 +15,7 @@ export type ImageTextItem = {
 interface ImageCarouselCustomProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  images?: ImageTextItem[];
+  images: ImageTextItem[];
   textClassName?: string;
   autoplay?: boolean;
   interval?: number;
@@ -38,7 +23,7 @@ interface ImageCarouselCustomProps
 
 const ImageCarouselCustom = ({
   className,
-  images = placeholders,
+  images,
   textClassName,
   autoplay = false,
   interval = 5000,
@@ -47,9 +32,39 @@ const ImageCarouselCustom = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoplay, setIsAutoplay] = useState(autoplay);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [loadedImages, setLoadedImages] = useState<string[]>([]);
+
+  const ref = useRef() as React.RefObject<HTMLDivElement>;
+
+  const { isIntersecting, disconnectObserver } = useIsVisible(ref);
 
   const [leftHover, setLeftHover] = useState(false);
   const [rightHover, setRightHover] = useState(false);
+
+  useEffect(() => {
+    loadImages(images);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const loadImages = (images: ImageTextItem[]) => {
+    setLoading(true);
+    const loadPromises = images.map(({ image, text }) => {
+      return new Promise((resolve, reject) => {
+        const img = new window.Image();
+        img.src = image;
+        img.onload = () => resolve(image);
+        img.onerror = reject;
+      });
+    });
+
+    Promise.all(loadPromises)
+      .then((loadedImages) => {
+        setLoadedImages(loadedImages as string[]);
+        setLoading(false);
+      })
+      .catch((error) => console.error("Failed to load images", error));
+  };
 
   const prevImage = () => {
     setCurrentIndex((prevIndex) =>
@@ -64,18 +79,30 @@ const ImageCarouselCustom = ({
   };
 
   useEffect(() => {
-    if (isAutoplay) {
+    // autoplay
+    if (isAutoplay && isIntersecting) {
       intervalRef.current = setInterval(() => {
         nextImage();
       }, interval);
-
-      return () => {
-        if (intervalRef.current) {
-          clearInterval(intervalRef.current);
-        }
-      };
+    } else {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
     }
-  }, [isAutoplay, interval]);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isAutoplay, interval, isIntersecting]);
+
+  useEffect(() => {
+    if (!isAutoplay) {
+      disconnectObserver();
+    }
+  }, [disconnectObserver, isAutoplay]);
 
   const handleClickBack = () => {
     prevImage();
@@ -93,8 +120,17 @@ const ImageCarouselCustom = ({
     }
   };
 
+  if (loading) {
+    return (
+      <div className="w-full h-full">
+        <Skeleton className="relative w-full md:h-[768px] h-[512px]" />
+      </div>
+    );
+  }
+
   return (
     <div
+      ref={ref}
       className={cn(
         "relative w-full overflow-clip transition-all duration-500 md:h-[768px] h-[512px]",
         className
@@ -126,7 +162,7 @@ const ImageCarouselCustom = ({
               style={{ width: `80%` }}
             >
               <Image
-                src={item.image}
+                src={loadedImages[i]}
                 alt={`Image ${i + 1}`}
                 width={1920}
                 height={768}
@@ -142,7 +178,7 @@ const ImageCarouselCustom = ({
               />
               <p
                 className={cn(
-                  "absolute bottom-0 p-2 w-[95%] bg-websiteBackground1/60 text-center transition-all duration-500 text-light",
+                  "absolute bottom-0 p-2 w-[95%] font-bold text-center transition-all duration-500 text-light",
                   textClassName,
                   i === currentIndex ? "opacity-100" : "opacity-0"
                 )}

@@ -1,4 +1,3 @@
-import MainStickyHeader from "@/components/customElements/custom-ui/MainStickyHeader";
 import React from "react";
 
 const layout = ({

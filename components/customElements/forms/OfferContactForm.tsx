@@ -89,7 +89,7 @@ export function OfferContactForm({
   return (
     <div
       className={cn(
-        "bg-dark flex-center justify-start flex-col w-full px-6 lg:p-6 max-w-[600px] xl:max-w-full",
+        "bg-dark flex-center justify-start flex-col w-full px-6 lg:p-6 max-w-[600px] xl:max-w-full max-h-svh",
         className
       )}
     >
@@ -204,7 +204,7 @@ export function OfferContactForm({
           </div>
         </form>
       </Form>
-      <div className="w-full h-full mt-10 flex items-start lg:items-center flex-col lg:flex-row lg:gap-5 pb-10 ">
+      <div className="w-full h-full mt-10 flex items-start lg:items-center flex-col lg:flex-row lg:gap-5 pb-5 ">
         <Button className="text-light px-0 hover:text-accent1 bg-transparent hover:bg-transparent">
           Polityka prywatności
         </Button>

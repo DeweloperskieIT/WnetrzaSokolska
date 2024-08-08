@@ -17,6 +17,8 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
     >
       <div className="basis-1/2">
         <Image
+          placeholder="blur"
+          blurDataURL="/images/blur.png"
           src={images[0]}
           alt="img"
           width={1920}
@@ -27,6 +29,8 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
       <div className="flex flex-col gap-1 basis-1/2">
         <div className="h-1/2">
           <Image
+            placeholder="blur"
+            blurDataURL="/images/blur.png"
             src={images[1]}
             alt="img"
             width={1920}
@@ -37,6 +41,8 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
         <div className="flex flex-row gap-1">
           <div>
             <Image
+              placeholder="blur"
+              blurDataURL="/images/blur.png"
               src={images[2]}
               alt="img"
               width={1920}
@@ -46,6 +52,8 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
           </div>
           <div>
             <Image
+              placeholder="blur"
+              blurDataURL="/images/blur.png"
               src={images[3]}
               alt="img"
               width={1920}

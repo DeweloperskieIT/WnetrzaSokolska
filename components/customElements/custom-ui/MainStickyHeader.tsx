@@ -50,7 +50,7 @@ const MainStickyHeader = ({
       {/* Desktop */}
       <div
         className={cn(
-          "sticky bg-darkerGray transition-all duration-300 z-40 top-0 w-full flex flex-col gap-4 md:flex-row justify-between items-center padding-element pt-4 md:py-4",
+          "sticky bg-darkerGray transition-all duration-300 z-40 top-0 w-full flex flex-col gap-4 md:flex-row justify-between items-center padding-element pt-4 md:py-4 ",
           className,
           isVisible ? "translate-y-0" : "-translate-y-full"
         )}

@@ -99,7 +99,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
               alt="soktower"
               width={150}
               height={60}
-              className="object-contain h-full"
+              className="object-contain h-full w-full"
             />
           </div>
         </div>

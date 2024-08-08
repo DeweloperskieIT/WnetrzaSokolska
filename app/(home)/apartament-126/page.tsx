@@ -22,13 +22,12 @@ const page = () => {
 
       <div className="landing-page">
         {/* Video */}
-        <div className="relative h-[512px] md:h-[724px] xl:h-[1024px] w-full">
-          <VideoBackground src="/videos/video1.mp4" className="" />
+        <VideoBackground src="/videos/video1.mp4" className="">
           <div className="w-full h-full relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6">
             <span className="font-base text-6xl">LUKSUS</span>
             <span className="font-extralight text-6xl">KTÓRY CIĘ WYRÓŻNI</span>
           </div>
-        </div>
+        </VideoBackground>
         {/* First Section - Icons Module */}
         <IconsModule
           className=""

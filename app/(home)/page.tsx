@@ -4,6 +4,7 @@ import BreathingBackgroundImage from "@/components/customElements/texts-images/b
 import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
 import InterchangeableImages from "@/components/customElements/texts-images/InterchangeableImages";
 import React from "react";
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 const page = () => {
   return (

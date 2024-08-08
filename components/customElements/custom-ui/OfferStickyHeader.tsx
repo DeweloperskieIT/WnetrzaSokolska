@@ -43,42 +43,43 @@ const OfferStickyHeader = ({
       {/* Desktop */}
       <div
         className={cn(
-          "sticky bg-websiteBackground2 transition-all duration-300 z-40 top-0 w-full hidden md:flex flex-col gap-4 md:flex-row justify-between items-center padding-element",
+          "sticky bg-websiteBackground2  z-40 top-0 w-full hidden md:flex-center",
           className,
           isVisible ? "translate-y-0" : "-translate-y-full"
         )}
       >
-        <div className="flex flex-row gap-2">
-          <span className="text-light">APARTAMENTY</span>
-          <span className="text-accent1 font-bold">SOKOLSKA TOWERS</span>
-        </div>
-        <div className="flex flex-row justify-evenly items-center gap-6 text-light">
-          <a
-            href="whatsapp://send?phone=48666000999"
-            className="cursor-pointer p-3"
-          >
-            <Image
-              src={"/images/CallIcon.png"}
-              alt="h-ic-1"
-              width={50}
-              height={50}
-              className="!size-5 object-scale-down"
-            />
-          </a>
-          <a
-            href={`mailto:deweloperskiepsa@gmail.com?subject=Apartament`}
-            className="cursor-pointer p-3"
-          >
-            <Image
-              src={"/images/PhoneTalk.png"}
-              alt="h-ic-1"
-              width={50}
-              height={50}
-              className="!size-5 object-scale-down"
-            />
-          </a>
+        <div className="max-w-screen-xl w-full flex flex-col gap-4 md:flex-row justify-between items-center padding-element">
+          <div className="flex flex-row gap-2">
+            <span className="text-light">APARTAMENTY</span>
+            <span className="text-accent1 font-bold">SOKOLSKA TOWERS</span>
+          </div>
+          <div className="flex flex-row justify-evenly items-center gap-6 text-light">
+            <a
+              href="whatsapp://send?phone=48666000999"
+              className="cursor-pointer p-3"
+            >
+              <Image
+                src={"/images/CallIcon.png"}
+                alt="h-ic-1"
+                width={50}
+                height={50}
+                className="!size-5 object-scale-down"
+              />
+            </a>
+            <a
+              href={`mailto:deweloperskiepsa@gmail.com?subject=${oferta}`}
+              className="cursor-pointer p-3"
+            >
+              <Image
+                src={"/images/PhoneTalk.png"}
+                alt="h-ic-1"
+                width={50}
+                height={50}
+                className="!size-5 object-scale-down"
+              />
+            </a>
 
-          {/* <Image
+            {/* <Image
             src={"/images/ArrowUp.png"}
             alt="h-ic-1"
             width={50}
@@ -92,16 +93,17 @@ const OfferStickyHeader = ({
             height={50}
             className="size-5"
           /> */}
-          <Drawer>
-            <DrawerTrigger>DrawerIconNeeded</DrawerTrigger>
-            <DrawerContent className="flex-center bg-dark rounded-none">
-              <OfferContactForm
-                sendTo={process.env.OFFERCONTACTDESTINATION}
-                oferta={oferta}
-                className="pt-6"
-              />
-            </DrawerContent>
-          </Drawer>
+            <Drawer>
+              <DrawerTrigger>DrawerIconNeeded</DrawerTrigger>
+              <DrawerContent className="flex-center bg-dark rounded-none max-h-svh">
+                <OfferContactForm
+                  sendTo={process.env.OFFERCONTACTDESTINATION}
+                  oferta={oferta}
+                  className="pt-6"
+                />
+              </DrawerContent>
+            </Drawer>
+          </div>
         </div>
       </div>
       {/* Mobile */}
@@ -114,6 +116,17 @@ const OfferStickyHeader = ({
         <div className="flex flex-row gap-2 w-full">
           <span className="text-accent1">APARTAMENT</span>
           <span className="text-light font-normal">W SOKOLSKA TOWERS</span>
+
+          <Drawer>
+            <DrawerTrigger>DrawerIconNeeded</DrawerTrigger>
+            <DrawerContent className="flex-center bg-dark rounded-none">
+              <OfferContactForm
+                sendTo={process.env.OFFERCONTACTDESTINATION}
+                oferta={oferta}
+                className="pt-6"
+              />
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
     </>
