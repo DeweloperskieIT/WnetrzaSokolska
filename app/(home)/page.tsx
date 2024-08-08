@@ -54,15 +54,16 @@ const page = () => {
                 "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
             },
           ]}
-        >
-          <SectionHeading
-            className="padding-element"
-            topClass="md:text-[54px]"
-            top="NAROŻNE APARTAMENTY"
-            bottom="SOKOLSKA TOWERS"
-            bottomClass="md:text-[76px]"
-          />
-        </InterchangeableImages>
+          header={
+            <SectionHeading
+              className="padding-element"
+              topClass="md:text-[54px]"
+              top="NAROŻNE APARTAMENTY"
+              bottom="SOKOLSKA TOWERS"
+              bottomClass="md:text-[76px]"
+            />
+          }
+        ></InterchangeableImages>
         {/* Third Section - Info text */}
         <InfoBlocks
           id="end"
