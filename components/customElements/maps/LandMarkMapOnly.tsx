@@ -2,7 +2,11 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "../custom-ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 export const demoPins: LocationPin[] = [
   {

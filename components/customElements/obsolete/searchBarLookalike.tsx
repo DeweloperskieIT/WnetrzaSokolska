@@ -1,6 +1,6 @@
 "use client";
 import { useState, forwardRef } from "react";
-import { TypewriterEffect } from "../aceternity/typewriter-effect";
+import { TypewriterEffect } from "@/components/aceternity/typewriter-effect";
 import { RiSearchEyeLine } from "react-icons/ri";
 import { cn } from "@/lib/utils";
 

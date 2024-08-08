@@ -1,6 +1,8 @@
 import { cn } from "@/lib/utils";
 import React, { forwardRef, ReactNode } from "react";
-import SingleIcon, { SingleIconProps } from "@/components/obsolete/singleIcon";
+import SingleIcon, {
+  SingleIconProps,
+} from "@/components/customElements/obsolete/singleIcon";
 
 interface IconsShowcaseProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
