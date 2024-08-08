@@ -60,6 +60,7 @@ const StickyFormButton = ({ className, oferta }: StickyFormButtonProps) => {
           <span className="text-dark font-bold">KONTAKT</span>
         </div>
         <OfferContactForm
+          sendTo={process.env.OFFERCONTACTDESTINATION}
           oferta={oferta || "Nie wyspecyfikowano"}
           className={cn(
             "max-h-[85svh] overflow-y-auto !justify-start border-2 w-[600px]  md:!p-4 !md:pb-0 ease-out border-accent1 transition-all duration-500"

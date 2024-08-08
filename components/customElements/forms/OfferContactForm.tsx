@@ -40,7 +40,7 @@ interface OfferContactFormProps {
 
 export function OfferContactForm({
   className,
-  sendTo = "krzysiek.kutniowski@deweloperskie.pl",
+  sendTo = "kontakt@deweloperskie.pl",
   oferta,
 }: OfferContactFormProps) {
   const [status, setStatus] = useState<"success" | "failure" | null>(null);

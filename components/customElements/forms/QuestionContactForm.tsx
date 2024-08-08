@@ -39,7 +39,7 @@ interface QuestionContactFormProps {
 
 export function QuestionContactForm({
   className,
-  sendTo = "krzysiek.kutniowski@deweloperskie.pl",
+  sendTo = "kontakt@deweloperskie.pl",
   disableTitle = false,
 }: QuestionContactFormProps) {
   const [status, setStatus] = useState<"success" | "failure" | null>(null);

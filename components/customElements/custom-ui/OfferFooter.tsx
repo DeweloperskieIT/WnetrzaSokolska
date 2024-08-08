@@ -106,6 +106,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
         {/* Formularz */}
         <div className="lg:basis-1/2">
           <OfferContactForm
+            sendTo={process.env.OFFERCONTACTDESTINATION}
             oferta={oferta}
             className="bg-transparent lg:bg-dark"
           />

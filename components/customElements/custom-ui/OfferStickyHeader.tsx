@@ -95,7 +95,11 @@ const OfferStickyHeader = ({
           <Drawer>
             <DrawerTrigger>DrawerIconNeeded</DrawerTrigger>
             <DrawerContent className="flex-center bg-dark rounded-none">
-              <OfferContactForm oferta={oferta} className="pt-6" />
+              <OfferContactForm
+                sendTo={process.env.OFFERCONTACTDESTINATION}
+                oferta={oferta}
+                className="pt-6"
+              />
             </DrawerContent>
           </Drawer>
         </div>
