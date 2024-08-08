@@ -7,9 +7,10 @@ import Image from "next/image";
 
 interface StickyFormButtonProps {
   className?: string;
+  oferta?: string;
 }
 
-const StickyFormButton = ({ className }: StickyFormButtonProps) => {
+const StickyFormButton = ({ className, oferta }: StickyFormButtonProps) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -59,6 +60,7 @@ const StickyFormButton = ({ className }: StickyFormButtonProps) => {
           <span className="text-dark font-bold">KONTAKT</span>
         </div>
         <OfferContactForm
+          oferta={oferta || "Nie wyspecyfikowano"}
           className={cn(
             "max-h-[85svh] overflow-y-auto !justify-start border-2 w-[600px]  md:!p-4 !md:pb-0 ease-out border-accent1 transition-all duration-500"
           )}

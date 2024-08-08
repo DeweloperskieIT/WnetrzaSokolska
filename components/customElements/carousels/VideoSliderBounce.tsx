@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState, useRef, forwardRef } from "react";
-import PrevNextButtons from "./PrevNextButtons";
+import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
 import { ParagraphWithHeading } from "@/types/customTypes";
 
 interface VideoSliderBounceProps extends React.HTMLAttributes<HTMLDivElement> {

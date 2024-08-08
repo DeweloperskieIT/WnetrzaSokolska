@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState, forwardRef, ReactNode } from "react";
-import PrevNextButtons from "../customElements/PrevNextButtons";
+import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
 import { ParagraphWithHeading } from "@/types/customTypes";
 
 interface ImagesSliderBounceProps extends React.HTMLAttributes<HTMLDivElement> {
