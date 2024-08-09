@@ -11,7 +11,7 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
   return (
     <div
       className={cn(
-        "flex flex-col md:flex-row gap-1 w-full h-full md:max-h-[800px] overflow-hidden",
+        "flex flex-col md:flex-row gap-1 w-full h-full md:aspect-[16/9] md:max-h-[1024px] overflow-hidden",
         className
       )}
     >
@@ -38,7 +38,7 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
             className="object-cover size-full"
           />
         </div>
-        <div className="flex flex-row gap-1">
+        <div className="flex flex-row gap-1 size-full">
           <div>
             <Image
               placeholder="blur"

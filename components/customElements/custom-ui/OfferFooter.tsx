@@ -25,9 +25,9 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
       {...rest}
     >
       {header}
-      <div className="flex flex-col xl:flex-row w-full items-center justify-between gap-10 ">
-        <div className="hidden md:flex basis-1/2 w-full items-center md:items-start gap-20 justify-start flex-col">
-          <div className="flex flex-col gap-4 w-full ">
+      <div className="flex flex-col xl:flex-col w-full items-center justify-between gap-10 pb-10">
+        {/*<div className="hidden md:flex basis-1/2 w-full items-center md:items-start gap-20 justify-between flex-col h-full">
+           <div className="flex flex-col gap-4 w-full ">
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="hover:bg-darkerGray/20">
@@ -84,31 +84,32 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-          </div>
-          {/* Logotypy */}
-          <div className="w-full flex items-center justify-evenly flex-row gap-10 h-[100px]">
-            <Image
-              src={"/images/soktowersIcon.png"}
-              alt="soktower"
-              width={100}
-              height={200}
-              className="object-contain h-full"
-            />
-            <Image
-              src={"/images/aradewIcon.png"}
-              alt="soktower"
-              width={150}
-              height={60}
-              className="object-contain h-full w-full"
-            />
-          </div>
-        </div>
+          </div> 
+        </div>*/}
         {/* Formularz */}
-        <div className="lg:basis-1/2">
+        <div className="lg:basis-1/2 self-center w-full">
           <OfferContactForm
             sendTo={process.env.OFFERCONTACTDESTINATION}
             oferta={oferta}
             className="bg-transparent lg:bg-dark"
+          />
+        </div>
+
+        {/* Logotypy */}
+        <div className="w-full flex items-center md:items-end justify-evenly flex-col md:flex-row gap-10 h-full max-w-screen-xl self-c">
+          <Image
+            src={"/images/logo2.png"}
+            alt="soktower"
+            width={160}
+            height={200}
+            className="object-contain h-auto w-auto"
+          />
+          <Image
+            src={"/images/wnetrzalogo.png"}
+            alt="soktower"
+            width={300}
+            height={100}
+            className="object-contain max-w-[300px] h-auto w-auto"
           />
         </div>
       </div>

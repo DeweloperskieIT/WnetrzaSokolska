@@ -24,6 +24,7 @@ const BreathingBackgroundImage = ({
   ...rest
 }: BreathingBackgroundImageProps) => {
   const [bgSize, setBgSize] = useState(bgSizes[0]);
+  const [isFirstRun, setIsFirstRun] = useState(true);
 
   const breathePulse = () => {
     const width = window.innerWidth;
@@ -39,6 +40,12 @@ const BreathingBackgroundImage = ({
   };
 
   useEffect(() => {
+    if (isFirstRun) {
+      setTimeout(() => {
+        breathePulse();
+        setIsFirstRun(false);
+      }, 500);
+    }
     const timer = setInterval(() => {
       breathePulse();
     }, interval);
@@ -51,7 +58,7 @@ const BreathingBackgroundImage = ({
   return (
     <div
       className={cn(
-        "w-full h-full transition-all duration-10000 bg-no-repeat bg-right-top flex",
+        "w-full h-full transition-[background-size] duration-10000 bg-no-repeat bg-right-top flex-center",
         className
       )}
       style={{

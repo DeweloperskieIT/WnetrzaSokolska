@@ -53,19 +53,19 @@ const InterchangeableImages = ({
         />
       </div> */}
 
-      <div className="flex flex-col gap-10 md:gap-0">
+      <div className=" flex-col flex-center gap-10 md:gap-0 w-full h-full limited-width self-center">
         {elements.map((e, i) => (
           <div
             key={i}
             className={cn(
-              " flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0",
+              " flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0 w-full",
               i % 2 ? "md:flex-row-reverse" : ""
             )}
           >
             <div
               className={cn(
                 "padding-element flex flex-col basis-1/2 gap-2",
-                i % 2 ? "md:pl-12" : "md:pr-12"
+                i % 2 ? "md:pl-16" : "md:pr-16"
               )}
             >
               <span
@@ -78,8 +78,8 @@ const InterchangeableImages = ({
               </span>
               <span
                 className={cn(
-                  "w-full text-lg font-light text-light text-left",
-                  i % 2 ? "md:text-left" : "md:text-right"
+                  "w-full text-lg font-light text-light text-left max-w-[500px]",
+                  i % 2 ? "md:text-left" : "md:text-right self-end"
                 )}
               >
                 {e.paragraph}
@@ -89,13 +89,19 @@ const InterchangeableImages = ({
               <Image
                 src={e.image!}
                 alt="img"
-                width={1024}
+                width={768}
                 height={768}
                 className="w-full h-full basis-1/2 object-cover xl:max-h-[768px]"
               />
             ) : (
-              <div className="w-full h-[360px] md:h-[512px] xl:h-[768px] md:basis-1/2 object-cover xl:max-h-[768px]">
+              <div
+                className={cn(
+                  "w-full h-[360px] md:h-[460px] md:basis-1/2",
+                  i % 2 ? "md:text-left" : "md:text-right self-end"
+                )}
+              >
                 <ImageCarouselFader
+                  className="object-contain"
                   dotsEnabledOnlyVisible
                   itemsLength={e.images!.length}
                   autoplay

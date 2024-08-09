@@ -11,7 +11,7 @@ import { LocationPin } from "@/types/customTypes";
 
 export const demoPins: LocationPin[] = [
   {
-    pinColor: "dewPrim",
+    pinClass: "dewPrim",
     name: "Lokacja 1",
     description:
       "Lorem ipsum copy copy Lorem ipsum copy copy Lorem ipsum copy copy Lorem ipsum copy copy",
@@ -20,7 +20,7 @@ export const demoPins: LocationPin[] = [
     top: 50,
   },
   {
-    pinColor: "dewPrim",
+    pinClass: "dewPrim",
     name: "Lokacja 2",
     description:
       "Lorem ipsum copy copy Lorem ipsum copy copy Lorem ipsum copy copy Lorem ipsum copy copy",
@@ -41,13 +41,7 @@ const LandmarkMapOnlyResponsive = forwardRef<
   LandmarkMapInfoProps
 >(
   (
-    {
-      src = "/images/kat_map_ph.jpg",
-      locations,
-      className,
-      originalDimensions = [1000, 500],
-      ...rest
-    },
+    { src, locations, className, originalDimensions = [1000, 500], ...rest },
     ref
   ) => {
     const [imageScale, setImageScale] = useState<number>(-1);
@@ -95,7 +89,7 @@ const LandmarkMapOnlyResponsive = forwardRef<
       >
         <Image
           ref={imageRef}
-          src={src}
+          src={src || ""}
           alt="mapa"
           fill
           className="absolute object-contain object-left-top !h-fit"
@@ -110,8 +104,8 @@ const LandmarkMapOnlyResponsive = forwardRef<
             <Popover key={index}>
               <PopoverTrigger
                 className={cn(
-                  "absolute z-10 object-contain base-hover -translate-x-1/2 -translate-y-1/2 cursor-pointer p-2 rounded-full  whitespace-nowrap",
-                  `bg-${location.pinColor}`
+                  "absolute z-10 object-contain -translate-x-1/2 -translate-y-1/2 cursor-pointer p-2 whitespace-nowrap bg-websiteBackground2",
+                  location.pinClass
                 )}
                 style={{
                   top: positions[0] | 0,
@@ -120,7 +114,12 @@ const LandmarkMapOnlyResponsive = forwardRef<
               >
                 {location.name}
               </PopoverTrigger>
-              <PopoverContent className="bg-websiteBackground2 flex-center flex-col p-0 overflow-hidden border-2">
+              <PopoverContent
+                className={cn(
+                  "bg-websiteBackground2 flex-center flex-col p-0 overflow-hidden border-2 rounded-none border-none min-w-[340px]",
+                  location.descriptionClass
+                )}
+              >
                 {location.img && (
                   <div className="max-h-[200px] min-h-[200px] h-full w-full overflow-hidden relative">
                     <Image
@@ -131,11 +130,16 @@ const LandmarkMapOnlyResponsive = forwardRef<
                     />
                   </div>
                 )}
-                <div className="p-2">
+                <div className="p-5 rounded-none">
                   {location.descriptionHeader && (
                     <h1>{location.descriptionHeader}</h1>
                   )}
-                  {location.description && <p>{location.description}</p>}
+                  {location.description &&
+                  typeof location.description === "string" ? (
+                    <p>{location.description}</p>
+                  ) : (
+                    location.description
+                  )}
                 </div>
               </PopoverContent>
             </Popover>

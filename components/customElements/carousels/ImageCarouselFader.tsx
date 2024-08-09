@@ -192,12 +192,12 @@ const ImageCarouselFader = ({
   return (
     <>
       {loading && (
-        <Skeleton className="relative w-full md:h-[768px] h-[512px]" />
+        <Skeleton className="relative w-full md:h-[768px] h-[512px] " />
       )}
 
       <div
         className={cn(
-          "relative w-full h-full bg-websiteBackground2 max-h-svh overflow-hidden",
+          "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full ",
           className,
           loading && "opacity-0 !size-0"
         )}
@@ -205,7 +205,7 @@ const ImageCarouselFader = ({
         {...rest}
       >
         {loading ? (
-          <Skeleton className="relative w-full md:h-[768px] h-[512px]" />
+          <Skeleton className="relative w-full md:h-[768px] h-[512px] xl:h-[1024px]" />
         ) : (
           <>
             <PrevNextButtons
@@ -260,7 +260,10 @@ const ImageCarouselFader = ({
                 src={loadedImages[currentIndex]}
                 alt={loadedImages[currentIndex]}
                 fill
-                sizes="(max-width: 768px) 512px, (max-width: 1280px) 768px"
+                sizes="
+    (max-width: 600px) 100vw,
+    (max-width: 1200px) 100vw,
+    100vw"
                 className={`absolute inset-0 object-cover ${fadeClass} transition-all duration-500`}
               />
             )}

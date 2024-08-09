@@ -19,16 +19,33 @@ import { useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
 import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Link from "next/link";
 
 const formSchema = z.object({
   telefon: z.string().optional(),
   email: z
     .string({ message: "Proszę podać właściwy adres email." })
     .email({ message: "Proszę podać właściwy adres email." }),
-  zgoda: z.boolean().refine((val) => val === true, {
-    message: "Prosimy o udzielenie zgody na przetwarzanie danych.",
-  }),
+
   formMessage: z.string().min(3, { message: "Prosimy opisać powód kontaktu" }),
+  zgodaPrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
+    message: "Wymagane.",
+  }),
+  oświadczeniePrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
+    message: "Wymagane.",
+  }),
+  zgodaPrzetwarzanieEmail: z.boolean().refine((val) => val === true, {
+    message: "Wymagane.",
+  }),
+  zgodaPrzetwarzanieTelefon: z.boolean().refine((val) => val === true, {
+    message: "Wymagane.",
+  }),
 });
 
 interface QuestionContactFormProps {
@@ -49,7 +66,10 @@ export function QuestionContactForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       formMessage: "",
-      zgoda: false,
+      zgodaPrzetwarzanieDanych: false,
+      oświadczeniePrzetwarzanieDanych: false,
+      zgodaPrzetwarzanieEmail: false,
+      zgodaPrzetwarzanieTelefon: false,
       email: "",
       telefon: "",
     },
@@ -62,7 +82,22 @@ export function QuestionContactForm({
     formData.append("formMessage", values.formMessage);
     formData.append("email", values.email);
     formData.append("telefon", values.telefon || "");
-    formData.append("zgoda", values.zgoda.toString());
+    formData.append(
+      "zgodaPrzetwarzanieDanych",
+      values.zgodaPrzetwarzanieDanych.toString()
+    );
+    formData.append(
+      "oświadczeniePrzetwarzanieDanych",
+      values.oświadczeniePrzetwarzanieDanych.toString()
+    );
+    formData.append(
+      "zgodaPrzetwarzanieEmail",
+      values.zgodaPrzetwarzanieEmail.toString()
+    );
+    formData.append(
+      "zgodaPrzetwarzanieTelefon",
+      values.zgodaPrzetwarzanieTelefon.toString()
+    );
     formData.append("destinationAddress", sendTo);
 
     try {
@@ -88,26 +123,25 @@ export function QuestionContactForm({
   return (
     <div
       className={cn(
-        "bg-dark flex-center justify-start flex-col w-full pt-3 px-6 lg:p-6 max-w-[600px]",
+        "bg-dark flex-center justify-start flex-col w-full px-6 lg:p-6 md:max-h-full pb-4",
         className
       )}
     >
-      {!disableTitle && (
-        <>
-          <div className="hidden md:block">
-            <span className="md:text-light font-bold text-2xl pb-6">
-              Formularz Kontaktowy
-            </span>
-          </div>
-          <div className="md:hidden flex flex-col gap-0 items-start justify-start w-full  pb-6">
-            <span className="text-accent1 font-bold text-4xl">FORMULARZ</span>
-            <span className="text-light font-light text-5xl">KONTAKTOWY</span>
-          </div>
-        </>
-      )}
+      <div className="hidden md:block">
+        <span className="md:text-light font-bold text-2xl pb-6">
+          Formularz Kontaktowy
+        </span>
+      </div>
+      <div className="md:hidden flex flex-col gap-0 items-start justify-start w-full pb-2 md:pb-6">
+        <span className="text-accent1 font-bold text-2xl">FORMULARZ</span>
+        <span className="text-light font-light text-3xl">KONTAKTOWY</span>
+      </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-8 text-dark w-full max-w-screen-xl"
+        >
           <FormField
             control={form.control}
             name="email"
@@ -154,23 +188,193 @@ export function QuestionContactForm({
               </FormItem>
             )}
           />
+          {/* Zgoda przetwarzanie */}
           <FormField
             control={form.control}
-            name="zgoda"
+            name="zgodaPrzetwarzanieDanych"
             render={({ field }) => (
-              <FormItem className="flex flex-row items-center justify-between rounded-lg border p-2 gap-4 !mt-4">
-                <FormControl>
+              <FormItem className="form-toggle-container">
+                <FormControl className="form-toggle-switch">
                   <Switch
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
                 </FormControl>
-                <div className="space-y-0.5">
-                  <FormLabel className="text-light text-base">Zgoda*</FormLabel>
-                  <FormDescription className="text-light">
-                    Wyrażam zgodę na przetwarzanie moich danych osobowych w
-                    celach marketingowych dotyczących wyżej wymienionej oferty.
-                  </FormDescription>
+                <div className="flex flex-col gap-2">
+                  <FormLabel className="text-light text-base">
+                    Zgoda na przetwarzanie danych*
+                  </FormLabel>
+
+                  <div className="form-toggle-description">
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionContent>
+                          Wyrażam zgodę na przetwarzanie podanych przeze mnie
+                          danych osobowych przez Inwestycje Deweloperskie Prosta
+                          Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska
+                          14C, 40-265 Katowice w celu nawiązania kontaktu oraz
+                          przedstawienia oferty naszych usług.
+                        </AccordionContent>
+                        <AccordionTrigger
+                          className="text-sm"
+                          openStateChildren={
+                            <span>Ukryj pełną treść zgody</span>
+                          }
+                        >
+                          Zobacz pełną treść zgody
+                        </AccordionTrigger>
+                      </AccordionItem>
+                    </Accordion>
+                  </div>
+                  <FormMessage />
+                </div>
+              </FormItem>
+            )}
+          />
+          {/* Oświadczenie */}
+
+          <FormField
+            control={form.control}
+            name="oświadczeniePrzetwarzanieDanych"
+            render={({ field }) => (
+              <FormItem className="form-toggle-container">
+                <FormControl className="form-toggle-switch">
+                  <Switch
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
+                <div className="flex flex-col gap-2">
+                  <FormLabel className="text-light text-base">
+                    Oświadczam, że zapoznałam/em się z zasadami przetwarzania
+                    moich danych osobowych zawartych w
+                    <Link
+                      className="text-accent1"
+                      href={"/informacje#klauzula"}
+                    >
+                      &nbsp;klauzuli informacyjnej&nbsp;
+                    </Link>
+                    oraz
+                    <Link
+                      className="text-accent1"
+                      href={"/informacje#polityka"}
+                    >
+                      &nbsp;polityką prywatności&nbsp;
+                    </Link>
+                    serwisu internetowego.*
+                  </FormLabel>
+                  <FormMessage />
+                </div>
+              </FormItem>
+            )}
+          />
+          {/* Zgoda Email */}
+
+          <FormField
+            control={form.control}
+            name="zgodaPrzetwarzanieEmail"
+            render={({ field }) => (
+              <FormItem className="form-toggle-container">
+                <FormControl className="form-toggle-switch">
+                  <Switch
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
+                <div className="flex flex-col gap-2">
+                  <FormLabel className="text-light text-base">
+                    Zgoda na kontakt e-mail*
+                  </FormLabel>
+
+                  <div className="form-toggle-description">
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionContent>
+                          Wyrażam zgodę na przetwarzanie moich danych osobowych
+                          w postaci adresu e-mail przez Inwestycje Deweloperskie
+                          Prosta Spółka Akcyjna z siedzibą w Katowicach, ul.
+                          Murckowska 14C, 40-265 Katowice, w celu otrzymywania
+                          drogą elektroniczną na adres e-mail informacji
+                          handlowych (tj. ofert, informacji o produktach i
+                          usługach), dotyczących produktów i usług oferowanych
+                          przez Inwestycje Deweloperskie Prosta Spółka Akcyjna z
+                          siedzibą w Katowicach, ul. Murckowska 14C, 40-265
+                          Katowice oraz przez partnerów, z których usług
+                          korzystamy w zakresie obrotu nieruchomościami:
+                          <Link
+                            className="text-accent1"
+                            href={"/informacje#podmioty"}
+                          >
+                            &nbsp;Lista podmiotów&nbsp;
+                          </Link>
+                        </AccordionContent>
+                        <AccordionTrigger
+                          className="text-sm"
+                          openStateChildren={
+                            <span>Ukryj pełną treść zgody</span>
+                          }
+                        >
+                          Zobacz pełną treść zgody
+                        </AccordionTrigger>
+                      </AccordionItem>
+                    </Accordion>
+                  </div>
+                  <FormMessage />
+                </div>
+              </FormItem>
+            )}
+          />
+          {/* Zgoda Telefon */}
+          <FormField
+            control={form.control}
+            name="zgodaPrzetwarzanieTelefon"
+            render={({ field }) => (
+              <FormItem className="form-toggle-container">
+                <FormControl className="form-toggle-switch">
+                  <Switch
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
+                <div className="flex flex-col gap-2">
+                  <FormLabel className="text-light text-base">
+                    Zgoda na kontakt telefoniczny*
+                  </FormLabel>
+
+                  <div className="form-toggle-description">
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionContent>
+                          Wyrażam zgodę na przetwarzanie moich danych osobowych
+                          w postaci w postaci numeru telefonu od Inwestycje
+                          Deweloperskie Prosta Spółka Akcyjna z siedzibą w
+                          Katowicach, ul. Murckowska 14C, 40-265 Katowice, w
+                          celu otrzymywania drogą telefoniczną na wskazany
+                          przeze mnie numer telefonu informacji handlowych (tj.
+                          ofert, informacji o produktach i usługach),
+                          dotyczących produktów i usług oferowanych przez
+                          Inwestycje Deweloperskie Prosta Spółka Akcyjna z
+                          siedzibą w Katowicach, ul. Murckowska 14C, 40-265
+                          Katowice oraz przez partnerów, z których usług
+                          korzystamy w zakresie obrotu nieruchomościami
+                          <Link
+                            className="text-accent1"
+                            href={"/informacje#podmioty"}
+                          >
+                            &nbsp;Lista podmiotów&nbsp;
+                          </Link>
+                        </AccordionContent>
+                        <AccordionTrigger
+                          className="text-sm"
+                          openStateChildren={
+                            <span>Ukryj pełną treść zgody</span>
+                          }
+                        >
+                          Zobacz pełną treść zgody
+                        </AccordionTrigger>
+                      </AccordionItem>
+                    </Accordion>
+                  </div>
                   <FormMessage />
                 </div>
               </FormItem>
@@ -208,15 +412,6 @@ export function QuestionContactForm({
           </div>
         </form>
       </Form>
-      <div className="w-full h-full mt-10 flex items-start lg:items-center flex-col lg:flex-row lg:gap-5 pb-10 ">
-        <Button className="text-light px-0 hover:text-accent1 bg-transparent hover:bg-transparent">
-          Polityka prywatności
-        </Button>
-        <span className="hidden lg:visible h-[20px] w-[1px] bg-darkerGray/40"></span>
-        <Button className="text-light px-0 hover:text-accent1 bg-transparent hover:bg-transparent">
-          Dane spółki
-        </Button>
-      </div>
     </div>
   );
 }

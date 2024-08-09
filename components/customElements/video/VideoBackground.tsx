@@ -20,12 +20,7 @@ const VideoBackground = ({
   ...props
 }: VideoBackgroundProps) => {
   return (
-    <div
-      className={cn(
-        "relative h-[512px] md:h-[724px] xl:h-[1024px] w-full",
-        className
-      )}
-    >
+    <div className={cn("relative h-full w-full", className)}>
       <video
         className={cn("absolute inset-0 w-full h-full object-cover", className)}
         muted

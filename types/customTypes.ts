@@ -1,13 +1,15 @@
+import { ReactNode } from "react";
 export type animationStyle = {
   in: string;
   out: string;
 };
 
 export type LocationPin = {
-  pinColor: string;
   name: string;
+  pinClass?: string;
   img?: string;
-  description: string;
+  description?: string | React.ReactNode;
+  descriptionClass?: string;
   descriptionHeader?: string;
   hoverDescription?: string;
   top: number;

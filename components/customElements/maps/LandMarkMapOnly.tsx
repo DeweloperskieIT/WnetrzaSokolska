@@ -48,7 +48,7 @@ interface LandmarkMapInfoProps {
 }
 
 const LandmarkMapOnly = ({
-  src = "/images/kat_map_ph.jpg",
+  src,
   locations,
   className,
   originalDimensions = [1000, 500],
@@ -106,7 +106,7 @@ const LandmarkMapOnly = ({
     >
       <Image
         ref={imageRef}
-        src={src}
+        src={src || ""}
         alt="mapa"
         fill
         className="absolute object-cover object-left-top h-2/3 max-h-[768px]"

@@ -9,10 +9,9 @@ import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
 import InterchangeableImages from "@/components/customElements/texts-images/InterchangeableImages";
 import RzutMieszkania from "@/components/customElements/texts-images/RzutMieszkania";
 import SpiralPhotos4 from "@/components/customElements/texts-images/SpiralPhotos4";
-import TextPlusSinglePhoto from "@/components/customElements/texts-images/TextPlusSinglePhoto";
 import VideoBackground from "@/components/customElements/video/VideoBackground";
-import Image from "next/image";
 import React from "react";
+import TextPlusSingleVideo from "@/components/customElements/texts-images/TextPlusSingleVideo";
 
 const page = () => {
   let oferta = "Apartament 103";
@@ -76,7 +75,7 @@ const page = () => {
             autoplay
             interval={4000}
             className=""
-            textClassName="bg-gradient-to-t from-dark/50 to-transparent"
+            textClassName="bg-gradient-to-t from-dark/70 to-transparent pt-6 m d:pt-2"
             images={[
               {
                 image: "/images/am/carousel-1.png",
@@ -124,51 +123,81 @@ const page = () => {
         />
         {/* Sixth Section - Interchangeable Photos */}
         <InterchangeableImages
+          interval={4000}
+          mode="carousel"
           elements={[
             {
-              image: "/images/am/right1.png",
-              header: "UNIKATOWE OŚWIETLENIE",
+              image: "/images/ko/right1.png",
+              images: [
+                "/images/ko/intercarousel/1/1.png",
+                "/images/ko/intercarousel/1/2.png",
+                "/images/ko/intercarousel/1/3.png",
+                "/images/ko/intercarousel/1/4.png",
+                "/images/ko/intercarousel/1/5.png",
+              ],
+              header: "SPEKTAKULARNE OŚWIETLENIE",
               paragraph:
-                "Oświetlenie pozwalające stworzyć klimat idealny do okoliczności.",
+                "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
             },
             {
-              image: "/images/am/left1.png",
+              image: "/images/ko/left1.png",
+              images: [
+                "/images/ko/intercarousel/1/1.png",
+                "/images/ko/intercarousel/1/2.png",
+                "/images/ko/intercarousel/1/3.png",
+                "/images/ko/intercarousel/1/4.png",
+                "/images/ko/intercarousel/1/5.png",
+              ],
               header: "MARKI PREMIUM",
               paragraph:
-                "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
+                "Postaw na rozwiązania najlepszych producentów: stolarki Dewro, ceramiki Villeroy & Boch, armatury Hansgrohe oraz AGD Samsung.",
             },
             {
-              image: "/images/am/right2.png",
-              header: `SPÓJNY DESIGN`,
+              image: "/images/ko/right2.png",
+              images: [
+                "/images/ko/intercarousel/1/1.png",
+                "/images/ko/intercarousel/1/2.png",
+                "/images/ko/intercarousel/1/3.png",
+                "/images/ko/intercarousel/1/4.png",
+                "/images/ko/intercarousel/1/5.png",
+              ],
+              header: `SPÓJNE WNĘTRZE`,
               paragraph:
-                "Ponadczasowy design, przewijający się przez szereg detali architektonicznych, będący wizytówką niebanalnego stylu",
+                "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
             },
             {
-              image: "/images/am/left2.png",
-              header: "KLIMATYCZNE WNĘTRZE",
+              image: "/images/ko/left2.png",
+              images: [
+                "/images/ko/intercarousel/1/1.png",
+                "/images/ko/intercarousel/1/2.png",
+                "/images/ko/intercarousel/1/3.png",
+                "/images/ko/intercarousel/1/4.png",
+                "/images/ko/intercarousel/1/5.png",
+              ],
+              header: "NAJLEPSZE MATERIAŁY",
               paragraph:
                 "Poczuj jakość: płyty meblowej i blatów Egger, trójwarstwowej deski podłogowej Barlinek czy włoskich plytek Marazzi.",
             },
             {
-              image: "/images/am/right3.png",
-              header: "APARTAMENT XXI WIEKU",
+              image: "/images/ko/right3.png",
+              images: [
+                "/images/ko/intercarousel/1/1.png",
+                "/images/ko/intercarousel/1/2.png",
+                "/images/ko/intercarousel/1/3.png",
+                "/images/ko/intercarousel/1/4.png",
+                "/images/ko/intercarousel/1/5.png",
+              ],
+              header: "ŚWIATOWA ARCHITEKTURA",
               paragraph:
-                "Wpisz się w najnowsze trendy budownictwa i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+                "Zamieszkaj w budynku nagrodzonym prestiżową nagrodą European Property Award.",
             },
           ]}
-          header={
-            <SectionHeading
-              wideParent
-              className=""
-              top="UNIKATOWY"
-              bottom="DESIGN"
-            />
-          }
+          header={<SectionHeading wideParent top="UNIKATOWY" bottom="DESIGN" />}
         ></InterchangeableImages>
         {/* Seventh Section - Info with photo */}
-        <TextPlusSinglePhoto
+        <TextPlusSingleVideo
           className="limited-width"
-          img="/images/castle.png"
+          src="/images/castle.png"
           content={
             <div className="flex justify-center flex-col gap-10 text-light lg:text-right text-xl">
               <span className="">
@@ -195,13 +224,13 @@ const page = () => {
               bottom="W SERCU MIASTA"
             />
           }
-        ></TextPlusSinglePhoto>
+        ></TextPlusSingleVideo>
         {/* Eigth Section - Info text */}
         <InfoBlocks
           className="limited-width"
           info={[
             {
-              icon: "/images/DocIcon.png",
+              icon: "/images/DingIcon.png",
               header: "ZAKUP OD PROFESJONALISTY",
               paragraph:
                 "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne.",

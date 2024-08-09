@@ -10,8 +10,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Aranżacje Deweloperskie",
-  description: "Aranżacje Deweloperskie",
+  title: "Wnętrza Deweloperskie",
+  description: "Wnętrza Deweloperskie",
 };
 
 export default function RootLayout({

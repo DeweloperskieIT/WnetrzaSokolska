@@ -25,7 +25,7 @@ const ScrollingHeader = () => {
       }`}
     >
       <Image
-        src={"/images/view1.jpg"}
+        src={""}
         alt="soklog"
         width={100}
         height={100}

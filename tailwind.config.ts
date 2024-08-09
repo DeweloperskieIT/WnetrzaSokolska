@@ -70,7 +70,7 @@ const config = {
         darkerGray: "#DADBD4",
         accent1: "#FACA32",
 
-        websiteBackground1: "#1D1D1B",
+        websiteBackground1: "#000000",
         websiteBackground2: "#1D1D1B",
 
         border: "hsl(var(--border))",

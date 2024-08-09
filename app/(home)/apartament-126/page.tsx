@@ -6,11 +6,9 @@ import InterchangeableImages from "@/components/customElements/texts-images/Inte
 import RzutMieszkania from "@/components/customElements/texts-images/RzutMieszkania";
 import SectionHeading from "@/components/customElements/custom-ui/SectionHeading";
 import SpiralPhotos4 from "@/components/customElements/texts-images/SpiralPhotos4";
-import StickyFormButton from "@/components/customElements//custom-ui/StickyFormButton";
 import OfferStickyHeader from "@/components/customElements/custom-ui/OfferStickyHeader";
 import VideoBackground from "@/components/customElements/video/VideoBackground";
-import Image from "next/image";
-import TextPlusSinglePhoto from "@/components/customElements/texts-images/TextPlusSinglePhoto";
+import TextPlusSingleVideo from "@/components/customElements/texts-images/TextPlusSingleVideo";
 
 let oferta = "Apartament 103";
 
@@ -22,7 +20,10 @@ const page = () => {
 
       <div className="landing-page">
         {/* Video */}
-        <VideoBackground src="/videos/video1.mp4" className="">
+        <VideoBackground
+          src="/videos/video1.mp4"
+          className="aspect-[16/9] max-h-[1024px] md:-mb-10 lg:-mb-20"
+        >
           <div className="w-full h-full relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6">
             <span className="font-base text-6xl">LUKSUS</span>
             <span className="font-extralight text-6xl">KTÓRY CIĘ WYRÓŻNI</span>
@@ -33,19 +34,19 @@ const page = () => {
           className=""
           icons={[
             {
-              icon: "/images/PolemanIcon.png",
+              icon: "/apartament126/s2/1.webp",
               text: "Najwyżej położony balkon w budynku",
             },
             {
-              icon: "/images/MapIcon.png",
+              icon: "/apartament126/s2/2.webp",
               text: "Apartamenty w topowej lokalizacji",
             },
             {
-              icon: "/images/BuildingIcon.png",
+              icon: "/apartament126/s2/3.webp",
               text: "Światowej klasy architektura",
             },
             {
-              icon: "/images/DangleKeysIcon.png",
+              icon: "/apartament126/s2/4.webp",
               text: "Indywidualny opiekun transakcji",
             },
             { icon: "/images/BedIcon.png", text: "Zamieszkaj już jutro" },
@@ -70,35 +71,76 @@ const page = () => {
           />
           <ImageCarouselFader
             autoplay
-            itemsLength={5}
+            duration={6000}
+            itemsLength={15}
             dotsEnabledOnlyVisible
             dotsClassName={""}
             textBackground="bg-gradient-to-t from-dark to-transparent"
-            className="h-[512px] md:h-[768px]"
+            className="aspect-[16/9] max-h-[1024px]"
             textPlacement="bottom"
             texts={[
               {
-                heading: "PRZESTRZENNY WIDOK",
+                heading: "CAŁE MIASTO W ZASIĘGU",
               },
               {
-                heading: "KOMFORTOWA SYPIALNIA",
+                heading: "WYGODA DWÓCH ŁAZIENEK",
               },
               {
-                heading: "DOPRACOWANE WNĘTRZA",
+                heading: "PRYSZNIC I WANNA DLA CIEBIE",
               },
               {
-                heading: "JAKOŚĆ, KTÓRĄ MOŻNA POCZYĆ W DŁONI",
+                heading: "PRZESTRONNE LUSTRA",
               },
               {
-                heading: "PRYWATNE MIEJSCE ZAWSZE CZEKAJĄCE NA CIEBIE",
+                heading: "ŚWIĄTYNIA RELAKSU",
+              },
+              {
+                heading: "POKÓJ DLA TWOICH PASJI",
+              },
+              {
+                heading: "PRZESTRZEŃ OSOBISTA",
+              },
+              {
+                heading: "OKNO NA ŚWIAT",
+              },
+              {
+                heading: "ESENCJA NOWOCZESNOŚCI",
+              },
+              {
+                heading: "MIEJSCE DO ROZKWITANIA",
+              },
+              {
+                heading: "DOPRACOWANY STYL",
+              },
+              {
+                heading: "WIECZÓR PO TWOJEMU",
+              },
+              {
+                heading: "ZACHWYCAJĄCE WNĘTRZE",
+              },
+              {
+                heading: "W ŚWIETLE ZACHODZĄCEGO SŁOŃCA",
+              },
+              {
+                heading: "MIEJSCE NA KAŻDĄ HISTORIĘ",
               },
             ]}
             images={[
-              "/images/ko/carousel-1.png",
-              "/images/ko/carousel-2.png",
-              "/images/ko/carousel-3.png",
-              "/images/ko/carousel-4.png",
-              "/images/ko/carousel-5.png",
+              "/apartament126/s3/01.jpg",
+              "/apartament126/s3/02.jpg",
+              "/apartament126/s3/03.jpg",
+              "/apartament126/s3/04.jpg",
+              "/apartament126/s3/05.jpg",
+              "/apartament126/s3/06.jpg",
+              "/apartament126/s3/07.jpg",
+              "/apartament126/s3/08.jpg",
+              "/apartament126/s3/09.jpg",
+              "/apartament126/s3/10.jpg",
+              "/apartament126/s3/11.jpg",
+              "/apartament126/s3/12.jpg",
+              "/apartament126/s3/13.jpg",
+              "/apartament126/s3/14.jpg",
+              "/apartament126/s3/15.jpg",
             ]}
           />
         </div>
@@ -107,8 +149,8 @@ const page = () => {
           cena="420 000 EUR"
           powierzchnia=" 75,20"
           img={{
-            mobile: "/images/ko/rzutmobile.png",
-            desktop: "/images/ko/rzutdesktop.png",
+            mobile: "/apartament126/s4/rzutm.webp",
+            desktop: "/apartament126/s4/rzutd.webp",
           }}
           header={
             <SectionHeading
@@ -121,10 +163,10 @@ const page = () => {
         {/* Fourth Section - Standalone Photos */}
         <SpiralPhotos4
           images={[
-            "/images/ko/img1.png",
-            "/images/ko/img2.png",
-            "/images/ko/img3.png",
-            "/images/ko/img4.png",
+            "/apartament126/s5/10.jpg",
+            "/apartament126/s5/3.jpg",
+            "/apartament126/s5/5.jpg",
+            "/apartament126/s5/4.jpg",
           ]}
         />
         {/* Fifth Section - Interchangeable images */}
@@ -133,76 +175,77 @@ const page = () => {
           mode="carousel"
           elements={[
             {
-              image: "/images/ko/right1.png",
+              image: "/apartament126/s6/1/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/1/1.jpeg",
+                "/apartament126/s6/1/2.jpeg",
+                "/apartament126/s6/1/3.jpeg",
+                "/apartament126/s6/1/4.jpeg",
+                "/apartament126/s6/1/5.jpeg",
+              ],
+              header: "APARTAMENT XXI WIEKU",
+              paragraph:
+                "Podąrzaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+            },
+            {
+              image: "/apartament126/s6/2/1.jpeg",
+              images: [
+                "/apartament126/s6/2/1.jpeg",
+                "/apartament126/s6/2/2.jpeg",
+                "/apartament126/s6/2/3.jpeg",
+                "/apartament126/s6/2/4.jpeg",
+                "/apartament126/s6/2/5.jpeg",
               ],
               header: "SPEKTAKULARNE OŚWIETLENIE",
               paragraph:
                 "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
             },
             {
-              image: "/images/ko/left1.png",
+              image: "/apartament126/s6/3/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
-              ],
-              header: "MARKI PREMIUM",
-              paragraph:
-                "Postaw na rozwiązania najlepszych producentów: stolarki Dewro, ceramiki Villeroy & Boch, armatury Hansgrohe oraz AGD Samsung.",
-            },
-            {
-              image: "/images/ko/right2.png",
-              images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/3/1.jpg",
+                "/apartament126/s6/3/2.jpg",
+                "/apartament126/s6/3/3.jpg",
+                "/apartament126/s6/3/4.jpeg",
+                "/apartament126/s6/3/5.jpg",
               ],
               header: `SPÓJNE WNĘTRZE`,
               paragraph:
                 "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
             },
             {
-              image: "/images/ko/left2.png",
+              image: "/apartament126/s6/4/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/4/1.jpg",
+                "/apartament126/s6/4/2.jpg",
+                "/apartament126/s6/4/3.jpg",
+                "/apartament126/s6/4/4.jpg",
+                "/apartament126/s6/4/5.jpg",
+                "/apartament126/s6/4/6.jpg",
               ],
-              header: "NAJLEPSZE MATERIAŁY",
+              header: "MARKI PREMIUM",
               paragraph:
-                "Poczuj jakość: płyty meblowej i blatów Egger, trójwarstwowej deski podłogowej Barlinek czy włoskich plytek Marazzi.",
+                "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
             },
             {
-              image: "/images/ko/right3.png",
+              image: "/apartament126/s6/5/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/5/1.jpg",
+                "/apartament126/s6/5/2.jpg",
+                "/apartament126/s6/5/3.jpg",
+                "/apartament126/s6/5/4.jpg",
+                "/apartament126/s6/5/5.jpg",
               ],
               header: "ŚWIATOWA ARCHITEKTURA",
               paragraph:
-                "Zamieszkaj w budynku nagrodzonym prestiżową nagrodą European Property Award.",
+                "Postaw na ponadcasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
             },
           ]}
           header={<SectionHeading wideParent top="UNIKATOWY" bottom="DESIGN" />}
         ></InterchangeableImages>
         {/* Seventh Section - Info with photo */}
-        <TextPlusSinglePhoto
-          img="/images/castle.png"
+        <TextPlusSingleVideo
+          src="/apartament126/s7/360V2.mp4"
           content={
             <div className="flex justify-center flex-col gap-10 text-light lg:text-right text-xl">
               <span className="">
@@ -229,24 +272,24 @@ const page = () => {
               bottom="W SERCU MIASTA"
             />
           }
-        ></TextPlusSinglePhoto>
+        ></TextPlusSingleVideo>
         {/* Eigth Section - Info text */}
         <InfoBlocks
           info={[
             {
-              icon: "/images/DocIcon.png",
+              icon: "/apartament126/s8/1.webp",
               header: "ZAKUP OD PROFESJONALISTY",
               paragraph:
                 "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne.",
             },
             {
-              icon: "/images/DingIcon.png",
+              icon: "/apartament126/s8/2.webp",
               header: "INDYWIDUALNY OPIEKUN TRANSAKCJI",
               paragraph:
                 "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności.",
             },
             {
-              icon: "/images/BullIcon.png",
+              icon: "/apartament126/s8/3.webp",
               header: "PRZEŁAM BARIERY FINANSOWE",
               paragraph:
                 "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. Nie pozwól, żeby bariera finansowa stanęła na drodze do inwestycji w prestiż.",
@@ -266,8 +309,8 @@ const page = () => {
             <SectionHeading
               wideParent
               className="gap-3 md:gap-2 md:flex hidden"
-              top="MASZ WIĘCEJ"
-              bottom="PYTAŃ?"
+              top="SKONTAKTUJ SIĘ"
+              bottom="W SPRAWIE OFERTY"
             />
           }
         ></Footer>

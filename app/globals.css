@@ -105,7 +105,7 @@
   }
 
   .landing-page {
-    @apply relative gap-10 md:gap-12 lg:gap-24 bg-websiteBackground2 flex items-center flex-col w-full text-light;
+    @apply relative gap-10 md:gap-24 lg:gap-36 bg-websiteBackground2 flex items-center flex-col w-full text-light;
   }
 
   .landing-page-text-common-1 {
@@ -196,6 +196,34 @@
 
   .section-header-gap {
     @apply gap-8 md:gap-14;
+  }
+
+  .form-toggle-container {
+    @apply w-full flex flex-row items-start justify-start rounded-lg gap-4 !mt-0;
+  }
+
+  .form-toggle-switch {
+    @apply mt-4;
+  }
+
+  .form-toggle-description {
+    @apply text-light text-sm !mt-0;
+  }
+
+  .informacje-container-common {
+    @apply w-full flex items-start justify-start flex-col gap-4 text-light;
+  }
+
+  .informacje-header-common {
+    @apply text-light font-bold text-xl md:text-2xl;
+  }
+
+  .informacje-list-common {
+    @apply list-decimal ml-8 flex flex-col gap-2;
+  }
+
+  .informacje-list-bullet-common {
+    @apply list-disc ml-8;
   }
 }
 
