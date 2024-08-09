@@ -256,6 +256,7 @@ const ImageCarouselFader = ({
 
             {loadedImages.length > 0 && (
               <Image
+                loading="lazy"
                 key={currentIndex}
                 src={loadedImages[currentIndex]}
                 alt={loadedImages[currentIndex]}

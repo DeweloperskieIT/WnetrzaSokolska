@@ -23,6 +23,7 @@ const VideoBackground = ({
     <div className={cn("relative h-full w-full", className)}>
       <video
         className={cn("absolute inset-0 w-full h-full object-cover", className)}
+        preload="auto"
         muted
         loop
         playsInline
