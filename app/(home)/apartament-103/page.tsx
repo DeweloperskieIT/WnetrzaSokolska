@@ -74,7 +74,7 @@ const page = () => {
           <ImageCarouselCustom
             autoplay
             interval={4000}
-            className=""
+            className="aspect-[16/9] max-h-[1024px]"
             textClassName="bg-gradient-to-t from-dark/70 to-transparent pt-6 m d:pt-2"
             images={[
               {
@@ -96,13 +96,13 @@ const page = () => {
             ]}
           />
         </div>
-        {/* Fourth Section - Rzut Mieszkania */}
+        {/* Third Section - Rzut Mieszkania */}
         <RzutMieszkania
           cena="420 000 EUR"
           powierzchnia=" 75,20"
           img={{
-            mobile: "/images/am/rzutmobile.png",
-            desktop: "/images/am/rzutdesktop.png",
+            mobile: "/apartament126/s4/rzutm.webp",
+            desktop: "/apartament126/s4/rzutd.webp",
           }}
           header={
             <SectionHeading
@@ -112,108 +112,108 @@ const page = () => {
             />
           }
         ></RzutMieszkania>
-        {/* Fifth Section - Spiral Photos */}
+        {/* Fourth Section - Standalone Photos */}
         <SpiralPhotos4
           images={[
-            "/images/am/img1.png",
-            "/images/am/img2.png",
-            "/images/am/img3.png",
-            "/images/am/img4.png",
+            "/apartament126/s5/10.jpg",
+            "/apartament126/s5/3.jpg",
+            "/apartament126/s5/5.jpg",
+            "/apartament126/s5/4.jpg",
           ]}
         />
-        {/* Sixth Section - Interchangeable Photos */}
+        {/* Fifth Section - Interchangeable images */}
         <InterchangeableImages
           interval={4000}
           mode="carousel"
           elements={[
             {
-              image: "/images/ko/right1.png",
+              image: "/apartament126/s6/1/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/1/1.jpeg",
+                "/apartament126/s6/1/2.jpeg",
+                "/apartament126/s6/1/3.jpeg",
+                "/apartament126/s6/1/4.jpeg",
+                "/apartament126/s6/1/5.jpeg",
               ],
-              header: "SPEKTAKULARNE OŚWIETLENIE",
+              header: "APARTAMENT XXI WIEKU",
               paragraph:
-                "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
+                "Wpisz się w najnowsze trendy budownictwa i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
             },
             {
-              image: "/images/ko/left1.png",
+              image: "/apartament126/s6/2/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/2/1.jpeg",
+                "/apartament126/s6/2/2.jpeg",
+                "/apartament126/s6/2/3.jpeg",
+                "/apartament126/s6/2/4.jpeg",
+                "/apartament126/s6/2/5.jpeg",
               ],
-              header: "MARKI PREMIUM",
+              header: "UNIKATOWE OŚWIETLENIE",
               paragraph:
-                "Postaw na rozwiązania najlepszych producentów: stolarki Dewro, ceramiki Villeroy & Boch, armatury Hansgrohe oraz AGD Samsung.",
+                "Oświetlenie POZWALAJĄCE STWORZYĆ KLIMAT IDEALNY DO OKOLICZNOŚCI",
             },
             {
-              image: "/images/ko/right2.png",
+              image: "/apartament126/s6/3/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/3/1.jpg",
+                "/apartament126/s6/3/2.jpg",
+                "/apartament126/s6/3/3.jpg",
+                "/apartament126/s6/3/4.jpeg",
+                "/apartament126/s6/3/5.jpg",
               ],
               header: `SPÓJNE WNĘTRZE`,
               paragraph:
                 "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
             },
             {
-              image: "/images/ko/left2.png",
+              image: "/apartament126/s6/4/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/4/1.jpg",
+                "/apartament126/s6/4/2.jpg",
+                "/apartament126/s6/4/3.jpg",
+                "/apartament126/s6/4/4.jpg",
+                "/apartament126/s6/4/5.jpg",
+                "/apartament126/s6/4/6.jpg",
               ],
-              header: "NAJLEPSZE MATERIAŁY",
+              header: "MARKI PREMIUM",
               paragraph:
-                "Poczuj jakość: płyty meblowej i blatów Egger, trójwarstwowej deski podłogowej Barlinek czy włoskich plytek Marazzi.",
+                "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
             },
             {
-              image: "/images/ko/right3.png",
+              image: "/apartament126/s6/5/1.jpeg",
               images: [
-                "/images/ko/intercarousel/1/1.png",
-                "/images/ko/intercarousel/1/2.png",
-                "/images/ko/intercarousel/1/3.png",
-                "/images/ko/intercarousel/1/4.png",
-                "/images/ko/intercarousel/1/5.png",
+                "/apartament126/s6/5/1.jpg",
+                "/apartament126/s6/5/2.jpg",
+                "/apartament126/s6/5/3.jpg",
+                "/apartament126/s6/5/4.jpg",
+                "/apartament126/s6/5/5.jpg",
               ],
               header: "ŚWIATOWA ARCHITEKTURA",
               paragraph:
-                "Zamieszkaj w budynku nagrodzonym prestiżową nagrodą European Property Award.",
+                "Postaw na ponadcasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
             },
           ]}
           header={<SectionHeading wideParent top="UNIKATOWY" bottom="DESIGN" />}
         ></InterchangeableImages>
         {/* Seventh Section - Info with photo */}
         <TextPlusSingleVideo
-          className="limited-width"
-          src="/images/castle.png"
+          src="/apartament126/s7/360V2.mp4"
           content={
             <div className="flex justify-center flex-col gap-10 text-light lg:text-right text-xl">
               <span className="">
-                <span className="text-accent1">3100</span> - co najmniej tyle
-                mieszkań powstało i jeszcze powstanie w Katowickiej Strefie
-                Kultury do 2028 roku.
+                <span className="text-accent1 font-bold">3100</span> -
+                przynajmniej tyle mieszkań powstało i jeszcze powstanie w
+                katowickiej Strefie Kultury do 2028 roku.
               </span>
               <span>
-                Ograniczona liczba lokali w bezpośrednim otoczeniu zapewni nie
-                tylko komfort w użytkowaniu Twojej inwestycji, lecz również
-                zabezpieczy jej wartość w przyszłości.
+                Postaw na unikatową lokalizację, w otoczeniu której nie powstaną
+                tysiące nowych mieszkań, z którymi będzie musiał konkurować ceną
+                w momencie sprzedaży nieruchomości na rynku wtórnym.
               </span>
               <span>
-                Wybierz narożny apartament na XIII piętrze ponadczasowego
+                Wybierz narożny apartament na XV piętrze ponadczasowego
                 budynku&nbsp;
-                <span className="text-accent1">Sokolska Towers.</span>
+                <span className="text-accent1 font-bold">Sokolska Towers.</span>
               </span>
             </div>
           }
@@ -227,65 +227,42 @@ const page = () => {
         ></TextPlusSingleVideo>
         {/* Eigth Section - Info text */}
         <InfoBlocks
-          className="limited-width"
           info={[
             {
-              icon: "/images/DingIcon.png",
+              icon: "/apartament126/s8/1.webp",
               header: "ZAKUP OD PROFESJONALISTY",
               paragraph:
                 "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne.",
             },
             {
-              icon: "/images/DingIcon.png",
+              icon: "/apartament126/s8/2.webp",
               header: "INDYWIDUALNY OPIEKUN TRANSAKCJI",
               paragraph:
                 "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności.",
             },
             {
-              icon: "/images/BullIcon.png",
-              header: "PRESTIŻ, NA KTÓRY CIĘ STAĆ",
+              icon: "/apartament126/s8/3.webp",
+              header: "PRZEŁAM BARIERY FINANSOWE",
               paragraph:
-                "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. ",
+                "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. Nie pozwól, żeby bariera finansowa stanęła na drodze do inwestycji w prestiż.",
             },
           ]}
-          // alternativeMobile
-          // mobileInfo={[
-          //   {
-          //     header: "BEZPIECZEŃSTWO",
-          //     paragraph:
-          //       "Nasz zespół prawny zadba o wszelkie formalności oraz zabezpieczenie transakcji",
-          //   },
-          //   {
-          //     header: "CZAS",
-          //     paragraph:
-          //       "Oszczędność czasu - zorganizujemy cały proces zakupu za Ciebie",
-          //   },
-          //   {
-          //     header: "FINANSE",
-          //     paragraph:
-          //       "Pomagamy zdobyć finansowanie nawet bez wkładu własnego!",
-          //   },
-          // ]}
-          // mobileHeader={
-          //   <SectionHeading className="" top="PROCES" bottom="ZAKUPU" />
-          // }
           header={
             <SectionHeading
-              className=""
               top="INTELIGENTNY WYBÓR"
               bottom="NA WYCIĄGNIĘCIE RĘKI"
             />
           }
         ></InfoBlocks>
-        {/* Footer */}
+        {/* Ninth Section - Footer */}
         <Footer
           oferta={oferta}
           header={
             <SectionHeading
               wideParent
               className="gap-3 md:gap-2 md:flex hidden"
-              top="MASZ WIĘCEJ"
-              bottom="PYTAŃ?"
+              top="SKONTAKTUJ SIĘ"
+              bottom="W SPRAWIE OFERTY"
             />
           }
         ></Footer>

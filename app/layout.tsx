@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/icons8-favicon.gif" sizes="any" />
+      <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       <body
         className={cn(
           "min-h-screen h-full bg-websiteBackground2 font-sans antialiased",

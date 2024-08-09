@@ -109,7 +109,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
             alt="soktower"
             width={300}
             height={100}
-            className="object-contain max-w-[300px] h-auto w-auto"
+            className="object-contain max-w-[200px] h-auto w-auto"
           />
         </div>
       </div>

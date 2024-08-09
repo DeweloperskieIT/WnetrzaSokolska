@@ -21,10 +21,10 @@ const page = () => {
       <div className="landing-page">
         {/* Video */}
         <VideoBackground
-          src="/videos/video1.mp4"
-          className="aspect-[16/9] max-h-[1024px] md:-mb-10 lg:-mb-20"
+          src="/apartament126/s1/version1.mp4"
+          className="aspect-[16/9] max-h-[1024px] md:-mb-10 lg:-mb-20 flex items-end"
         >
-          <div className="w-full h-full relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6">
+          <div className="w-full h-fit relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6 from-dark/60 to-transparent bg-gradient-to-t">
             <span className="font-base text-6xl">LUKSUS</span>
             <span className="font-extralight text-6xl">KTÓRY CIĘ WYRÓŻNI</span>
           </div>

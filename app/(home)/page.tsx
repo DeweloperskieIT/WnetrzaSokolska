@@ -92,7 +92,8 @@ const page = () => {
             className="lg:!absolute object-cover  w-full h-full lg:pl-20 !relative"
           />
           <div className="z-20 w-full h-full relative lg:block flex flex-col gap-6">
-            <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2 lg:max-w-[300px] p-4 lg:absolute md:left-[60px] md:top-[100px]">
+            <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2 lg:max-w-[300px] p-4 lg:absolute md:left-[60px] md:top-[60px]">
+              <span className="font-bold">XIV piętro </span>
               <span>
                 Nowoczesny apartament dla osób, które chcą mieć wszystko w
                 zasięgu ręki.
@@ -101,15 +102,15 @@ const page = () => {
                 <span>
                   <i>Przyjmij nową perspektywę</i>
                 </span>
-                <Link
-                  href={"/xxx"}
-                  className="font-bold text-accent1 w-full text-right"
-                >
-                  poznaj ofertę
-                </Link>
+                <span className="font-light text-accent1 w-full text-right">
+                  premiera
+                  <br />
+                  26/08/2024
+                </span>
               </div>
             </div>
-            <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2  lg:max-w-[300px] p-4 lg:absolute md:left-[60px] md:top-[340px]">
+            <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2  lg:max-w-[300px] p-4 lg:absolute md:left-[60px] md:top-[400px]">
+              <span className="font-bold">XIII piętro </span>
               <span>
                 Apartament zaaranżowany z myślą o osobach, które pragną
                 korzystać z potencjału Katowic na swoich zasadach.
@@ -131,7 +132,8 @@ const page = () => {
                 </span>
               </div>
             </div>
-            <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2 lg:max-w-[300px] p-4 lg:absolute md:right-[60px] md:top-[100px]">
+            <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2 lg:max-w-[300px] p-4 lg:absolute md:right-[60px] md:top-[60px]">
+              <span className="font-bold">XV piętro </span>
               <span>
                 Najwyżej usytuowany apartament z wygodną loggią dla osób, które
                 cenią sobie wyjątkowość.
@@ -140,14 +142,16 @@ const page = () => {
                 <span>
                   <i>Luksus, który Cię wyróżni</i>
                 </span>
-                <span className="font-light text-accent1 w-full text-right">
-                  premiera
-                  <br />
-                  26/08/2024
-                </span>
+                <Link
+                  href={"/xxx"}
+                  className="font-bold text-accent1 w-full text-right"
+                >
+                  poznaj ofertę
+                </Link>
               </div>
             </div>
             <div className="text-light text-xl flex flex-col justify-between gap-6 bg-websiteBackground2 lg:max-w-[300px] p-4 lg:absolute md:right-[60px] md:top-[400px]">
+              <span className="font-bold">XIV piętro </span>
               <span>
                 Twój mały dom na XIV piętrze, z przestronnym salonem z kuchnią,
                 gabinetem, sypialnią, pralnią, garderobą oraz pojemną komórką
@@ -186,8 +190,12 @@ const page = () => {
           </div>
         </div>
         {/* footer */}
-        <div className="w-full h-full relative limited-width flex flex-col gap-10 mb-10">
-          <SectionHeading top="SKONTAKTUJ SIĘ" bottom="Z NAMI" />
+        <div className="w-full h-full relative flex flex-col gap-10 mb-10">
+          <SectionHeading
+            className="limited-width self-center"
+            top="SKONTAKTUJ SIĘ"
+            bottom="Z NAMI"
+          />
           {/* Formularz */}
           <div className="lg:basis-1/2 self-center w-full">
             <QuestionContactForm
@@ -210,7 +218,7 @@ const page = () => {
               alt="soktower"
               width={300}
               height={100}
-              className="object-contain max-w-[300px] h-auto w-auto"
+              className="object-contain max-w-[200px] h-auto w-auto"
             />
           </div>
         </div>

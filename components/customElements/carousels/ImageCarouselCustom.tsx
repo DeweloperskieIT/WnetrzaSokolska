@@ -123,7 +123,7 @@ const ImageCarouselCustom = ({
   if (loading) {
     return (
       <div className="w-full h-full">
-        <Skeleton className="relative w-full md:h-[768px] h-[512px]" />
+        <Skeleton className="relative w-full" />
       </div>
     );
   }
@@ -132,7 +132,7 @@ const ImageCarouselCustom = ({
     <div
       ref={ref}
       className={cn(
-        "relative w-full overflow-clip transition-all duration-500 md:h-[768px] h-[512px]",
+        "relative w-full overflow-clip transition-all duration-500 ",
         className
       )}
       {...rest}
