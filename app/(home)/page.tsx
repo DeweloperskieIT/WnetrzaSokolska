@@ -143,7 +143,7 @@ const page = () => {
                   <i>Luksus, który Cię wyróżni</i>
                 </span>
                 <Link
-                  href={"/xxx"}
+                  href={"/apartament-126"}
                   className="font-bold text-accent1 w-full text-right"
                 >
                   poznaj ofertę
