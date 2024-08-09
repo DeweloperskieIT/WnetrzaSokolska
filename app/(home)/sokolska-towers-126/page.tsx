@@ -21,7 +21,7 @@ const page = () => {
       <div className="landing-page">
         {/* Video */}
         <VideoBackground
-          src="/apartament126/s1/version1.mp4"
+          src="/apartament126/s1/Version1.mp4"
           className="md:aspect-[16/9] max-h-[1024px] !h-[80svh] md:h-full md:-mb-10 lg:-mb-20 flex items-end"
         >
           <div className="w-full h-fit relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6 from-dark/60 to-transparent bg-gradient-to-t">
