@@ -207,7 +207,7 @@ const page = () => {
                 "/apartament126/s6/3/2.jpg",
                 "/apartament126/s6/3/3.jpg",
                 "/apartament126/s6/3/4.jpeg",
-                "/apartament126/s6/3/5.jpg",
+                "/apartament126/s6/3/5.JPG",
               ],
               header: `SPÓJNE WNĘTRZE`,
               paragraph:
@@ -230,10 +230,10 @@ const page = () => {
             {
               image: "/apartament126/s6/5/1.jpeg",
               images: [
-                "/apartament126/s6/5/1.jpg",
+                "/apartament126/s6/5/1.JPG",
                 "/apartament126/s6/5/2.jpg",
                 "/apartament126/s6/5/3.jpg",
-                "/apartament126/s6/5/4.jpg",
+                "/apartament126/s6/5/4.JPG",
                 "/apartament126/s6/5/5.jpg",
               ],
               header: "ŚWIATOWA ARCHITEKTURA",
