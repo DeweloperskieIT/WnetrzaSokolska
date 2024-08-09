@@ -1,3 +1,5 @@
+"use client";
+
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
@@ -19,20 +21,33 @@ const VideoBackground = ({
   children,
   ...props
 }: VideoBackgroundProps) => {
+  const [videoError, setVideoError] = useState(false);
+
   return (
     <div className={cn("relative h-full w-full", className)}>
-      <video
-        className={cn("absolute inset-0 w-full h-full object-cover", className)}
-        preload="auto"
-        muted
-        loop
-        playsInline
-        autoPlay
-        {...props} // Spread all other props onto the video tag
-      >
-        <source src={src} type={type} />
-        Your browser does not support the video tag.
-      </video>
+      {!videoError ? (
+        <video
+          className={cn(
+            "absolute inset-0 w-full h-full object-cover",
+            className
+          )}
+          preload="auto"
+          muted
+          loop
+          playsInline
+          autoPlay
+          onError={() => setVideoError(true)}
+          {...props}
+        >
+          <source src={src} type={type} />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+          <Skeleton className="h-full w-full" />
+          <p>Failed to load video.</p>
+        </div>
+      )}
       {children}
     </div>
   );
