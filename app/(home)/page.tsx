@@ -205,7 +205,7 @@ const page = () => {
           </div>
 
           {/* Logotypy */}
-          <div className="w-full flex items-center md:items-end justify-evenly flex-col md:flex-row gap-10 h-full max-w-screen-xl self-c">
+          <div className="w-full flex items-center md:items-end justify-evenly flex-col md:flex-row gap-10 h-full max-w-screen-xl self-center">
             <Image
               src={"/images/logo2.png"}
               alt="soktower"
