@@ -12,7 +12,7 @@ const fontSans = FontSans({
 export const metadata = {
   title: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
   description:
-    "Odkryj luksusowe apartamenty w sercu Katowic. Oferujemy gotowe do zamieszkania mieszkania segmentu premium z ponadczasowym designem, nowoczesnymi technologiami oraz pełnym wsparciem w aranżacji wnętrz.",
+    "Odkryj luksusowe apartamenty w Katowicach. Gotowe do zamieszkania mieszkania premium z ponadczasowym designem i nowoczesnymi technologiami.",
   keywords: [
     "luksusowe apartamenty Katowice",
     "mieszkania premium Katowice",

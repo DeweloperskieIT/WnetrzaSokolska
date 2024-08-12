@@ -24,15 +24,15 @@ const page = () => {
           interval={5000}
           img="/images/mainpage/dszare.png"
         >
-          <h1 className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
-            <span className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</span>
-            <span className="text-xl md:text-xl font-light max-w-[800px]">
+          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
+            <h1 className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</h1>
+            <h2 className="text-xl md:text-xl font-light max-w-[800px]">
               Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić
               wieczór przyrządzając ją samodzielnie, albo zaufać
               profesjonalistom i delektować się posiłkiem serwowanym przez szefa
               kuchni.
-            </span>
-          </h1>
+            </h2>
+          </div>
         </BreathingBackgroundImage>
         {/* Second Section - Icons */}
         <IconsModule
