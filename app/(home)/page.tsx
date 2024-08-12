@@ -26,7 +26,7 @@ const page = () => {
         >
           <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
             <h1 className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</h1>
-            <h2 className="text-xl md:text-xl font-light max-w-[800px]">
+            <h2 className="text-xl md:text-xl font-light max-w-[800px] text-left">
               Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić
               wieczór przyrządzając ją samodzielnie, albo zaufać
               profesjonalistom i delektować się posiłkiem serwowanym przez szefa
