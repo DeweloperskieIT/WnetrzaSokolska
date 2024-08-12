@@ -191,9 +191,7 @@ const ImageCarouselFader = ({
 
   return (
     <>
-      {loading && (
-        <Skeleton className="relative w-full md:h-[768px] h-[512px] " />
-      )}
+      {loading && <Skeleton className="relative w-full h-[200px] " />}
 
       <div
         className={cn(
@@ -205,7 +203,7 @@ const ImageCarouselFader = ({
         {...rest}
       >
         {loading ? (
-          <Skeleton className="relative w-full md:h-[768px] h-[512px] xl:h-[1024px]" />
+          <Skeleton className="relative w-full md:h-[200px] h-[200px] xl:h-[1024px]" />
         ) : (
           <>
             <PrevNextButtons
