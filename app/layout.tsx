@@ -9,9 +9,39 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export const metadata: Metadata = {
-  title: "Wnętrza Deweloperskie",
-  description: "Wnętrza Deweloperskie",
+export const metadata = {
+  title: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
+  description:
+    "Odkryj luksusowe apartamenty w sercu Katowic. Oferujemy gotowe do zamieszkania mieszkania segmentu premium z ponadczasowym designem, nowoczesnymi technologiami oraz pełnym wsparciem w aranżacji wnętrz.",
+  keywords: [
+    "luksusowe apartamenty Katowice",
+    "mieszkania premium Katowice",
+    "Wnętrza Deweloperskie",
+    "nowoczesne mieszkania Katowice",
+    "zakup apartamentu Katowice",
+  ],
+  openGraph: {
+    title: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
+    description:
+      "Oferujemy wyjątkowe apartamenty w centrum Katowic z nowoczesnym designem i zaawansowanymi technologiami. Skontaktuj się z nami, aby dowiedzieć się więcej.",
+    type: "website",
+    url: "https://wnetrza.deweloperskie.pl",
+    images: [
+      {
+        url: "https://wnetrza.deweloperskie.pl/images/mainpage/dszare.png",
+        width: 800,
+        height: 600,
+        alt: "Luksusowe apartamenty w Katowicach",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
+    description:
+      "Zamieszkaj w sercu Katowic w luksusowym apartamencie z unikalnym designem. Poznaj naszą ofertę.",
+    images: ["https://wnetrza.deweloperskie.pl/images/mainpage/dszare.png"],
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pl">
       <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       <body
         className={cn(

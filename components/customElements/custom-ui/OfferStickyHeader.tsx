@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { OfferContactForm } from "@/components/customElements/forms/OfferContactForm";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
+import Link from "next/link";
 
 interface OfferStickyHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -48,13 +49,15 @@ const OfferStickyHeader = ({
           isVisible ? "translate-y-0" : "-translate-y-full"
         )}
       >
-        <Image
-          alt="dlogo"
-          src={"/images/mainpage/dciemnoszare.png"}
-          width={100}
-          height={100}
-          className="hidden 2xl:block 2xl:absolute right-0 p-0 2xl:p-2 2xl:max-h-full object-contain"
-        />
+        <Link href={"/"}>
+          <Image
+            alt="dlogo"
+            src={"/images/mainpage/dciemnoszare.png"}
+            width={100}
+            height={100}
+            className="hidden 2xl:block 2xl:absolute right-0 p-0 2xl:p-2 2xl:max-h-full object-contain"
+          />
+        </Link>
         <div className="max-w-screen-xl w-full flex flex-col gap-4 md:flex-row justify-between items-center padding-element">
           <div className="flex-row flex-center gap-2 pt-2 md:p-0 -mb-4 md:mb-0">
             <Image
@@ -131,13 +134,15 @@ const OfferStickyHeader = ({
                 </div>
               </DrawerContent>
             </Drawer>
-            <Image
-              alt="dlogo"
-              src={"/images/mainpage/dciemnoszare.png"}
-              width={100}
-              height={100}
-              className="2xl:hidden max-h-14 p-2 block md:p-4 md:max-h-full object-contain"
-            />
+            <Link href={"/"}>
+              <Image
+                alt="dlogo"
+                src={"/images/mainpage/dciemnoszare.png"}
+                width={100}
+                height={100}
+                className="2xl:hidden max-h-14 p-2 block md:p-4 md:max-h-full object-contain"
+              />
+            </Link>
           </div>
         </div>
       </div>

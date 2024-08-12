@@ -25,7 +25,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
       {...rest}
     >
       {header}
-      <div className="flex flex-col xl:flex-col w-full items-center justify-between gap-10 pb-10">
+      <div className="flex flex-col xl:flex-col w-full items-center justify-between gap-10 pb-2">
         {/*<div className="hidden md:flex basis-1/2 w-full items-center md:items-start gap-20 justify-between flex-col h-full">
            <div className="flex flex-col gap-4 w-full ">
             <Accordion type="single" collapsible>
@@ -113,6 +113,16 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
           />
         </div>
       </div>
+      <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">
+        <span>
+          Wnętrza Deweloperskie są marką należącą do spółki: Grupa Deweloperskie
+          P.S.A., z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP:
+          6343022518, REGON: Pośrednikiem nieruchomości obsługującym sprzedaż
+          jest: Inwestycje Deweloperskie P.S.A., z siedzibą w Katowicach przy
+          ul. Murckowskiej 14c, NIP: 6343014507.
+        </span>
+        <span className="self-center">© Wnętrza Deweloperskie 2024</span>
+      </footer>
     </div>
   );
 };

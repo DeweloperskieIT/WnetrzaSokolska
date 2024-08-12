@@ -24,7 +24,7 @@ const page = () => {
           interval={5000}
           img="/images/mainpage/dszare.png"
         >
-          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
+          <h1 className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
             <span className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</span>
             <span className="text-xl md:text-xl font-light max-w-[800px]">
               Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić
@@ -32,7 +32,7 @@ const page = () => {
               profesjonalistom i delektować się posiłkiem serwowanym przez szefa
               kuchni.
             </span>
-          </div>
+          </h1>
         </BreathingBackgroundImage>
         {/* Second Section - Icons */}
         <IconsModule
@@ -221,6 +221,17 @@ const page = () => {
               className="object-contain max-w-[200px] h-auto w-auto"
             />
           </div>
+          <footer className="text-sm flex flex-col gap-4 padding-element">
+            <span>
+              Wnętrza Deweloperskie są marką należącą do spółki: Grupa
+              Deweloperskie P.S.A., z siedzibą w Katowicach przy ul.
+              Murckowskiej 14c, NIP: 6343022518, REGON: Pośrednikiem
+              nieruchomości obsługującym sprzedaż jest: Inwestycje Deweloperskie
+              P.S.A., z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP:
+              6343014507.
+            </span>
+            <span className="self-center">© Wnętrza Deweloperskie 2024</span>
+          </footer>
         </div>
       </div>
     </>
