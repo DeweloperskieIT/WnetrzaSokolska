@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { Open_Sans as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import GoogleTag from "@/components/google/GoogleTag";
-import { Suspense } from "react";
 import FacebookPixel from "@/components/meta/FacebookPixel";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import CookieConsentBanner from "@/components/cookies/CookieConsentBanner";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -81,6 +80,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <CookieConsentBanner />
       </body>
     </html>
   );
