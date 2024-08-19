@@ -66,7 +66,7 @@ export default function RootLayout({
     <html lang="pl">
       <head>
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER!} />
-        <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS!} />
+        {/* <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS!} /> */}
         <FacebookPixel />
         <meta
           name="google-site-verification"

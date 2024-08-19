@@ -30,7 +30,7 @@ const FacebookPixel: React.FC = () => {
           width="1"
           style={{ display: "none" }}
           alt="meta-pixel"
-          src="https://www.facebook.com/tr?id=1026568032297398&ev=PageView&noscript=1"
+          src={`https://www.facebook.com/tr?id=${process.env.META_PIXEL_ID}&ev=PageView&noscript=1`}
         />
       </noscript>
     </>
