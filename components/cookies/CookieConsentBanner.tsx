@@ -30,10 +30,16 @@ const CookieConsentBanner = () => {
 
   return (
     <div>
-      <p>This website uses cookies to improve your browsing experience.</p>
-      <p>Please click Accept to continue.</p>
-      <button onClick={handleAccept}>Accept</button>
-      <button onClick={handleReject}>Reject</button>
+      <p>
+        This website uses cookies to improve your browsing experience. Ta
+        streona używa plików cookies aby polepszyć oferowane usługi.
+      </p>
+      <p>
+        Prosimy o udzielenie zgody na przechowywanie plików cookies i zbierania
+        informacji analitycznych.
+      </p>
+      <button onClick={handleAccept}>Zgadzam się</button>
+      <button onClick={handleReject}>Nie zgadzam się</button>
     </div>
   );
 };
