@@ -80,49 +80,49 @@ const page = () => {
             textPlacement="bottom"
             texts={[
               {
-                heading: "CAŁE MIASTO W ZASIĘGU",
+                heading: "Poznaj klimat zachodów słońca na XV piętrze",
               },
               {
-                heading: "WYGODA DWÓCH ŁAZIENEK",
+                heading: "Poczuj się jak u siebie w domu",
               },
               {
-                heading: "PRYSZNIC I WANNA DLA CIEBIE",
+                heading: "Poznaj swój nowy duży pokój",
               },
               {
-                heading: "PRZESTRONNE LUSTRA",
+                heading: "Wykorzystaj potencjał minimalistycznej kuchni ",
               },
               {
-                heading: "ŚWIĄTYNIA RELAKSU",
+                heading: "Zasypiaj wśród chmur, na XV piętrze",
               },
               {
-                heading: "POKÓJ DLA TWOICH PASJI",
+                heading: "Korzystaj z potencjału układu funkcjonalnego",
               },
               {
-                heading: "PRZESTRZEŃ OSOBISTA",
+                heading: "Długa kąpiel wieczorem…",
               },
               {
-                heading: "OKNO NA ŚWIAT",
+                heading: "… szybki prysznic rano",
               },
               {
-                heading: "ESENCJA NOWOCZESNOŚCI",
+                heading: "Wypełnij swoją garderobę",
               },
               {
-                heading: "MIEJSCE DO ROZKWITANIA",
+                heading: "Pokochaj swój mały pokój",
               },
               {
-                heading: "DOPRACOWANY STYL",
+                heading: "Otól się luksusem",
               },
               {
-                heading: "WIECZÓR PO TWOJEMU",
+                heading: "Zamieszkaj już jutro ",
               },
               {
-                heading: "ZACHWYCAJĄCE WNĘTRZE",
+                heading: "Poznaj klimat zachodów słońca na XV piętrze",
               },
               {
-                heading: "W ŚWIETLE ZACHODZĄCEGO SŁOŃCA",
+                heading: "Zamieszkaj już jutro w wymarzonym apartamencie",
               },
               {
-                heading: "MIEJSCE NA KAŻDĄ HISTORIĘ",
+                heading: "Postaw na luksus, który stawia Cię w centrum",
               },
             ]}
             images={[

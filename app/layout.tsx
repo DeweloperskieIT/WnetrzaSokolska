@@ -60,6 +60,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+      <meta
+        name="google-site-verification"
+        content="I4Cp77QIJW62l_8EIbNJ7AVJxdScvRE_pgMWkHMIuF4"
+      />
       <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       <body
         className={cn(
