@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import GoogleTag from "@/components/google/GoogleTag";
 import { Suspense } from "react";
 import FacebookPixel from "@/components/meta/FacebookPixel";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -64,13 +65,14 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
+        <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER!} />
+        <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS!} />
         <FacebookPixel />
         <meta
           name="google-site-verification"
           content="I4Cp77QIJW62l_8EIbNJ7AVJxdScvRE_pgMWkHMIuF4"
         />
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
-        <GoogleTag />
       </head>
       <body
         className={cn(

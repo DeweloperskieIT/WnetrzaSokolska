@@ -403,7 +403,7 @@ const PrivacyPolicy = () => {
           <li>
             kancelarią prawnym/ przedsiębiorstwom świadczącym usługi prawne w
             zakresie analizy prawnej oraz finansowej, w zakresie świadczonych
-            usług, w tym Grupa Deweloperskie Prosta Spółka Akcyjna z siedzibą w
+            usług, w tym Deweloperskie Prosta Spółka Akcyjna z siedzibą w
             Katowicach, przy ul. Murckowskiej 14C ( 40-265 Katowice), wpisana
             do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego prowadzonego
             przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział

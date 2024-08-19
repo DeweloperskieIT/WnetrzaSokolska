@@ -115,7 +115,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
       </div>
       <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">
         <span>
-          Wnętrza Deweloperskie są marką należącą do spółki: Grupa Deweloperskie
+          Wnętrza Deweloperskie są marką należącą do spółki: Deweloperskie
           P.S.A., z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP:
           6343022518, REGON: Pośrednikiem nieruchomości obsługującym sprzedaż
           jest: Inwestycje Deweloperskie P.S.A., z siedzibą w Katowicach przy

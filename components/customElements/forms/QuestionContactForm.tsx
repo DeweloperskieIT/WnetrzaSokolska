@@ -251,6 +251,7 @@ export function QuestionContactForm({
                     <Link
                       className="text-accent1"
                       href={"/informacje#klauzula"}
+                      target="_blank"
                     >
                       &nbsp;klauzuli informacyjnej&nbsp;
                     </Link>
@@ -258,6 +259,7 @@ export function QuestionContactForm({
                     <Link
                       className="text-accent1"
                       href={"/informacje#polityka"}
+                      target="_blank"
                     >
                       &nbsp;polityką prywatności&nbsp;
                     </Link>
@@ -304,6 +306,7 @@ export function QuestionContactForm({
                           <Link
                             className="text-accent1"
                             href={"/informacje#podmioty"}
+                            target="_blank"
                           >
                             &nbsp;Lista podmiotów&nbsp;
                           </Link>
@@ -360,6 +363,7 @@ export function QuestionContactForm({
                           <Link
                             className="text-accent1"
                             href={"/informacje#podmioty"}
+                            target="_blank"
                           >
                             &nbsp;Lista podmiotów&nbsp;
                           </Link>
