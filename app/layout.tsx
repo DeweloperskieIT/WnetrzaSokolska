@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import GoogleTag from "@/components/google/GoogleTag";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -9,7 +10,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
   description:
     "Odkryj luksusowe apartamenty w Katowicach. Gotowe do zamieszkania mieszkania premium z ponadczasowym designem i nowoczesnymi technologiami.",
@@ -65,6 +66,7 @@ export default function RootLayout({
         content="I4Cp77QIJW62l_8EIbNJ7AVJxdScvRE_pgMWkHMIuF4"
       />
       <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
+      <GoogleTag />
       <body
         className={cn(
           "min-h-screen h-full bg-websiteBackground2 font-sans antialiased",

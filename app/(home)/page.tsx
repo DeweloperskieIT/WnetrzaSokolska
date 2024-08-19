@@ -10,6 +10,7 @@ import Image from "next/image";
 import LandmarkMapOnlyResponsive from "@/components/customElements/maps/LandmarkMapOnlyResponsive";
 import Link from "next/link";
 import { QuestionContactForm } from "@/components/customElements/forms/QuestionContactForm";
+import FacebookPagePlugin from "@/components/plugins/FacebookPagePlugin";
 
 const page = () => {
   return (
@@ -234,6 +235,8 @@ const page = () => {
           </footer>
         </div>
       </div>
+
+      {/* <FacebookPagePlugin /> */}
     </>
   );
 };

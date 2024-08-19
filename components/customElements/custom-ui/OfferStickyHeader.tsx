@@ -59,18 +59,22 @@ const OfferStickyHeader = ({
           />
         </Link>
         <div className="max-w-screen-xl w-full flex flex-col gap-4 md:flex-row justify-between items-center padding-element">
-          <div className="flex-row flex-center gap-2 pt-2 md:p-0 -mb-4 md:mb-0">
+          <div className="w-full flex-row flex items-center justify-between  md:items-center md:justify-start gap-2 pt-2 md:p-0 -mb-4 md:mb-0">
             <Image
               src={"/images/logo2.png"}
               alt="soktower"
               width={160}
               height={200}
-              className="object-contain size-20"
+              className="object-contain size-14 md:size-20"
             />
-            <span className="text-light text-xl">APARTAMENTY</span>
-            <span className="text-accent1 text-xl font-light">
-              SOKOLSKA TOWERS
-            </span>
+            <div>
+              <span className="text-light text-sm md:text-xl">
+                APARTAMENTY &nbsp;
+              </span>
+              <span className="text-accent1 text-sm md:text-xl font-light">
+                SOKOLSKA TOWERS
+              </span>
+            </div>
           </div>
           <div className="flex flex-row justify-evenly items-center gap-6 text-light">
             <a
