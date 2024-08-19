@@ -69,7 +69,9 @@ export default function RootLayout({
       />
       <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       <GoogleTag />
-      <MetaPixel />
+      <Suspense>
+        <MetaPixel />
+      </Suspense>
       <body
         className={cn(
           "min-h-screen h-full bg-websiteBackground2 font-sans antialiased",
