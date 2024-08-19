@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import cookie from "js-cookie";
+import { Router } from "next/router";
 
 const CookieConsentBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -21,6 +22,7 @@ const CookieConsentBanner = () => {
       sameSite: "None",
       secure: true,
     });
+    window.location.reload();
   };
 
   const handleReject = () => {
