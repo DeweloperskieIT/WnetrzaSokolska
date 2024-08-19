@@ -3,6 +3,8 @@ import { Open_Sans as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import GoogleTag from "@/components/google/GoogleTag";
+import MetaPixel from "@/components/meta/MetaPixel";
+import { Suspense } from "react";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -67,6 +69,10 @@ export default function RootLayout({
       />
       <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       <GoogleTag />
+
+      <Suspense fallback={null}>
+        <MetaPixel />
+      </Suspense>
       <body
         className={cn(
           "min-h-screen h-full bg-websiteBackground2 font-sans antialiased",

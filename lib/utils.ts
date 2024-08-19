@@ -6,5 +6,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function replaceSpacesWithTwenty(str: string) {
-  return str.replace(/ /g, "$20");
+  return str.replace(/ /g, "%20");
 }
