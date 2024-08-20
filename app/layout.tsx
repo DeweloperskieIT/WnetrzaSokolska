@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Open_Sans as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import FacebookPixel from "@/components/meta/FacebookPixel";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import CookieConsentBanner from "@/components/cookies/CookieConsentBanner";
+import PiwikPro from "@/components/analytics/piwik/PiwikPro";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -57,6 +57,21 @@ export const metadata: Metadata = {
       "Zamieszkaj w sercu Katowic w luksusowym apartamencie z unikalnym designem. Poznaj naszą ofertę.",
     images: ["https://wnetrza.deweloperskie.pl/images/mainpage/dszare.png"],
   },
+  icons: {
+    shortcut: [{ rel: "shortcut icon", url: "/favicons/favicon.ico" }],
+    icon: [
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
+      { url: "/favicon/favicon.ico", sizes: "any" },
+    ],
+    apple: "/favicon/apple-touch-icon.png",
+    other: [
+      {
+        rel: "manifest",
+        url: "/favicon/site.webmanifest",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -67,10 +82,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
-        {/* <title>Wnętrza deweloperskie</title> */}
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER!} />
-        {/* <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS!} /> */}
-        {/* <FacebookPixel /> */}
         <meta
           name="google-site-verification"
           content="I4Cp77QIJW62l_8EIbNJ7AVJxdScvRE_pgMWkHMIuF4"
@@ -84,7 +96,8 @@ export default function RootLayout({
         )}
       >
         {children}
-        <CookieConsentBanner />
+        <PiwikPro />
+        {/* <CookieConsentBanner /> */}
       </body>
     </html>
   );
