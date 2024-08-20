@@ -22,3 +22,8 @@ export type ParagraphWithHeading = {
   paragraph?: string;
   paragraphStyle?: string;
 };
+
+export type ImageAlt = {
+  img: string;
+  alt: string;
+};

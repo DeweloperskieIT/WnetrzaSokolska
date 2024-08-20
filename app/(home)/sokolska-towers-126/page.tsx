@@ -126,21 +126,66 @@ const page = () => {
               },
             ]}
             images={[
-              "/apartament126/s3/01.jpg",
-              "/apartament126/s3/02.jpg",
-              "/apartament126/s3/03.jpg",
-              "/apartament126/s3/04.jpg",
-              "/apartament126/s3/05.jpg",
-              "/apartament126/s3/06.jpg",
-              "/apartament126/s3/07.jpg",
-              "/apartament126/s3/08.jpg",
-              "/apartament126/s3/09.jpg",
-              "/apartament126/s3/10.jpg",
-              "/apartament126/s3/11.jpg",
-              "/apartament126/s3/12.jpg",
-              "/apartament126/s3/13.jpg",
-              "/apartament126/s3/14.jpg",
-              "/apartament126/s3/15.jpg",
+              {
+                img: "/apartament126/s3/01.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/02.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/03.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/04.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/05.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/06.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/07.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/08.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/09.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/10.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/11.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/12.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/13.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/14.jpg",
+                alt: "image",
+              },
+              {
+                img: "/apartament126/s3/15.jpg",
+                alt: "image",
+              },
             ]}
           />
         </div>
@@ -177,11 +222,11 @@ const page = () => {
             {
               image: "/apartament126/s6/1/1.jpeg",
               images: [
-                "/apartament126/s6/1/1.jpeg",
-                "/apartament126/s6/1/2.jpeg",
-                "/apartament126/s6/1/3.jpeg",
-                "/apartament126/s6/1/4.jpeg",
-                "/apartament126/s6/1/5.jpeg",
+                { img: "/apartament126/s6/1/1.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/2.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/3.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/4.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/5.jpeg", alt: "image" },
               ],
               header: "APARTAMENT XXI WIEKU",
               paragraph:
@@ -190,11 +235,11 @@ const page = () => {
             {
               image: "/apartament126/s6/2/1.jpeg",
               images: [
-                "/apartament126/s6/2/1.jpeg",
-                "/apartament126/s6/2/2.jpeg",
-                "/apartament126/s6/2/3.jpeg",
-                "/apartament126/s6/2/4.jpeg",
-                "/apartament126/s6/2/5.jpeg",
+                { img: "/apartament126/s6/2/1.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/2.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/3.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/4.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/5.jpeg", alt: "image" },
               ],
               header: "SPEKTAKULARNE OŚWIETLENIE",
               paragraph:
@@ -203,11 +248,11 @@ const page = () => {
             {
               image: "/apartament126/s6/3/1.jpeg",
               images: [
-                "/apartament126/s6/3/1.jpg",
-                "/apartament126/s6/3/2.jpg",
-                "/apartament126/s6/3/3.jpg",
-                "/apartament126/s6/3/4.jpeg",
-                "/apartament126/s6/3/5.JPG",
+                { img: "/apartament126/s6/3/1.jpg", alt: "image" },
+                { img: "/apartament126/s6/3/2.jpg", alt: "image" },
+                { img: "/apartament126/s6/3/3.jpg", alt: "image" },
+                { img: "/apartament126/s6/3/4.jpeg", alt: "image" },
+                { img: "/apartament126/s6/3/5.JPG", alt: "image" },
               ],
               header: `SPÓJNE WNĘTRZE`,
               paragraph:
@@ -216,12 +261,12 @@ const page = () => {
             {
               image: "/apartament126/s6/4/1.jpeg",
               images: [
-                "/apartament126/s6/4/1.jpg",
-                "/apartament126/s6/4/2.jpg",
-                "/apartament126/s6/4/3.jpg",
-                "/apartament126/s6/4/4.jpg",
-                "/apartament126/s6/4/5.jpg",
-                "/apartament126/s6/4/6.jpg",
+                { img: "/apartament126/s6/4/1.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/2.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/3.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/4.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/5.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/6.jpg", alt: "image" },
               ],
               header: "MARKI PREMIUM",
               paragraph:
@@ -230,11 +275,11 @@ const page = () => {
             {
               image: "/apartament126/s6/5/1.jpeg",
               images: [
-                "/apartament126/s6/5/1.JPG",
-                "/apartament126/s6/5/2.jpg",
-                "/apartament126/s6/5/3.jpg",
-                "/apartament126/s6/5/4.JPG",
-                "/apartament126/s6/5/5.jpg",
+                { img: "/apartament126/s6/5/1.JPG", alt: "image" },
+                { img: "/apartament126/s6/5/2.jpg", alt: "image" },
+                { img: "/apartament126/s6/5/3.jpg", alt: "image" },
+                { img: "/apartament126/s6/5/4.JPG", alt: "image" },
+                { img: "/apartament126/s6/5/5.jpg", alt: "image" },
               ],
               header: "ŚWIATOWA ARCHITEKTURA",
               paragraph:

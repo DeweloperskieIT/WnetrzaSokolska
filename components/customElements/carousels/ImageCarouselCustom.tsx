@@ -9,6 +9,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export type ImageTextItem = {
   image: string;
+  alt: string;
   text: string;
 };
 
@@ -163,7 +164,7 @@ const ImageCarouselCustom = ({
             >
               <Image
                 src={loadedImages[i]}
-                alt={`Image ${i + 1}`}
+                alt={images[i].alt}
                 width={1920}
                 height={768}
                 className={cn(

@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons"; // Assuming the PrevNextButtons component is in the same directory
-import { ParagraphWithHeading } from "@/types/customTypes";
+import { ImageAlt, ParagraphWithHeading } from "@/types/customTypes";
 import { cn } from "@/lib/utils";
 import { animationStyle } from "@/types/customTypes";
 import { Skeleton } from "../../ui/skeleton";
@@ -11,7 +11,7 @@ import { useIsVisible } from "@/lib/hooks/useIsVisible";
 
 interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  images: string[];
+  images: ImageAlt[];
   texts?: ParagraphWithHeading[] | null;
   textPlacement?: "top" | "right" | "bottom" | "left";
   textBackground?: string;
@@ -77,7 +77,8 @@ const ImageCarouselFader = ({
   };
 
   useEffect(() => {
-    loadImages(images);
+    const imageUrls = images.map((image) => image.img);
+    loadImages(imageUrls);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -253,18 +254,36 @@ const ImageCarouselFader = ({
             )}
 
             {loadedImages.length > 0 && (
-              <Image
-                loading="lazy"
-                key={currentIndex}
-                src={loadedImages[currentIndex]}
-                alt={loadedImages[currentIndex]}
-                fill
-                sizes="
+              <>
+                <Image
+                  loading="lazy"
+                  key={currentIndex}
+                  src={loadedImages[currentIndex]}
+                  alt={images[currentIndex].alt}
+                  fill
+                  sizes="
     (max-width: 600px) 100vw,
     (max-width: 1200px) 100vw,
     100vw"
-                className={`absolute inset-0 object-cover ${fadeClass} transition-all duration-500`}
-              />
+                  className={cn(
+                    `absolute inset-0 object-cover ${fadeClass} transition-all duration-500`
+                  )}
+                />
+                {/* <Image
+                  loading="lazy"
+                  key={currentIndex}
+                  src={loadedImages[currentIndex]}
+                  alt={images[currentIndex].alt}
+                  fill
+                  sizes="
+    (max-width: 600px) 100vw,
+    (max-width: 1200px) 100vw,
+    100vw"
+                  className={cn(
+                    `absolute inset-0 object-cover ${fadeClass} transition-all duration-500`
+                  )}
+                /> */}
+              </>
             )}
           </>
         )}

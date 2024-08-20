@@ -2,11 +2,11 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 import ImageCarouselFader from "@/components/customElements/carousels/ImageCarouselFader";
-import { ParagraphWithHeading } from "@/types/customTypes";
+import { ImageAlt, ParagraphWithHeading } from "@/types/customTypes";
 
 export type InterchangeableImagesSingleElement = {
   image: string;
-  images?: string[];
+  images?: ImageAlt[];
   header: string;
   paragraph: string;
 };

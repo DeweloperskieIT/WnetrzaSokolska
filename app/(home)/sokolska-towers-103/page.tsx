@@ -79,18 +79,22 @@ const page = () => {
             images={[
               {
                 image: "/images/am/carousel-1.png",
+                alt: "image",
                 text: "KOMFORTOWA SYPIALNIA",
               },
               {
                 image: "/images/am/carousel-2.png",
+                alt: "image",
                 text: "DOPRACOWANE WNĘTRZA",
               },
               {
                 image: "/images/am/carousel-3.png",
+                alt: "image",
                 text: "JAKOŚĆ, KTÓRĄ MOŻNA POCZUĆ W DŁONI",
               },
               {
                 image: "/images/am/carousel-4.png",
+                alt: "image",
                 text: "PRYWATNE MIEJSCE ZAWSZE CZEKAJĄCE NA CIEBIE",
               },
             ]}
@@ -129,11 +133,11 @@ const page = () => {
             {
               image: "/apartament126/s6/1/1.jpeg",
               images: [
-                "/apartament126/s6/1/1.jpeg",
-                "/apartament126/s6/1/2.jpeg",
-                "/apartament126/s6/1/3.jpeg",
-                "/apartament126/s6/1/4.jpeg",
-                "/apartament126/s6/1/5.jpeg",
+                { img: "/apartament126/s6/1/1.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/2.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/3.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/4.jpeg", alt: "image" },
+                { img: "/apartament126/s6/1/5.jpeg", alt: "image" },
               ],
               header: "APARTAMENT XXI WIEKU",
               paragraph:
@@ -142,11 +146,11 @@ const page = () => {
             {
               image: "/apartament126/s6/2/1.jpeg",
               images: [
-                "/apartament126/s6/2/1.jpeg",
-                "/apartament126/s6/2/2.jpeg",
-                "/apartament126/s6/2/3.jpeg",
-                "/apartament126/s6/2/4.jpeg",
-                "/apartament126/s6/2/5.jpeg",
+                { img: "/apartament126/s6/2/1.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/2.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/3.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/4.jpeg", alt: "image" },
+                { img: "/apartament126/s6/2/5.jpeg", alt: "image" },
               ],
               header: "UNIKATOWE OŚWIETLENIE",
               paragraph:
@@ -155,11 +159,11 @@ const page = () => {
             {
               image: "/apartament126/s6/3/1.jpeg",
               images: [
-                "/apartament126/s6/3/1.jpg",
-                "/apartament126/s6/3/2.jpg",
-                "/apartament126/s6/3/3.jpg",
-                "/apartament126/s6/3/4.jpeg",
-                "/apartament126/s6/3/5.jpg",
+                { img: "/apartament126/s6/3/1.jpg", alt: "image" },
+                { img: "/apartament126/s6/3/2.jpg", alt: "image" },
+                { img: "/apartament126/s6/3/3.jpg", alt: "image" },
+                { img: "/apartament126/s6/3/4.jpeg", alt: "image" },
+                { img: "/apartament126/s6/3/5.jpg", alt: "image" },
               ],
               header: `SPÓJNE WNĘTRZE`,
               paragraph:
@@ -168,12 +172,12 @@ const page = () => {
             {
               image: "/apartament126/s6/4/1.jpeg",
               images: [
-                "/apartament126/s6/4/1.jpg",
-                "/apartament126/s6/4/2.jpg",
-                "/apartament126/s6/4/3.jpg",
-                "/apartament126/s6/4/4.jpg",
-                "/apartament126/s6/4/5.jpg",
-                "/apartament126/s6/4/6.jpg",
+                { img: "/apartament126/s6/4/1.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/2.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/3.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/4.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/5.jpg", alt: "image" },
+                { img: "/apartament126/s6/4/6.jpg", alt: "image" },
               ],
               header: "MARKI PREMIUM",
               paragraph:
@@ -182,11 +186,11 @@ const page = () => {
             {
               image: "/apartament126/s6/5/1.jpeg",
               images: [
-                "/apartament126/s6/5/1.jpg",
-                "/apartament126/s6/5/2.jpg",
-                "/apartament126/s6/5/3.jpg",
-                "/apartament126/s6/5/4.jpg",
-                "/apartament126/s6/5/5.jpg",
+                { img: "/apartament126/s6/5/1.jpg", alt: "image" },
+                { img: "/apartament126/s6/5/2.jpg", alt: "image" },
+                { img: "/apartament126/s6/5/3.jpg", alt: "image" },
+                { img: "/apartament126/s6/5/4.jpg", alt: "image" },
+                { img: "/apartament126/s6/5/5.jpg", alt: "image" },
               ],
               header: "ŚWIATOWA ARCHITEKTURA",
               paragraph:

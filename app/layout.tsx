@@ -13,34 +13,32 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Wnętrza Deweloperskie: Katowice, Sokolska Towers, Katowice ",
+  title: "Wnętrza Deweloperskie",
   description:
-    "Zamieszkaj już jutro w ponadczasowych apartamentach w centrum Katowic. ",
+    "Zamieszkaj już jutro w ponadczasowych apartamentach w centrum Katowic.",
   keywords: [
     "luksusowe apartamenty Katowice",
     "nieruchomości premium Katowice",
     "nieruchomości Katowice",
+    "sokolska towers",
+    "penthouse katowice",
     "apartamenty Katowice",
-    "architektura Katowic",
-    "apartament XXI wieku",
     "strefa kultury",
+    "apartamenty pod klucz",
     "katowicka strefa kultury",
     "666000999",
-    "Łukasz Nowaczyk",
     "Deweloperskie P.S.A.",
     "6343022518",
     "Wnętrza Deweloperskie",
     "Wnetrza Deweloperskie",
-    "apartament",
     "katowice",
     "śląsk",
     "slask",
-    "apartamenty",
   ],
   openGraph: {
     title: "Wnętrza Deweloperskie: Katowice, Sokolska Towers, Katowice ",
     description:
-      "Zamieszkaj już jutro w ponadczasowych apartamentach w centrum Katowic. ",
+      "Zamieszkaj już jutro w ponadczasowym apartamencie w centrum Katowic. ",
     type: "website",
     url: "https://wnetrza.deweloperskie.pl",
     images: [
@@ -59,20 +57,6 @@ export const metadata: Metadata = {
       "Zamieszkaj w sercu Katowic w luksusowym apartamencie z unikalnym designem. Poznaj naszą ofertę.",
     images: ["https://wnetrza.deweloperskie.pl/images/mainpage/dszare.png"],
   },
-  icons: {
-    icon: [
-      { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
-      { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
-      { url: "/favicon/favicon.ico", sizes: "any" },
-    ],
-    apple: "/favicon/apple-touch-icon.png",
-    other: [
-      {
-        rel: "manifest",
-        url: "/favicon/site.webmanifest",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -83,6 +67,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
+        {/* <title>Wnętrza deweloperskie</title> */}
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER!} />
         {/* <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS!} /> */}
         {/* <FacebookPixel /> */}
