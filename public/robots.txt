@@ -5,3 +5,4 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+Sitemap: https://wnetrza.deweloperskie.pl/sitemap.xml
