@@ -4,7 +4,6 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { GoogleTagManager } from "@next/third-parties/google";
 import CookieConsentBanner from "@/components/cookies/CookieConsentBanner";
-import PiwikPro from "@/components/analytics/piwik/PiwikPro";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -96,7 +95,6 @@ export default function RootLayout({
         )}
       >
         {children}
-        <PiwikPro />
         {/* <CookieConsentBanner /> */}
       </body>
     </html>
