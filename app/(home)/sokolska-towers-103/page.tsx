@@ -119,10 +119,22 @@ const page = () => {
         {/* Fourth Section - Standalone Photos */}
         <SpiralPhotos4
           images={[
-            "/apartament126/s5/10.jpg",
-            "/apartament126/s5/3.jpg",
-            "/apartament126/s5/5.jpg",
-            "/apartament126/s5/4.jpg",
+            {
+              img: "/apartament126/s5/1-wspolny-taras.jpg",
+              alt: "Wpólny taras z ogrodem",
+            },
+            {
+              img: "/apartament126/s5/2-portiernia.jpg",
+              alt: "Portiernia na wejściu do budynku",
+            },
+            {
+              img: "/apartament126/s5/3-wspolna-strefa-spa.jpg",
+              alt: "Wspólna strefa SPA z sauną",
+            },
+            {
+              img: "/apartament126/s5/4-wspolna-silownia.jpg",
+              alt: "Wspólna siłownia",
+            },
           ]}
         />
         {/* Fifth Section - Interchangeable images */}
@@ -275,4 +287,4 @@ const page = () => {
   );
 };
 
-export default page;
+// export default page;
