@@ -126,8 +126,10 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
           siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP: 6343022518,
           REGON: 525018864 KRS: 0001030478
           <br />
-          Przedmiotem oferty są luksusowe apartamenty posadowione w ramach
-          kompleksu Sokolska Towers, pod adresem: ul. Sokolska 30 Katowice.
+          Przedmiotem oferty są luksusowe apartamenty pod prestiżowym adresem:
+          ul. Sokolska 30 Katowice, posadowione na ostatnich kondygnacjach
+          budynku Sokolska Towers, będące konkurencją dla apartanetów klasy
+          penthouse na śląskim rynku nieruchomości.
         </span>
         <span className="self-center">© Deweloperskie 2024</span>
       </footer>
