@@ -2,11 +2,10 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons"; // Assuming the PrevNextButtons component is in the same directory
+import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
 import { ImageAlt, ParagraphWithHeading } from "@/types/customTypes";
 import { cn } from "@/lib/utils";
 import { animationStyle } from "@/types/customTypes";
-import { Skeleton } from "../../ui/skeleton";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
 
 interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -49,16 +48,15 @@ const ImageCarouselFader = ({
   ...rest
 }: ImageCarouselFaderProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [fadeClass, setFadeClass] = useState<string>("");
-  const [loading, setLoading] = useState(true);
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
+  const [prevIndex, setPrevIndex] = useState<number | undefined>();
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const [isAutoplay, setIsAutoplay] = useState(autoplay);
+  const [textAnimationClass, setTextAnimationClass] = useState<string>("");
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const currentIndexRef = useRef(currentIndex);
 
   const ref = useRef() as React.RefObject<HTMLDivElement>;
-
   const { isIntersecting, disconnectObserver } = useIsVisible(ref);
 
   const orientation = () => {
@@ -76,80 +74,69 @@ const ImageCarouselFader = ({
     }
   };
 
-  useEffect(() => {
-    const imageUrls = images.map((image) => image.img);
-    loadImages(imageUrls);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const loadImages = (images: string[]) => {
-    setLoading(true);
-    const loadPromises = images.map((image) => {
-      return new Promise((resolve, reject) => {
-        const img = new window.Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages as string[]);
-        setLoading(false);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  };
-
   const handleNext = () => {
-    if (isAnimating) {
-      return;
-    }
-    if (autoplay && !isIntersecting) {
-      return;
-    }
+    if (isAnimating) return;
+    if (autoplay && !isIntersecting) return;
+
     setIsAnimating(true);
-    setFadeClass(animations.out);
+    setTextAnimationClass(animations.out);
+
+    const newIndex = (currentIndexRef.current + 1) % images.length;
+    setPrevIndex(currentIndexRef.current);
+    currentIndexRef.current = newIndex;
+
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setFadeClass(animations.in);
+      setCurrentIndex(newIndex);
+      setTextAnimationClass(animations.in);
+
       setTimeout(() => {
         setIsAnimating(false);
       }, 450);
-    }, 450); // Match the animation duration
+    }, 450);
   };
 
   const handlePrev = () => {
     if (isAnimating) return;
+
     setIsAnimating(true);
-    setFadeClass(animations.out);
+    setTextAnimationClass(animations.out);
+
+    const newIndex =
+      (currentIndexRef.current - 1 + images.length) % images.length;
+    setPrevIndex(currentIndexRef.current);
+    currentIndexRef.current = newIndex;
+
     setTimeout(() => {
-      setCurrentIndex(
-        (prevIndex) => (prevIndex - 1 + images.length) % images.length
-      );
-      setFadeClass(animations.in);
+      setCurrentIndex(newIndex);
+      setTextAnimationClass(animations.in);
+
       setTimeout(() => {
         setIsAnimating(false);
       }, 450);
-    }, 450); // Match the animation duration
+    }, 450);
   };
 
   const handleManualChange = (index: number) => {
     if (isAnimating) return;
-    if (index === currentIndex) return;
+    if (index === currentIndexRef.current) return;
+
     setIsAnimating(true);
-    setFadeClass(animations.out);
+    setTextAnimationClass(animations.out);
+
+    setPrevIndex(currentIndexRef.current);
+    currentIndexRef.current = index;
+
     setTimeout(() => {
       setCurrentIndex(index);
-      setFadeClass(animations.in);
+      setTextAnimationClass(animations.in);
+
       setTimeout(() => {
         setIsAnimating(false);
       }, 450);
-    }, 450); // Match the an
+    }, 450);
   };
 
   useEffect(() => {
-    // autoplay
     if (isAutoplay && isIntersecting) {
       intervalRef.current = setInterval(() => {
         handleNext();
@@ -165,7 +152,6 @@ const ImageCarouselFader = ({
         clearInterval(intervalRef.current);
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAutoplay, duration, isIntersecting]);
 
   useEffect(() => {
@@ -191,90 +177,80 @@ const ImageCarouselFader = ({
   };
 
   return (
-    <>
-      {loading && <Skeleton className="relative w-full h-[200px] " />}
+    <div
+      className={cn(
+        "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full",
+        className
+      )}
+      ref={ref as React.LegacyRef<HTMLDivElement>}
+      {...rest}
+    >
+      <PrevNextButtons
+        dotsEnabledOnlyVisible={dotsEnabledOnlyVisible}
+        controlsDisabled={controlsDisabled}
+        dotsClassName={dotsClassName}
+        dotsEnabled={dotsEnabled}
+        setCurrentIndex={handleManualChange}
+        currentIndex={currentIndex}
+        visible={buttonsVisible}
+        itemsLength={itemsLength}
+        handleClickBack={handleClickBack}
+        handleClickNext={handleClickNext}
+      />
 
-      <div
-        className={cn(
-          "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full",
-          className,
-          loading && "opacity-0 !size-0"
-        )}
-        ref={ref as React.LegacyRef<HTMLDivElement>}
-        {...rest}
-      >
-        {loading ? (
-          <Skeleton className="relative w-full md:h-[200px] h-[200px] xl:h-[1024px]" />
-        ) : (
-          <>
-            <PrevNextButtons
-              dotsEnabledOnlyVisible={dotsEnabledOnlyVisible}
-              controlsDisabled={controlsDisabled}
-              dotsClassName={dotsClassName}
-              dotsEnabled={dotsEnabled}
-              setCurrentIndex={handleManualChange}
-              currentIndex={currentIndex}
-              visible={buttonsVisible}
-              itemsLength={itemsLength}
-              handleClickBack={handleClickBack}
-              handleClickNext={handleClickNext}
-            />
-
-            {texts?.length === images.length && (
-              <div
+      {texts?.length === images.length && (
+        <div
+          className={cn(
+            "absolute w-full h-fit z-10 p-8 pb-10 md:p-12 flex justify-start",
+            textBackground,
+            orientation()
+          )}
+        >
+          <div
+            className={`relative transition-all duration-500 gap-4 flex flex-col h-fit ${textAnimationClass}`}
+          >
+            <h1
+              className={cn(
+                "carousel-text-heading",
+                texts[currentIndex].headingStyle
+              )}
+            >
+              {texts[currentIndex].heading}
+            </h1>
+            {texts[currentIndex].paragraph && (
+              <p
                 className={cn(
-                  "absolute w-full h-fit z-10 p-8 pb-10 md:p-12 flex justify-start ${fadeClass} transition-all duration-500",
-                  textBackground,
-                  orientation()
+                  "carousel-text-paragraph",
+                  texts[currentIndex].paragraphStyle
                 )}
               >
-                <div
-                  className={`${fadeClass} relative transition-all duration-500 gap-4 flex flex-col h-fit`}
-                >
-                  <h1
-                    className={cn(
-                      "carousel-text-heading",
-                      texts[currentIndex].headingStyle
-                    )}
-                  >
-                    {texts[currentIndex].heading}
-                  </h1>
-                  {texts[currentIndex].paragraph && (
-                    <p
-                      className={cn(
-                        "carousel-text-paragraph",
-                        texts[currentIndex].paragraphStyle
-                      )}
-                    >
-                      {texts[currentIndex].paragraph}
-                    </p>
-                  )}
-                </div>
-              </div>
+                {texts[currentIndex].paragraph}
+              </p>
             )}
+          </div>
+        </div>
+      )}
 
-            {loadedImages.length > 0 && (
-              <>
-                <Image
-                  loading="eager"
-                  key={currentIndex}
-                  src={loadedImages[currentIndex]}
-                  alt={images[currentIndex].alt}
-                  fill
-                  sizes="
-    (max-width: 600px) 100vw,
-    (max-width: 1200px) 100vw,
-    100vw"
-                  className={cn(
-                    `absolute inset-0 object-cover ${fadeClass} transition-all duration-500`
-                  )}
-                />
-              </>
-            )}
-          </>
-        )}
-      </div>
-    </>
+      {images.map(({ img, alt }, i) => (
+        <Image
+          loading="lazy"
+          key={i}
+          src={img}
+          alt={alt}
+          fill
+          sizes="
+            (max-width: 600px) 100vw,
+            (max-width: 1200px) 100vw,
+            100vw"
+          className={cn(
+            `absolute inset-0 object-cover transition-all duration-500`,
+            i === currentIndex && "opacity-100",
+            i === prevIndex && "opacity-10",
+            i !== currentIndex && "opacity-0"
+          )}
+        />
+      ))}
+    </div>
   );
 };
 

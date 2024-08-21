@@ -70,7 +70,7 @@ const page = () => {
             itemsLength={15}
             dotsEnabledOnlyVisible
             dotsClassName={""}
-            textBackground="bg-gradient-to-t from-dark to-transparent"
+            textBackground="bg-gradient-to-t from-dark via-dark/90 to-dark/0"
             className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
             textPlacement="bottom"
             texts={[
