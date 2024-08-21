@@ -122,13 +122,14 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
       </div>
       <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">
         <span className="text-center">
-          Wnętrza Deweloperskie są marką należącą do spółki: Deweloperskie
-          P.S.A., z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP:
-          6343022518, REGON: Pośrednikiem nieruchomości obsługującym sprzedaż
-          jest: Inwestycje Deweloperskie P.S.A., z siedzibą w Katowicach przy
-          ul. Murckowskiej 14c, NIP: 6343014507.
+          Wnętrza Deweloperskie jest marką należącą do: Deweloperskie P.S.A. z
+          siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP: 6343022518,
+          REGON: 525018864 KRS: 0001030478
+          <br />
+          Przedmiotem oferty są luksusowe apartamenty posadowione w ramach
+          kompleksu Sokolska Towers, pod adresem: ul. Sokolska 30 Katowice.
         </span>
-        <span className="self-center">© Wnętrza Deweloperskie 2024</span>
+        <span className="self-center">© Deweloperskie 2024</span>
       </footer>
     </div>
   );

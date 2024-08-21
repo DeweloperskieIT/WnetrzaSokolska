@@ -20,11 +20,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    // {
-    //   url: 'https://acme.com/blog',
-    //   lastModified: new Date(),
-    //   changeFrequency: 'weekly',
-    //   priority: 0.5,
-    // },
   ];
 }

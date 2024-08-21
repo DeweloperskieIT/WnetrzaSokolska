@@ -186,7 +186,7 @@ const page = () => {
         </div>
         {/* Third Section - Rzut Mieszkania */}
         <RzutMieszkania
-          cena="420 000 EUR"
+          cena="399 000 EUR"
           powierzchnia=" 75,20"
           img={{
             mobile: "/apartament126/s4/rzutm.webp",

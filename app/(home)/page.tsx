@@ -62,16 +62,19 @@ const Home = () => {
         <InfoBlocks
           info={[
             {
+              icon: "/images/mainpage/BuildingIcon.png",
               header: "PONADCZASOWE INWESTYCJE",
               paragraph:
                 "Oferujemy naszym Klientom gotowe do zamieszkania apartamenty segmentu premium w ścisłym centrum Katowic, wyróżniające się ponadczasowym i uniwersalnym designem, połączonym z najnowszymi technologiami.",
             },
             {
+              icon: "/images/mainpage/DangleKeysIcon.png",
               header: "LUKSUS NA WYCIĄGNIĘCIE RĘKI",
               paragraph:
                 "Wizja marki Wnętrza Deweloperskie zakłada powielanie bardzo dopracowanych elementów aranżacyjnych w szeregu podobnych mieszkań, co pozwala zachować konkurencyjność cenową.",
             },
             {
+              icon: "/images/mainpage/HomeMagnifyingGlass.png",
               header: "JAKOŚĆ, ZA KTÓRĄ STOI RĘKOJMIA",
               paragraph:
                 "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame oraz instalacja elektryczna pod stację ładowania samochodów.",
@@ -88,8 +91,8 @@ const Home = () => {
         {/* Eigth Section - Info text */}
         <div className="w-full h-full relative lg:aspect-[12/9] limited-width bg-white pb-10 lg:pb-0">
           <Image
-            alt="building"
-            src={"/images/mainpage/bwdrawing.png"}
+            alt="szkic budynku sokolska towers"
+            src={"/images/mainpage/Sokolska-Szkic.jpg"}
             fill
             className="lg:!absolute object-cover  w-full h-full lg:pl-20 !relative"
           />
