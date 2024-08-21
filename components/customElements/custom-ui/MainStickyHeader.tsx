@@ -3,6 +3,11 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import NawigacjaDropDown from "./NawigacjaDropDown";
+import { FaFacebookF } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io5";
+import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
+import { AiFillInstagram } from "react-icons/ai";
 
 interface MainStickyHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -46,84 +51,84 @@ const MainStickyHeader = ({
   };
 
   return (
-    <>
-      {/* Desktop */}
-      <div
-        className={cn(
-          "sticky bg-websiteBackground1 transition-all duration-300 z-40 top-0 w-full flex-center padding-element pt-4 md:py-4 ",
-          className,
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        )}
-      >
+    <div
+      data-testid="Header"
+      className={cn(
+        "sticky bg-websiteBackground1 md:h-20  z-40 top-0 w-full flex-center md:flex-row flex-col padding-element",
+        className,
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      )}
+    >
+      <Image
+        src={"/images/mainpage/deweloperskie-corner-logo.png"}
+        alt="Deweloperskie Logo"
+        width={80}
+        height={80}
+        className="absolute right-0 top-0"
+      />
+      <div className="w-full h-full flex flex-col gap-4 md:flex-row justify-between items-center max-w-screen-xl py-2">
         <Image
-          alt="dlogo"
-          src={"/images/mainpage/dciemnoszare.png"}
-          width={100}
-          height={100}
-          className="hidden 2xl:block 2xl:absolute right-0 p-0 2xl:p-2 2xl:max-h-full object-contain"
+          src={"/images/mainpage/wnetrzalogo.png"}
+          alt="Wnętrza Deweloperskie Logo"
+          width={200}
+          height={70}
+          className="w-auto h-auto max-h-[60px]"
         />
-        <div className="w-full flex flex-col gap-4 md:flex-row justify-between items-center max-w-screen-xl">
-          <Image
-            src={"/images/mainpage/wnetrzalogo.png"}
-            alt="logo"
-            width={200}
-            height={70}
-            className="w-auto h-auto max-h-[80px]"
-          />
-          <div className="flex flex-row justify-evenly items-center gap-6 text-light">
-            <a
-              href="whatsapp://send?phone=48666000999"
-              className="cursor-pointer p-3"
-            >
-              <Image
-                src={"/images/mainpage/whatsappwhite.png"}
-                alt="h-ic-1"
-                width={40}
-                height={40}
-                className="size-5"
-              />
-            </a>
-            <a
-              href={`mailto:wnetrza@deweloperskie.pl?subject=Sokolska%20Towers`}
-              className="cursor-pointer p-3"
-            >
-              <Image
-                src={"/images/mainpage/talkwhite.png"}
-                alt="h-ic-1"
-                width={40}
-                height={40}
-                className="size-5"
-              />
-            </a>
+        <div className="w-fit flex flex-row justify-evenly items-center h-full gap-6 max-h-5 text-light md:pr-6 xl:pr-0">
+          <a
+            href="https://www.facebook.com/people/Wn%C4%99trza-Deweloperskie/61564077804403"
+            target="_blank"
+            className="header-icon-href"
+          >
+            <FiFacebook className="header-icon-graphic" />
+          </a>
+          <a
+            href="https://www.instagram.com/wnetrza.deweloperskie/"
+            target="_blank"
+            className="header-icon-href"
+          >
+            <FiInstagram className="header-icon-graphic" />
+          </a>
+          <a
+            href="https://www.youtube.com/@Deweloperskie"
+            target="_blank"
+            className="header-icon-href"
+          >
+            <FiYoutube className="header-icon-graphic" />
+          </a>
+          <a
+            href="whatsapp://send?phone=48666000999"
+            className="header-icon-href"
+          >
             <Image
-              alt="dlogo"
-              src={"/images/mainpage/dciemnoszare.png"}
-              width={100}
-              height={100}
-              className="2xl:hidden max-h-14 p-2 block md:p-4 md:max-h-full object-contain"
+              src={"/images/mainpage/whatsappwhite.png"}
+              alt="Contact Whatsapp"
+              width={40}
+              height={40}
+              className="header-icon-graphic"
             />
-            {/* <button onClick={scrollToTop} className="cursor-pointer p-3">
-              <Image
-                src={"/images/mainpage/arrowup.png"}
-                alt="Scroll to top"
-                width={40}
-                height={40}
-                className="size-5"
-              />
-            </button>
-            <button onClick={scrollToBottom} className="cursor-pointer p-3">
-              <Image
-                src={"/images/mainpage/arrowdown.png"}
-                alt="Scroll to bottom"
-                width={40}
-                height={40}
-                className="size-5"
-              />
-            </button> */}
-          </div>
+          </a>
+          <a
+            href={`mailto:wnetrza@deweloperskie.pl?subject=Sokolska%20Towers`}
+            className="header-icon-href"
+          >
+            <Image
+              src={"/images/mainpage/talkwhite.png"}
+              alt="Contact Email"
+              width={40}
+              height={40}
+              className="header-icon-graphic"
+            />
+          </a>
+          <NawigacjaDropDown
+            links={[
+              { link: "/", name: "Strona główna" },
+              { link: "/sokolska-towers-126", name: "Apartament 126" },
+            ]}
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

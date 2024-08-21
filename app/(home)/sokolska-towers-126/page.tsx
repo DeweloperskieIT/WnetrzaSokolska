@@ -23,12 +23,7 @@ const page = () => {
         <VideoBackground
           src="/apartament126/s1/Version1.mp4"
           className="md:aspect-[16/9] max-h-[1024px] !h-[80svh] md:h-full md:-mb-10 lg:-mb-20 flex items-end"
-        >
-          <h1 className="w-full h-fit relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6 from-dark/60 to-transparent bg-gradient-to-t">
-            <span className="font-base text-6xl">LUKSUS</span>
-            <span className="font-extralight text-6xl">KTÓRY CIĘ WYRÓŻNI</span>
-          </h1>
-        </VideoBackground>
+        ></VideoBackground>
         {/* First Section - Icons Module */}
         <IconsModule
           className=""
@@ -76,7 +71,7 @@ const page = () => {
             dotsEnabledOnlyVisible
             dotsClassName={""}
             textBackground="bg-gradient-to-t from-dark to-transparent"
-            className="md:aspect-[16/9] max-h-[1024px] !h-[80svh] md:h-full"
+            className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
             textPlacement="bottom"
             texts={[
               {
@@ -208,10 +203,22 @@ const page = () => {
         {/* Fourth Section - Standalone Photos */}
         <SpiralPhotos4
           images={[
-            "/apartament126/s5/10.jpg",
-            "/apartament126/s5/3.jpg",
-            "/apartament126/s5/5.jpg",
-            "/apartament126/s5/4.jpg",
+            {
+              img: "/apartament126/s5/1-wspolny-taras.jpg",
+              alt: "Wpólny taras z ogrodem",
+            },
+            {
+              img: "/apartament126/s5/2-portiernia.jpg",
+              alt: "Portiernia na wejściu do budynku",
+            },
+            {
+              img: "/apartament126/s5/3-wspolna-strefa-spa.jpg",
+              alt: "Wspólna strefa SPA z sauną",
+            },
+            {
+              img: "/apartament126/s5/4-wspolna-silownia.jpg",
+              alt: "Wspólna siłownia",
+            },
           ]}
         />
         {/* Fifth Section - Interchangeable images */}
@@ -230,7 +237,7 @@ const page = () => {
               ],
               header: "APARTAMENT XXI WIEKU",
               paragraph:
-                "Podąrzaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+                "Podążaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
             },
             {
               image: "/apartament126/s6/2/1.jpeg",
@@ -300,8 +307,8 @@ const page = () => {
               </span>
               <span>
                 Postaw na unikatową lokalizację, w otoczeniu której nie powstaną
-                tysiące nowych mieszkań, z którymi będzie musiał konkurować ceną
-                w momencie sprzedaży nieruchomości na rynku wtórnym.
+                tysiące nowych mieszkań, z którymi będziesz musiał konkurować
+                ceną w momencie sprzedaży nieruchomości na rynku wtórnym.
               </span>
               <span>
                 Wybierz narożny apartament na XV piętrze ponadczasowego
@@ -354,8 +361,8 @@ const page = () => {
             <SectionHeading
               wideParent
               className="gap-3 md:gap-2 md:flex hidden"
-              top="SKONTAKTUJ SIĘ"
-              bottom="W SPRAWIE OFERTY"
+              top="UMÓW SIĘ"
+              bottom="NA PREZENTACJĘ"
             />
           }
         ></Footer>

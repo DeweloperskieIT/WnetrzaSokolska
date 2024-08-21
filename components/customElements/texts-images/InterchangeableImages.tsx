@@ -78,7 +78,7 @@ const InterchangeableImages = ({
               </span>
               <span
                 className={cn(
-                  "w-full text-lg font-light text-light text-left max-w-[500px]",
+                  "w-full text-lg font-light text-light text-left max-w-[420px]",
                   i % 2 ? "md:text-left" : "md:text-right self-end"
                 )}
               >
@@ -96,7 +96,7 @@ const InterchangeableImages = ({
             ) : (
               <div
                 className={cn(
-                  "w-full h-[360px] md:h-[460px] md:basis-1/2",
+                  "w-full h-[240px] md:h-[460px] md:basis-1/2 ",
                   i % 2 ? "md:text-left" : "md:text-right self-end"
                 )}
               >

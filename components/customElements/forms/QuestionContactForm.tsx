@@ -33,7 +33,7 @@ const formSchema = z.object({
     .string({ message: "Proszę podać właściwy adres email." })
     .email({ message: "Proszę podać właściwy adres email." }),
 
-  formMessage: z.string().min(3, { message: "Prosimy opisać powód kontaktu" }),
+  formMessage: z.string().min(3, { message: "Prosimy o opisanie tematu" }),
   zgodaPrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
     message: "Wymagane.",
   }),
@@ -65,7 +65,8 @@ export function QuestionContactForm({
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      formMessage: "",
+      formMessage:
+        "Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji",
       zgodaPrzetwarzanieDanych: false,
       oświadczeniePrzetwarzanieDanych: false,
       zgodaPrzetwarzanieEmail: false,
@@ -163,7 +164,18 @@ export function QuestionContactForm({
               <FormItem className="!mt-0">
                 <FormLabel className="text-light">Numer telefonu</FormLabel>
                 <FormControl>
-                  <Input placeholder="" {...field} />
+                  <Input
+                    type="tel"
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    placeholder=""
+                    {...field}
+                    onInput={(e) => {
+                      const value = e.currentTarget.value;
+                      // Remove non-numeric characters
+                      e.currentTarget.value = value.replace(/\D/g, "");
+                    }}
+                  />
                 </FormControl>
                 <FormDescription></FormDescription>
                 <FormMessage />
@@ -178,7 +190,7 @@ export function QuestionContactForm({
                 <FormLabel className="text-light">Wiadomość*</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Opisz temat rozmowy"
+                    placeholder="Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji"
                     className="resize-none"
                     {...field}
                   />

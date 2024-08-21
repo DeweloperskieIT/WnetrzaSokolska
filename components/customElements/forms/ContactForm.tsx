@@ -25,12 +25,15 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
+import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
   imie: z.string().min(2, {
     message: "Prosimy o podanie swojego Imienia.",
   }),
-  telefon: z.string().optional(),
+  telefon: z
+    .string({ message: "Proszę wpisać właściwy numer telefonu" })
+    .optional(),
   email: z
     .string({ message: "Proszę podać właściwy adres email." })
     .email({ message: "Proszę podać właściwy adres email." }),
@@ -46,25 +49,27 @@ const formSchema = z.object({
   zgodaPrzetwarzanieTelefon: z.boolean().refine((val) => val === true, {
     message: "Wymagane.",
   }),
+  formMessage: z.string().optional(),
 });
 
-interface OfferContactFormProps {
+interface ContactFormProps {
   className?: string;
   sendTo?: string;
-  oferta: string;
+  oferta?: string;
 }
 
-export function OfferContactForm({
+export function ContactForm({
   className,
   sendTo = "kontakt@deweloperskie.pl",
-  oferta,
-}: OfferContactFormProps) {
+  oferta = "Kontakt",
+}: ContactFormProps) {
   const [status, setStatus] = useState<"success" | "failure" | null>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      formMessage: `Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji`,
       imie: "",
       zgodaPrzetwarzanieDanych: false,
       oświadczeniePrzetwarzanieDanych: false,
@@ -78,6 +83,10 @@ export function OfferContactForm({
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSending(true);
     const formData = new FormData();
+    formData.append(
+      "formMessage",
+      values.formMessage ? values.formMessage : "Brak wiadomości"
+    );
     formData.append("imie", values.imie);
     formData.append("email", values.email);
     formData.append("telefon", values.telefon || "");
@@ -101,7 +110,7 @@ export function OfferContactForm({
     formData.append("offer", oferta);
 
     try {
-      const response = await fetch("/api/offerContact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: formData,
       });
@@ -149,7 +158,7 @@ export function OfferContactForm({
               <FormItem className="!mt-0">
                 <FormLabel className="text-light">Imię*</FormLabel>
                 <FormControl>
-                  <Input placeholder="" {...field} />
+                  <Input type="text" placeholder="" {...field} />
                 </FormControl>
                 <FormDescription></FormDescription>
                 <FormMessage />
@@ -163,7 +172,7 @@ export function OfferContactForm({
               <FormItem className="!mt-0">
                 <FormLabel className="text-light">Adres email*</FormLabel>
                 <FormControl>
-                  <Input placeholder="" {...field} />
+                  <Input type="email" placeholder="" {...field} />
                 </FormControl>
                 <FormDescription></FormDescription>
                 <FormMessage />
@@ -177,7 +186,39 @@ export function OfferContactForm({
               <FormItem className="!mt-0">
                 <FormLabel className="text-light">Numer telefonu</FormLabel>
                 <FormControl>
-                  <Input placeholder="" {...field} />
+                  <Input
+                    type="tel"
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    placeholder=""
+                    {...field}
+                    value={field.value || ""} // Ensure controlled value
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      // Remove non-numeric characters
+                      field.onChange(value.replace(/\D/g, ""));
+                    }}
+                  />
+                </FormControl>
+                <FormDescription></FormDescription>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          {/* Wiadomość */}
+
+          <FormField
+            control={form.control}
+            name="formMessage"
+            render={({ field }) => (
+              <FormItem className="!mt-0">
+                <FormLabel className="text-light">Wiadomość</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder="Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji"
+                    className="resize-none"
+                    {...field}
+                  />
                 </FormControl>
                 <FormDescription></FormDescription>
                 <FormMessage />
@@ -206,9 +247,9 @@ export function OfferContactForm({
                       <AccordionItem value="item-1">
                         <AccordionContent>
                           Wyrażam zgodę na przetwarzanie podanych przeze mnie
-                          danych osobowych przez Inwestycje Deweloperskie Prosta
-                          Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska
-                          14C, 40-265 Katowice w celu nawiązania kontaktu oraz
+                          danych osobowych przez Deweloperskie Prosta Spółka
+                          Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C,
+                          40-265 Katowice w celu nawiązania kontaktu oraz
                           przedstawienia oferty naszych usług.
                         </AccordionContent>
                         <AccordionTrigger
@@ -257,7 +298,7 @@ export function OfferContactForm({
                       href={"/informacje#polityka"}
                       target="_blank"
                     >
-                      &nbsp;polityką prywatności&nbsp;
+                      &nbsp;polityce prywatności&nbsp;
                     </Link>
                     serwisu internetowego.*
                   </FormLabel>
@@ -289,16 +330,16 @@ export function OfferContactForm({
                       <AccordionItem value="item-1">
                         <AccordionContent>
                           Wyrażam zgodę na przetwarzanie moich danych osobowych
-                          w postaci adresu e-mail przez Inwestycje Deweloperskie
-                          Prosta Spółka Akcyjna z siedzibą w Katowicach, ul.
-                          Murckowska 14C, 40-265 Katowice, w celu otrzymywania
-                          drogą elektroniczną na adres e-mail informacji
-                          handlowych (tj. ofert, informacji o produktach i
-                          usługach), dotyczących produktów i usług oferowanych
-                          przez Inwestycje Deweloperskie Prosta Spółka Akcyjna z
-                          siedzibą w Katowicach, ul. Murckowska 14C, 40-265
-                          Katowice oraz przez partnerów, z których usług
-                          korzystamy w zakresie obrotu nieruchomościami:
+                          w postaci adresu e-mail przez Deweloperskie Prosta
+                          Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska
+                          14C, 40-265 Katowice, w celu otrzymywania drogą
+                          elektroniczną na adres e-mail informacji handlowych
+                          (tj. ofert, informacji o produktach i usługach),
+                          dotyczących produktów i usług oferowanych przez
+                          Deweloperskie Prosta Spółka Akcyjna z siedzibą w
+                          Katowicach, ul. Murckowska 14C, 40-265 Katowice oraz
+                          przez naszych partnerów, z których usług korzystamy w
+                          zakresie obrotu nieruchomościami:
                           <Link
                             className="text-accent1"
                             href={"/informacje#podmioty"}
@@ -345,17 +386,16 @@ export function OfferContactForm({
                       <AccordionItem value="item-1">
                         <AccordionContent>
                           Wyrażam zgodę na przetwarzanie moich danych osobowych
-                          w postaci w postaci numeru telefonu od Inwestycje
-                          Deweloperskie Prosta Spółka Akcyjna z siedzibą w
-                          Katowicach, ul. Murckowska 14C, 40-265 Katowice, w
-                          celu otrzymywania drogą telefoniczną na wskazany
-                          przeze mnie numer telefonu informacji handlowych (tj.
-                          ofert, informacji o produktach i usługach),
-                          dotyczących produktów i usług oferowanych przez
-                          Inwestycje Deweloperskie Prosta Spółka Akcyjna z
-                          siedzibą w Katowicach, ul. Murckowska 14C, 40-265
-                          Katowice oraz przez partnerów, z których usług
-                          korzystamy w zakresie obrotu nieruchomościami
+                          w postaci adresu numeru telefonu przez Deweloperskie
+                          Prosta Spółka Akcyjna z siedzibą w Katowicach, ul.
+                          Murckowska 14C, 40-265 Katowice, w celu otrzymywania
+                          drogą elektroniczną na adres numeru telefonu
+                          informacji handlowych (tj. ofert, informacji o
+                          produktach i usługach), dotyczących produktów i usług
+                          oferowanych przez Deweloperskie Prosta Spółka Akcyjna
+                          z siedzibą w Katowicach, ul. Murckowska 14C, 40-265
+                          Katowice oraz przez naszych partnerów, z których usług
+                          korzystamy w zakresie obrotu nieruchomościami:
                           <Link
                             className="text-accent1"
                             href={"/informacje#podmioty"}

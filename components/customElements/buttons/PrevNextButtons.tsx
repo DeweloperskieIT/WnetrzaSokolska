@@ -156,7 +156,7 @@ const PrevNextButtons = ({
             <div
               key={i}
               className={cn(
-                " size-3 bg-darkerGray/60 transition-all z-40",
+                " size-2 bg-darkerGray/60 transition-all z-40",
                 i === currentIndex ? "bg-accent1/80" : "bg-darkerGray/60"
               )}
             ></div>

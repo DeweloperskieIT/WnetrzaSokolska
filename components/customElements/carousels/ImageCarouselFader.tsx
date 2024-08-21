@@ -196,7 +196,7 @@ const ImageCarouselFader = ({
 
       <div
         className={cn(
-          "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full ",
+          "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full",
           className,
           loading && "opacity-0 !size-0"
         )}
@@ -256,7 +256,7 @@ const ImageCarouselFader = ({
             {loadedImages.length > 0 && (
               <>
                 <Image
-                  loading="lazy"
+                  loading="eager"
                   key={currentIndex}
                   src={loadedImages[currentIndex]}
                   alt={images[currentIndex].alt}
@@ -269,20 +269,6 @@ const ImageCarouselFader = ({
                     `absolute inset-0 object-cover ${fadeClass} transition-all duration-500`
                   )}
                 />
-                {/* <Image
-                  loading="lazy"
-                  key={currentIndex}
-                  src={loadedImages[currentIndex]}
-                  alt={images[currentIndex].alt}
-                  fill
-                  sizes="
-    (max-width: 600px) 100vw,
-    (max-width: 1200px) 100vw,
-    100vw"
-                  className={cn(
-                    `absolute inset-0 object-cover ${fadeClass} transition-all duration-500`
-                  )}
-                /> */}
               </>
             )}
           </>

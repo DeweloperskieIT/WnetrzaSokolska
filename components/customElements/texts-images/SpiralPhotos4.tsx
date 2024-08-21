@@ -1,10 +1,11 @@
 import { cn } from "@/lib/utils";
+import { ImageAlt } from "@/types/customTypes";
 import Image from "next/image";
 import React from "react";
 
 interface SpiralPhotos4Types {
   className?: string;
-  images: string[];
+  images: ImageAlt[];
 }
 
 const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
@@ -19,8 +20,8 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
         <Image
           placeholder="blur"
           blurDataURL="/images/blur.png"
-          src={images[0]}
-          alt="img"
+          src={images[0].img}
+          alt={images[0].alt}
           width={1920}
           height={1080}
           className="object-cover size-full"
@@ -31,8 +32,8 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
           <Image
             placeholder="blur"
             blurDataURL="/images/blur.png"
-            src={images[1]}
-            alt="img"
+            src={images[1].img}
+            alt={images[1].alt}
             width={1920}
             height={1080}
             className="object-cover size-full"
@@ -43,22 +44,22 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
             <Image
               placeholder="blur"
               blurDataURL="/images/blur.png"
-              src={images[2]}
-              alt="img"
+              src={images[2].img}
+              alt={images[2].alt}
               width={1920}
               height={1080}
-              className="object-cover size-full"
+              className="object-cover h-full"
             />
           </div>
           <div>
             <Image
               placeholder="blur"
               blurDataURL="/images/blur.png"
-              src={images[3]}
-              alt="img"
+              src={images[3].img}
+              alt={images[3].alt}
               width={1920}
               height={1080}
-              className="object-cover size-full"
+              className="object-cover h-full"
             />
           </div>
         </div>

@@ -16,6 +16,7 @@ async function handler(req: NextRequest) {
       const imie = formData.get("imie");
       const email = formData.get("email");
       const telefon = formData.get("telefon");
+      const formMessage = formData.get("formMessage");
       const offer = formData.get("offer");
 
       const transporter = nodemailer.createTransport({
@@ -51,6 +52,7 @@ async function handler(req: NextRequest) {
           Imię: ${imie}
           Email: ${email}
           ${telefon ? `Telefon: ${telefon}` : "Nie podano numeru telefonu"}
+          Treść wiadomości - ${formMessage}
         `,
       };
 

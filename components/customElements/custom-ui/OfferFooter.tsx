@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { OfferContactForm } from "@/components/customElements/forms/OfferContactForm";
+import { ContactForm } from "@/components/customElements/forms/ContactForm";
 
 interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -88,7 +88,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
         </div>*/}
         {/* Formularz */}
         <div className="lg:basis-1/2 self-center w-full">
-          <OfferContactForm
+          <ContactForm
             sendTo={process.env.OFFERCONTACTDESTINATION}
             oferta={oferta}
             className="bg-transparent lg:bg-dark"
@@ -99,22 +99,29 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
         <div className="w-full flex items-center md:items-end justify-evenly flex-col md:flex-row gap-10 h-full max-w-screen-xl self-c">
           <Image
             src={"/images/logo2.png"}
-            alt="soktower"
+            alt="sokolska towers logo"
             width={160}
-            height={200}
+            height={100}
             className="object-contain h-auto w-auto"
+          />{" "}
+          <Image
+            src={"/images/mainpage/deweloperskie-logo-jasno-szare.png"}
+            alt="deweloperskie logo"
+            width={100}
+            height={100}
+            className="object-contain h-auto w-auto max-w-[200px] max-h-[80px]"
           />
           <Image
             src={"/images/wnetrzalogo.png"}
-            alt="soktower"
+            alt="wnętrza deweloperskie logo"
             width={300}
             height={100}
-            className="object-contain max-w-[200px] h-auto w-auto"
+            className="object-contain max-w-[200px] max-h-[70px] h-auto w-auto"
           />
         </div>
       </div>
       <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">
-        <span>
+        <span className="text-center">
           Wnętrza Deweloperskie są marką należącą do spółki: Deweloperskie
           P.S.A., z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP:
           6343022518, REGON: Pośrednikiem nieruchomości obsługującym sprzedaż

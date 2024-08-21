@@ -11,12 +11,13 @@ import LandmarkMapOnlyResponsive from "@/components/customElements/maps/Landmark
 import Link from "next/link";
 import { QuestionContactForm } from "@/components/customElements/forms/QuestionContactForm";
 import FacebookPagePlugin from "@/components/plugins/FacebookPagePlugin";
+import Footer from "@/components/customElements/custom-ui/OfferFooter";
 
-const page = () => {
+const Home = () => {
   return (
     <>
       {/* Sticky HEader main */}
-      <MainStickyHeader id={"start"} />
+      <MainStickyHeader id={"Header"} />
       <div className="landing-page">
         {/* First Section - Breathing image */}
         <BreathingBackgroundImage
@@ -191,54 +192,21 @@ const page = () => {
           </div>
         </div>
         {/* footer */}
-        <div className="w-full h-full relative flex flex-col gap-10 mb-10">
-          <SectionHeading
-            className="limited-width self-center"
-            top="SKONTAKTUJ SIĘ"
-            bottom="Z NAMI"
-          />
-          {/* Formularz */}
-          <div className="lg:basis-1/2 self-center w-full">
-            <QuestionContactForm
-              sendTo={process.env.QUESTIONCONTACTDESTINATION}
-              className="bg-transparent lg:bg-dark"
-            />
-          </div>
 
-          {/* Logotypy */}
-          <div className="w-full flex items-center md:items-end justify-evenly flex-col md:flex-row gap-10 h-full max-w-screen-xl self-center">
-            <Image
-              src={"/images/logo2.png"}
-              alt="soktower"
-              width={160}
-              height={200}
-              className="object-contain h-auto w-auto"
+        <Footer
+          oferta={"Kontakt"}
+          header={
+            <SectionHeading
+              wideParent
+              className="gap-3 md:gap-2 md:flex hidden"
+              top="UMÓW SIĘ"
+              bottom="NA PREZENTACJĘ"
             />
-            <Image
-              src={"/images/wnetrzalogo.png"}
-              alt="soktower"
-              width={300}
-              height={100}
-              className="object-contain max-w-[200px] h-auto w-auto"
-            />
-          </div>
-          <footer className="text-sm flex flex-col gap-4 padding-element">
-            <span>
-              Wnętrza Deweloperskie są marką należącą do spółki: Grupa
-              Deweloperskie P.S.A., z siedzibą w Katowicach przy ul.
-              Murckowskiej 14c, NIP: 6343022518, REGON: Pośrednikiem
-              nieruchomości obsługującym sprzedaż jest: Inwestycje Deweloperskie
-              P.S.A., z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP:
-              6343014507.
-            </span>
-            <span className="self-center">© Wnętrza Deweloperskie 2024</span>
-          </footer>
-        </div>
+          }
+        ></Footer>
       </div>
-
-      {/* <FacebookPagePlugin /> */}
     </>
   );
 };
 
-export default page;
+export default Home;

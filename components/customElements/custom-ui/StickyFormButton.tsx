@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { OfferContactForm } from "@/components/customElements/forms/OfferContactForm";
+import { ContactForm } from "@/components/customElements/forms/ContactForm";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -59,7 +59,7 @@ const StickyFormButton = ({ className, oferta }: StickyFormButtonProps) => {
           />
           <span className="text-dark font-bold">KONTAKT</span>
         </div>
-        <OfferContactForm
+        <ContactForm
           sendTo={process.env.OFFERCONTACTDESTINATION}
           oferta={oferta || "Nie wyspecyfikowano"}
           className={cn(

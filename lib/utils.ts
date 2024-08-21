@@ -5,6 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function replaceSpacesWithTwenty(str: string) {
+export function parseEmailHrefText(str: string) {
   return str.replace(/ /g, "%20");
 }

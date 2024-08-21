@@ -8,54 +8,58 @@ const PrivacyPolicy = () => {
           Klauzula informacyjna dotycząca przetwarzania danych osobowych:
         </span>
         <span>
-          Na podstawie przepisów Rozporządzenia Parlamentu Europejskiego i Rady
-          Unii Europejskiej 2016/679 z dnia 27 kwietnia 2016 r. w sprawie
-          ochrony osób fizycznych w związku z przetwarzaniem danych osobowych
-          i w sprawie swobodnego przepływu takich danych oraz uchylenia
-          dyrektywy 95/46/WE (dalej „RODO”), jesteśmy zobowiązani przedstawić
-          informacje dotyczące przetwarzania Twoich danych osobowych:
+          Na podstawie przepisów Rozporządzenia Parlamentu Europejskiego i Rady
+          Unii Europejskiej 2016/679 z dnia 27 kwietnia 2016 r. w sprawie
+          ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i
+          w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy
+          95/46/WE (dalej „RODO”), jesteśmy zobowiązani przedstawić informacje
+          dotyczące przetwarzania Twoich danych osobowych:
         </span>
         Administratorem Twoich danych osobowych jest spółka{" "}
         <strong>
           Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach
         </strong>{" "}
-        (dalej: „Administrator”) adres: 40-265 Katowice, ul. Murckowska 14C,
-        wpisana do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego
-        prowadzonego przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII
-        Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS:
-        0001030478, NIP: 6343022518, REGON: 525018864, kapitał akcyjnego:
-        100.000,00 zł, opłacony w całości.
+        (dalej: „Administrator”) adres: 40-265 Katowice, ul. Murckowska 14C,
+        wpisana do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego
+        prowadzonego przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII
+        Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS:
+        0001030478, NIP: 6343022518, REGON: 525018864, kapitał akcyjny:
+        100.000,00 zł, opłacony w całości.
         <br />
         Administrator wyznaczył adres kontaktowy w sprawach związanych z ochroną
         danych osobowych dla osób, których dane dotyczą: ul. Murckowska 14C,
         40-265 Katowice. Celem bieżącego monitorowania prawidłowego
         przestrzegania zasad ochrony danych osobowych powołany został Inspektor
-        Ochrony Danych Osobowych. Może się Pani/Pan z nim skontaktować: ⎯
-        elektronicznie pod adresem e-mail: iodo@deweloperskie.pl lub ⎯
-        telefonicznie pod nr telefonu: +48 666 000 999. Cele przetwarzania
-        danych osobowych.
+        Ochrony Danych Osobowych. Może się Pani/Pan z nim skontaktować:
+        <br />⎯ elektronicznie pod adresem e-mail: iodo@deweloperskie.pl,
         <br />
-        <span>Przetwarzamy Twoje dane osobowe w celu:</span>
-        <ul className="informacje-list-bullet-common">
-          <li>
-            nawiązania kontaktu oraz przedstawienia oferty naszych usług, a w
-            szczególności oferty sprzedaży nieruchomości oraz oferty umowy
-            pożyczki na zakup nieruchomości,
-          </li>
-          <li>administrowania serwisem,</li>
-          <li>zarządzania treścią serwisu,</li>
-          <li>
-            przekazania materiałów promujących usługi własne administratora
-            danych,
-          </li>
-          <li>archiwizowania danych zgodnie z przepisami prawa,</li>
-          <li>utrzymania kontaktu z Użytkownikami.</li>
-        </ul>
+        lub
+        <br />⎯ telefonicznie pod nr telefonu: +48 666 000 999.
         <ol start={1} className="informacje-list-common">
+          <li>
+            <strong> Cele przetwarzania danych osobowych.</strong>
+          </li>
+          <br />
+          <span>Przetwarzamy Twoje dane osobowe w celu:</span>
+          <ul className="informacje-list-bullet-common">
+            <li>
+              nawiązania kontaktu oraz przedstawienia oferty naszych usług, a w
+              szczególności oferty sprzedaży nieruchomości oraz oferty umowy
+              pożyczki na zakup nieruchomości,
+            </li>
+            <li>administrowania serwisem,</li>
+            <li>zarządzania treścią serwisu,</li>
+            <li>
+              przekazania materiałów promujących usługi własne administratora
+              danych,
+            </li>
+            <li>archiwizowania danych zgodnie z przepisami prawa,</li>
+            <li>utrzymania kontaktu z Użytkownikami.</li>
+          </ul>
           <li>
             <strong>Sposoby przetwarzania danych osobowych.</strong>
             <br />
-            Podanie danych przez Użytkownika jest dobrowolne, przez formularz.
+            Podanie danych w formularzu przez Użytkownika jest dobrowolne.
           </li>
           <li>
             <strong>Podstawy prawne przetwarzania danych.</strong>
@@ -68,7 +72,7 @@ const PrivacyPolicy = () => {
                 dochodzeniu roszczeń,
               </li>
               <li>zapewnienia bezpieczeństwa osób i mienia,</li>
-              <li>realizacja umowy,</li>
+              <li>realizacji umowy,</li>
               <li>przepisy prawa.</li>
             </ul>
           </li>
@@ -149,25 +153,24 @@ const PrivacyPolicy = () => {
             nich.
           </span>
           <span>
-            Na podstawie przepisów Rozporządzenia Parlamentu Europejskiego
-            i Rady Unii Europejskiej 2016/679 z dnia 27 kwietnia 2016 r.
-            w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych
-            osobowych i w sprawie swobodnego przepływu takich danych
-            oraz uchylenia dyrektywy 95/46/WE (dalej „RODO”), jesteśmy
-            zobowiązani przedstawić informacje dotyczące przetwarzania
-            Twoich danych osobowych:
+            Na podstawie przepisów Rozporządzenia Parlamentu Europejskiego i
+            Rady Unii Europejskiej 2016/679 z dnia 27 kwietnia 2016 r. w sprawie
+            ochrony osób fizycznych w związku z przetwarzaniem danych osobowych
+            i w sprawie swobodnego przepływu takich danych oraz uchylenia
+            dyrektywy 95/46/WE (dalej „RODO”), jesteśmy zobowiązani przedstawić
+            informacje dotyczące przetwarzania Twoich danych osobowych:
           </span>
           <span>
-            Administratorem Twoich danych osobowych jest spółka{" "}
+            Administratorem Twoich danych osobowych jest spółka{" "}
             <strong>
               Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach
             </strong>{" "}
-            (dalej: „Administrator”) adres: 40-265 Katowice, ul. Murckowska 14C,
-            wpisana do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego
-            prowadzonego przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII
-            Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS:
-            0001030478, NIP: 6343022518, REGON: 525018864, kapitał akcyjnego:
-            100.000,00 zł, opłacony w całości.
+            (dalej: „Administrator”) adres: 40-265 Katowice, ul. Murckowska 14C,
+            wpisana do Rejestru Przedsiębiorców Krajowego Rejestru Sądowego
+            prowadzonego przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII
+            Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS:
+            0001030478, NIP: 6343022518, REGON: 525018864, kapitał akcyjny:
+            100.000,00 zł, opłacony w całości.
           </span>
           <span>
             Administrator wyznaczył adres kontaktowy w sprawach związanych z
@@ -175,9 +178,9 @@ const PrivacyPolicy = () => {
             Murckowska 14C, 40-265 Katowice. Celem bieżącego monitorowania
             prawidłowego przestrzegania zasad ochrony danych osobowych powołany
             został Inspektor Ochrony Danych Osobowych. Może się Pani/Pan z nim
-            skontaktować: ⎯ elektronicznie pod adresem e-mail:
-            iodo@deweloperskie.pl lub ⎯ telefonicznie pod nr telefonu: +48 666
-            000 999.
+            skontaktować: <br />⎯ elektronicznie pod adresem e-mail:
+            iodo@deweloperskie.pl, <br />
+            lub <br />⎯ telefonicznie pod nr telefonu: +48 666 000 999.
           </span>
         </span>
         <ol start={1} className="informacje-list-common">
@@ -185,18 +188,18 @@ const PrivacyPolicy = () => {
             <strong>Definicje użytych pojęć w Polityce prywatności.</strong>
             <ul className="informacje-list-bullet-common">
               <li>
-                <strong>Administrator</strong> – Deweloperskie Prosta Spółka
-                Akcyjna z siedzibą w Katowicach
+                <strong>Administrator</strong> - Deweloperskie Prosta Spółka
+                Akcyjna z siedzibą w Katowicach.
               </li>
               <li>
-                <strong>RODO</strong> – rozporządzenie Parlamentu Europejskiego
+                <strong>RODO</strong> - rozporządzenie Parlamentu Europejskiego
                 i Rady (UE) 2016/679 z 27.04.2016 r. w sprawie ochrony osób
                 fizycznych w związku z przetwarzaniem danych osobowych i w
                 sprawie swobodnego przepływu takich danych oraz uchylenia
                 dyrektywy 95/46/WE.
               </li>
               <li>
-                <strong>Dane osobowe</strong> – w rozumieniu RODO: informacje o
+                <strong>Dane osobowe</strong> - w rozumieniu RODO: informacje o
                 osobie fizycznej zidentyfikowanej lub możliwej do
                 zidentyfikowania poprzez jeden bądź kilka szczególnych czynników
                 określających fizyczną, fizjologiczną, genetyczną, psychiczną,
@@ -205,10 +208,10 @@ const PrivacyPolicy = () => {
                 za pośrednictwem plików cookie oraz innej podobnej technologii.
               </li>
               <li>
-                <strong>Polityka</strong> – niniejsza Polityka prywatności.
+                <strong>Polityka</strong> - niniejsza Polityka prywatności.
               </li>
               <li>
-                <strong>Pliki cookie</strong> – to niewielkie pliki tekstowe
+                <strong>Pliki cookie</strong> - to niewielkie pliki tekstowe
                 wysyłane do przeglądarki przez witrynę, która jest w danym
                 momencie odwiedzana. Pozwalają jej zapamiętać informacje na
                 temat Twojej wizyty. Dzięki temu przy kolejnych odwiedzinach
@@ -216,11 +219,11 @@ const PrivacyPolicy = () => {
                 Twoich preferencji.
               </li>
               <li>
-                <strong>Serwis</strong> – serwis internetowy prowadzony przez
+                <strong>Serwis</strong> - serwis internetowy prowadzony przez
                 Administratora pod adresem wnętrza.deweloperskie.pl.
               </li>
               <li>
-                <strong>Użytkownik</strong> – każda osoba fizyczna odwiedzająca
+                <strong>Użytkownik</strong> - każda osoba fizyczna odwiedzająca
                 Serwis lub korzystająca z jednej albo kilku usług czy
                 funkcjonalności opisanych w Polityce.
               </li>
@@ -274,9 +277,9 @@ const PrivacyPolicy = () => {
                 uzasadnionego interesu administratora, jakim jest realizowanie
                 żądań użytkowników (art. 6 ust. 1 lit. a i f RODO).
               </li>
-              <li>nawiązania kontaktu oraz przedstawienia</li>
+              <li>nawiązania kontaktu,</li>
               <li>archiwizowania danych zgodnie z przepisami prawa,</li>
-              <li>trzymaniem kontaktu z Użytkownikami</li>
+              <li>trzymaniem kontaktu z Użytkownikami.</li>
             </ul>
           </li>
           <li>
@@ -324,8 +327,8 @@ const PrivacyPolicy = () => {
               <li>
                 Wniesienia skargi w związku z przetwarzaniem przez
                 Administratora Pani/Pana danych osobowych do organu nadzorczego
-                tj. Prezesa Urzędu Ochrony Danych Osobowych na adres ul. Stawki
-                2, 00-193 Warszawa, gdy uznasz, że przetwarzanie Twoich danych
+                tj. Prezesa Urzędu Ochrony Danych Osobowych na adres ul. Stawki
+                2, 00-193 Warszawa, gdy uznasz, że przetwarzanie Twoich danych
                 osobowych narusza przepisy RODO.
               </li>
             </ul>
@@ -344,7 +347,8 @@ const PrivacyPolicy = () => {
               </li>
             </ul>
             Wymienione powyżej grupy podmiotów przetwarzają dane osobowe na
-            podstawie umowy z Administratorem i zgodnie z naszymi poleceniami.
+            podstawie umowy o przetwarzaniu danych osobowych zawartej z
+            Administratorem i zgodnie z naszymi poleceniami.
           </li>
           <li>
             <strong>Czas przechowywania danych.</strong>
@@ -395,13 +399,13 @@ const PrivacyPolicy = () => {
             </span>
             <ul className="informacje-list-bullet-common">
               <li>
-                <span className="underline">Pliki cookies niezbędne</span> –
+                <span className="underline">Pliki cookies niezbędne</span> -
                 pomagają ulepszać usługi i zwiększać komfort korzystania z
                 Serwisu Administratora i są wykorzystywane w szczególności w
                 celu konfiguracji Serwisu;{" "}
               </li>
               <li>
-                <span className="underline">Pliki cookies analityczne</span> –
+                <span className="underline">Pliki cookies analityczne</span> -
                 zbierają informacje o tym w jaki sposób użytkownicy korzystają z
                 Serwisu. Ten rodzaj plików cookies nie zbiera informacji
                 pozwalających na zidentyfikowanie osoby fizycznej, ale może
@@ -412,13 +416,13 @@ const PrivacyPolicy = () => {
               </li>
               <li>
                 {" "}
-                <span className="underline">Pliki cookies reklamowe</span> –
+                <span className="underline">Pliki cookies reklamowe</span> -
                 pozwalają wyświetlać reklamy, które odpowiadają preferencjom
                 użytkowników.
               </li>
             </ul>
             <span>
-              Odbiorcami Pani/Pana danych – mogą być podmioty zajmujące się
+              Odbiorcami Pani/Pana danych mogą być podmioty zajmujące się
               hostingiem naszej strony WWW oraz ewentualnie podmioty zajmujące
               się usługami technicznymi dla witryny WWW.{" "}
             </span>
@@ -438,11 +442,12 @@ const PrivacyPolicy = () => {
         </span>
         <ul className="informacje-list-bullet-common">
           <li>dostawcom usług IT,</li>
-          <li>dostawcom usług serwisowych, </li>
+          <li>dostawcom usług serwisowych, </li>
           <li>
-            kancelarie prawne/ przedsiębiorstwa świadczące usługi prawne w
-            zakresie analizy prawnej oraz finansowej, w zakresie świadczonych w
-            ramach grupy CUW DEWELOPERSKIE.
+            kancelarie prawne/przedsiębiorstwa świadczące usługi prawne w
+            zakresie analizy prawnej oraz finansowej na podstawie umowy
+            powierzenia danych osobowych, w zakresie świadczonych w ramach grupy
+            CUW DEWELOPERSKIE.
           </li>
         </ul>
       </div>
