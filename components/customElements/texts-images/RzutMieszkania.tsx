@@ -35,8 +35,8 @@ const RzutMieszkania = ({
         <Image
           src={img.mobile}
           alt="Rzut mieszkania na urządzeniu mobilnym"
-          width={1024}
-          height={1024}
+          width={768}
+          height={768}
           sizes="(max-width: 768px) 100vw, 10vw"
           className="block md:hidden max-h-[600px] h-fit w-full object-contain px-10"
         />
