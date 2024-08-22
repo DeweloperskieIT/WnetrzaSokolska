@@ -88,6 +88,24 @@ export default function RootLayout({
           name="google-site-verification"
           content="I4Cp77QIJW62l_8EIbNJ7AVJxdScvRE_pgMWkHMIuF4"
         />
+        {/* Preconnect to the font origin */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        {/* Preload the font stylesheet */}
+        <link
+          rel="preload"
+          as="style"
+          href={`https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap`}
+        />
+        {/* Load the stylesheet with display=swap */}
+        <link
+          rel="stylesheet"
+          href={`https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap`}
+        />
         <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       </head>
       <body

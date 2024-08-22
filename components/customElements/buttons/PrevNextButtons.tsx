@@ -86,8 +86,8 @@ const PrevNextButtons = ({
             }}
             className={cn(
               commonClassesButton,
-              "bg-gradient-to-l",
-              visible ? "" : "rounded-r-full"
+              "bg-gradient-to-l"
+              // visible ? "" : "rounded-r-full"
             )}
             onPointerDown={handlePointerDownBack}
           >
@@ -106,8 +106,8 @@ const PrevNextButtons = ({
             }}
             className={cn(
               commonClassesButton,
-              "bg-gradient-to-r",
-              visible ? "" : "rounded-l-full"
+              "bg-gradient-to-r"
+              // visible ? "" : "rounded-l-full"
             )}
             onPointerDown={handlePointerDownNext}
           >

@@ -24,6 +24,7 @@ interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
   dotsEnabledOnlyVisible?: boolean;
   dotsClassName?: string;
   controlsDisabled?: boolean;
+  sizes?: string;
 }
 
 const ImageCarouselFader = ({
@@ -45,6 +46,7 @@ const ImageCarouselFader = ({
   dotsEnabledOnlyVisible,
   dotsClassName,
   controlsDisabled = false,
+  sizes = "100vw",
   ...rest
 }: ImageCarouselFaderProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -238,10 +240,7 @@ const ImageCarouselFader = ({
           src={img}
           alt={alt}
           fill
-          sizes="
-            (max-width: 600px) 100vw,
-            (max-width: 1200px) 100vw,
-            100vw"
+          sizes={sizes}
           className={cn(
             `absolute inset-0 object-cover transition-all duration-500`,
             i === currentIndex && "opacity-100",

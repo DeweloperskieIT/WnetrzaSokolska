@@ -29,7 +29,7 @@ const VideoBackground = ({
         <video
           className={cn(
             "absolute inset-0 w-full h-full object-cover",
-            className
+            videoClassName
           )}
           preload="auto"
           muted

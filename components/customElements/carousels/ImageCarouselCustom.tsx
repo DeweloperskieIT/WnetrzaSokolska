@@ -167,6 +167,7 @@ const ImageCarouselCustom = ({
                 alt={images[i].alt}
                 width={1920}
                 height={768}
+                sizes="90vw"
                 className={cn(
                   "object-cover w-[95%] h-full duration-500",
                   i === currentIndex ? "grayscale-0" : "grayscale",
