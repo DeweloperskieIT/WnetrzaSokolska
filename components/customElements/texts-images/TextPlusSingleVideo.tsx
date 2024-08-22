@@ -25,7 +25,7 @@ const TextPlusSingleVideo = ({
       )}
     >
       {header}
-      <div className="flex flex-col items-center lg:flex-row justify-between gap-20">
+      <div className="flex flex-col items-center lg:flex-row justify-between gap-6 md:gap-20">
         {content}
         <video
           muted

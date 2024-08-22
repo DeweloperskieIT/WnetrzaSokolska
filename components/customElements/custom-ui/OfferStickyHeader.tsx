@@ -11,49 +11,27 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import Link from "next/link";
 import NawigacjaDropDown from "./NawigacjaDropDown";
 import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
+import FacebookRedirect from "../buttons/FacebookRedirect";
+import InstagramRedirect from "../buttons/InstagramRedirect";
+import YoutubeRedirect from "../buttons/YoutubeRedirect";
+import WhatsappContact from "../buttons/WhatsappContact";
+import EmailContact from "../buttons/EmailContact";
+import ContactFormOpener from "../buttons/ContactFormOpener";
 
 interface OfferStickyHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  hideOnScroll?: boolean;
   oferta: string;
 }
 
-const OfferStickyHeader = ({
-  className,
-  hideOnScroll = false,
-  oferta,
-}: OfferStickyHeaderProps) => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY + window.innerHeight;
-    const threshold = document.documentElement.scrollHeight * 0.02;
-    if (scrollPosition >= threshold) {
-      setIsVisible(false);
-    } else {
-      setIsVisible(true);
-    }
-  };
-
-  useEffect(() => {
-    if (hideOnScroll) {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, [hideOnScroll]);
-
+const OfferStickyHeader = ({ className, oferta }: OfferStickyHeaderProps) => {
   return (
     <div
       data-testid="Header"
       className={cn(
-        "sticky bg-websiteBackground1 md:h-20  z-40 top-0 w-full flex-center md:flex-row flex-col padding-element",
-        className,
-        isVisible ? "translate-y-0" : "-translate-y-full"
+        "bg-websiteBackground1 md:h-20  z-40 top-0 w-full flex-center md:flex-row flex-col padding-element",
+        className
       )}
     >
       <Image
@@ -81,82 +59,12 @@ const OfferStickyHeader = ({
         </div>
 
         <div className="w-fit flex flex-row justify-evenly items-center h-full gap-6 max-h-5 text-light md:pr-6 xl:pr-0">
-          <a
-            aria-label="Odwiedź nasze konto na Facebook"
-            href="https://www.facebook.com/people/Wn%C4%99trza-Deweloperskie/61564077804403"
-            target="_blank"
-            className="header-icon-href"
-          >
-            <FiFacebook className="header-icon-graphic" />
-          </a>
-          <a
-            aria-label="Odwiedź nasze konto na Instagram"
-            href="https://www.instagram.com/wnetrza.deweloperskie/"
-            target="_blank"
-            className="header-icon-href"
-          >
-            <FiInstagram className="header-icon-graphic" />
-          </a>
-          <a
-            aria-label="Odwiedź nasze konto na Youtube"
-            href="https://www.youtube.com/@Deweloperskie"
-            target="_blank"
-            className="header-icon-href"
-          >
-            <FiYoutube className="header-icon-graphic" />
-          </a>
-          <a
-            aria-label="Skontaktuj się z nami na whatsapp"
-            href="whatsapp://send?phone=48666000999"
-            className="header-icon-href"
-          >
-            <Image
-              src={"/images/mainpage/whatsappwhite.png"}
-              alt="Contact Whatsapp"
-              width={40}
-              height={40}
-              className="header-icon-graphic"
-            />
-          </a>
-          <a
-            aria-label="Skontaktuj się z nami mailowo"
-            href={`mailto:wnetrza@deweloperskie.pl?subject=${parseEmailHrefText(
-              oferta
-            )}`}
-            className="header-icon-href"
-          >
-            <Image
-              src={"/images/mainpage/talkwhite.png"}
-              alt="Contact Email"
-              width={40}
-              height={40}
-              className="header-icon-graphic"
-            />
-          </a>
-          <Drawer>
-            <DrawerTrigger className="header-icon-href">
-              <Image
-                src={"/images/ding.png"}
-                alt="Show Contact Form Button"
-                width={40}
-                height={40}
-                className="header-icon-graphic min-h-5 min-w-5"
-              />
-            </DrawerTrigger>
-            <DrawerDescription className="hidden">
-              Formularz Kontaktowy
-            </DrawerDescription>
-            <DrawerTitle className="hidden">Formularz Kontaktowy</DrawerTitle>
-            <DrawerContent className="flex-center bg-dark rounded-none max-h-svh">
-              <div className="max-h-[600px]  md:max-h-svh overflow-auto">
-                <ContactForm
-                  sendTo={process.env.OFFERCONTACTDESTINATION}
-                  oferta={oferta}
-                  className="pt-6"
-                />
-              </div>
-            </DrawerContent>
-          </Drawer>
+          <FacebookRedirect />
+          <InstagramRedirect />
+          <YoutubeRedirect />
+          <WhatsappContact />
+          <EmailContact params={`subject=${parseEmailHrefText(oferta)}`} />
+          <ContactFormOpener />
           <NawigacjaDropDown
             links={[
               { link: "/", name: "Strona główna" },
