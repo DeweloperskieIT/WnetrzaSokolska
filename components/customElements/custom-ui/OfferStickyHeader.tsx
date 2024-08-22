@@ -7,6 +7,7 @@ import { ContactForm } from "@/components/customElements/forms/ContactForm";
 import {
   Drawer,
   DrawerContent,
+  DrawerDescription,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
@@ -137,6 +138,9 @@ const OfferStickyHeader = ({
                 className="header-icon-graphic min-h-5 min-w-5"
               />
             </DrawerTrigger>
+            <DrawerDescription className="hidden">
+              Formularz Kontaktowy
+            </DrawerDescription>
             <DrawerTitle className="hidden">Formularz Kontaktowy</DrawerTitle>
             <DrawerContent className="flex-center bg-dark rounded-none max-h-svh">
               <div className="max-h-[600px]  md:max-h-svh overflow-auto">

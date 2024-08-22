@@ -96,7 +96,7 @@ const InterchangeableImages = ({
             ) : (
               <div
                 className={cn(
-                  "w-full aspect-video md:aspect-auto  md:h-[460px] md:basis-1/2 ",
+                  "w-full aspect-[4/3] h-full md:basis-1/2 ",
                   i % 2 ? "md:text-left" : "md:text-right self-end"
                 )}
               >

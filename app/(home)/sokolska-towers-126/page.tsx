@@ -231,23 +231,23 @@ const page = () => {
               images: [
                 {
                   img: "/apartament126/s6/1/apartament-XXIw-1.jpg",
-                  alt: "image",
+                  alt: "Wnętrze telewizor oświetlenie czerwone",
                 },
                 {
                   img: "/apartament126/s6/1/apartament-XXIw-2.jpg",
-                  alt: "image",
+                  alt: "Wnętrze telewizor oświetlenie niebieskie",
                 },
                 {
                   img: "/apartament126/s6/1/apartament-XXIw-3.jpg",
-                  alt: "image",
+                  alt: "Wnętrze telewizor oświetlenie zielone",
                 },
                 {
                   img: "/apartament126/s6/1/apartament-XXIw-4.jpg",
-                  alt: "image",
+                  alt: "Wnętrze interaktywna ramka na zdjęcia",
                 },
                 {
                   img: "/apartament126/s6/1/apartament-XXIw-5.jpg",
-                  alt: "image",
+                  alt: "Wnętrze interaktywna ramka na zdjęcia szerokie ujęcie",
                 },
               ],
               header: "APARTAMENT XXI WIEKU",

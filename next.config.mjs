@@ -1,31 +1,27 @@
+const cspHeader = `
+    default-src 'self';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/lite-yt-embed.css https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/;
+    img-src 'self' https://i.ytimg.com/ blob: data:;
+    font-src 'self' https://fonts.gstatic.com;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-ancestors 'none';
+    upgrade-insecure-requests;
+`;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
   async headers() {
-    // Define different policies for development and production
-    const cspPolicy =
-      process.env.NODE_ENV === "development"
-        ? ""
-        : `
-          default-src 'self';
-          script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com;
-          style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-          img-src 'self' data: https://wnetrza.deweloperskie.pl;
-          connect-src 'self' https://wnetrza.deweloperskie.pl;
-          font-src 'self' https://fonts.gstatic.com;
-          object-src 'none';
-          frame-src 'self';
-          base-uri 'self';
-          form-action 'self';
-        `;
-
     return [
       {
         source: "/(.*)",
         headers: [
           {
             key: "Content-Security-Policy",
-            value: cspPolicy,
+            value: cspHeader.replace(/\n/g, ""),
           },
         ],
       },
