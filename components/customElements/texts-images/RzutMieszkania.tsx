@@ -61,7 +61,7 @@ const RzutMieszkania = ({
               {cena}
             </span>
           </div>
-          <Button
+          {/* <Button
             className={cn(
               "md:hidden bg-accent1 font-bold !py-6 rounded-none p-4 w-full text-dark hover:bg-accent1/60"
             )}
@@ -70,7 +70,7 @@ const RzutMieszkania = ({
             <a href="/documents/Katalog.pdf" download="Katalog.pdf">
               POBIERZ KATALOG
             </a>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

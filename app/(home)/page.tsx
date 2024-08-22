@@ -21,12 +21,12 @@ const Home = () => {
       <div className="landing-page">
         {/* First Section - Breathing image */}
         <BreathingBackgroundImage
-          className="md:h-[560px] h-[300px] bg-darkerGray/90 text-dark"
+          className="bg-darkerGray/90 text-dark"
           bgSizes={["100%", "70%"]}
           interval={5000}
           img="/images/mainpage/deweloperskie-logo-corner-szare.webp"
         >
-          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-6 pt-10 md:pt-0 md:pb-20">
+          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-6 pt-20 md:py-40 md:pb-20">
             <h1 className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</h1>
             <h2 className="text-xl md:text-xl font-light max-w-[800px] text-left">
               Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić
@@ -89,7 +89,7 @@ const Home = () => {
           }
         ></InfoBlocks>
         {/* Eigth Section - Info text */}
-        <div className="w-full h-full relative lg:aspect-[12/9] limited-width bg-white pb-10 lg:pb-0">
+        <div className="w-full h-fit relative lg:aspect-[12/9] limited-width bg-white pb-10 lg:pb-0 flex flex-col">
           <Image
             alt="szkic budynku sokolska towers"
             src={"/images/mainpage/Sokolska-Szkic.jpg"}

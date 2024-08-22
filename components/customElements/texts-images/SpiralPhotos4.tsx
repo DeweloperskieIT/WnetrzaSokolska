@@ -12,11 +12,11 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
   return (
     <div
       className={cn(
-        "flex flex-col md:flex-row gap-1 w-full h-full md:aspect-[16/9] md:max-h-[1024px] overflow-hidden",
+        "flex flex-col md:flex-row gap-1  w-full md:aspect-[16/9] md:max-h-[1024px]",
         className
       )}
     >
-      <div className="basis-1/2">
+      <div className="basis-1/2 h-full">
         <Image
           placeholder="blur"
           blurDataURL="/images/blur.png" // Replace with appropriate low-res image URL
