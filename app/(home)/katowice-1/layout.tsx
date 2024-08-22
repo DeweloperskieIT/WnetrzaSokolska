@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Sokolska Towers 126",
+  title: "Oferta Apartamentu",
   description:
-    "Zamieszkaj już jutro w ponadczasowym apartamencie 126 znajdującym się w Sokolska Towers w centrum Katowic.",
+    "Zamieszkaj już jutro w ponadczasowym apartamencie znajdującym się w Sokolska Towers w centrum Katowic.",
 };
 
 const layout = ({

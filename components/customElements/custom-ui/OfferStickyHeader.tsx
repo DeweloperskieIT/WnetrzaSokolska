@@ -68,7 +68,7 @@ const OfferStickyHeader = ({ className, oferta }: OfferStickyHeaderProps) => {
           <NawigacjaDropDown
             links={[
               { link: "/", name: "Strona główna" },
-              { link: "/sokolska-towers-126", name: "Apartament 126" },
+              { link: "/katowice-1", name: "Apartament 1" },
             ]}
           />
         </div>

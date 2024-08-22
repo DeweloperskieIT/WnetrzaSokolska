@@ -9,13 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://wnetrza.deweloperskie.pl/sokolska-towers-126",
+      url: "https://wnetrza.deweloperskie.pl/katowice-1",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: "https://wnetrza.deweloperskie.pl/sokolska-towers-103",
+      url: "https://wnetrza.deweloperskie.pl/katowice-2",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,

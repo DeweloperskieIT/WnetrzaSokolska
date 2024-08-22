@@ -149,7 +149,7 @@ const Home = () => {
                   <i>Luksus, który Cię wyróżni</i>
                 </span>
                 <Link
-                  href={"/sokolska-towers-126"}
+                  href={"/katowice-1"}
                   className="font-bold text-accent1 w-full text-right"
                 >
                   poznaj ofertę
