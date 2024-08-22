@@ -101,7 +101,7 @@ const InterchangeableImages = ({
                 )}
               >
                 <ImageCarouselFader
-                  sizes="(max-width: 768px) 100vw, 60vw"
+                  sizes="(max-width: 768px) 100vw, 75vw"
                   className="object-contain"
                   dotsEnabledOnlyVisible
                   itemsLength={e.images!.length}

@@ -37,15 +37,15 @@ const RzutMieszkania = ({
           alt="Rzut mieszkania na urządzeniu mobilnym"
           width={1024}
           height={1024}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, 10vw"
           className="block md:hidden max-h-[600px] h-fit w-full object-contain px-10"
         />
         <Image
           src={img.desktop}
           alt="Rzut mieszkania na urządzeniu desktopowym"
-          width={1920}
+          width={1080}
           height={1080}
-          sizes="(min-width: 768px) 100vw, 50vw"
+          sizes="(min-width: 768px) 100vw, 10vw"
           className="hidden md:block min-h-[450px] h-fit w-full object-contain pl-[100px]"
         />
         <div className="md:absolute md:left-0 md:bottom-0 relative text-2xl text-light flex flex-col gap-6 md:gap-5">
