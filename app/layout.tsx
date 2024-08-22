@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       { url: "/favicon/favicon-48x48.png", sizes: "48x48" },
       { url: "/favicon/favicon-144x144.png", sizes: "144x144" },
       { url: "/favicon/favicon.ico", sizes: "any" },
-      { url: "/favicon/favicon.ico"},
+      { url: "/favicon/favicon.ico" },
     ],
     apple: "/favicon/apple-touch-icon.png",
     other: [
@@ -114,7 +114,6 @@ export default function RootLayout({
           rel="stylesheet"
           href={`https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap`}
         />
-        <link rel=
       </head>
       <body
         className={cn(
