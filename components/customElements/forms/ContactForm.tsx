@@ -233,6 +233,7 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
+                    aria-label="Zaznacz zgodę na przetwarzanie danych"
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
@@ -277,6 +278,7 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
+                    aria-label="Zaznacz zapoznanie się z zasadami przetwarzania danych osobowych"
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
@@ -286,7 +288,7 @@ export function ContactForm({
                     Oświadczam, że zapoznałam/em się z zasadami przetwarzania
                     moich danych osobowych zawartych w
                     <Link
-                      className="text-accent1"
+                      className="text-accent1 font-bold"
                       href={"/informacje#klauzula"}
                       target="_blank"
                     >
@@ -294,7 +296,7 @@ export function ContactForm({
                     </Link>
                     oraz
                     <Link
-                      className="text-accent1"
+                      className="text-accent1 font-bold"
                       href={"/informacje#polityka"}
                       target="_blank"
                     >
@@ -316,6 +318,7 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
+                    aria-label="Zaznacz zgodę na kontakt email"
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
@@ -341,7 +344,7 @@ export function ContactForm({
                           przez naszych partnerów, z których usług korzystamy w
                           zakresie obrotu nieruchomościami:
                           <Link
-                            className="text-accent1"
+                            className="text-accent1 font-bold"
                             href={"/informacje#podmioty"}
                             target="_blank"
                           >
@@ -372,6 +375,7 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
+                    aria-label="Zaznacz zgodę na kontakt telefoniczny"
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
@@ -397,7 +401,7 @@ export function ContactForm({
                           Katowice oraz przez naszych partnerów, z których usług
                           korzystamy w zakresie obrotu nieruchomościami:
                           <Link
-                            className="text-accent1"
+                            className="text-accent1 font-bold"
                             href={"/informacje#podmioty"}
                             target="_blank"
                           >

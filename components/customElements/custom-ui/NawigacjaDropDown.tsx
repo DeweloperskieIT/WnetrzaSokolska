@@ -29,6 +29,7 @@ const NawigacjaDropDown = ({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
+        aria-label="Otwórz nawigację"
         className={cn(
           "w-full h-full flex-center transition-all duration-150 hover:text-accent1 p-1",
           className

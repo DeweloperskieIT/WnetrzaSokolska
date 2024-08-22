@@ -24,7 +24,7 @@ const Home = () => {
           className="md:h-[560px] h-[300px] bg-darkerGray/90 text-dark"
           bgSizes={["100%", "70%"]}
           interval={5000}
-          img="/images/mainpage/dszare.png"
+          img="/images/mainpage/deweloperskie-logo-corner-szare.webp"
         >
           <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
             <h1 className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</h1>

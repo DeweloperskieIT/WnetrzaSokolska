@@ -78,6 +78,7 @@ const PrevNextButtons = ({
       {!controlsDisabled && (
         <>
           <button
+            name="previous button"
             onMouseEnter={() => {
               if (handleHoverBack) handleHoverBack(true);
             }}
@@ -98,6 +99,7 @@ const PrevNextButtons = ({
           </button>
 
           <button
+            name="next button"
             onMouseEnter={() => {
               if (handleHoverNext) handleHoverNext(true);
             }}

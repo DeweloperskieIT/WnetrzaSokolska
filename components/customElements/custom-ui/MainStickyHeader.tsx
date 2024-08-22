@@ -76,6 +76,7 @@ const MainStickyHeader = ({
         />
         <div className="w-fit flex flex-row justify-evenly items-center h-full gap-6 max-h-5 text-light md:pr-6 xl:pr-0">
           <a
+            aria-label="Odwiedź nasze konto na Facebook"
             href="https://www.facebook.com/people/Wn%C4%99trza-Deweloperskie/61564077804403"
             target="_blank"
             className="header-icon-href"
@@ -83,6 +84,7 @@ const MainStickyHeader = ({
             <FiFacebook className="header-icon-graphic" />
           </a>
           <a
+            aria-label="Odwiedź nasze konto na Instagram"
             href="https://www.instagram.com/wnetrza.deweloperskie/"
             target="_blank"
             className="header-icon-href"
@@ -90,6 +92,7 @@ const MainStickyHeader = ({
             <FiInstagram className="header-icon-graphic" />
           </a>
           <a
+            aria-label="Odwiedź nasze konto na Youtube"
             href="https://www.youtube.com/@Deweloperskie"
             target="_blank"
             className="header-icon-href"
@@ -97,6 +100,7 @@ const MainStickyHeader = ({
             <FiYoutube className="header-icon-graphic" />
           </a>
           <a
+            aria-label="Skontaktuj się z nami na whatsapp"
             href="whatsapp://send?phone=48666000999"
             className="header-icon-href"
           >
@@ -109,6 +113,7 @@ const MainStickyHeader = ({
             />
           </a>
           <a
+            aria-label="Skontaktuj się z nami mailowo"
             href={`mailto:wnetrza@deweloperskie.pl?subject=Sokolska%20Towers`}
             className="header-icon-href"
           >
