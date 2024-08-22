@@ -43,7 +43,7 @@ const VideoBackground = ({
           Your browser does not support the video tag.
         </video>
       ) : (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-600">
           <Skeleton className="h-full w-full" />
           <p>Failed to load video.</p>
         </div>
