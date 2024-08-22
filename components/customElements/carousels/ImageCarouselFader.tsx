@@ -154,6 +154,7 @@ const ImageCarouselFader = ({
         clearInterval(intervalRef.current);
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAutoplay, duration, isIntersecting]);
 
   useEffect(() => {
@@ -235,6 +236,8 @@ const ImageCarouselFader = ({
 
       {images.map(({ img, alt }, i) => (
         <Image
+          placeholder="blur"
+          blurDataURL="/images/blur.png"
           loading="lazy"
           key={i}
           src={img}

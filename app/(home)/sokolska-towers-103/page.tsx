@@ -23,42 +23,38 @@ const page = () => {
 
       <div className="landing-page text-light">
         {/* Video */}
-        <VideoBackground src="/videos/video1.mp4" className="">
-          <h1 className="w-full h-full relative z-10 flex flex-col gap-0 items-start justify-end text-light padding-element py-6">
-            <span className="font-base text-6xl">LUKSUS</span>
-            <span className="font-extralight text-6xl text-accent1">
-              KTÓRY WZBUDZA POŻĄDANIE
-            </span>
-          </h1>
-        </VideoBackground>
+        <VideoBackground
+          src="/apartament126/s1/Version1.mp4"
+          className="aspect-[4/3] md:aspect-video max-h-[1024px] h-full md:-mb-10 lg:-mb-20 flex items-end"
+        ></VideoBackground>
         {/* First Section - Icons Module */}
         <IconsModule
           className=""
           icons={[
             {
-              icon: "/images/PolemanIcon.png",
-              text: "Panorama Katowic z XIII piętra",
+              icon: "/apartament126/s2/1.webp",
+              text: "Najwyżej położony balkon w budynku",
             },
             {
-              icon: "/images/MapIcon.png",
-              text: "Topowa lokalizacja Sokolska Towers",
+              icon: "/apartament126/s2/2.webp",
+              text: "Apartamenty w topowej lokalizacji",
             },
             {
-              icon: "/images/BuildingIcon.png",
-              text: "Lobby z recepcją i ochroną 24/7 ",
+              icon: "/apartament126/s2/3.webp",
+              text: "Światowej klasy architektura",
             },
             {
-              icon: "/images/DangleKeysIcon.png",
-              text: "Strefa SPA Fitness-club",
+              icon: "/apartament126/s2/4.webp",
+              text: "Indywidualny opiekun transakcji",
             },
-            { icon: "/images/BedIcon.png", text: "Gotowy do zamieszkania" },
+            { icon: "/images/BedIcon.png", text: "Zamieszkaj już jutro" },
           ]}
           header={
             <SectionHeading
-              className=""
-              top="DOŁĄCZ DO GRONA WŁAŚCICIELI"
+              className="w-2/3 md:w-full"
+              top="DOŁĄCZ DO EKSKLUZYWNEGO"
               topClass="text-2xl md:text-[48px] font-bold"
-              bottom="PRESTIŻOWCH APARTAMENTÓW SOKOLSKA TOWERS"
+              bottom="GRONA WŁAŚCICIELI SOKOLSKA TOWERS"
               bottomClass="text-xl md:text-[38px] font-bold md:font-normal leading-7"
             />
           }
@@ -145,37 +141,82 @@ const page = () => {
             {
               image: "/apartament126/s6/1/1.jpeg",
               images: [
-                { img: "/apartament126/s6/1/1.jpeg", alt: "image" },
-                { img: "/apartament126/s6/1/2.jpeg", alt: "image" },
-                { img: "/apartament126/s6/1/3.jpeg", alt: "image" },
-                { img: "/apartament126/s6/1/4.jpeg", alt: "image" },
-                { img: "/apartament126/s6/1/5.jpeg", alt: "image" },
+                {
+                  img: "/apartament126/s6/1/apartament-XXIw-1.jpg",
+                  alt: "Wnętrze telewizor oświetlenie czerwone",
+                },
+                {
+                  img: "/apartament126/s6/1/apartament-XXIw-2.jpg",
+                  alt: "Wnętrze telewizor oświetlenie niebieskie",
+                },
+                {
+                  img: "/apartament126/s6/1/apartament-XXIw-3.jpg",
+                  alt: "Wnętrze telewizor oświetlenie zielone",
+                },
+                {
+                  img: "/apartament126/s6/1/apartament-XXIw-4.jpg",
+                  alt: "Wnętrze interaktywna ramka na zdjęcia",
+                },
+                {
+                  img: "/apartament126/s6/1/apartament-XXIw-5.jpg",
+                  alt: "Wnętrze interaktywna ramka na zdjęcia szerokie ujęcie",
+                },
               ],
               header: "APARTAMENT XXI WIEKU",
               paragraph:
-                "Wpisz się w najnowsze trendy budownictwa i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+                "Podążaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
             },
             {
               image: "/apartament126/s6/2/1.jpeg",
               images: [
-                { img: "/apartament126/s6/2/1.jpeg", alt: "image" },
-                { img: "/apartament126/s6/2/2.jpeg", alt: "image" },
-                { img: "/apartament126/s6/2/3.jpeg", alt: "image" },
-                { img: "/apartament126/s6/2/4.jpeg", alt: "image" },
-                { img: "/apartament126/s6/2/5.jpeg", alt: "image" },
+                {
+                  img: "/apartament126/s6/2/spektakularne-oswietlenie-1.jpg",
+                  alt: "Oświetlenie salonu o poranku",
+                },
+                {
+                  img: "/apartament126/s6/2/spektakularne-oswietlenie-2.jpg",
+                  alt: "Oświetlenie salonu wieczorem",
+                },
+                {
+                  img: "/apartament126/s6/2/spektakularne-oswietlenie-3.jpg",
+                  alt: "Oświetlenie salonu wieczorem niebieskie",
+                },
+                {
+                  img: "/apartament126/s6/2/spektakularne-oswietlenie-4.jpg",
+                  alt: "Oświetlenie salonu wieczorem alternatywne",
+                },
+                {
+                  img: "/apartament126/s6/2/spektakularne-oswietlenie-5.jpg",
+                  alt: "Oświetlenie salonu wieczorem alternatywne na kanape",
+                },
               ],
-              header: "UNIKATOWE OŚWIETLENIE",
+              header: "SPEKTAKULARNE OŚWIETLENIE",
               paragraph:
-                "Oświetlenie POZWALAJĄCE STWORZYĆ KLIMAT IDEALNY DO OKOLICZNOŚCI",
+                "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
             },
             {
               image: "/apartament126/s6/3/1.jpeg",
               images: [
-                { img: "/apartament126/s6/3/1.jpg", alt: "image" },
-                { img: "/apartament126/s6/3/2.jpg", alt: "image" },
-                { img: "/apartament126/s6/3/3.jpg", alt: "image" },
-                { img: "/apartament126/s6/3/4.jpeg", alt: "image" },
-                { img: "/apartament126/s6/3/5.jpg", alt: "image" },
+                {
+                  img: "/apartament126/s6/3/spojne-wnetrza-1.jpg",
+                  alt: "Widok na wykońćzony salon",
+                },
+                {
+                  img: "/apartament126/s6/3/spojne-wnetrza-2.jpg",
+                  alt: "Zbliżenie na drewniane detale",
+                },
+                {
+                  img: "/apartament126/s6/3/spojne-wnetrza-3.jpg",
+                  alt: "Zbliżenie na lampę z drewnianym wykończeniem",
+                },
+                {
+                  img: "/apartament126/s6/3/spojne-wnetrza-4.jpg",
+                  alt: "Ujęcie na ścianę telewizora z drewnianym wykończeniem",
+                },
+                {
+                  img: "/apartament126/s6/3/spojne-wnetrza-5.jpg",
+                  alt: "Zbliżenie na stolik na kawę pasujący do salonu",
+                },
               ],
               header: `SPÓJNE WNĘTRZE`,
               paragraph:
@@ -184,12 +225,26 @@ const page = () => {
             {
               image: "/apartament126/s6/4/1.jpeg",
               images: [
-                { img: "/apartament126/s6/4/1.jpg", alt: "image" },
-                { img: "/apartament126/s6/4/2.jpg", alt: "image" },
-                { img: "/apartament126/s6/4/3.jpg", alt: "image" },
-                { img: "/apartament126/s6/4/4.jpg", alt: "image" },
-                { img: "/apartament126/s6/4/5.jpg", alt: "image" },
-                { img: "/apartament126/s6/4/6.jpg", alt: "image" },
+                {
+                  img: "/apartament126/s6/4/marki-premium-1.jpg",
+                  alt: "Zbliżenie na logo drzwi marki DEWRO",
+                },
+                {
+                  img: "/apartament126/s6/4/marki-premium-2.jpg",
+                  alt: "Ujęcie wykończonej łazienki z prysznicem",
+                },
+                {
+                  img: "/apartament126/s6/4/marki-premium-3.jpg",
+                  alt: "Ujęcie wykończonej łazienki z wanną",
+                },
+                {
+                  img: "/apartament126/s6/4/marki-premium-4.jpg",
+                  alt: "Zbliżenie na drewniane panele podłogowe",
+                },
+                {
+                  img: "/apartament126/s6/4/marki-premium-5.jpg",
+                  alt: "Ujęcie oświetlenia sufitowego i jednostki klimatyzacji",
+                },
               ],
               header: "MARKI PREMIUM",
               paragraph:
@@ -198,11 +253,26 @@ const page = () => {
             {
               image: "/apartament126/s6/5/1.jpeg",
               images: [
-                { img: "/apartament126/s6/5/1.jpg", alt: "image" },
-                { img: "/apartament126/s6/5/2.jpg", alt: "image" },
-                { img: "/apartament126/s6/5/3.jpg", alt: "image" },
-                { img: "/apartament126/s6/5/4.jpg", alt: "image" },
-                { img: "/apartament126/s6/5/5.jpg", alt: "image" },
+                {
+                  img: "/apartament126/s6/5/swiatowa-architektura-1.jpg",
+                  alt: "Zachód słońca widoczny z okna sokolska towers",
+                },
+                {
+                  img: "/apartament126/s6/5/swiatowa-architektura-2.jpg",
+                  alt: "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku",
+                },
+                {
+                  img: "/apartament126/s6/5/swiatowa-architektura-3.jpg",
+                  alt: "Wschód słońca widoczny z okna sokolska towers",
+                },
+                {
+                  img: "/apartament126/s6/5/swiatowa-architektura-4.jpg",
+                  alt: "Ujęcie z recepcji budynku sokolska towers",
+                },
+                {
+                  img: "/apartament126/s6/5/swiatowa-architektura-5.jpg",
+                  alt: "Ujęcie z drona wspólnego prywatnego tarasu wieczorem",
+                },
               ],
               header: "ŚWIATOWA ARCHITEKTURA",
               paragraph:
@@ -223,8 +293,8 @@ const page = () => {
               </span>
               <span>
                 Postaw na unikatową lokalizację, w otoczeniu której nie powstaną
-                tysiące nowych mieszkań, z którymi będzie musiał konkurować ceną
-                w momencie sprzedaży nieruchomości na rynku wtórnym.
+                tysiące nowych mieszkań, z którymi będziesz musiał konkurować
+                ceną w momencie sprzedaży nieruchomości na rynku wtórnym.
               </span>
               <span>
                 Wybierz narożny apartament na XV piętrze ponadczasowego

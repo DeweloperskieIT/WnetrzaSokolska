@@ -9,16 +9,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://wnetrza.deweloperskie.pl/sokolska-towers-126",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
+      url: "https://wnetrza.deweloperskie.pl/sokolska-towers-103",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1,
+    },
+    {
       url: "https://wnetrza.deweloperskie.pl/informacje",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.5,
-    },
-    {
-      url: "https://wnetrza.deweloperskie.pl/sokolska-towers-126",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.1,
     },
   ];
 }

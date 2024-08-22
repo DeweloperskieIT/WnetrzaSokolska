@@ -259,23 +259,23 @@ const page = () => {
               images: [
                 {
                   img: "/apartament126/s6/2/spektakularne-oswietlenie-1.jpg",
-                  alt: "image",
+                  alt: "Oświetlenie salonu o poranku",
                 },
                 {
                   img: "/apartament126/s6/2/spektakularne-oswietlenie-2.jpg",
-                  alt: "image",
+                  alt: "Oświetlenie salonu wieczorem",
                 },
                 {
                   img: "/apartament126/s6/2/spektakularne-oswietlenie-3.jpg",
-                  alt: "image",
+                  alt: "Oświetlenie salonu wieczorem niebieskie",
                 },
                 {
                   img: "/apartament126/s6/2/spektakularne-oswietlenie-4.jpg",
-                  alt: "image",
+                  alt: "Oświetlenie salonu wieczorem alternatywne",
                 },
                 {
                   img: "/apartament126/s6/2/spektakularne-oswietlenie-5.jpg",
-                  alt: "image",
+                  alt: "Oświetlenie salonu wieczorem alternatywne na kanape",
                 },
               ],
               header: "SPEKTAKULARNE OŚWIETLENIE",
@@ -287,23 +287,23 @@ const page = () => {
               images: [
                 {
                   img: "/apartament126/s6/3/spojne-wnetrza-1.jpg",
-                  alt: "image",
+                  alt: "Widok na wykońćzony salon",
                 },
                 {
                   img: "/apartament126/s6/3/spojne-wnetrza-2.jpg",
-                  alt: "image",
+                  alt: "Zbliżenie na drewniane detale",
                 },
                 {
                   img: "/apartament126/s6/3/spojne-wnetrza-3.jpg",
-                  alt: "image",
+                  alt: "Zbliżenie na lampę z drewnianym wykończeniem",
                 },
                 {
                   img: "/apartament126/s6/3/spojne-wnetrza-4.jpg",
-                  alt: "image",
+                  alt: "Ujęcie na ścianę telewizora z drewnianym wykończeniem",
                 },
                 {
                   img: "/apartament126/s6/3/spojne-wnetrza-5.jpg",
-                  alt: "image",
+                  alt: "Zbliżenie na stolik na kawę pasujący do salonu",
                 },
               ],
               header: `SPÓJNE WNĘTRZE`,
@@ -315,23 +315,23 @@ const page = () => {
               images: [
                 {
                   img: "/apartament126/s6/4/marki-premium-1.jpg",
-                  alt: "image",
+                  alt: "Zbliżenie na logo drzwi marki DEWRO",
                 },
                 {
                   img: "/apartament126/s6/4/marki-premium-2.jpg",
-                  alt: "image",
+                  alt: "Ujęcie wykończonej łazienki z prysznicem",
                 },
                 {
                   img: "/apartament126/s6/4/marki-premium-3.jpg",
-                  alt: "image",
+                  alt: "Ujęcie wykończonej łazienki z wanną",
                 },
                 {
                   img: "/apartament126/s6/4/marki-premium-4.jpg",
-                  alt: "image",
+                  alt: "Zbliżenie na drewniane panele podłogowe",
                 },
                 {
                   img: "/apartament126/s6/4/marki-premium-5.jpg",
-                  alt: "image",
+                  alt: "Ujęcie oświetlenia sufitowego i jednostki klimatyzacji",
                 },
               ],
               header: "MARKI PREMIUM",
@@ -343,23 +343,23 @@ const page = () => {
               images: [
                 {
                   img: "/apartament126/s6/5/swiatowa-architektura-1.jpg",
-                  alt: "image",
+                  alt: "Zachód słońca widoczny z okna sokolska towers",
                 },
                 {
                   img: "/apartament126/s6/5/swiatowa-architektura-2.jpg",
-                  alt: "image",
+                  alt: "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku",
                 },
                 {
                   img: "/apartament126/s6/5/swiatowa-architektura-3.jpg",
-                  alt: "image",
+                  alt: "Wschód słońca widoczny z okna sokolska towers",
                 },
                 {
                   img: "/apartament126/s6/5/swiatowa-architektura-4.jpg",
-                  alt: "image",
+                  alt: "Ujęcie z recepcji budynku sokolska towers",
                 },
                 {
                   img: "/apartament126/s6/5/swiatowa-architektura-5.jpg",
-                  alt: "image",
+                  alt: "Ujęcie z drona wspólnego prywatnego tarasu wieczorem",
                 },
               ],
               header: "ŚWIATOWA ARCHITEKTURA",

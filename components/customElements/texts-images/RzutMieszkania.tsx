@@ -33,6 +33,8 @@ const RzutMieszkania = ({
       {header}
       <div className="relative w-full flex flex-col gap-10">
         <Image
+          placeholder="blur"
+          blurDataURL="/images/blur.png"
           src={img.mobile}
           alt="Rzut mieszkania na urządzeniu mobilnym"
           width={768}
@@ -41,6 +43,8 @@ const RzutMieszkania = ({
           className="block md:hidden max-h-[600px] h-fit w-full object-contain px-10"
         />
         <Image
+          placeholder="blur"
+          blurDataURL="/images/blur.png"
           src={img.desktop}
           alt="Rzut mieszkania na urządzeniu desktopowym"
           width={1080}

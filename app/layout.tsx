@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   keywords: [
     "luksusowe apartamenty Katowice",
     "nieruchomości premium Katowice",
+    "luksusowy apartament",
     "nieruchomości Katowice",
     "apartamenty Katowice",
     "architektura Katowic",
