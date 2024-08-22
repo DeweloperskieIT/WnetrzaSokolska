@@ -433,7 +433,6 @@ const page = () => {
           oferta={oferta}
           header={
             <SectionHeading
-              wideParent
               className="gap-3 md:gap-2 md:flex hidden"
               top="UMÓW SIĘ"
               bottom="NA PREZENTACJĘ"

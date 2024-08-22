@@ -124,6 +124,7 @@ const Home = () => {
                 <span>
                   <i>Luksus, który wzbudza pożądanie</i>
                 </span>
+                |
                 {/* <Link
                         href={"/xxx"}
                         className="font-bold text-accent1 w-full text-right"
@@ -200,7 +201,6 @@ const Home = () => {
           oferta={"Kontakt"}
           header={
             <SectionHeading
-              wideParent
               className="gap-3 md:gap-2 md:flex hidden"
               top="UMÓW SIĘ"
               bottom="NA PREZENTACJĘ"
