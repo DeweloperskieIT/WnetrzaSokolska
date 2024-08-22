@@ -112,7 +112,6 @@ export default function RootLayout({
           rel="stylesheet"
           href={`https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap`}
         />
-        <link rel="icon" href="/favicon/favicon-32x32.png" sizes="any" />
       </head>
       <body
         className={cn(
