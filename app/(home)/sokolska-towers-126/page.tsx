@@ -22,7 +22,7 @@ const page = () => {
         {/* Video */}
         <VideoBackground
           src="/apartament126/s1/Version1.mp4"
-          className="md:aspect-[16/9] max-h-[1024px] !h-[80svh] md:h-full md:-mb-10 lg:-mb-20 flex items-end"
+          className="aspect-[4/3] md:aspect-video max-h-[1024px] h-full md:-mb-10 lg:-mb-20 flex items-end"
         ></VideoBackground>
         {/* First Section - Icons Module */}
         <IconsModule

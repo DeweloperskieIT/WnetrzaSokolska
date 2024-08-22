@@ -26,7 +26,7 @@ const Home = () => {
           interval={5000}
           img="/images/mainpage/deweloperskie-logo-corner-szare.webp"
         >
-          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-20">
+          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-6 pt-10 md:pt-0 md:pb-20">
             <h1 className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</h1>
             <h2 className="text-xl md:text-xl font-light max-w-[800px] text-left">
               Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić
