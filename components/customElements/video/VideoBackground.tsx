@@ -27,10 +27,7 @@ export const VideoBackground = ({
     <div className={cn("relative h-full w-full", className)}>
       {!videoError ? (
         <video
-          className={cn(
-            "absolute inset-0 w-full h-full object-cover",
-            videoClassName
-          )}
+          className={cn("inset-0 w-full h-full object-cover", videoClassName)}
           preload="auto"
           muted
           loop

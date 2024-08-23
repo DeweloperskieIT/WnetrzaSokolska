@@ -65,6 +65,7 @@ export const OfferStickyHeader = ({
             links={[
               { link: "/", name: "Strona główna" },
               { link: "/katowice-1", name: "Apartament 1" },
+              { link: "/katowice-2", name: "Apartament 2" },
             ]}
           />
         </div>

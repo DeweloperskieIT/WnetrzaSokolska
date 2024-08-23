@@ -52,8 +52,8 @@ const Home = () => {
 
         <div className="flex justify-center flex-row flex-wrap gap-10 w-fit h-fit md:padding-element">
           <Link
-            href="/katowice-1"
-            className="aspect-[4/3] lg:max-w-[45%] size-auto relative flex group items-end"
+            href="/katowice-2"
+            className="aspect-[4/3] lg:max-w-[45%] h-auto w-full relative flex group items-end"
           >
             <Image
               alt="alt"
@@ -75,7 +75,10 @@ const Home = () => {
               </span>
             </div>
           </Link>
-          <div className="aspect-[4/3] lg:max-w-[45%] size-auto relative flex group items-end">
+          <Link
+            href="/katowice-1"
+            className="aspect-[4/3] lg:max-w-[45%] h-auto w-full relative flex group items-end"
+          >
             <Image
               alt="alt"
               src={"/images/mainpage/grid-apartament-2.png"}
@@ -92,11 +95,11 @@ const Home = () => {
               <span className="italic">
                 Luksus, który Cię wyróżni
                 <br />
-                Premiera 30.08
+                <span className="text-accent1">Zobacz ofertę</span>
               </span>
             </div>
-          </div>
-          <div className="aspect-[4/3] lg:max-w-[45%] size-auto relative flex group items-end">
+          </Link>
+          <div className="aspect-[4/3] lg:max-w-[45%] h-auto w-full relative flex group items-end">
             <Image
               alt="alt"
               src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
@@ -106,7 +109,7 @@ const Home = () => {
               )}
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
-              <span>
+              <span className="">
                 Nowoczesny apartament dla osób, które chcą mieć wszystko w
                 zasięgu ręki.
               </span>
@@ -117,7 +120,7 @@ const Home = () => {
               </span>
             </div>
           </div>
-          <div className="aspect-[4/3] lg:max-w-[45%] size-auto relative flex group items-end">
+          <div className="aspect-[4/3] lg:max-w-[45%] h-auto w-full relative flex group items-end">
             <Image
               alt="alt"
               src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
@@ -127,7 +130,7 @@ const Home = () => {
               )}
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
-              <span>
+              <span className="">
                 Twój mały dom na XIV piętrze, z przestronnym salonem z kuchnią,
                 gabinetem, sypialnią, pralnią, garderobą oraz pojemną komórką
                 lokatorską na piętrze.
@@ -150,6 +153,12 @@ const Home = () => {
           <SectionHeading top="PONADCZASOWY " bottom="BUDYNEK" />
           <div className="flex flex-row justify-evenly gap-10 flex-wrap">
             <YouTubeEmbed
+              videoid="AdIdKxq-PTs"
+              style="width: 270px !important; height: 480px !important; margin: auto; aspectRatio: 9/16"
+              height={0}
+              width={0}
+            />
+            <YouTubeEmbed
               videoid="_Amg5afbXSU"
               style="width: 270px !important; height: 480px !important; margin: auto; aspectRatio: 9/16"
               height={0}
@@ -161,12 +170,6 @@ const Home = () => {
               height={0}
               width={0}
             />
-            {/* <YouTubeEmbed
-              videoid="_Amg5afbXSU"
-              style="width: 270px !important; height: 480px !important; margin: auto; aspectRatio: 9/16"
-              height={0}
-              width={0}
-            /> */}
           </div>
         </div>
         {/* footer */}
