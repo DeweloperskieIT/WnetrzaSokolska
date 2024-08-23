@@ -69,7 +69,7 @@ export function ContactForm({
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      formMessage: `Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji`,
+      formMessage: `Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji`,
       imie: "",
       zgodaPrzetwarzanieDanych: false,
       oświadczeniePrzetwarzanieDanych: false,
@@ -215,7 +215,7 @@ export function ContactForm({
                 <FormLabel className="text-light">Wiadomość</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji"
+                    placeholder="Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji"
                     className="resize-none"
                     {...field}
                   />

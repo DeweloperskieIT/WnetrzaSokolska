@@ -66,7 +66,7 @@ export function QuestionContactForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       formMessage:
-        "Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji",
+        "Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji",
       zgodaPrzetwarzanieDanych: false,
       oświadczeniePrzetwarzanieDanych: false,
       zgodaPrzetwarzanieEmail: false,
@@ -190,7 +190,7 @@ export function QuestionContactForm({
                 <FormLabel className="text-light">Wiadomość*</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Umów mnię na prezentacje z moim indywidualnym opiekunem transakcji"
+                    placeholder="Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji"
                     className="resize-none"
                     {...field}
                   />
