@@ -149,9 +149,9 @@ const Home = () => {
         {/* Eigth Section - Info text */}
         {/* <LandingPageOffers {...LandingPageOffersSectionData} /> */}
         {/* Section something */}
-        <div className="w-full h-full relative limited-width flex flex-col gap-10">
+        <div className="w-full h-fit relative limited-width flex flex-col gap-10">
           <SectionHeading top="PONADCZASOWY " bottom="BUDYNEK" />
-          <div className="flex flex-row justify-evenly gap-10 flex-wrap">
+          <div className="flex flex-row justify-evenly gap-10 flex-wrap size-auto">
             <YouTubeEmbed
               videoid="AdIdKxq-PTs"
               style="width: 270px !important; height: 480px !important; margin: auto; aspectRatio: 9/16"
