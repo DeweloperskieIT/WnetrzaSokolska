@@ -19,7 +19,6 @@ interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
   stepsVisible?: boolean;
   autoplay?: boolean;
   duration?: number;
-  itemsLength?: number;
   dotsEnabled?: boolean;
   dotsEnabledOnlyVisible?: boolean;
   dotsClassName?: string;
@@ -41,7 +40,6 @@ const ImageCarouselFader = ({
   buttonsVisible = false,
   autoplay = false,
   duration = 5000,
-  itemsLength = 0,
   dotsEnabled = false,
   dotsEnabledOnlyVisible,
   dotsClassName,
@@ -196,7 +194,7 @@ const ImageCarouselFader = ({
         setCurrentIndex={handleManualChange}
         currentIndex={currentIndex}
         visible={buttonsVisible}
-        itemsLength={itemsLength}
+        itemsLength={images.length}
         handleClickBack={handleClickBack}
         handleClickNext={handleClickNext}
       />

@@ -104,7 +104,6 @@ const InterchangeableImages = ({
                   sizes="(max-width: 768px) 100vw, 75vw"
                   className="object-contain"
                   dotsEnabledOnlyVisible
-                  itemsLength={e.images!.length}
                   autoplay
                   duration={interval}
                   images={e.images!}

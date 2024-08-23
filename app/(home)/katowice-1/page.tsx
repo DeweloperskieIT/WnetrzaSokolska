@@ -9,6 +9,11 @@ import SpiralPhotos4 from "@/components/customElements/texts-images/SpiralPhotos
 import OfferStickyHeader from "@/components/customElements/custom-ui/OfferStickyHeader";
 import VideoBackground from "@/components/customElements/video/VideoBackground";
 import TextPlusSingleVideo from "@/components/customElements/texts-images/TextPlusSingleVideo";
+import {
+  icons_content_array,
+  IconsSectionHeading,
+  video_content_source,
+} from "@/data/content/katowice-1";
 
 let oferta = "Apartament 103";
 
@@ -21,40 +26,14 @@ const page = () => {
       <div className="landing-page">
         {/* Video */}
         <VideoBackground
-          src="/apartament126/s1/Version1.mp4"
+          src={video_content_source}
           className="aspect-[4/3] md:aspect-video max-h-[1024px] h-full md:-mb-10 lg:-mb-20 flex items-end"
         ></VideoBackground>
         {/* First Section - Icons Module */}
         <IconsModule
           className=""
-          icons={[
-            {
-              icon: "/apartament126/s2/1.webp",
-              text: "Najwyżej położony balkon w budynku",
-            },
-            {
-              icon: "/apartament126/s2/2.webp",
-              text: "Apartamenty w topowej lokalizacji",
-            },
-            {
-              icon: "/apartament126/s2/3.webp",
-              text: "Światowej klasy architektura",
-            },
-            {
-              icon: "/apartament126/s2/4.webp",
-              text: "Indywidualny opiekun transakcji",
-            },
-            { icon: "/images/BedIcon.png", text: "Zamieszkaj już jutro" },
-          ]}
-          header={
-            <SectionHeading
-              className="w-2/3 md:w-full"
-              top="DOŁĄCZ DO EKSKLUZYWNEGO"
-              topClass="text-2xl md:text-[48px] font-bold"
-              bottom="GRONA WŁAŚCICIELI SOKOLSKA TOWERS"
-              bottomClass="text-xl md:text-[38px] font-bold md:font-normal leading-7"
-            />
-          }
+          icons={icons_content_array}
+          header={IconsSectionHeading}
         ></IconsModule>
         {/* Second Section - Carousel fader */}
         <div className="flex flex-col section-header-gap w-full">
@@ -67,8 +46,8 @@ const page = () => {
           <ImageCarouselFader
             autoplay
             duration={6000}
-            itemsLength={15}
-            dotsEnabledOnlyVisible
+            // dotsEnabledOnlyVisible
+            dotsEnabled
             dotsClassName={""}
             textBackground="bg-gradient-to-t from-dark via-dark/90 to-dark/0"
             className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
