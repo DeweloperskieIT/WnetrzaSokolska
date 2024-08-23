@@ -9,6 +9,7 @@ import {
   WhatsappContact,
   YoutubeRedirect,
 } from "../buttons";
+import Link from "next/link";
 
 export interface MainStickyHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -24,13 +25,15 @@ export const MainStickyHeader = ({ className }: MainStickyHeaderProps) => {
         className
       )}
     >
-      <Image
-        src={"/images/mainpage/deweloperskie-corner-logo.png"}
-        alt="Deweloperskie Logo"
-        width={80}
-        height={80}
-        className="absolute right-0 top-0 z-0"
-      />
+      <Link href={"/"}>
+        <Image
+          src={"/images/mainpage/deweloperskie-corner-logo.png"}
+          alt="Deweloperskie Logo"
+          width={80}
+          height={80}
+          className="absolute right-0 top-0 z-0"
+        />
+      </Link>
       <div className="w-full h-full flex flex-col gap-4 md:flex-row justify-between items-center max-w-screen-xl py-2">
         <Image
           src={"/images/mainpage/wnetrzalogo.png"}

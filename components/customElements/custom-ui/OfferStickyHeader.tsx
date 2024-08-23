@@ -11,6 +11,7 @@ import {
   WhatsappContact,
   YoutubeRedirect,
 } from "@/components/customElements/buttons";
+import Link from "next/link";
 
 export interface OfferStickyHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -30,13 +31,15 @@ export const OfferStickyHeader = ({
         className
       )}
     >
-      <Image
-        src={"/images/mainpage/deweloperskie-corner-logo.png"}
-        alt="Deweloperskie Logo"
-        width={80}
-        height={80}
-        className="absolute right-0 top-0 size-16 md:size-20"
-      />
+      <Link href={"/"}>
+        <Image
+          src={"/images/mainpage/deweloperskie-corner-logo.png"}
+          alt="Deweloperskie Logo"
+          width={80}
+          height={80}
+          className="absolute right-0 top-0 size-16 md:size-20"
+        />
+      </Link>
       <div className="w-full h-full flex flex-col gap-4 md:flex-row justify-between items-center max-w-screen-xl py-2">
         <div className="w-auto h-full max-h-[60px] flex flex-row items-center gap-4 self-start">
           <Image
