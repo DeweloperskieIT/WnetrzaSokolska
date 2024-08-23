@@ -1,10 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-interface BreathingBackgroundImageProps
+export interface BreathingBackgroundImageProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   img: string;
@@ -14,7 +13,7 @@ interface BreathingBackgroundImageProps
   children?: React.ReactNode;
 }
 
-const BreathingBackgroundImage = ({
+export const BreathingBackgroundImage = ({
   img,
   className,
   interval = 4000,
@@ -71,5 +70,3 @@ const BreathingBackgroundImage = ({
     </div>
   );
 };
-
-export default BreathingBackgroundImage;

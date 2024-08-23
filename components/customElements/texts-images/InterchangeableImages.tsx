@@ -1,17 +1,17 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
-import ImageCarouselFader from "@/components/customElements/carousels/ImageCarouselFader";
-import { ImageAlt, ParagraphWithHeading } from "@/types/customTypes";
+import { ImageAlt } from "@/types/customTypes";
+import { ImageCarouselFader } from "@/components/customElements/carousels";
 
 export type InterchangeableImagesSingleElement = {
-  image: string;
+  image?: string;
   images?: ImageAlt[];
   header: string;
   paragraph: string;
 };
 
-interface InterchangeableImagesProps {
+export interface InterchangeableImagesProps {
   className?: string;
   header?: React.ReactNode;
   elements: InterchangeableImagesSingleElement[];
@@ -19,7 +19,7 @@ interface InterchangeableImagesProps {
   interval?: number;
 }
 
-const InterchangeableImages = ({
+export const InterchangeableImages = ({
   className,
   header,
   elements,
@@ -117,5 +117,3 @@ const InterchangeableImages = ({
     </div>
   );
 };
-
-export default InterchangeableImages;

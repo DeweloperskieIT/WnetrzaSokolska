@@ -2,16 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { forwardRef } from "react";
 
-const details: string[] = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-];
-
-interface DetailsListProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface DetailsListProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   classNameListItems?: string;
   classNameImage?: string;
@@ -19,16 +10,9 @@ interface DetailsListProps extends React.HTMLAttributes<HTMLDivElement> {
   items?: string[];
 }
 
-const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
+export const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
   (
-    {
-      className,
-      classNameListItems,
-      image,
-      classNameImage,
-      items = details,
-      ...rest
-    },
+    { className, classNameListItems, image, classNameImage, items, ...rest },
     ref
   ) => {
     return (
@@ -52,14 +36,15 @@ const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
           />
         )}
         <ul className="list-disc relative">
-          {items.map((item, index) => (
-            <li
-              key={index}
-              className={cn("text-white mb-2", classNameListItems)}
-            >
-              {item}
-            </li>
-          ))}
+          {items &&
+            items.map((item, index) => (
+              <li
+                key={index}
+                className={cn("text-white mb-2", classNameListItems)}
+              >
+                {item}
+              </li>
+            ))}
         </ul>
       </div>
     );
@@ -67,5 +52,3 @@ const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
 );
 
 DetailsList.displayName = "DetailsList";
-
-export default DetailsList;

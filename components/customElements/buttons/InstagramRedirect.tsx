@@ -2,12 +2,12 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { FiInstagram } from "react-icons/fi";
 
-interface InstagramRedirectProps {
+export interface InstagramRedirectProps {
   className?: string;
   link?: string;
 }
 
-const InstagramRedirect = ({
+export const InstagramRedirect = ({
   className,
   link = "https://www.instagram.com/wnetrza.deweloperskie/",
 }: InstagramRedirectProps) => {
@@ -22,5 +22,3 @@ const InstagramRedirect = ({
     </a>
   );
 };
-
-export default InstagramRedirect;

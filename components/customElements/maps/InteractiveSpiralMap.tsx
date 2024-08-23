@@ -1,15 +1,15 @@
 "use client";
-// components/AnimatedMap.js
+
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-type Location = {
+export type SpiralMapLocation = {
   name: string;
   distance: number;
   angle: number;
 };
 
-export const demoLocations: Location[] = [
+const demoLocations: SpiralMapLocation[] = [
   { name: "Place 1", distance: 100, angle: 340 },
   { name: "Place 2", distance: 100, angle: 30 },
   { name: "Place 3", distance: 150, angle: 150 },
@@ -18,12 +18,15 @@ export const demoLocations: Location[] = [
   { name: "Place 6", distance: 200, angle: 300 },
 ];
 
-interface AnimatedMapProps {
+export interface AnimatedMapProps {
   className?: string;
-  locations: Location[];
+  locations?: SpiralMapLocation[];
 }
 
-const AnimatedMap = ({ locations, className }: AnimatedMapProps) => {
+export const InteractiveSpiralMap = ({
+  locations = demoLocations,
+  className,
+}: AnimatedMapProps) => {
   const [visible, setVisible] = useState<boolean>(false);
   const [distances, setDistances] = useState<number[]>([]);
 
@@ -69,21 +72,21 @@ const AnimatedMap = ({ locations, className }: AnimatedMapProps) => {
               </div>
             );
           })}
-          {locations.map((location, index) => (
+          {locations.map(({ angle, distance, name }, index) => (
             <div
-              key={location.name}
+              key={index}
               className="w-5 h-5 bg-red-500 rounded-full transition-all absolute duration-500"
               style={{
                 opacity: visible ? 1 : 0,
                 transform: visible
-                  ? `rotate(${location.angle}deg) translate(${location.distance}px) rotate(-${location.angle}deg)`
+                  ? `rotate(${angle}deg) translate(${distance}px) rotate(-${angle}deg)`
                   : "",
                 left: `calc(50% - 10px)`,
                 top: `calc(50% - 10px)`,
               }}
             >
               <div className="text-dewPrim text-base absolute top-full left-1/2 transform -translate-x-1/2 mt-1 whitespace-nowrap p-2 font-bold bg-websiteBackground2 rounded">
-                {location.name}
+                {name}
               </div>
             </div>
           ))}
@@ -92,5 +95,3 @@ const AnimatedMap = ({ locations, className }: AnimatedMapProps) => {
     </div>
   );
 };
-
-export default AnimatedMap;

@@ -8,7 +8,7 @@ export type InfoBlockItem = {
   paragraph?: string;
 };
 
-interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   info: InfoBlockItem[];
   header?: React.ReactNode;
@@ -17,7 +17,7 @@ interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
   mobileInfo?: Omit<InfoBlockItem, "icon">[];
 }
 
-const InfoBlocks = ({
+export const InfoBlocks = ({
   className,
   info,
   header,
@@ -124,5 +124,3 @@ const InfoBlocks = ({
     </div>
   );
 };
-
-export default InfoBlocks;

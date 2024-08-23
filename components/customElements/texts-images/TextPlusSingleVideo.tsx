@@ -1,8 +1,7 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React from "react";
 
-interface TextPlusSingleVideoProps {
+export interface TextPlusSingleVideoProps {
   className?: string;
   header?: React.ReactNode;
   src: string;
@@ -10,7 +9,7 @@ interface TextPlusSingleVideoProps {
   videoClassName?: string;
 }
 
-const TextPlusSingleVideo = ({
+export const TextPlusSingleVideo = ({
   header,
   className,
   src,
@@ -43,5 +42,3 @@ const TextPlusSingleVideo = ({
     </div>
   );
 };
-
-export default TextPlusSingleVideo;

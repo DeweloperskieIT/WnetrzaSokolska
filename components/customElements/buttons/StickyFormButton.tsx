@@ -5,12 +5,15 @@ import { ContactForm } from "@/components/customElements/forms/ContactForm";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-interface StickyFormButtonProps {
+export interface StickyFormButtonProps {
   className?: string;
   oferta?: string;
 }
 
-const StickyFormButton = ({ className, oferta }: StickyFormButtonProps) => {
+export const StickyFormButton = ({
+  className,
+  oferta,
+}: StickyFormButtonProps) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -70,5 +73,3 @@ const StickyFormButton = ({ className, oferta }: StickyFormButtonProps) => {
     </div>
   );
 };
-
-export default StickyFormButton;

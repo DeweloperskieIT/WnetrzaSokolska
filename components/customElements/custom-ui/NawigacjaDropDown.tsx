@@ -1,3 +1,5 @@
+"use client";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,13 +18,13 @@ export type LinkName = {
   name: string;
 };
 
-interface NawigacjaDropDownProps {
+export interface NawigacjaDropDownProps {
   title?: string;
   links: LinkName[];
   className?: string;
 }
 
-const NawigacjaDropDown = ({
+export const NawigacjaDropDown = ({
   links,
   title,
   className,
@@ -66,5 +68,3 @@ const NawigacjaDropDown = ({
     </DropdownMenu>
   );
 };
-
-export default NawigacjaDropDown;

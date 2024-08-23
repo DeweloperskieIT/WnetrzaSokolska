@@ -27,3 +27,6 @@ export type ImageAlt = {
   img: string;
   alt: string;
 };
+
+export type ImageAltMergeParagraphWithHeading = ImageAlt &
+  Partial<ParagraphWithHeading>;

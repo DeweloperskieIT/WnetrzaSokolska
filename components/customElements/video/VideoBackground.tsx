@@ -2,9 +2,9 @@
 
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-interface VideoBackgroundProps
+export interface VideoBackgroundProps
   extends React.VideoHTMLAttributes<HTMLVideoElement> {
   src: string;
   type?: string;
@@ -13,7 +13,7 @@ interface VideoBackgroundProps
   children?: React.ReactNode;
 }
 
-const VideoBackground = ({
+export const VideoBackground = ({
   src,
   className,
   videoClassName,
@@ -52,5 +52,3 @@ const VideoBackground = ({
     </div>
   );
 };
-
-export default VideoBackground;

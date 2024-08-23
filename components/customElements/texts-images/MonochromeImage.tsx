@@ -4,14 +4,14 @@ import { cn } from "@/lib/utils";
 import Image, { ImageProps } from "next/image";
 import React, { useState } from "react";
 
-interface MonochromeImageProps extends ImageProps {
+export interface MonochromeImageProps extends ImageProps {
   src: string;
   alt: string;
   className?: string;
   oneTime?: boolean;
 }
 
-const MonochromeImage = ({
+export const MonochromeImage = ({
   src,
   alt,
   className,
@@ -35,5 +35,3 @@ const MonochromeImage = ({
     />
   );
 };
-
-export default MonochromeImage;

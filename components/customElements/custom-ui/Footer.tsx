@@ -9,13 +9,13 @@ import {
 } from "@/components/ui/accordion";
 import { ContactForm } from "@/components/customElements/forms/ContactForm";
 
-interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   header?: React.ReactNode;
   oferta: string;
 }
 
-const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
+export const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
   return (
     <div
       className={cn(
@@ -128,7 +128,7 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
           <br />
           Przedmiotem oferty są luksusowe apartamenty pod prestiżowym adresem:
           ul. Sokolska 30 Katowice, posadowione na ostatnich kondygnacjach
-          budynku Sokolska Towers, będące konkurencją dla apartanetów klasy
+          budynku Sokolska Towers, będące konkurencją dla apartamentów klasy
           penthouse na śląskim rynku nieruchomości.
         </span>
         <span className="self-center">© Deweloperskie 2024</span>
@@ -136,5 +136,3 @@ const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
     </div>
   );
 };
-
-export default Footer;

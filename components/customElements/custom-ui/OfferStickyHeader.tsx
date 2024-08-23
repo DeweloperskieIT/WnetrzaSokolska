@@ -1,31 +1,27 @@
-"use client";
-
 import { cn, parseEmailHrefText } from "@/lib/utils";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import { ContactForm } from "@/components/customElements/forms/ContactForm";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import NawigacjaDropDown from "./NawigacjaDropDown";
-import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
-import FacebookRedirect from "../buttons/FacebookRedirect";
-import InstagramRedirect from "../buttons/InstagramRedirect";
-import YoutubeRedirect from "../buttons/YoutubeRedirect";
-import WhatsappContact from "../buttons/WhatsappContact";
-import EmailContact from "../buttons/EmailContact";
-import ContactFormOpener from "../buttons/ContactFormOpener";
+import React from "react";
 
-interface OfferStickyHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
+import { NawigacjaDropDown } from "@/components/customElements/custom-ui";
+import {
+  ContactFormOpener,
+  EmailContact,
+  FacebookRedirect,
+  InstagramRedirect,
+  WhatsappContact,
+  YoutubeRedirect,
+} from "@/components/customElements/buttons";
+
+export interface OfferStickyHeaderProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   oferta: string;
 }
 
-const OfferStickyHeader = ({ className, oferta }: OfferStickyHeaderProps) => {
+export const OfferStickyHeader = ({
+  className,
+  oferta,
+}: OfferStickyHeaderProps) => {
   return (
     <div
       data-testid="Header"
@@ -76,5 +72,3 @@ const OfferStickyHeader = ({ className, oferta }: OfferStickyHeaderProps) => {
     </div>
   );
 };
-
-export default OfferStickyHeader;

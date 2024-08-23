@@ -2,12 +2,12 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { FiFacebook } from "react-icons/fi";
 
-interface FacebookRedirectProps {
+export interface FacebookRedirectProps {
   className?: string;
   link?: string;
 }
 
-const FacebookRedirect = ({
+export const FacebookRedirect = ({
   className,
   link = "https://www.facebook.com/people/Wn%C4%99trza-Deweloperskie/61564077804403",
 }: FacebookRedirectProps) => {
@@ -22,5 +22,3 @@ const FacebookRedirect = ({
     </a>
   );
 };
-
-export default FacebookRedirect;

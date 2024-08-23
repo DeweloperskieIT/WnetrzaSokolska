@@ -2,13 +2,13 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
-interface EmailContactProps {
+export interface EmailContactProps {
   className?: string;
   email?: string;
   params?: string;
 }
 
-const EmailContact = ({
+export const EmailContact = ({
   className,
   email = "wnetrza@deweloperskie.pl",
   params = "subject=Sokolska%20Towers",
@@ -29,5 +29,3 @@ const EmailContact = ({
     </a>
   );
 };
-
-export default EmailContact;

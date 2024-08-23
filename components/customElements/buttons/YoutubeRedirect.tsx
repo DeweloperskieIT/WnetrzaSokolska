@@ -2,12 +2,12 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { FiYoutube } from "react-icons/fi";
 
-interface YoutubeRedirectProps {
+export interface YoutubeRedirectProps {
   className?: string;
   link?: string;
 }
 
-const YoutubeRedirect = ({
+export const YoutubeRedirect = ({
   className,
   link = "https://www.youtube.com/@Deweloperskie",
 }: YoutubeRedirectProps) => {
@@ -22,5 +22,3 @@ const YoutubeRedirect = ({
     </a>
   );
 };
-
-export default YoutubeRedirect;

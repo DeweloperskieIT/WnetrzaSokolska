@@ -2,12 +2,15 @@ import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import React from "react";
 
-interface YoutubeContainerProps {
+export interface YoutubeContainerProps {
   className?: string;
   videoId: string;
 }
 
-const YoutubeContainer = ({ className, videoId }: YoutubeContainerProps) => {
+export const YoutubeContainer = ({
+  className,
+  videoId,
+}: YoutubeContainerProps) => {
   return (
     <div className={cn("w-full h-auto", className)}>
       <YouTubeEmbed
@@ -17,5 +20,3 @@ const YoutubeContainer = ({ className, videoId }: YoutubeContainerProps) => {
     </div>
   );
 };
-
-export default YoutubeContainer;

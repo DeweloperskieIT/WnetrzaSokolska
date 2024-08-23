@@ -10,12 +10,15 @@ import { ContactForm } from "../forms/ContactForm";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-interface ContactFormOpenerProps {
+export interface ContactFormOpenerProps {
   className?: string;
   oferta?: string;
 }
 
-const ContactFormOpener = ({ className, oferta }: ContactFormOpenerProps) => {
+export const ContactFormOpener = ({
+  className,
+  oferta,
+}: ContactFormOpenerProps) => {
   return (
     <Drawer>
       <DrawerTrigger className="header-icon-href">
@@ -43,5 +46,3 @@ const ContactFormOpener = ({ className, oferta }: ContactFormOpenerProps) => {
     </Drawer>
   );
 };
-
-export default ContactFormOpener;

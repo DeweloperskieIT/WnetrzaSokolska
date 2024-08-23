@@ -3,12 +3,15 @@ import { ImageAlt } from "@/types/customTypes";
 import Image from "next/image";
 import React from "react";
 
-interface SpiralPhotos4Types {
+export interface SpiralPhotos4TypesProps {
   className?: string;
   images: ImageAlt[];
 }
 
-const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
+export const SpiralPhotos4 = ({
+  className,
+  images,
+}: SpiralPhotos4TypesProps) => {
   return (
     <div
       className={cn(
@@ -72,5 +75,3 @@ const SpiralPhotos4 = ({ className, images }: SpiralPhotos4Types) => {
     </div>
   );
 };
-
-export default SpiralPhotos4;

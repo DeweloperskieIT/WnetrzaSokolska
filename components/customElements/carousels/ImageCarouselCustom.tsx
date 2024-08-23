@@ -3,9 +3,9 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
 import { Skeleton } from "@/components/ui/skeleton";
+import { PrevNextButtons } from "../buttons";
 
 export type ImageTextItem = {
   image: string;
@@ -13,7 +13,7 @@ export type ImageTextItem = {
   text: string;
 };
 
-interface ImageCarouselCustomProps
+export interface ImageCarouselCustomProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   images: ImageTextItem[];
@@ -22,7 +22,7 @@ interface ImageCarouselCustomProps
   interval?: number;
 }
 
-const ImageCarouselCustom = ({
+export const ImageCarouselCustom = ({
   className,
   images,
   textClassName,
@@ -194,5 +194,3 @@ const ImageCarouselCustom = ({
     </div>
   );
 };
-
-export default ImageCarouselCustom;

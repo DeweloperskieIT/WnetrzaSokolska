@@ -2,12 +2,12 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
-interface WhatsappContactProps {
+export interface WhatsappContactProps {
   className?: string;
   number?: string;
 }
 
-const WhatsappContact = ({
+export const WhatsappContact = ({
   className,
   number = "48666000999",
 }: WhatsappContactProps) => {
@@ -27,5 +27,3 @@ const WhatsappContact = ({
     </a>
   );
 };
-
-export default WhatsappContact;

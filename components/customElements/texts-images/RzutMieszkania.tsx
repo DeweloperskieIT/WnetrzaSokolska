@@ -1,14 +1,13 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui/button";
 
 export type RzutImages = {
   mobile: string;
   desktop: string;
 };
 
-interface RzutMieszkaniaProps {
+export interface RzutMieszkaniaProps {
   className?: string;
   img: RzutImages;
   powierzchnia: string;
@@ -16,7 +15,7 @@ interface RzutMieszkaniaProps {
   header?: React.ReactNode;
 }
 
-const RzutMieszkania = ({
+export const RzutMieszkania = ({
   className,
   img,
   powierzchnia,
@@ -80,5 +79,3 @@ const RzutMieszkania = ({
     </div>
   );
 };
-
-export default RzutMieszkania;

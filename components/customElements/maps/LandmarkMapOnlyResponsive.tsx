@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/popover";
 import { LocationPin } from "@/types/customTypes";
 
-export const demoPins: LocationPin[] = [
+const demoPins: LocationPin[] = [
   {
     pinClass: "dewPrim",
     name: "Lokacja 1",
@@ -30,13 +30,14 @@ export const demoPins: LocationPin[] = [
   },
 ];
 
-interface LandmarkMapInfoProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface LandmarkMapInfoProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   src?: string;
   locations?: LocationPin[];
   originalDimensions?: [number, number];
 }
 
-const LandmarkMapOnlyResponsive = forwardRef<
+export const LandmarkMapOnlyResponsive = forwardRef<
   HTMLDivElement,
   LandmarkMapInfoProps
 >(
@@ -151,5 +152,3 @@ const LandmarkMapOnlyResponsive = forwardRef<
 );
 
 LandmarkMapOnlyResponsive.displayName = "LandmarkMapOnlyResponsive";
-
-export default LandmarkMapOnlyResponsive;

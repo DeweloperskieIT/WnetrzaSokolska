@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-interface SectionHeadingProps {
+export interface SectionHeadingProps {
   className?: string;
   top?: string;
   topClass?: string;
@@ -10,7 +10,7 @@ interface SectionHeadingProps {
   wideParent?: boolean;
 }
 
-const SectionHeading = ({
+export const SectionHeading = ({
   className,
   top,
   topClass,
@@ -43,5 +43,3 @@ const SectionHeading = ({
     </div>
   );
 };
-
-export default SectionHeading;

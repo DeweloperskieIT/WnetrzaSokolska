@@ -48,7 +48,7 @@ const formSchema = z.object({
   }),
 });
 
-interface QuestionContactFormProps {
+export interface QuestionContactFormProps {
   className?: string;
   sendTo?: string;
   disableTitle?: boolean;

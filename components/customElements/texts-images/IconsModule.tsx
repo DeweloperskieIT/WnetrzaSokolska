@@ -7,13 +7,13 @@ export type LandingPageIcon = {
   text: string;
 };
 
-interface IconsModuleProps {
+export interface IconsModuleProps {
   className?: string;
   header?: React.ReactNode;
   icons: LandingPageIcon[];
 }
 
-const IconsModule = ({ className, header, icons }: IconsModuleProps) => {
+export const IconsModule = ({ className, header, icons }: IconsModuleProps) => {
   return (
     <div
       className={cn(
@@ -39,5 +39,3 @@ const IconsModule = ({ className, header, icons }: IconsModuleProps) => {
     </div>
   );
 };
-
-export default IconsModule;

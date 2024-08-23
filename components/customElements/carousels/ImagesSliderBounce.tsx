@@ -3,10 +3,11 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState, forwardRef, ReactNode } from "react";
-import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
 import { ParagraphWithHeading } from "@/types/customTypes";
+import { PrevNextButtons } from "../buttons";
 
-interface ImagesSliderBounceProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ImagesSliderBounceProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   images: string[];
   children?: ReactNode;
   overlay?: React.ReactNode;
@@ -20,7 +21,10 @@ interface ImagesSliderBounceProps extends React.HTMLAttributes<HTMLDivElement> {
   buttonsVisible?: boolean;
 }
 
-const ImagesSliderBounce = forwardRef<HTMLDivElement, ImagesSliderBounceProps>(
+export const ImagesSliderBounce = forwardRef<
+  HTMLDivElement,
+  ImagesSliderBounceProps
+>(
   (
     {
       images,
@@ -219,5 +223,3 @@ const ImagesSliderBounce = forwardRef<HTMLDivElement, ImagesSliderBounceProps>(
 );
 
 ImagesSliderBounce.displayName = "ImagesSliderBounce";
-
-export default ImagesSliderBounce;

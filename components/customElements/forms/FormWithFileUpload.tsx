@@ -48,7 +48,7 @@ const formSchema = z.object({
     .optional(),
 });
 
-export function ContactForm() {
+export function FormWithFileUpload() {
   const [status, setStatus] = useState<"success" | "failure" | null>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
 

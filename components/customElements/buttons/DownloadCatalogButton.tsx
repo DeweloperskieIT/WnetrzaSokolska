@@ -2,13 +2,15 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-interface DownloadCatalogButtonProps {
+export interface DownloadCatalogButtonProps {
   className?: string;
+  catalogue?: string;
 }
 
-const DownloadCatalogButton = ({ className }: DownloadCatalogButtonProps) => {
-  const handleClick = () => {};
-
+export const DownloadCatalogButton = ({
+  className,
+  catalogue = "/documents/Katalog.pdf",
+}: DownloadCatalogButtonProps) => {
   return (
     <Button
       className={cn(
@@ -17,11 +19,9 @@ const DownloadCatalogButton = ({ className }: DownloadCatalogButtonProps) => {
       )}
       asChild
     >
-      <a href="/documents/Katalog.pdf" download="Katalog.pdf">
+      <a href={catalogue} download="Katalog.pdf">
         Pobierz Katalog
       </a>
     </Button>
   );
 };
-
-export default DownloadCatalogButton;

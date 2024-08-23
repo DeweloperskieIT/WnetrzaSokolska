@@ -2,17 +2,17 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import PrevNextButtons from "@/components/customElements/buttons/PrevNextButtons";
-import { ImageAlt, ParagraphWithHeading } from "@/types/customTypes";
+import { ImageAltMergeParagraphWithHeading } from "@/types/customTypes";
 import { cn } from "@/lib/utils";
 import { animationStyle } from "@/types/customTypes";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
+import { PrevNextButtons } from "@/components/customElements/buttons";
 
-interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ImageCarouselFaderProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  images: ImageAlt[];
-  texts?: ParagraphWithHeading[] | null;
-  textPlacement?: "top" | "right" | "bottom" | "left";
+  images: ImageAltMergeParagraphWithHeading[];
+  textPlacement?: "top" | "right" | "bottom" | "left" | undefined;
   textBackground?: string;
   animations?: animationStyle;
   buttonsVisible?: boolean;
@@ -26,10 +26,9 @@ interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
   sizes?: string;
 }
 
-const ImageCarouselFader = ({
+export const ImageCarouselFader = ({
   className,
   images,
-  texts,
   textPlacement,
   textBackground,
   stepsVisible = false,
@@ -199,7 +198,7 @@ const ImageCarouselFader = ({
         handleClickNext={handleClickNext}
       />
 
-      {texts?.length === images.length && (
+      {textPlacement && (
         <div
           className={cn(
             "absolute w-full h-fit z-10 p-8 pb-10 md:p-12 flex justify-start",
@@ -213,19 +212,19 @@ const ImageCarouselFader = ({
             <h1
               className={cn(
                 "carousel-text-heading",
-                texts[currentIndex].headingStyle
+                images[currentIndex].headingStyle
               )}
             >
-              {texts[currentIndex].heading}
+              {images[currentIndex].heading}
             </h1>
-            {texts[currentIndex].paragraph && (
+            {images[currentIndex].paragraph && (
               <p
                 className={cn(
                   "carousel-text-paragraph",
-                  texts[currentIndex].paragraphStyle
+                  images[currentIndex].paragraphStyle
                 )}
               >
-                {texts[currentIndex].paragraph}
+                {images[currentIndex].paragraph}
               </p>
             )}
           </div>
@@ -253,7 +252,3 @@ const ImageCarouselFader = ({
     </div>
   );
 };
-
-ImageCarouselFader.displayName = "ImageCarouselFader";
-
-export default ImageCarouselFader;

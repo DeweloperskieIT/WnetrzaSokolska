@@ -2,11 +2,11 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
-interface accordionChevronTriangleProps {
+export interface accordionChevronTriangleProps {
   className?: string;
 }
 
-const AccordionChevronTriangle = ({
+export const AccordionChevronTriangle = ({
   className,
 }: accordionChevronTriangleProps) => {
   return (
@@ -19,5 +19,3 @@ const AccordionChevronTriangle = ({
     />
   );
 };
-
-export default AccordionChevronTriangle;

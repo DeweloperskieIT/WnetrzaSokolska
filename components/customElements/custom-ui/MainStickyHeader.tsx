@@ -1,24 +1,21 @@
-"use client";
-
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import NawigacjaDropDown from "./NawigacjaDropDown";
-import { FaFacebookF } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io5";
-import { FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
-import { AiFillInstagram } from "react-icons/ai";
-import FacebookRedirect from "../buttons/FacebookRedirect";
-import InstagramRedirect from "../buttons/InstagramRedirect";
-import YoutubeRedirect from "../buttons/YoutubeRedirect";
-import WhatsappContact from "../buttons/WhatsappContact";
-import EmailContact from "../buttons/EmailContact";
+import React from "react";
+import { NawigacjaDropDown } from "./NawigacjaDropDown";
+import {
+  EmailContact,
+  FacebookRedirect,
+  InstagramRedirect,
+  WhatsappContact,
+  YoutubeRedirect,
+} from "../buttons";
 
-interface MainStickyHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface MainStickyHeaderProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-const MainStickyHeader = ({ className }: MainStickyHeaderProps) => {
+export const MainStickyHeader = ({ className }: MainStickyHeaderProps) => {
   return (
     <div
       data-testid="Header"
@@ -60,5 +57,3 @@ const MainStickyHeader = ({ className }: MainStickyHeaderProps) => {
     </div>
   );
 };
-
-export default MainStickyHeader;
