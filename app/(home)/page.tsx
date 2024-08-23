@@ -70,9 +70,8 @@ const Home = () => {
               </span>
               <span className="italic">
                 Luksus, który wzbudza pożądanie
-                <span className="text-accent1">
-                  Luksus, który wzbudza pożądanie
-                </span>
+                <br />
+                <span className="text-accent1">Zobacz ofertę</span>
               </span>
             </div>
           </Link>
