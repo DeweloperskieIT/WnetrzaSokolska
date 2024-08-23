@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export interface WhatsappContactProps {
   className?: string;
@@ -17,13 +17,7 @@ export const WhatsappContact = ({
       href={`whatsapp://send?phone=${number}`}
       className={cn("header-icon-href", className)}
     >
-      <Image
-        src={"/images/mainpage/whatsappwhite.png"}
-        alt="Contact Whatsapp"
-        width={40}
-        height={40}
-        className="header-icon-graphic"
-      />
+      <FaWhatsapp className="header-icon-graphic" />
     </a>
   );
 };

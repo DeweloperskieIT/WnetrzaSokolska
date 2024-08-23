@@ -14,8 +14,6 @@ export const BigCarouselSectionHeading = (
 export const BigCarouselSectionCarouselCustomData: ImageCarouselCustomProps = {
   autoplay: true,
   interval: 4000,
-  className: "aspect-[16/9] max-h-[1024px]",
-  textClassName: "bg-gradient-to-t from-dark/70 to-transparent pt-6 m d:pt-2",
   images: [
     {
       image: "/images/am/carousel-1.png",

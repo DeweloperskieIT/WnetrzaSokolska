@@ -2,24 +2,19 @@ import { ImageCarouselFaderProps } from "@/components/customElements/carousels/I
 import { SectionHeading } from "@/components/customElements/custom-ui";
 
 export const BigCarouselSectionHeading = (
-  <SectionHeading
-    wideParent
-    className=""
-    top="KOMFORT, NA KTÓRY"
-    bottom="ZASŁUGUJESZ"
-  />
+  <SectionHeading wideParent top="KOMFORT, NA KTÓRY" bottom="ZASŁUGUJESZ" />
 );
 
 export const BigCarouselSectionCarouselFaderData: ImageCarouselFaderProps = {
   autoplay: true,
   duration: 6000,
   dotsEnabledOnlyVisible: true,
-  textBackground: "bg-gradient-to-t from-dark via-dark/90 to-dark/0",
+  textBackground: "bg-gradient-to-t from-dark via-dark/75 to-dark/0",
   className: "md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full",
   textPlacement: "bottom",
   images: [
     {
-      heading: "Poznaj klimat zachodów słońca na XV piętrze",
+      heading: "Otul się luksusem",
       img: "/apartament126/s3/01.jpg",
       alt: "image",
     },

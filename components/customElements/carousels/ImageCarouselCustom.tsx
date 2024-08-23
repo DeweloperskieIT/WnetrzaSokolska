@@ -133,7 +133,7 @@ export const ImageCarouselCustom = ({
     <div
       ref={ref}
       className={cn(
-        "relative w-full overflow-clip transition-all duration-500 ",
+        "relative w-full h-svh transition-all duration-500 ",
         className
       )}
       {...rest}

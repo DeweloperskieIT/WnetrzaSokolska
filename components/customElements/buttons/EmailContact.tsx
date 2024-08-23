@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
 
 export interface EmailContactProps {
   className?: string;
@@ -19,13 +19,7 @@ export const EmailContact = ({
       href={`mailto:${email}?${params}`}
       className={cn("header-icon-href", className)}
     >
-      <Image
-        src={"/images/mainpage/talkwhite.png"}
-        alt="Contact Email"
-        width={40}
-        height={40}
-        className="header-icon-graphic"
-      />
+      <AiOutlineMail className="header-icon-graphic" />
     </a>
   );
 };

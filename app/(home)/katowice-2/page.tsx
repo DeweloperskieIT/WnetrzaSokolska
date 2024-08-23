@@ -34,13 +34,17 @@ const page = () => {
       <OfferStickyHeader oferta={FooterSectionData.oferta} />
       <div className="landing-page text-light">
         {/* Video */}
-        <VideoBackground {...VideoSectionData}></VideoBackground>
+        <VideoBackground {...VideoSectionData} />
         {/* First Section - Icons Module */}
-        <IconsModule className="" {...IconsSectionData}></IconsModule>
+        <IconsModule className="" {...IconsSectionData} />
         {/* Second Section - Carousel custom slider */}
         <FullscreenCarouselContainer>
           {BigCarouselSectionHeading}
-          <ImageCarouselCustom {...BigCarouselSectionCarouselCustomData} />
+          <ImageCarouselCustom
+            {...BigCarouselSectionCarouselCustomData}
+            className="aspect-[16/9] max-h-[1024px] h-svh"
+            textClassName="bg-gradient-to-t from-dark/70 to-transparent  pt-6 m d:pt-2"
+          />
         </FullscreenCarouselContainer>
         {/* Third Section - Rzut Mieszkania */}
         <RzutMieszkania {...RzutMieszkaniaComponentData} />

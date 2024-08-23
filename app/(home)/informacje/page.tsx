@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="w-full p-10 max-w-screen-xl flex flex-col gap-10">
+    <div className="w-full p-10 padding-element flex flex-col gap-10 bg-dark max-h-screen overflow-y-auto">
       <div id="klauzula" className="informacje-container-common">
         <span className="informacje-header-common">
           Klauzula informacyjna dotycząca przetwarzania danych osobowych:

@@ -8,6 +8,7 @@ const cspHeader = `
     base-uri 'self' ;
     form-action 'self' ;
     frame-ancestors 'none';
+    frame-src 'self' https://www.youtube-nocookie.com/embed/ https://www.youtube.com/ https://youtu.be/;
     upgrade-insecure-requests;
 `;
 
