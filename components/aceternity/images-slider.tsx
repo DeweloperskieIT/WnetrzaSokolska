@@ -2,8 +2,8 @@
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import PrevNextButtons from "../customElements/buttons/PrevNextButtons";
 import { ParagraphWithHeading } from "@/types/customTypes";
+import { PrevNextButtons } from "../customElements/buttons";
 
 export const ImagesSlider = ({
   images,

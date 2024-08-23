@@ -17,8 +17,6 @@ import {
   LandingPageOffersSectionData,
 } from "@/data/content/Landing";
 import { YouTubeEmbed } from "@next/third-parties/google";
-import Image from "next/image";
-import Link from "next/link";
 
 const Home = () => {
   return (
