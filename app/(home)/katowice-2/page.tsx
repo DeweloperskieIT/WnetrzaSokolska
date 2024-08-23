@@ -42,7 +42,7 @@ const page = () => {
           {BigCarouselSectionHeading}
           <ImageCarouselCustom
             {...BigCarouselSectionCarouselCustomData}
-            className="aspect-[16/9] max-h-[1024px]"
+            className="aspect-[16/9] max-h-[368px] md:max-h-[768px] 2xl:max-h-[1024px]"
             textClassName="bg-gradient-to-t from-dark/70 to-transparent  pt-6 m d:pt-2"
           />
         </FullscreenCarouselContainer>
