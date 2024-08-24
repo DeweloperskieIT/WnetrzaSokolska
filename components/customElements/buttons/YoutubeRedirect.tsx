@@ -9,7 +9,7 @@ export interface YoutubeRedirectProps {
 
 export const YoutubeRedirect = ({
   className,
-  link = "https://www.youtube.com/@Deweloperskie",
+  link = "https://www.youtube.com/@WnetrzaDeweloperskie",
 }: YoutubeRedirectProps) => {
   return (
     <a
