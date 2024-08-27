@@ -33,8 +33,6 @@ export const ImageCarouselCustom = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoplay, setIsAutoplay] = useState(autoplay);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
   const ref = useRef() as React.RefObject<HTMLDivElement>;
 
@@ -42,30 +40,6 @@ export const ImageCarouselCustom = ({
 
   const [leftHover, setLeftHover] = useState(false);
   const [rightHover, setRightHover] = useState(false);
-
-  useEffect(() => {
-    loadImages(images);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const loadImages = (images: ImageTextItem[]) => {
-    setLoading(true);
-    const loadPromises = images.map(({ image, text }) => {
-      return new Promise((resolve, reject) => {
-        const img = new window.Image();
-        img.src = image;
-        img.onload = () => resolve(image);
-        img.onerror = reject;
-      });
-    });
-
-    Promise.all(loadPromises)
-      .then((loadedImages) => {
-        setLoadedImages(loadedImages as string[]);
-        setLoading(false);
-      })
-      .catch((error) => console.error("Failed to load images", error));
-  };
 
   const prevImage = () => {
     setCurrentIndex((prevIndex) =>
@@ -121,14 +95,6 @@ export const ImageCarouselCustom = ({
     }
   };
 
-  if (loading) {
-    return (
-      <div className="w-full h-full">
-        <Skeleton className="relative w-full" />
-      </div>
-    );
-  }
-
   return (
     <div
       ref={ref}
@@ -163,8 +129,8 @@ export const ImageCarouselCustom = ({
               style={{ width: `80%` }}
             >
               <Image
-                src={loadedImages[i]}
-                alt={images[i].alt}
+                src={item.image}
+                alt={item.alt}
                 width={1920}
                 height={768}
                 sizes="90vw"
@@ -190,6 +156,17 @@ export const ImageCarouselCustom = ({
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Preload the next image off-screen */}
+      <div style={{ display: "none" }}>
+        <Image
+          src={images[(currentIndex + 1) % images.length].image}
+          alt={images[(currentIndex + 1) % images.length].alt}
+          width={1920}
+          height={768}
+          priority
+        />
       </div>
     </div>
   );

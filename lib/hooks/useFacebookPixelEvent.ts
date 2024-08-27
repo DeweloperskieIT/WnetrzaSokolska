@@ -20,7 +20,10 @@ const useFacebookPixelEvent = ({
       window.fbq("trackCustom", eventName, eventParams);
       hasFired.current = true;
     } else {
-      console.warn("Facebook Pixel is not initialized.");
+      // debug only, disable for production
+      if (process.env.NODE_ENV === "development") {
+        console.warn("Facebook Pixel is not initialized.");
+      }
     }
   }, [eventName, eventParams, runOnce]);
 

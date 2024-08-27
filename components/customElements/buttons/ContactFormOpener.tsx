@@ -12,6 +12,7 @@ import { ContactForm } from "../forms/ContactForm";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
+import { PiCallBell } from "react-icons/pi";
 
 export interface ContactFormOpenerProps {
   className?: string;
@@ -23,21 +24,15 @@ export const ContactFormOpener = ({
   oferta,
 }: ContactFormOpenerProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
-    eventName: "HeaderContactForm",
-    eventParams: { Text: "Contact Form opened" },
+    eventName: `${oferta} Header Contact Clicked`,
+    eventParams: { oferta },
     runOnce: true, // Will only fire once unless reset
   });
 
   return (
     <Drawer>
       <DrawerTrigger className="header-icon-href" onClick={() => fireEvent()}>
-        <Image
-          src={"/images/ding.png"}
-          alt="Show Contact Form Button"
-          width={40}
-          height={40}
-          className={cn("header-icon-graphic min-h-5 min-w-5", className)}
-        />
+        <PiCallBell className="header-icon-graphic" />
       </DrawerTrigger>
       <DrawerDescription className="hidden">
         Formularz Kontaktowy
