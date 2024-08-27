@@ -38,12 +38,12 @@ const page = () => {
         {/* First Section - Icons Module */}
         <IconsModule className="" {...IconsSectionData} />
         {/* Second Section - Carousel custom slider */}
-        <FullscreenCarouselContainer>
+        <FullscreenCarouselContainer className="">
           {BigCarouselSectionHeading}
           <ImageCarouselCustom
             {...BigCarouselSectionCarouselCustomData}
-            className="aspect-[16/9] max-h-[368px] md:max-h-[768px] 2xl:max-h-[1024px]"
-            textClassName="bg-gradient-to-t from-dark/70 to-transparent  pt-6 m d:pt-2"
+            className=""
+            textClassName="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
           />
         </FullscreenCarouselContainer>
         {/* Third Section - Rzut Mieszkania */}

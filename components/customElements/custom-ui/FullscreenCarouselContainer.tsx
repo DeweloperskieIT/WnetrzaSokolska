@@ -1,12 +1,17 @@
+import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 
 export const FullscreenCarouselContainer = ({
   children,
+  className,
 }: {
   children: ReactNode;
+  className?: string;
 }) => {
   return (
-    <div className="flex flex-col section-header-gap w-full h-fit">
+    <div
+      className={cn("flex flex-col section-header-gap w-full h-fit", className)}
+    >
       {children}
     </div>
   );

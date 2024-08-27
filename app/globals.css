@@ -163,7 +163,7 @@
   }
 
   .carousel-text-heading {
-    @apply text-2xl md:text-4xl text-left text-light  transition-all duration-500;
+    @apply text-xl md:text-4xl text-left text-light  transition-all duration-500;
   }
 
   .carousel-text-paragraph {

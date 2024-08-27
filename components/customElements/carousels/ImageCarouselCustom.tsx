@@ -98,10 +98,7 @@ export const ImageCarouselCustom = ({
   return (
     <div
       ref={ref}
-      className={cn(
-        "relative w-full h-svh transition-all duration-500 ",
-        className
-      )}
+      className={cn("relative w-full transition-all duration-500 ", className)}
       {...rest}
     >
       <PrevNextButtons
@@ -115,7 +112,7 @@ export const ImageCarouselCustom = ({
         handleClickNext={handleClickNext}
         dotsClassName={""}
       />
-      <div className="relative flex justify-center items-center h-full  md:translate-y-0  translate-x-[10%]">
+      <div className="relative flex justify-center items-center h-full md:translate-y-0 min-h-[300px] translate-x-[10%]">
         <div
           className={cn("flex transition-all duration-500 h-full")}
           style={{
@@ -125,7 +122,9 @@ export const ImageCarouselCustom = ({
           {images.map((item, i) => (
             <div
               key={i}
-              className="relative h-full flex-shrink-0 flex flex-col items-center justify-start md:justify-end"
+              className={cn(
+                "relative h-full flex-shrink-0 flex flex-col items-center justify-start md:justify-end aspect-video"
+              )}
               style={{ width: `80%` }}
             >
               <Image
@@ -135,8 +134,8 @@ export const ImageCarouselCustom = ({
                 height={768}
                 sizes="90vw"
                 className={cn(
-                  "object-cover w-[95%] h-full duration-500",
-                  i === currentIndex ? "grayscale-0" : "grayscale",
+                  "object-cover block w-[95%] duration-500",
+                  i === currentIndex ? "grayscale-0 " : "grayscale",
                   i === currentIndex - 1 && leftHover && "grayscale-0 !h-[75%]",
                   i === currentIndex + 1 && rightHover && "grayscale-0 !h-[75%]"
                 )}
@@ -144,15 +143,15 @@ export const ImageCarouselCustom = ({
                   height: i === currentIndex ? "100%" : "50%",
                 }}
               />
-              <p
+              <h1
                 className={cn(
-                  "absolute bottom-0 p-2 w-[95%] font-bold text-center transition-all duration-500 text-light",
+                  "absolute bottom-0 p-4 w-[100%] transition-all duration-500 carousel-text-heading",
                   textClassName,
                   i === currentIndex ? "opacity-100" : "opacity-0"
                 )}
               >
                 {item.text}
-              </p>
+              </h1>
             </div>
           ))}
         </div>
