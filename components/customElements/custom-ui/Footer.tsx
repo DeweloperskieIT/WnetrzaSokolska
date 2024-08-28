@@ -7,15 +7,22 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ContactForm } from "@/components/customElements/forms/ContactForm";
+import { ContactForm } from "@/components/customElements/forms";
 
 export interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   header?: React.ReactNode;
   oferta: string;
+  dict: any;
 }
 
-export const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
+export const Footer = ({
+  header,
+  className,
+  oferta,
+  dict,
+  ...rest
+}: FooterProps) => {
   return (
     <div
       className={cn(
@@ -89,6 +96,7 @@ export const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
         {/* Formularz */}
         <div className="lg:basis-1/2 self-center w-full">
           <ContactForm
+            dict={dict}
             sendTo={process.env.OFFERCONTACTDESTINATION}
             oferta={oferta}
             className="bg-transparent lg:bg-dark"
@@ -122,14 +130,9 @@ export const Footer = ({ header, className, oferta, ...rest }: FooterProps) => {
       </div>
       <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">
         <span className="text-center">
-          Wnętrza Deweloperskie jest marką należącą do: Deweloperskie P.S.A. z
-          siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP: 6343022518,
-          REGON: 525018864 KRS: 0001030478
+          {dict.Footer_Common.paragraph_1}
           <br />
-          Przedmiotem oferty są luksusowe apartamenty pod prestiżowym adresem:
-          ul. Sokolska 30 Katowice, posadowione na ostatnich kondygnacjach
-          budynku Sokolska Towers, będące konkurencją dla apartamentów klasy
-          penthouse na śląskim rynku nieruchomości.
+          {dict.Footer_Common.paragraph_2}
         </span>
         <span className="self-center">© Deweloperskie 2024</span>
       </footer>

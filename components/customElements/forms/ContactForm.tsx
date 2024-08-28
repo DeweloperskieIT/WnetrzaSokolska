@@ -1,5 +1,6 @@
 "use client";
 
+import { useParams } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -26,50 +27,53 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { Textarea } from "@/components/ui/textarea";
-
-const formSchema = z.object({
-  imie: z.string().min(2, {
-    message: "Prosimy o podanie swojego Imienia.",
-  }),
-  telefon: z
-    .string({ message: "Proszę wpisać właściwy numer telefonu" })
-    .optional(),
-  email: z
-    .string({ message: "Proszę podać właściwy adres email." })
-    .email({ message: "Proszę podać właściwy adres email." }),
-  zgodaPrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
-    message: "Wymagane.",
-  }),
-  oświadczeniePrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
-    message: "Wymagane.",
-  }),
-  zgodaPrzetwarzanieEmail: z.boolean().refine((val) => val === true, {
-    message: "Wymagane.",
-  }),
-  zgodaPrzetwarzanieTelefon: z.boolean().refine((val) => val === true, {
-    message: "Wymagane.",
-  }),
-  formMessage: z.string().optional(),
-});
+import { getDictionary, Locales } from "@/app/[locale]/dictionaries";
 
 interface ContactFormProps {
   className?: string;
   sendTo?: string;
   oferta?: string;
+  dict: any;
 }
 
 export function ContactForm({
   className,
   sendTo = "kontakt@deweloperskie.pl",
   oferta = "Kontakt",
+  dict,
 }: ContactFormProps) {
   const [status, setStatus] = useState<"success" | "failure" | null>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
 
+  const formSchema = z.object({
+    imie: z.string().min(2, {
+      message: dict.contact_form.name_error,
+    }),
+    telefon: z
+      .string({ message: dict.contact_form.telephone_error })
+      .optional(),
+    email: z
+      .string({ message: dict.contact_form.email_error })
+      .email({ message: dict.contact_form.email_error }),
+    zgodaPrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
+      message: dict.contact_form.name_error,
+    }),
+    oświadczeniePrzetwarzanieDanych: z.boolean().refine((val) => val === true, {
+      message: dict.contact_form.required_error,
+    }),
+    zgodaPrzetwarzanieEmail: z.boolean().refine((val) => val === true, {
+      message: dict.contact_form.required_error,
+    }),
+    zgodaPrzetwarzanieTelefon: z.boolean().refine((val) => val === true, {
+      message: dict.contact_form.required_error,
+    }),
+    formMessage: z.string().optional(),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      formMessage: `Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji`,
+      formMessage: dict.contact_form.message_placeholder,
       imie: "",
       zgodaPrzetwarzanieDanych: false,
       oświadczeniePrzetwarzanieDanych: false,
@@ -138,12 +142,16 @@ export function ContactForm({
     >
       <div className="hidden md:block">
         <span className="md:text-light font-bold text-2xl pb-6">
-          Formularz Kontaktowy
+          {dict.contact_form.title}
         </span>
       </div>
       <div className="md:hidden flex flex-col gap-0 items-start justify-start w-full pb-2 md:pb-6">
-        <span className="text-accent1 font-bold text-2xl">FORMULARZ</span>
-        <span className="text-light font-light text-3xl">KONTAKTOWY</span>
+        <span className="text-accent1 font-bold text-2xl">
+          {dict.contact_form.title_top}
+        </span>
+        <span className="text-light font-light text-3xl">
+          {dict.contact_form.title_bottom}
+        </span>
       </div>
 
       <Form {...form}>
@@ -156,7 +164,9 @@ export function ContactForm({
             name="imie"
             render={({ field }) => (
               <FormItem className="!mt-0">
-                <FormLabel className="text-light">Imię*</FormLabel>
+                <FormLabel className="text-light">
+                  {dict.contact_form.name}*
+                </FormLabel>
                 <FormControl>
                   <Input type="text" placeholder="" {...field} />
                 </FormControl>
@@ -170,7 +180,9 @@ export function ContactForm({
             name="email"
             render={({ field }) => (
               <FormItem className="!mt-0">
-                <FormLabel className="text-light">Adres email*</FormLabel>
+                <FormLabel className="text-light">
+                  {dict.contact_form.email}*
+                </FormLabel>
                 <FormControl>
                   <Input type="email" placeholder="" {...field} />
                 </FormControl>
@@ -184,7 +196,9 @@ export function ContactForm({
             name="telefon"
             render={({ field }) => (
               <FormItem className="!mt-0">
-                <FormLabel className="text-light">Numer telefonu</FormLabel>
+                <FormLabel className="text-light">
+                  {dict.contact_form.telephone}
+                </FormLabel>
                 <FormControl>
                   <Input
                     type="tel"
@@ -212,10 +226,12 @@ export function ContactForm({
             name="formMessage"
             render={({ field }) => (
               <FormItem className="!mt-0">
-                <FormLabel className="text-light">Wiadomość</FormLabel>
+                <FormLabel className="text-light">
+                  {dict.contact_form.message}
+                </FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji"
+                    placeholder={dict.contact_form.message_placeholder}
                     className="resize-none"
                     {...field}
                   />
@@ -233,33 +249,31 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
-                    aria-label="Zaznacz zgodę na przetwarzanie danych"
+                    aria-label={dict.contact_form.accept_condition_data}
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
                 </FormControl>
                 <div className="flex flex-col gap-2">
                   <FormLabel className="text-light text-base">
-                    Zgoda na przetwarzanie danych*
+                    {dict.contact_form.accept_condition_data}*
                   </FormLabel>
 
                   <div className="form-toggle-description">
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
                         <AccordionContent>
-                          Wyrażam zgodę na przetwarzanie podanych przeze mnie
-                          danych osobowych przez Deweloperskie Prosta Spółka
-                          Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C,
-                          40-265 Katowice w celu nawiązania kontaktu oraz
-                          przedstawienia oferty naszych usług.
+                          {dict.contact_form.accept_condition_data_paragraph}
                         </AccordionContent>
                         <AccordionTrigger
                           className="text-sm"
                           openStateChildren={
-                            <span>Ukryj pełną treść zgody</span>
+                            <span>
+                              {dict.contact_form.hide_condition_button}
+                            </span>
                           }
                         >
-                          Zobacz pełną treść zgody
+                          {dict.contact_form.show_condition_button}
                         </AccordionTrigger>
                       </AccordionItem>
                     </Accordion>
@@ -278,31 +292,31 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
-                    aria-label="Zaznacz zapoznanie się z zasadami przetwarzania danych osobowych"
+                    aria-label={dict.contact_form.accept_condition_data_read_01}
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
                 </FormControl>
                 <div className="flex flex-col gap-2">
                   <FormLabel className="text-light text-base">
-                    Oświadczam, że zapoznałam/em się z zasadami przetwarzania
-                    moich danych osobowych zawartych w
+                    {dict.contact_form.accept_condition_data_read_01}
                     <Link
                       className="text-accent1 font-bold"
                       href={"/informacje#klauzula"}
                       target="_blank"
                     >
-                      &nbsp;klauzuli informacyjnej&nbsp;
+                      &nbsp;{dict.contact_form.information_clause}
+                      &nbsp;
                     </Link>
-                    oraz
+                    {dict.contact_form.accept_condition_data_read_02}
                     <Link
                       className="text-accent1 font-bold"
                       href={"/informacje#polityka"}
                       target="_blank"
                     >
-                      &nbsp;polityce prywatności&nbsp;
+                      &nbsp;{dict.contact_form.privacy_clause}&nbsp;
                     </Link>
-                    serwisu internetowego.*
+                    {dict.contact_form.accept_condition_data_read_03}*
                   </FormLabel>
                   <FormMessage />
                 </div>
@@ -318,46 +332,39 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
-                    aria-label="Zaznacz zgodę na kontakt email"
+                    aria-label={dict.contact_form.accept_condition_email}
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
                 </FormControl>
                 <div className="flex flex-col gap-2">
                   <FormLabel className="text-light text-base">
-                    Zgoda na kontakt e-mail*
+                    {dict.contact_form.accept_condition_email}*
                   </FormLabel>
 
                   <div className="form-toggle-description">
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
                         <AccordionContent>
-                          Wyrażam zgodę na przetwarzanie moich danych osobowych
-                          w postaci adresu e-mail przez Deweloperskie Prosta
-                          Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska
-                          14C, 40-265 Katowice, w celu otrzymywania drogą
-                          elektroniczną na adres e-mail informacji handlowych
-                          (tj. ofert, informacji o produktach i usługach),
-                          dotyczących produktów i usług oferowanych przez
-                          Deweloperskie Prosta Spółka Akcyjna z siedzibą w
-                          Katowicach, ul. Murckowska 14C, 40-265 Katowice oraz
-                          przez naszych partnerów, z których usług korzystamy w
-                          zakresie obrotu nieruchomościami:
+                          {dict.contact_form.accept_condition_email_paragraph}
                           <Link
                             className="text-accent1 font-bold"
                             href={"/informacje#podmioty"}
                             target="_blank"
                           >
-                            &nbsp;Lista podmiotów&nbsp;
+                            &nbsp;{dict.contact_form.list_of_entities}
+                            &nbsp;
                           </Link>
                         </AccordionContent>
                         <AccordionTrigger
                           className="text-sm"
                           openStateChildren={
-                            <span>Ukryj pełną treść zgody</span>
+                            <span>
+                              {dict.contact_form.hide_condition_button}
+                            </span>
                           }
                         >
-                          Zobacz pełną treść zgody
+                          {dict.contact_form.show_condition_button}
                         </AccordionTrigger>
                       </AccordionItem>
                     </Accordion>
@@ -375,46 +382,39 @@ export function ContactForm({
               <FormItem className="form-toggle-container">
                 <FormControl className="form-toggle-switch">
                   <Switch
-                    aria-label="Zaznacz zgodę na kontakt telefoniczny"
+                    aria-label={dict.contact_form.accept_condition_phone}
                     checked={field.value}
                     onCheckedChange={field.onChange}
                   />
                 </FormControl>
                 <div className="flex flex-col gap-2">
                   <FormLabel className="text-light text-base">
-                    Zgoda na kontakt telefoniczny*
+                    {dict.contact_form.accept_condition_phone}
                   </FormLabel>
 
                   <div className="form-toggle-description">
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
                         <AccordionContent>
-                          Wyrażam zgodę na przetwarzanie moich danych osobowych
-                          w postaci adresu numeru telefonu przez Deweloperskie
-                          Prosta Spółka Akcyjna z siedzibą w Katowicach, ul.
-                          Murckowska 14C, 40-265 Katowice, w celu otrzymywania
-                          drogą elektroniczną na adres numeru telefonu
-                          informacji handlowych (tj. ofert, informacji o
-                          produktach i usługach), dotyczących produktów i usług
-                          oferowanych przez Deweloperskie Prosta Spółka Akcyjna
-                          z siedzibą w Katowicach, ul. Murckowska 14C, 40-265
-                          Katowice oraz przez naszych partnerów, z których usług
-                          korzystamy w zakresie obrotu nieruchomościami:
+                          {dict.contact_form.accept_condition_phone_paragraph}
                           <Link
                             className="text-accent1 font-bold"
                             href={"/informacje#podmioty"}
                             target="_blank"
                           >
-                            &nbsp;Lista podmiotów&nbsp;
+                            &nbsp;{dict.contact_form.list_of_entities}
+                            &nbsp;
                           </Link>
                         </AccordionContent>
                         <AccordionTrigger
                           className="text-sm"
                           openStateChildren={
-                            <span>Ukryj pełną treść zgody</span>
+                            <span>
+                              {dict.contact_form.hide_condition_button}
+                            </span>
                           }
                         >
-                          Zobacz pełną treść zgody
+                          {dict.contact_form.show_condition_button}
                         </AccordionTrigger>
                       </AccordionItem>
                     </Accordion>
@@ -427,17 +427,17 @@ export function ContactForm({
 
           <div className="flex items-end lg:items-center flex-col-reverse lg:flex-row justify-between gap-2">
             <p className="text-light text-xs w-full">
-              Pola oznaczone * są wymagane.
+              {dict.contact_form.required_fields}
             </p>
 
             <div className="flex flex-row items-center justify-end gap-6">
               {status === "success" ? (
                 <p className="text-green-500 text-sm">
-                  Formularz został pomyślnie wysłany
+                  {dict.contact_form.form_sent_success}
                 </p>
               ) : status === "failure" ? (
                 <p className="text-red-500 text-sm">
-                  Błąd przy wysyłaniu formularza
+                  {dict.contact_form.form_sent_error}
                 </p>
               ) : null}
               <Button
@@ -454,7 +454,7 @@ export function ContactForm({
                   aria-label="Loading Spinner"
                   data-testid="loader"
                 />
-                Wyślij
+                {dict.contact_form.form_send}
               </Button>
             </div>
           </div>

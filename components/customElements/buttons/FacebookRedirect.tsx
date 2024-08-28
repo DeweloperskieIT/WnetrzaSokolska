@@ -8,11 +8,13 @@ import { FiFacebook } from "react-icons/fi";
 export interface FacebookRedirectProps {
   className?: string;
   link?: string;
+  fill?: string;
 }
 
 export const FacebookRedirect = ({
   className,
   link = "https://www.facebook.com/people/Wn%C4%99trza-Deweloperskie/61564077804403",
+  fill,
 }: FacebookRedirectProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Facebook redirect clicked`,
@@ -28,7 +30,7 @@ export const FacebookRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiFacebook className="header-icon-graphic" />
+      <FiFacebook className={cn("header-icon-graphic", fill)} />
     </a>
   );
 };

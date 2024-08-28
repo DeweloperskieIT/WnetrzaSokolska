@@ -8,11 +8,13 @@ import { FiInstagram } from "react-icons/fi";
 export interface InstagramRedirectProps {
   className?: string;
   link?: string;
+  fill?: string;
 }
 
 export const InstagramRedirect = ({
   className,
   link = "https://www.instagram.com/wnetrza.deweloperskie/",
+  fill,
 }: InstagramRedirectProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Instagram redirect clicked`,
@@ -27,7 +29,7 @@ export const InstagramRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiInstagram className="header-icon-graphic" />
+      <FiInstagram className={cn("header-icon-graphic", fill)} />
     </a>
   );
 };

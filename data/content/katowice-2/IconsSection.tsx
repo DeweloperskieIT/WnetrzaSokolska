@@ -13,19 +13,19 @@ export const IconsSectionData: IconsModuleProps = {
   ),
   icons: [
     {
-      icon: "/apartament126/s2/1.webp",
+      icon: "/katowice-1/s2/1.webp",
       text: "Najwyżej położony balkon w budynku",
     },
     {
-      icon: "/apartament126/s2/2.webp",
+      icon: "/katowice-1/s2/2.webp",
       text: "Apartamenty w topowej lokalizacji",
     },
     {
-      icon: "/apartament126/s2/3.webp",
+      icon: "/katowice-1/s2/3.webp",
       text: "Światowej klasy architektura",
     },
     {
-      icon: "/apartament126/s2/4.webp",
+      icon: "/katowice-1/s2/4.webp",
       text: "Indywidualny opiekun transakcji",
     },
     { icon: "/images/BedIcon.png", text: "Zamieszkaj już jutro" },

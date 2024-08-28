@@ -8,11 +8,13 @@ import { FiYoutube } from "react-icons/fi";
 export interface YoutubeRedirectProps {
   className?: string;
   link?: string;
+  fill?: string;
 }
 
 export const YoutubeRedirect = ({
   className,
   link = "https://www.youtube.com/@WnetrzaDeweloperskie",
+  fill,
 }: YoutubeRedirectProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Youtube redirect clicked`,
@@ -27,7 +29,7 @@ export const YoutubeRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiYoutube className="header-icon-graphic" />
+      <FiYoutube className={cn("header-icon-graphic", fill)} />
     </a>
   );
 };

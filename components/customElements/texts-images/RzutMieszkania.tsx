@@ -1,3 +1,4 @@
+import { Locales } from "@/app/[locale]/dictionaries";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
@@ -13,6 +14,8 @@ export interface RzutMieszkaniaProps {
   powierzchnia: string;
   cena: string;
   header?: React.ReactNode;
+  locale?: Locales;
+  customAccent?: string;
 }
 
 export const RzutMieszkania = ({
@@ -21,6 +24,8 @@ export const RzutMieszkania = ({
   powierzchnia,
   cena,
   header,
+  locale = "pl",
+  customAccent = "text-accent1",
 }: RzutMieszkaniaProps) => {
   return (
     <div
@@ -53,13 +58,19 @@ export const RzutMieszkania = ({
         />
         <div className="md:absolute md:left-0 md:bottom-0 relative text-2xl text-light flex flex-col gap-6 md:gap-5">
           <div className="flex flex-col md:gap-2">
-            <span className="text-accent1 text-xl font-bold">POWIERZCHNIA</span>
+            <span className={cn("text-xl font-bold", customAccent)}>
+              {locale === "pl" && "POWIERZCHNIA"}
+              {locale === "en" && "AREA"}
+            </span>
             <span className="text-light font-light text-3xl md:text-3xl">
               {powierzchnia} m<sup>2</sup>
             </span>
           </div>
           <div className="flex flex-col md:gap-2">
-            <span className="text-accent1 text-xl font-bold">CENA</span>
+            <span className={cn(" text-xl font-bold", customAccent)}>
+              {locale === "pl" && "CENA"}
+              {locale === "en" && "PRICE"}
+            </span>
             <span className="text-light font-light text-3xl md:text-3xl">
               {cena}
             </span>

@@ -10,6 +10,10 @@ export type InfoBlockItem = {
 
 export interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
+  backgroundClass?: string;
+  headerClass?: string;
+  paragraphClass?: string;
+  itemSpacing?: string;
   info: InfoBlockItem[];
   header?: React.ReactNode;
   mobileHeader?: React.ReactNode;
@@ -19,6 +23,10 @@ export interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export const InfoBlocks = ({
   className,
+  backgroundClass,
+  headerClass,
+  paragraphClass,
+  itemSpacing,
   info,
   header,
   mobileHeader,
@@ -55,7 +63,8 @@ export const InfoBlocks = ({
       <div
         className={cn(
           "flex-center flex-col gap-10",
-          alternativeMobile && "gap-1 md:gap-10"
+          alternativeMobile && "gap-1 md:gap-10",
+          itemSpacing
         )}
       >
         {info.map((e, i) => (
@@ -63,7 +72,8 @@ export const InfoBlocks = ({
             key={i}
             className={cn(
               "flex items-center flex-col md:flex-row gap-6 md:gap-10 p-10 bg-dark w-full",
-              alternativeMobile && "px-0 md:p-10"
+              alternativeMobile && "px-0 md:p-10",
+              backgroundClass
             )}
           >
             {e.icon && (
@@ -80,14 +90,15 @@ export const InfoBlocks = ({
             )}
             <div
               className={cn(
-                "gap-4 flex flex-col text-light",
+                "gap-4 flex flex-col text-light w-full",
                 alternativeMobile && "padding-element md:p-0"
               )}
             >
               <span
                 className={cn(
-                  "hidden text-2xl md:text-4xl font-bold",
-                  alternativeMobile && "block md:hidden"
+                  "hidden text-2xl md:text-4xl font-bold w-full",
+                  alternativeMobile && "block md:hidden",
+                  headerClass
                 )}
               >
                 {mobileInfo && mobileInfo[i].header}
@@ -95,7 +106,8 @@ export const InfoBlocks = ({
               <span
                 className={cn(
                   "hidden text-lg md:text-xl font-light px-8",
-                  alternativeMobile && "block md:hidden"
+                  alternativeMobile && "block md:hidden",
+                  paragraphClass
                 )}
               >
                 {mobileInfo && mobileInfo[i].paragraph}
@@ -103,16 +115,18 @@ export const InfoBlocks = ({
 
               <span
                 className={cn(
-                  "text-2xl md:text-4xl font-bold",
-                  alternativeMobile && "hidden md:block"
+                  "text-2xl md:text-4xl font-bold w-full",
+                  alternativeMobile && "hidden md:block",
+                  headerClass
                 )}
               >
                 {e.header}
               </span>
               <span
                 className={cn(
-                  "text-lg md:text-xl font-light",
-                  alternativeMobile && "hidden md:block"
+                  "text-lg md:text-xl font-light w-full",
+                  alternativeMobile && "hidden md:block",
+                  paragraphClass
                 )}
               >
                 {e.paragraph}

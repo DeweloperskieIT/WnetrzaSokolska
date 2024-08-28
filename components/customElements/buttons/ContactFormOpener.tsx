@@ -17,11 +17,15 @@ import { PiCallBell } from "react-icons/pi";
 export interface ContactFormOpenerProps {
   className?: string;
   oferta?: string;
+  dict: any;
+  fill?: string;
 }
 
 export const ContactFormOpener = ({
   className,
   oferta,
+  dict,
+  fill,
 }: ContactFormOpenerProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `${oferta} Header Contact Clicked`,
@@ -32,7 +36,7 @@ export const ContactFormOpener = ({
   return (
     <Drawer>
       <DrawerTrigger className="header-icon-href" onClick={() => fireEvent()}>
-        <PiCallBell className="header-icon-graphic" />
+        <PiCallBell className={cn("header-icon-graphic", fill)} />
       </DrawerTrigger>
       <DrawerDescription className="hidden">
         Formularz Kontaktowy
@@ -41,6 +45,7 @@ export const ContactFormOpener = ({
       <DrawerContent className="flex-center bg-dark rounded-none max-h-svh">
         <div className="max-h-[600px]  md:max-h-svh overflow-auto">
           <ContactForm
+            dict={dict}
             sendTo={process.env.OFFERCONTACTDESTINATION}
             oferta={oferta}
             className="pt-6"

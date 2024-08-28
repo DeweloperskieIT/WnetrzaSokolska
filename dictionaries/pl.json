@@ -1,0 +1,1043 @@
+{
+  "contact_form": {
+    "title": "Formularz Kontaktowy",
+    "title_top": "FORMULARZ",
+    "title_bottom": "KONTAKTOWY",
+    "name": "Imię",
+    "name_error": "Prosimy o podanie swojego Imienia.",
+    "email": "Adres email",
+    "email_error": "Proszę podać właściwy adres email.",
+    "telephone": "Telefon",
+    "telephone_error": "Proszę wpisać właściwy numer telefonu.",
+    "message": "Wiadomość",
+    "required_error": "Wymagane.",
+    "message_placeholder": "Umów mnie na prezentacje z moim indywidualnym opiekunem transakcji",
+    "show_condition_button": "Zobacz pełną treść zgody",
+    "hide_condition_button": "Ukryj pełną treść zgody",
+    "accept_condition_data": "Zgoda na przetwarzanie danych",
+    "accept_condition_data_paragraph": "Wyrażam zgodę na przetwarzanie podanych przeze mnie danych osobowych przez Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C, 40-265 Katowice w celu nawiązania kontaktu oraz przedstawienia oferty naszych usług.",
+    "accept_condition_data_read_01": "Oświadczam, że zapoznałam/em się z zasadami przetwarzania moich danych osobowych zawartych w",
+    "accept_condition_data_read_02": "oraz",
+    "accept_condition_data_read_03": "serwisu internetowego.",
+    "information_clause": "klauzuli informacyjnej",
+    "privacy_clause": "polityce prywatności",
+    "list_of_entities": "Lista podmiotów",
+    "accept_condition_email": "Zgoda na kontakt e-mail",
+    "accept_condition_email_paragraph": "Wyrażam zgodę na przetwarzanie moich danych osobowych w postaci adresu e-mail przez Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C, 40-265 Katowice, w celu otrzymywania drogą elektroniczną na adres e-mail informacji handlowych (tj. ofert, informacji o produktach i usługach), dotyczących produktów i usług oferowanych przez Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C, 40-265 Katowice oraz przez naszych partnerów, z których usług korzystamy w zakresie obrotu nieruchomościami:",
+    "accept_condition_phone": "Zgoda na kontakt telefoniczny",
+    "accept_condition_phone_paragraph": "Wyrażam zgodę na przetwarzanie moich danych osobowych w postaci adresu numeru telefonu przez Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C, 40-265 Katowice, w celu otrzymywania drogą elektroniczną na adres numeru telefonu informacji handlowych (tj. ofert, informacji o produktach i usługach), dotyczących produktów i usług oferowanych przez Deweloperskie Prosta Spółka Akcyjna z siedzibą w Katowicach, ul. Murckowska 14C, 40-265 Katowice oraz przez naszych partnerów, z których usług korzystamy w zakresie obrotu nieruchomościami:",
+    "required_fields": "Pola oznaczone * są wymagane.",
+    "form_sent_success": "Formularz został pomyślnie wysłany",
+    "form_sent_error": "Błąd przy wysyłaniu formularza",
+    "form_send": "Wyślij"
+  },
+  "Header": {
+    "offer_title": "APARTAMENTY",
+    "landing_page": "Strona główna",
+    "offer_1": "Apartament 1",
+    "offer_2": "Apartament 2",
+    "offer_3": "Apartament 3",
+    "offer_4": "Apartament 4"
+  },
+  "Landing_Page": {
+    "breathing_background_image_01": {
+      "header": "NASZĄ PASJĄ JEST JAKOŚĆ",
+      "paragraph": "Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić wieczór przyrządzając ją samodzielnie, albo zaufać profesjonalistom i delektować się posiłkiem serwowanym przez szefa kuchni."
+    },
+    "icons_module_01": {
+      "icons": [
+        {
+          "icon": "/images/mainpage/PolemanIcon.png",
+          "text": "Innowacyjny model finansowania, bez wkładu własnego"
+        },
+        {
+          "icon": "/images/mainpage/DangleKeysIcon.png",
+          "text": "Indywidualny  opiekun transakcji"
+        },
+        {
+          "icon": "/images/mainpage/BuildingIcon.png",
+          "text": "Ekipa remontowa do indywidualnych aranżacji"
+        },
+        {
+          "icon": "/images/mainpage/BedIcon.png",
+          "text": "Zakup na fakturę, brak prowizji i PCC"
+        }
+      ]
+    },
+    "offer_blocks": {
+      "see_offer": "Kliknij aby zobaczyć ofertę",
+      "premieres": "premiera",
+      "offer_katowice_1": {
+        "paragraph_01": "Najwyżej usytuowany apartament z wygodną loggią dla osób, które cenią sobie wyjątkowość.",
+        "paragraph_02": "Luksus, który Cię wyróżni"
+      },
+      "offer_katowice_2": {
+        "paragraph_01": "Apartament zaaranżowany z myślą o osobach, które pragną korzystać z potencjału Katowic na swoich zasadach.",
+        "paragraph_02": "Luksus, który wzbudza pożądanie"
+      },
+      "offer_katowice_3": {
+        "paragraph_01": "Twój mały dom na XIV piętrze, z przestronnym salonem z kuchnią, gabinetem, sypialnią, pralnią, garderobą oraz pojemną komórką lokatorską na piętrze.",
+        "paragraph_02": "Twoja oaza spokoju w sercu miasta"
+      },
+      "offer_katowice_4": {
+        "paragraph_01": "Nowoczesny apartament dla osób, które chcą mieć wszystko w zasięgu ręki.",
+        "paragraph_02": "Przyjmij nową perspektywę"
+      }
+    },
+    "info_blocks_01": {
+      "header_top": "DOPRACOWANE",
+      "header_bottom": "W KAŻDYM CALU",
+      "info_01": {
+        "header": "PONADCZASOWE INWESTYCJE",
+        "paragraph": "Oferujemy naszym Klientom gotowe do zamieszkania apartamenty segmentu premium w ścisłym centrum Katowic, wyróżniające się ponadczasowym i uniwersalnym designem, połączonym z najnowszymi technologiami."
+      },
+      "info_02": {
+        "header": "LUKSUS NA WYCIĄGNIĘCIE RĘKI",
+        "paragraph": "Wizja marki Wnętrza Deweloperskie zakłada powielanie bardzo dopracowanych elementów aranżacyjnych w szeregu podobnych mieszkań, co pozwala zachować konkurencyjność cenową."
+      },
+      "info_03": {
+        "header": "JAKOŚĆ, ZA KTÓRĄ STOI RĘKOJMIA",
+        "paragraph": "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame oraz instalacja elektryczna pod stację ładowania samochodów."
+      }
+    },
+    "youtube_shorts_01": {
+      "header_top": "PONADCZASOWY",
+      "header_bottom": "BUDYNEK"
+    },
+    "Footer_1": {
+      "oferta": "Kontakt",
+      "header_top": "UMÓW SIĘ",
+      "header_bottom": "NA PREZENTACJĘ"
+    }
+  },
+  "Katowice_01": {
+    "icons_module_01": {
+      "header_top": "DOŁĄCZ DO EKSKLUZYWNEGO",
+      "header_bottom": "GRONA WŁAŚCICIELI SOKOLSKA TOWERS",
+      "icons": [
+        {
+          "icon": "/katowice-1/s2/1.webp",
+          "text": "Najwyżej położony balkon w budynku"
+        },
+        {
+          "icon": "/katowice-1/s2/2.webp",
+          "text": "Apartamenty w topowej lokalizacji"
+        },
+        {
+          "icon": "/katowice-1/s2/3.webp",
+          "text": "Światowej klasy architektura"
+        },
+        {
+          "icon": "/katowice-1/s2/4.webp",
+          "text": "Indywidualny opiekun transakcji"
+        },
+        {
+          "icon": "/images/BedIcon.png",
+          "text": "Zamieszkaj już jutro"
+        }
+      ]
+    },
+    "image_carousel_fader_01": {
+      "header_top": "KOMFORT, NA KTÓRY",
+      "header_bottom": "ZASŁUGUJESZ",
+      "images": [
+        {
+          "heading": "Otul się luksusem",
+          "img": "/katowice-1/s3/01.jpg",
+          "alt": "Salon w apartamencie wieczorem"
+        },
+        {
+          "heading": "Poczuj się jak u siebie w domu",
+          "img": "/katowice-1/s3/02.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia"
+        },
+        {
+          "heading": "Poznaj swój nowy duży pokój",
+          "img": "/katowice-1/s3/03.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na okna"
+        },
+        {
+          "heading": "Wykorzystaj potencjał minimalistycznej kuchni",
+          "img": "/katowice-1/s3/04.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na kuchnię"
+        },
+        {
+          "heading": "Zasypiaj wśród chmur, na XV piętrze",
+          "img": "/katowice-1/s3/05.jpg",
+          "alt": "Sypialnia w apartamencie w ciągu dnia"
+        },
+        {
+          "heading": "Korzystaj z potencjału układu funkcjonalnego",
+          "img": "/katowice-1/s3/06.jpg",
+          "alt": "Korytarz w apartamencie z wejściem do sypialni"
+        },
+        {
+          "heading": "Długa kąpiel wieczorem…",
+          "img": "/katowice-1/s3/07.jpg",
+          "alt": "W pełni wykończona łazienka z wanną"
+        },
+        {
+          "heading": "… szybki prysznic rano",
+          "img": "/katowice-1/s3/08.jpg",
+          "alt": "W pełni wykończona łazienka z prysznicem"
+        },
+        {
+          "heading": "Wypełnij swoją garderobę",
+          "img": "/katowice-1/s3/09.jpg",
+          "alt": "Przestrzenna garderoba"
+        },
+        {
+          "heading": "Pokochaj swój mały pokój",
+          "img": "/katowice-1/s3/10.jpg",
+          "alt": "Pokój funkcjonalny w dzień"
+        },
+        {
+          "heading": "Otól się luksusem",
+          "img": "/katowice-1/s3/11.jpg",
+          "alt": "Kuchnia i korytarz przy zachodzie słońca"
+        },
+        {
+          "heading": "Zamieszkaj już jutro",
+          "img": "/katowice-1/s3/12.jpg",
+          "alt": "Salon przy zachodzie słońca"
+        },
+        {
+          "heading": "Poznaj klimat zachodów słońca na XV piętrze",
+          "img": "/katowice-1/s3/13.jpg",
+          "alt": "Widok z okna apartamentu"
+        },
+        {
+          "heading": "Zamieszkaj już jutro w wymarzonym apartamencie",
+          "img": "/katowice-1/s3/14.jpg",
+          "alt": "Wysepka w salonie zm iejscem siedzącym wieczorem"
+        },
+        {
+          "heading": "Postaw na luksus, który stawia Cię w centrum",
+          "img": "/katowice-1/s3/15.jpg",
+          "alt": "Budynek sokolska towers przy wschodzie słońca"
+        }
+      ]
+    },
+    "rzut_mieszkania_01": {
+      "header_top": "POZNAJ SWÓJ NOWY",
+      "header_bottom": "APARTAMENT",
+      "price": "399 000 EUR",
+      "area": "75,20",
+      "images": {
+        "mobile": "/katowice-1/s4/rzutm.webp",
+        "desktop": "/katowice-1/s4/rzutd.webp"
+      }
+    },
+    "spiral_photos_01": {
+      "images": [
+        {
+          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
+          "alt": "Wpólny taras z ogrodem"
+        },
+        {
+          "img": "/katowice-1/s5/2-portiernia.jpg",
+          "alt": "Portiernia na wejściu do budynku"
+        },
+        {
+          "img": "/katowice-1/s5/3-wspolna-strefa-spa.jpg",
+          "alt": "Wspólna strefa SPA z sauną"
+        },
+        {
+          "img": "/katowice-1/s5/4-wspolna-silownia.jpg",
+          "alt": "Wspólna siłownia"
+        }
+      ]
+    },
+    "interchangeable_images_01": {
+      "header_top": "UNIKATOWY",
+      "header_bottom": "DESIGN",
+
+      "elements": [
+        {
+          "header": "APARTAMENT XXI WIEKU",
+          "paragraph": "Podążaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
+              "alt": "Wnętrze telewizor oświetlenie czerwone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
+              "alt": "Wnętrze telewizor oświetlenie niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
+              "alt": "Wnętrze telewizor oświetlenie zielone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia szerokie ujęcie"
+            }
+          ]
+        },
+        {
+          "header": "SPEKTAKULARNE OŚWIETLENIE",
+          "paragraph": "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
+              "alt": "Oświetlenie salonu o poranku"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
+              "alt": "Oświetlenie salonu wieczorem"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
+              "alt": "Oświetlenie salonu wieczorem niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne na kanape"
+            }
+          ]
+        },
+        {
+          "header": "SPÓJNE WNĘTRZE",
+          "paragraph": "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
+              "alt": "Widok na wykońćzony salon"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
+              "alt": "Zbliżenie na drewniane detale"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-3.jpg",
+              "alt": "Zbliżenie na lampę z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
+              "alt": "Ujęcie na ścianę telewizora z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
+              "alt": "Zbliżenie na stolik na kawę pasujący do salonu"
+            }
+          ]
+        },
+        {
+          "header": "MARKI PREMIUM",
+          "paragraph": "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/4/marki-premium-1.jpg",
+              "alt": "Zbliżenie na logo drzwi marki DEWRO"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-2.jpg",
+              "alt": "Ujęcie wykończonej łazienki z prysznicem"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-3.jpg",
+              "alt": "Ujęcie wykończonej łazienki z wanną"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-4.jpg",
+              "alt": "Zbliżenie na drewniane panele podłogowe"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-5.jpg",
+              "alt": "Ujęcie oświetlenia sufitowego i jednostki klimatyzacji"
+            }
+          ]
+        },
+        {
+          "header": "ŚWIATOWA ARCHITEKTURA",
+          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
+              "alt": "Zachód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
+              "alt": "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
+              "alt": "Wschód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
+              "alt": "Ujęcie z recepcji budynku sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
+              "alt": "Ujęcie z drona wspólnego prywatnego tarasu wieczorem"
+            }
+          ]
+        }
+      ]
+    },
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": {
+        "accent_1": "3500",
+        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
+        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
+        "paragraph_3": "Wybierz narożny apartament na XV piętrze ponadczasowego budynku ",
+        "accent_2": "Sokolska Towers."
+      },
+      "header_top": "LIMITOWANY LUKSUS",
+      "header_bottom": "W SERCU MIASTA"
+    },
+    "InfoBlocks_1": {
+      "header_top": "INTELIGENTNY WYBÓR",
+      "header_bottom": "NA WYCIĄGNIĘCIE RĘKI",
+      "info": [
+        {
+          "icon": "/katowice-1/s8/1.webp",
+          "header": "ZAKUP OD PROFESJONALISTY",
+          "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem _ dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne."
+        },
+        {
+          "icon": "/katowice-1/s8/2.webp",
+          "header": "INDYWIDUALNY OPIEKUN TRANSAKCJI",
+          "paragraph": "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności."
+        },
+        {
+          "icon": "/katowice-1/s8/3.webp",
+          "header": "PRZEŁAM BARIERY FINANSOWE",
+          "paragraph": "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. Nie pozwól, żeby bariera finansowa stanęła na drodze do inwestycji w prestiż."
+        }
+      ]
+    },
+    "Footer_1": {
+      "header_top": "UMÓW SIĘ",
+      "header_bottom": "NA PREZENTACJĘ",
+      "oferta": "Katowice 1"
+    }
+  },
+  "Katowice_02": {
+    "icons_module_01": {
+      "header_top": "DOŁĄCZ DO EKSKLUZYWNEGO",
+      "header_bottom": "GRONA WŁAŚCICIELI SOKOLSKA TOWERS",
+      "icons": [
+        {
+          "icon": "/katowice-1/s2/1.webp",
+          "text": "Najwyżej położony balkon w budynku"
+        },
+        {
+          "icon": "/katowice-1/s2/2.webp",
+          "text": "Apartamenty w topowej lokalizacji"
+        },
+        {
+          "icon": "/katowice-1/s2/3.webp",
+          "text": "Światowej klasy architektura"
+        },
+        {
+          "icon": "/katowice-1/s2/4.webp",
+          "text": "Indywidualny opiekun transakcji"
+        },
+        {
+          "icon": "/images/BedIcon.png",
+          "text": "Zamieszkaj już jutro"
+        }
+      ]
+    },
+    "ImageCarouselCustom_1": {
+      "header_top": "KOMFORT, NA KTÓRY",
+      "header_bottom": "ZASŁUGUJESZ",
+      "images": [
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "Widok na okna z salonu wieczorem",
+          "text": "Luksus, który wzbudza pożądanie"
+        },
+        {
+          "image": "/katowice-2/s3/02.jpg",
+          "alt": "Salon, telewizor z kanapą",
+          "text": "Poczuj się jak u siebie w domu"
+        },
+        {
+          "image": "/katowice-2/s3/03.jpg",
+          "alt": "Salon z kuchnią w dzień",
+          "text": "Poznaj swój apartament za dnia…"
+        },
+        {
+          "image": "/katowice-2/s3/04.jpg",
+          "alt": "Salon z kuchnią w nocy",
+          "text": "I jego drugie oblicze po zmroku"
+        },
+        {
+          "image": "/katowice-2/s3/05.jpg",
+          "alt": "Salon, widok na balkon",
+          "text": "Kawa z widokiem na Spodek"
+        },
+        {
+          "image": "/katowice-2/s3/06.jpg",
+          "alt": "Sypialnia, widok z okna w dzień",
+          "text": "Sypialnia wśród chmur, na XIII piętrze"
+        },
+        {
+          "image": "/katowice-2/s3/07.jpg",
+          "alt": "Wnętrze - wejście do sypialni z dużym łóżkiem",
+          "text": "Najbardziej prestiżowe apartamenty narożne"
+        },
+        {
+          "image": "/katowice-2/s3/08.jpg",
+          "alt": "Wnętrze - łazienka z wanną",
+          "text": "Długa kąpiel wieczorem…"
+        },
+        {
+          "image": "/katowice-2/s3/09.jpg",
+          "alt": "Wnętrze - łazienka z pryszniczem",
+          "text": "… szybki prysznic rano"
+        },
+        {
+          "image": "/katowice-2/s3/10.jpg",
+          "alt": "Wnętrze - nowoczesne oświetlenie telewizora",
+          "text": "Wyróżnij się ponadczasowym designem"
+        },
+        {
+          "image": "/katowice-2/s3/11.jpg",
+          "alt": "Wnętrze - salon ze stolikiem i wysepką",
+          "text": "Jadalnia z Twoją małą winiarnią"
+        },
+        {
+          "image": "/katowice-2/s3/12.jpg",
+          "alt": "Wnętrze - kuchnia z korytarzem",
+          "text": "Zamieszkaj już jutro w wymarzonym apartamencie"
+        },
+        {
+          "image": "/katowice-2/s3/13.jpg",
+          "alt": "Budynek sokolska towers z zewnątrz na tle zachodu słońca",
+          "text": "Postaw na luksus, który stawia Cię w centrum"
+        }
+      ]
+    },
+    "rzut_mieszkania_01": {
+      "header_top": "POZNAJ SWÓJ NOWY",
+      "header_bottom": "APARTAMENT",
+      "price": "399 000 EUR",
+      "area": "75,33",
+      "images": {
+        "mobile": "/katowice-1/s4/rzutm.webp",
+        "desktop": "/katowice-1/s4/rzutd.webp"
+      }
+    },
+    "spiral_photos_01": {
+      "images": [
+        {
+          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
+          "alt": "Wpólny taras z ogrodem"
+        },
+        {
+          "img": "/katowice-1/s5/2-portiernia.jpg",
+          "alt": "Portiernia na wejściu do budynku"
+        },
+        {
+          "img": "/katowice-1/s5/3-wspolna-strefa-spa.jpg",
+          "alt": "Wspólna strefa SPA z sauną"
+        },
+        {
+          "img": "/katowice-1/s5/4-wspolna-silownia.jpg",
+          "alt": "Wspólna siłownia"
+        }
+      ]
+    },
+    "interchangeable_images_01": {
+      "header_top": "UNIKATOWY",
+      "header_bottom": "DESIGN",
+
+      "elements": [
+        {
+          "header": "APARTAMENT XXI WIEKU",
+          "paragraph": "Podążaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
+              "alt": "Wnętrze telewizor oświetlenie czerwone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
+              "alt": "Wnętrze telewizor oświetlenie niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
+              "alt": "Wnętrze telewizor oświetlenie zielone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia szerokie ujęcie"
+            }
+          ]
+        },
+        {
+          "header": "SPEKTAKULARNE OŚWIETLENIE",
+          "paragraph": "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
+              "alt": "Oświetlenie salonu o poranku"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
+              "alt": "Oświetlenie salonu wieczorem"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
+              "alt": "Oświetlenie salonu wieczorem niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne na kanape"
+            }
+          ]
+        },
+        {
+          "header": "SPÓJNE WNĘTRZE",
+          "paragraph": "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
+              "alt": "Widok na wykońćzony salon"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
+              "alt": "Zbliżenie na drewniane detale"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-3.jpg",
+              "alt": "Zbliżenie na lampę z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
+              "alt": "Ujęcie na ścianę telewizora z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
+              "alt": "Zbliżenie na stolik na kawę pasujący do salonu"
+            }
+          ]
+        },
+        {
+          "header": "MARKI PREMIUM",
+          "paragraph": "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/4/marki-premium-1.jpg",
+              "alt": "Zbliżenie na logo drzwi marki DEWRO"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-2.jpg",
+              "alt": "Ujęcie wykończonej łazienki z prysznicem"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-3.jpg",
+              "alt": "Ujęcie wykończonej łazienki z wanną"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-4.jpg",
+              "alt": "Zbliżenie na drewniane panele podłogowe"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-5.jpg",
+              "alt": "Ujęcie oświetlenia sufitowego i jednostki klimatyzacji"
+            }
+          ]
+        },
+        {
+          "header": "ŚWIATOWA ARCHITEKTURA",
+          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
+              "alt": "Zachód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
+              "alt": "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
+              "alt": "Wschód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
+              "alt": "Ujęcie z recepcji budynku sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
+              "alt": "Ujęcie z drona wspólnego prywatnego tarasu wieczorem"
+            }
+          ]
+        }
+      ]
+    },
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": {
+        "accent_1": "3500",
+        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
+        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
+        "paragraph_3": "Wybierz narożny apartament na XV piętrze ponadczasowego budynku ",
+        "accent_2": "Sokolska Towers."
+      },
+      "header_top": "LIMITOWANY LUKSUS",
+      "header_bottom": "W SERCU MIASTA"
+    },
+    "InfoBlocks_1": {
+      "header_top": "INTELIGENTNY WYBÓR",
+      "header_bottom": "NA WYCIĄGNIĘCIE RĘKI",
+      "info": [
+        {
+          "icon": "/katowice-1/s8/1.webp",
+          "header": "ZAKUP OD PROFESJONALISTY",
+          "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem _ dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne."
+        },
+        {
+          "icon": "/katowice-1/s8/2.webp",
+          "header": "INDYWIDUALNY OPIEKUN TRANSAKCJI",
+          "paragraph": "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności."
+        },
+        {
+          "icon": "/katowice-1/s8/3.webp",
+          "header": "PRZEŁAM BARIERY FINANSOWE",
+          "paragraph": "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. Nie pozwól, żeby bariera finansowa stanęła na drodze do inwestycji w prestiż."
+        }
+      ]
+    },
+    "Footer_1": {
+      "header_top": "UMÓW SIĘ",
+      "header_bottom": "NA PREZENTACJĘ",
+      "oferta": "Katowice 1"
+    }
+  },
+
+  "Katowice_03": {
+    "icons_module_01": {
+      "header_top": "Spokój i komfort w standardzie premium.",
+      "header_bottom": "Wybierz nowy apartament w  Sokolska Towers,aby być bliżej tego, co ważne. ",
+      "icons": [
+        {
+          "icon": "/katowice-3/s2/icon1.png",
+          "text": "3 pokoje, 2 łazienki"
+        },
+        {
+          "icon": "/katowice-3/s2/icon2.png",
+          "text": "73,66 m2 powierzchni"
+        },
+        {
+          "icon": "/katowice-3/s2/icon3.png",
+          "text": "Recepcja, siłownia, strefa spa, patio"
+        },
+        {
+          "icon": "/katowice-3/s2/icon4.png",
+          "text": "XIV kondygnacja; unikalny widok"
+        },
+        {
+          "icon": "/katowice-3/s2/icon5.png",
+          "text": "Do zamieszkaniaw dniu zakupu"
+        },
+        {
+          "icon": "/katowice-3/s2/icon6.png",
+          "text": "Miesięczne opłaty 988,12 PLN"
+        }
+      ]
+    },
+    "image_carousel_fader_01": {
+      "header_top": "Poczuj się jak u siebie.",
+      "header_bottom": "Witaj w domu.",
+      "images": [
+        {
+          "heading": "Otul się luksusem",
+          "img": "/katowice-1/s3/01.jpg",
+          "alt": "Salon w apartamencie wieczorem"
+        },
+        {
+          "heading": "Poczuj się jak u siebie w domu",
+          "img": "/katowice-1/s3/02.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia"
+        },
+        {
+          "heading": "Poznaj swój nowy duży pokój",
+          "img": "/katowice-1/s3/03.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na okna"
+        },
+        {
+          "heading": "Wykorzystaj potencjał minimalistycznej kuchni",
+          "img": "/katowice-1/s3/04.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na kuchnię"
+        },
+        {
+          "heading": "Zasypiaj wśród chmur, na XV piętrze",
+          "img": "/katowice-1/s3/05.jpg",
+          "alt": "Sypialnia w apartamencie w ciągu dnia"
+        },
+        {
+          "heading": "Korzystaj z potencjału układu funkcjonalnego",
+          "img": "/katowice-1/s3/06.jpg",
+          "alt": "Korytarz w apartamencie z wejściem do sypialni"
+        },
+        {
+          "heading": "Długa kąpiel wieczorem…",
+          "img": "/katowice-1/s3/07.jpg",
+          "alt": "W pełni wykończona łazienka z wanną"
+        },
+        {
+          "heading": "… szybki prysznic rano",
+          "img": "/katowice-1/s3/08.jpg",
+          "alt": "W pełni wykończona łazienka z prysznicem"
+        },
+        {
+          "heading": "Wypełnij swoją garderobę",
+          "img": "/katowice-1/s3/09.jpg",
+          "alt": "Przestrzenna garderoba"
+        },
+        {
+          "heading": "Pokochaj swój mały pokój",
+          "img": "/katowice-1/s3/10.jpg",
+          "alt": "Pokój funkcjonalny w dzień"
+        },
+        {
+          "heading": "Otól się luksusem",
+          "img": "/katowice-1/s3/11.jpg",
+          "alt": "Kuchnia i korytarz przy zachodzie słońca"
+        },
+        {
+          "heading": "Zamieszkaj już jutro",
+          "img": "/katowice-1/s3/12.jpg",
+          "alt": "Salon przy zachodzie słońca"
+        },
+        {
+          "heading": "Poznaj klimat zachodów słońca na XV piętrze",
+          "img": "/katowice-1/s3/13.jpg",
+          "alt": "Widok z okna apartamentu"
+        },
+        {
+          "heading": "Zamieszkaj już jutro w wymarzonym apartamencie",
+          "img": "/katowice-1/s3/14.jpg",
+          "alt": "Wysepka w salonie zm iejscem siedzącym wieczorem"
+        }
+      ]
+    },
+    "custom_text_section_01": {
+      "texts": [
+        "Ten nowy apartament łączy w sobie nowoczesność z elegancją, tworząc przestrzeń idealną dla osób ceniących spójność i najwyższy standard.",
+        "Od wyselekcjonowanych materiałów budowlanych, przez starannie dobrane detale wykończeniowe, po zaawansowane technologicznie udogodnienia - wszystko to sprawia, że jest to więcej niż mieszkanie, to wyraz najwyższej klasy życia."
+      ]
+    },
+    "rzut_mieszkania_01": {
+      "header_top": "Twój apartament,",
+      "header_bottom": "Twoje królestwo",
+      "price": "420 000 EUR",
+      "area": "73,66",
+      "images": {
+        "mobile": "/katowice-1/s4/rzutm.webp",
+        "desktop": "/katowice-1/s4/rzutd.webp"
+      }
+    },
+    "InfoBlocks_1": {
+      "header_top": "Wsparcie w procesie",
+      "header_bottom": "zakupu",
+      "info": [
+        {
+          "icon": "/katowice-3/s5/icon1.png",
+          "header": "Bezpieczeństwo",
+          "paragraph": "Nasz zespół prawny zadba o wszelkie formalności oraz zabezpieczenie transakcji"
+        },
+        {
+          "icon": "/katowice-3/s5/icon2.png",
+          "header": "Oszczędność czasu",
+          "paragraph": "Zorganizujemy cały proces zakupu dla Ciebie i wyślemy niezbędne dokumenty."
+        },
+        {
+          "icon": "/katowice-3/s5/icon3.png",
+          "header": "Finansowanie",
+          "paragraph": "Pomagamy zdobyć finansowanie zakupu, także bez wkładu własnego."
+        }
+      ]
+    },
+    "custom_text_section_02": {
+      "header_top": "Czas, który możesz",
+      "header_bottom": "odzyskać",
+      "texts": [
+        "Każdego dnia na dojazdy w ważne dla nas miejsca tracimy nawet do 2,5 godziny. Odzyskaj ten czas, będąc zawsze na miejscu.",
+        "W wieżowcu dostępne są strefy dostępne wyłącznie dla mieszkańców - m.in. fitness oraz spa. Twoje miejsce parkingowe również będzie czekać na Ciebie. W zasięgu krótkiego spaceru znajdziesz szereg ośrodków biznesowych, centrów zdrowia, kultury i handlu. Z tego miejsca najłatwiej wyruszysz gdziekolwiek chcesz."
+      ]
+    },
+    "interchangeable_images_01": {
+      "header_top": "UNIKATOWY",
+      "header_bottom": "DESIGN",
+
+      "elements": [
+        {
+          "header": "APARTAMENT XXI WIEKU",
+          "paragraph": "Podążaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
+              "alt": "Wnętrze telewizor oświetlenie czerwone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
+              "alt": "Wnętrze telewizor oświetlenie niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
+              "alt": "Wnętrze telewizor oświetlenie zielone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia szerokie ujęcie"
+            }
+          ]
+        },
+        {
+          "header": "SPEKTAKULARNE OŚWIETLENIE",
+          "paragraph": "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
+              "alt": "Oświetlenie salonu o poranku"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
+              "alt": "Oświetlenie salonu wieczorem"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
+              "alt": "Oświetlenie salonu wieczorem niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne na kanape"
+            }
+          ]
+        },
+        {
+          "header": "SPÓJNE WNĘTRZE",
+          "paragraph": "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
+              "alt": "Widok na wykońćzony salon"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
+              "alt": "Zbliżenie na drewniane detale"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-3.jpg",
+              "alt": "Zbliżenie na lampę z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
+              "alt": "Ujęcie na ścianę telewizora z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
+              "alt": "Zbliżenie na stolik na kawę pasujący do salonu"
+            }
+          ]
+        },
+        {
+          "header": "MARKI PREMIUM",
+          "paragraph": "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/4/marki-premium-1.jpg",
+              "alt": "Zbliżenie na logo drzwi marki DEWRO"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-2.jpg",
+              "alt": "Ujęcie wykończonej łazienki z prysznicem"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-3.jpg",
+              "alt": "Ujęcie wykończonej łazienki z wanną"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-4.jpg",
+              "alt": "Zbliżenie na drewniane panele podłogowe"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-5.jpg",
+              "alt": "Ujęcie oświetlenia sufitowego i jednostki klimatyzacji"
+            }
+          ]
+        },
+        {
+          "header": "ŚWIATOWA ARCHITEKTURA",
+          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
+              "alt": "Zachód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
+              "alt": "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
+              "alt": "Wschód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
+              "alt": "Ujęcie z recepcji budynku sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
+              "alt": "Ujęcie z drona wspólnego prywatnego tarasu wieczorem"
+            }
+          ]
+        }
+      ]
+    },
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": {
+        "accent_1": "3500",
+        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
+        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
+        "paragraph_3": "Wybierz narożny apartament na XV piętrze ponadczasowego budynku ",
+        "accent_2": "Sokolska Towers."
+      },
+      "header_top": "LIMITOWANY LUKSUS",
+      "header_bottom": "W SERCU MIASTA"
+    },
+    "Footer_1": {
+      "header_top": "UMÓW SIĘ",
+      "header_bottom": "NA PREZENTACJĘ",
+      "oferta": "Katowice 1"
+    }
+  },
+  "Footer_Common": {
+    "paragraph_1": "Wnętrza Deweloperskie jest marką należącą do: Deweloperskie P.S.A. z siedzibą w Katowicach przy ul. Murckowskiej 14c, NIP: 6343022518, REGON: 525018864 KRS: 0001030478",
+    "paragraph_2": "Przedmiotem oferty są luksusowe apartamenty pod prestiżowym adresem: ul. Sokolska 30 Katowice, posadowione na ostatnich kondygnacjach budynku Sokolska Towers, będące konkurencją dla apartamentów klasy penthouse na śląskim rynku nieruchomości."
+  }
+}

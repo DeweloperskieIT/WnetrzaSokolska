@@ -14,9 +14,15 @@ import Link from "next/link";
 export interface MainStickyHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
+  dict: any;
+  customAccent?: string;
 }
 
-export const MainStickyHeader = ({ className }: MainStickyHeaderProps) => {
+export const MainStickyHeader = ({
+  className,
+  dict,
+  customAccent,
+}: MainStickyHeaderProps) => {
   return (
     <div
       data-testid="Header"
@@ -43,17 +49,17 @@ export const MainStickyHeader = ({ className }: MainStickyHeaderProps) => {
           className="w-auto h-auto max-h-[60px]"
         />
         <div className="w-fit flex flex-row justify-evenly items-center h-full gap-6 max-h-5 text-light md:pr-6 xl:pr-0">
-          <FacebookRedirect />
-          <InstagramRedirect />
-          <YoutubeRedirect />
-          <WhatsappContact />
-          <EmailContact />
+          <FacebookRedirect fill={customAccent} />
+          <InstagramRedirect fill={customAccent} />
+          <YoutubeRedirect fill={customAccent} />
+          <WhatsappContact fill={customAccent} />
+          <EmailContact fill={customAccent} />
 
           <NawigacjaDropDown
             links={[
-              { link: "/", name: "Strona główna" },
-              { link: "/katowice-1", name: "Apartament 1" },
-              { link: "/katowice-2", name: "Apartament 2" },
+              { link: "/", name: dict.Header.landing_page },
+              { link: "/katowice-1", name: dict.Header.offer_1 },
+              { link: "/katowice-2", name: dict.Header.offer_2 },
             ]}
           />
         </div>

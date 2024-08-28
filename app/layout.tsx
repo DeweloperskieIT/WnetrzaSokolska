@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    shortcut: [{ rel: "shortcut icon", url: "/favicons/favicon.ico" }],
+    shortcut: [{ rel: "shortcut icon", url: "/favicon/favicon.ico" }],
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16" },
       { url: "/favicon/favicon-32x32.png", sizes: "32x32" },
@@ -81,6 +81,10 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "pl" }];
+}
 
 export default function RootLayout({
   children,

@@ -8,49 +8,73 @@ import {
   IconsModule,
   InfoBlocks,
 } from "@/components/customElements/texts-images";
-import LandingPageOffers from "@/components/customElements/texts-images/LandingPageOffers";
-import { YoutubeContainer } from "@/components/customElements/video";
 import {
   BreathingBackgroundImageData,
   FooterSectionData,
   IconsSectionData,
   InfoBlocksSectionData,
-  LandingPageOffersSectionData,
 } from "@/data/content/Landing";
 import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
+import { getDictionary, Locales } from "@/app/[locale]/dictionaries";
 
-const Home = () => {
+const Home = async ({
+  params: { locale },
+}: {
+  params: { locale: Locales };
+}) => {
+  const dict = await getDictionary(locale);
   return (
     <>
       {/* Sticky HEader main */}
-      <MainStickyHeader />
+      <MainStickyHeader dict={dict} />
       <div className="landing-page">
         {/* First Section - Breathing image */}
         <BreathingBackgroundImage
-          {...BreathingBackgroundImageData}
-          // className="bg-darkerGray/90 text-dark"
-          // bgSizes={["100%", "70%"]}
-          // interval={5000}
-          // img="/images/mainpage/deweloperskie-logo-corner-szare.webp"
+          className="bg-darkerGray/90 text-dark"
+          bgSizes={["100%", "70%"]}
+          interval={5000}
+          img="/images/mainpage/deweloperskie-logo-corner-szare.webp"
         >
-          {/* <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-6 pt-20 md:py-40 md:pb-20">
-            <h1 className="text-xl md:text-5xl">NASZĄ PASJĄ JEST JAKOŚĆ</h1>
+          <div className="limited-width flex flex-col md:gap-4 w-full h-full items-start justify-end pb-6 pt-20 md:py-40 md:pb-20">
+            <h1 className="text-xl md:text-5xl">
+              {dict.Landing_Page.breathing_background_image_01.header}
+            </h1>
             <h2 className="text-xl md:text-xl font-light max-w-[800px] text-left">
-              Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić
-              wieczór przyrządzając ją samodzielnie, albo zaufać
-              profesjonalistom i delektować się posiłkiem serwowanym przez szefa
-              kuchni.
+              {dict.Landing_Page.breathing_background_image_01.paragraph}
             </h2>
-          </div> */}
+          </div>
         </BreathingBackgroundImage>
         {/* Second Section - Icons */}
-        <IconsModule {...IconsSectionData} />
+        <IconsModule
+          header=""
+          icons={
+            dict.Landing_Page.icons_module_01.icons
+            //   [
+            //   {
+            //     icon: "/images/mainpage/PolemanIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_01_text,
+            //   },
+            //   {
+            //     icon: "/images/mainpage/DangleKeysIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_02_text,
+            //   },
+            //   {
+            //     icon: "/images/mainpage/BuildingIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_03_text,
+            //   },
+            //   {
+            //     icon: "/images/mainpage/BedIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_04_text,
+            //   },
+            // ]
+          }
+        />
         {/* ??????????????????? */}
 
-        <div className="flex justify-center flex-row flex-wrap gap-10 w-fit h-fit md:padding-element">
+        <div className="flex justify-center flex-row flex-wrap gap-10 w-fit h-fit md:padding-element max-w-screen-lg">
           <Link
             href="/katowice-2"
             className="aspect-[4/3] lg:max-w-[45%] h-auto w-full relative flex group items-end"
@@ -65,13 +89,14 @@ const Home = () => {
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
               <span>
-                Apartament zaaranżowany z myślą o osobach, które pragną
-                korzystać z potencjału Katowic na swoich zasadach.
+                {dict.Landing_Page.offer_blocks.offer_katowice_2.paragraph_01}
               </span>
               <span className="italic">
-                Luksus, który wzbudza pożądanie
+                {dict.Landing_Page.offer_blocks.offer_katowice_2.paragraph_02}
                 <br />
-                <span className="text-accent1">Zobacz ofertę</span>
+                <span className="text-accent1">
+                  {dict.Landing_Page.offer_blocks.see_offer}
+                </span>
               </span>
             </div>
           </Link>
@@ -89,13 +114,14 @@ const Home = () => {
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
               <span>
-                Najwyżej usytuowany apartament z wygodną loggią dla osób, które
-                cenią sobie wyjątkowość.
+                {dict.Landing_Page.offer_blocks.offer_katowice_1.paragraph_01}
               </span>
               <span className="italic">
-                Luksus, który Cię wyróżni
+                {dict.Landing_Page.offer_blocks.offer_katowice_1.paragraph_02}
                 <br />
-                <span className="text-accent1">Zobacz ofertę</span>
+                <span className="text-accent1">
+                  {dict.Landing_Page.offer_blocks.see_offer}
+                </span>
               </span>
             </div>
           </Link>
@@ -110,13 +136,12 @@ const Home = () => {
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
               <span className="">
-                Nowoczesny apartament dla osób, które chcą mieć wszystko w
-                zasięgu ręki.
+                {dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_01}
               </span>
               <span className="italic">
-                Przyjmij nową perspektywę
+                {dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_02}
                 <br />
-                Premiera 30.08
+                {dict.Landing_Page.offer_blocks.premieres} 30.08
               </span>
             </div>
           </div>
@@ -131,26 +156,50 @@ const Home = () => {
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
               <span className="">
-                Twój mały dom na XIV piętrze, z przestronnym salonem z kuchnią,
-                gabinetem, sypialnią, pralnią, garderobą oraz pojemną komórką
-                lokatorską na piętrze.
+                {dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_01}
               </span>
               <span className="italic">
-                Twoja oaza spokoju w sercu miasta
+                {dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_02}
                 <br />
-                Premiera 30.08
+                {dict.Landing_Page.offer_blocks.premieres} 30.08
               </span>
             </div>
           </div>
         </div>
 
         {/* Eigth Section - Info text */}
-        <InfoBlocks {...InfoBlocksSectionData} />
-        {/* Eigth Section - Info text */}
-        {/* <LandingPageOffers {...LandingPageOffersSectionData} /> */}
+        <InfoBlocks
+          info={[
+            {
+              icon: "/images/mainpage/BuildingIcon.png",
+              header: dict.Landing_Page.info_blocks_01.info_01.header,
+              paragraph: dict.Landing_Page.info_blocks_01.info_01.paragraph,
+            },
+            {
+              icon: "/images/mainpage/DangleKeysIcon.png",
+              header: dict.Landing_Page.info_blocks_01.info_02.header,
+              paragraph: dict.Landing_Page.info_blocks_01.info_02.paragraph,
+            },
+            {
+              icon: "/images/mainpage/HomeMagnifyingGlass.png",
+              header: dict.Landing_Page.info_blocks_01.info_03.header,
+              paragraph: dict.Landing_Page.info_blocks_01.info_03.paragraph,
+            },
+          ]}
+          header={
+            <SectionHeading
+              topClass=""
+              top={dict.Landing_Page.info_blocks_01.header_top}
+              bottom={dict.Landing_Page.info_blocks_01.header_bottom}
+            />
+          }
+        />
         {/* Section something */}
         <div className="w-full h-fit relative limited-width flex flex-col gap-10">
-          <SectionHeading top="PONADCZASOWY " bottom="BUDYNEK" />
+          <SectionHeading
+            top={dict.Landing_Page.youtube_shorts_01.header_top}
+            bottom={dict.Landing_Page.youtube_shorts_01.header_bottom}
+          />
           <div className="flex flex-row justify-evenly gap-10 flex-wrap size-auto">
             <YouTubeEmbed
               videoid="AdIdKxq-PTs"
@@ -173,7 +222,17 @@ const Home = () => {
           </div>
         </div>
         {/* footer */}
-        <Footer {...FooterSectionData} />
+        <Footer
+          dict={dict}
+          oferta={dict.Landing_Page.Footer_1.oferta}
+          header={
+            <SectionHeading
+              className="gap-3 md:gap-2 md:flex hidden"
+              top={dict.Landing_Page.Footer_1.header_top}
+              bottom={dict.Landing_Page.Footer_1.header_bottom}
+            />
+          }
+        />
       </div>
     </>
   );

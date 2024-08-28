@@ -1,18 +1,20 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ContactForm } from "@/components/customElements/forms/ContactForm";
+import { ContactForm } from "@/components/customElements/forms";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export interface StickyFormButtonProps {
   className?: string;
   oferta?: string;
+  dict: any;
 }
 
 export const StickyFormButton = ({
   className,
   oferta,
+  dict,
 }: StickyFormButtonProps) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
@@ -63,6 +65,7 @@ export const StickyFormButton = ({
           <span className="text-dark font-bold">KONTAKT</span>
         </div>
         <ContactForm
+          dict={dict}
           sendTo={process.env.OFFERCONTACTDESTINATION}
           oferta={oferta || "Nie wyspecyfikowano"}
           className={cn(

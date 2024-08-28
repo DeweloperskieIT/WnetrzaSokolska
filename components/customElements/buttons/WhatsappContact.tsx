@@ -8,11 +8,13 @@ import { FaWhatsapp } from "react-icons/fa";
 export interface WhatsappContactProps {
   className?: string;
   number?: string;
+  fill?: string;
 }
 
 export const WhatsappContact = ({
   className,
   number = "48666000999",
+  fill,
 }: WhatsappContactProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Whatsapp contact clicked`,
@@ -26,7 +28,7 @@ export const WhatsappContact = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FaWhatsapp className="header-icon-graphic" />
+      <FaWhatsapp className={cn("header-icon-graphic", fill)} />
     </a>
   );
 };

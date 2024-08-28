@@ -69,6 +69,7 @@ const config = {
         light: "#EDECE6",
         darkerGray: "#DADBD4",
         accent1: "#FACA32",
+        accent2: "#99BD31",
 
         websiteBackground1: "#000000",
         websiteBackground2: "#1D1D1B",

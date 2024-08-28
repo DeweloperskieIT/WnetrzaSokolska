@@ -2,7 +2,7 @@ import { SectionHeading } from "@/components/customElements/custom-ui";
 import { TextPlusSingleVideoProps } from "@/components/customElements/texts-images";
 
 export const TextPlusSingleVideoData: TextPlusSingleVideoProps = {
-  src: "/apartament126/s7/360V2.mp4",
+  src: "/katowice-1/s7/360V2.mp4",
   content: (
     <div className="flex justify-center flex-col gap-10 text-light lg:text-right text-xl">
       <span className="">

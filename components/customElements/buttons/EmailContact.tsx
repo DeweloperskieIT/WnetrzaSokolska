@@ -9,12 +9,14 @@ export interface EmailContactProps {
   className?: string;
   email?: string;
   params?: string;
+  fill?: string;
 }
 
 export const EmailContact = ({
   className,
   email = "wnetrza@deweloperskie.pl",
   params = "subject=Sokolska%20Towers",
+  fill,
 }: EmailContactProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Email Contact Clicked`,
@@ -29,7 +31,7 @@ export const EmailContact = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <AiOutlineMail className="header-icon-graphic" />
+      <AiOutlineMail className={cn("header-icon-graphic", fill)} />
     </a>
   );
 };

@@ -123,7 +123,7 @@ export const ImageCarouselCustom = ({
             <div
               key={i}
               className={cn(
-                "relative h-full flex-shrink-0 flex flex-col items-center justify-start md:justify-end aspect-video"
+                "relative flex-shrink-0 flex flex-col items-center justify-start md:justify-end aspect-video"
               )}
               style={{ width: `80%` }}
             >

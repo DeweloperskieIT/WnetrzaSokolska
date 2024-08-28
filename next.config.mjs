@@ -14,7 +14,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  // output: "standalone",
   // async headers() {
   //   return [
   //     {

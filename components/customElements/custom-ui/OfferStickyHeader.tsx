@@ -17,11 +17,15 @@ export interface OfferStickyHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   oferta: string;
+  dict: any;
+  customAccent?: string;
 }
 
 export const OfferStickyHeader = ({
   className,
   oferta,
+  dict,
+  customAccent,
 }: OfferStickyHeaderProps) => {
   return (
     <div
@@ -50,25 +54,35 @@ export const OfferStickyHeader = ({
             className="object-contain size-14 md:size-20"
           />
           <div className="flex flex-wrap flex-row gap-2">
-            <span className="text-light text-sm md:text-xl">APARTAMENTY</span>
-            <span className="text-accent1 text-sm md:text-xl font-light whitespace-nowrap">
+            <span className="text-light text-sm md:text-xl">
+              {dict.Header.offer_title}
+            </span>
+            <span
+              className={cn(
+                "text-accent1 text-sm md:text-xl font-light whitespace-nowrap",
+                customAccent
+              )}
+            >
               SOKOLSKA TOWERS
             </span>
           </div>
         </div>
 
         <div className="w-fit flex flex-row justify-evenly items-center h-full gap-6 max-h-5 text-light md:pr-6 xl:pr-0">
-          <FacebookRedirect />
-          <InstagramRedirect />
-          <YoutubeRedirect />
-          <WhatsappContact />
-          <EmailContact params={`subject=${parseEmailHrefText(oferta)}`} />
-          <ContactFormOpener />
+          <FacebookRedirect fill={customAccent} />
+          <InstagramRedirect fill={customAccent} />
+          <YoutubeRedirect fill={customAccent} />
+          <WhatsappContact fill={customAccent} />
+          <EmailContact
+            params={`subject=${parseEmailHrefText(oferta)}`}
+            fill={customAccent}
+          />
+          <ContactFormOpener dict={dict} fill={customAccent} />
           <NawigacjaDropDown
             links={[
-              { link: "/", name: "Strona główna" },
-              { link: "/katowice-1", name: "Apartament 1" },
-              { link: "/katowice-2", name: "Apartament 2" },
+              { link: "/", name: dict.Header.landing_page },
+              { link: "/katowice-1", name: dict.Header.offer_1 },
+              { link: "/katowice-2", name: dict.Header.offer_2 },
             ]}
           />
         </div>

@@ -7,3 +7,4 @@ export * from "./RzutMieszkania";
 export * from "./SpiralPhotos4";
 export * from "./TextPlusSingleVideo";
 export * from "./BreathingBackgroundImage";
+export * from "./PlainParagraphText";
