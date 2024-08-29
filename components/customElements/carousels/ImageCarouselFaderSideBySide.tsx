@@ -238,7 +238,7 @@ export const ImageCarouselFaderSideBySide = ({
       {Array.from({ length: images.length / 2 }).map((_, i) => (
         <div
           className={cn(
-            "absolute top-0 left-0 flex flex-col lg:flex-row w-full h-full transition-all duration-500",
+            "absolute inset-0 top-0 left-0 flex flex-col lg:flex-row w-full h-full transition-all duration-500 !aspect-video",
             i === currentIndex
               ? `opacity-100 z-[1]
                ${isAnimating && "opacity-10"}
