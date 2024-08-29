@@ -110,7 +110,6 @@ const page = async ({
           texts={dict.Katowice_03.custom_text_section_02.texts}
           header={
             <SectionHeading
-              wideParent
               topClass="text-accent2 font-bold"
               top={dict.Katowice_03.custom_text_section_02.header_top}
               bottom={dict.Katowice_03.custom_text_section_02.header_bottom}
@@ -122,6 +121,7 @@ const page = async ({
           dotsEnabledOnlyVisible
           textPlacement="bottom"
           textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
+          className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
           images={dict.Katowice_03.image_carousel_fader_01.images}
         />
         {/* Fifth Section - Interchangeable images */}
@@ -132,6 +132,7 @@ const page = async ({
           header={
             <SectionHeading
               wideParent
+              topClass="text-accent2 font-bold"
               top={dict.Katowice_03.interchangeable_images_01.header_top}
               bottom={dict.Katowice_03.interchangeable_images_01.header_bottom}
             />
@@ -141,9 +142,11 @@ const page = async ({
         <TextPlusSingleVideo
           src={dict.Katowice_03.text_plus_single_video_01.source}
           content={dict.Katowice_03.text_plus_single_video_01.content}
+          customAccent="text-accent2"
           header={
             <SectionHeading
               className=""
+              topClass="text-accent2 font-bold"
               top={dict.Katowice_03.text_plus_single_video_01.header_top}
               bottom={dict.Katowice_03.text_plus_single_video_01.header_bottom}
             />
@@ -156,11 +159,12 @@ const page = async ({
           header={
             <SectionHeading
               className="gap-3 md:gap-2 md:flex hidden"
+              topClass="text-accent2 font-bold"
               top={dict.Katowice_03.Footer_1.header_top}
               bottom={dict.Katowice_03.Footer_1.header_bottom}
             />
           }
-          oferta="Katowice 1"
+          oferta={dict.Katowice_03.Footer_1.oferta}
         />
       </div>
     </>

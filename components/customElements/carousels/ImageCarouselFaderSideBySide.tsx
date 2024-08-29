@@ -48,6 +48,7 @@ export const ImageCarouselFaderSideBySide = ({
   ...rest
 }: ImageCarouselFaderSideBySideProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [arrayIndex, setArrayIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState<number | undefined>();
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const [isAutoplay, setIsAutoplay] = useState(autoplay);
@@ -55,6 +56,7 @@ export const ImageCarouselFaderSideBySide = ({
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const currentIndexRef = useRef(currentIndex);
+  const currentArrayIndexRef = useRef(arrayIndex);
 
   const ref = useRef() as React.RefObject<HTMLDivElement>;
   const { isIntersecting, disconnectObserver } = useIsVisible(ref);
@@ -81,17 +83,19 @@ export const ImageCarouselFaderSideBySide = ({
     setIsAnimating(true);
     setTextAnimationClass(animations.out);
 
-    const newIndex = (currentIndexRef.current + 1) % (images.length / 2);
+    const newIndex = (currentIndexRef.current + 2) % (images.length / 2);
+    const newArrayIndex =
+      (currentArrayIndexRef.current + 1) % (images.length / 2);
     setPrevIndex(currentIndexRef.current);
     currentIndexRef.current = newIndex;
+    currentArrayIndexRef.current = newArrayIndex;
 
     setTimeout(() => {
       setCurrentIndex(newIndex);
+      setArrayIndex(newArrayIndex);
       setTextAnimationClass(animations.in);
 
-      setTimeout(() => {
-        setIsAnimating(false);
-      }, 450);
+      setIsAnimating(false);
     }, 450);
   };
 
@@ -102,17 +106,19 @@ export const ImageCarouselFaderSideBySide = ({
     setTextAnimationClass(animations.out);
 
     const newIndex =
-      (currentIndexRef.current - 1 + images.length) % (images.length / 2);
+      (currentIndexRef.current - 2 + images.length) % images.length;
+    const newArrayIndex =
+      (currentArrayIndexRef.current + 1) % (images.length / 2);
     setPrevIndex(currentIndexRef.current);
+    setArrayIndex((previous) => previous - (1 % images.length));
     currentIndexRef.current = newIndex;
+    currentArrayIndexRef.current = newArrayIndex;
 
     setTimeout(() => {
       setCurrentIndex(newIndex);
+      setArrayIndex(newArrayIndex);
       setTextAnimationClass(animations.in);
-
-      setTimeout(() => {
-        setIsAnimating(false);
-      }, 450);
+      setIsAnimating(false);
     }, 450);
   };
 
@@ -129,10 +135,7 @@ export const ImageCarouselFaderSideBySide = ({
     setTimeout(() => {
       setCurrentIndex(index);
       setTextAnimationClass(animations.in);
-
-      setTimeout(() => {
-        setIsAnimating(false);
-      }, 450);
+      setIsAnimating(false);
     }, 450);
   };
 
@@ -180,7 +183,7 @@ export const ImageCarouselFaderSideBySide = ({
   return (
     <div
       className={cn(
-        "relative w-full bg-websiteBackground2 max-h-svh h-fit !aspect-[1/1] md:!aspect-video",
+        "relative w-full bg-websiteBackground2 max-h-svh h-svh !aspect-[1/1] md:!aspect-video min-h-[440px] md:min-h-[520px] lg:min-h-[660px]",
         className
       )}
       ref={ref as React.LegacyRef<HTMLDivElement>}
@@ -192,7 +195,7 @@ export const ImageCarouselFaderSideBySide = ({
         dotsClassName={dotsClassName}
         dotsEnabled={dotsEnabled}
         setCurrentIndex={handleManualChange}
-        currentIndex={currentIndex}
+        currentIndex={arrayIndex}
         visible={buttonsVisible}
         itemsLength={images.length / 2}
         handleClickBack={handleClickBack}
@@ -235,11 +238,13 @@ export const ImageCarouselFaderSideBySide = ({
       {Array.from({ length: images.length / 2 }).map((_, i) => (
         <div
           className={cn(
-            "absolute top-0 left-0 flex flex-col md:flex-row w-full h-full",
+            "absolute top-0 left-0 flex flex-col md:flex-row w-full h-full transition-all duration-500",
             i === currentIndex
-              ? "opacity-100 w-full h-1/2 md:w-1/2 md:h-full"
+              ? `opacity-100 z-[1]
+               ${isAnimating && "opacity-10"}
+              `
               : i === prevIndex
-              ? `opacity-10`
+              ? "opacity-10 z-[0]"
               : `opacity-0`
           )}
           key={i}
@@ -253,7 +258,9 @@ export const ImageCarouselFaderSideBySide = ({
             sizes={sizes}
             width={1366}
             height={768}
-            className={cn("flex-1")}
+            className={cn(
+              "flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover"
+            )}
           />
           <Image
             placeholder="blur"
@@ -264,7 +271,9 @@ export const ImageCarouselFaderSideBySide = ({
             sizes={sizes}
             width={1366}
             height={768}
-            className={cn("flex-1")}
+            className={cn(
+              "flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover"
+            )}
           />
         </div>
       ))}

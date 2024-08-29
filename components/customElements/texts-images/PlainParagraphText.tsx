@@ -15,14 +15,9 @@ export const PlainParagraphText = ({
   header,
 }: PlainParagraphTextProps) => {
   return (
-    <div>
+    <div className="flex flex-col section-header-gap limited-width w-full">
       {header}
-      <div
-        className={cn(
-          "padding-element flex flex-col gap-10 md:gap-16",
-          className
-        )}
-      >
+      <div className={cn("flex flex-col gap-10 md:gap-16", className)}>
         {texts.map((text, i) => (
           <p key={i} className={cn("md:text-2xl", textClassName)}>
             {text}

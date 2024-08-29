@@ -882,13 +882,13 @@
       ]
     },
     "interchangeable_images_01": {
-      "header_top": "UNIKATOWY",
-      "header_bottom": "DESIGN",
+      "header_top": "Żyj w luksusie,",
+      "header_bottom": "otoczony pięknem",
 
       "elements": [
         {
-          "header": "APARTAMENT XXI WIEKU",
-          "paragraph": "Podążaj za trendami budownictwa mieszkaniowego i zainwestuj w nieruchomość projektowaną z myślą o nowoczesnych technologiach.",
+          "header": "SPEKTAKULARNE OŚWIETLENIE",
+          "paragraph": "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
           "images": [
             {
               "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
@@ -913,8 +913,8 @@
           ]
         },
         {
-          "header": "SPEKTAKULARNE OŚWIETLENIE",
-          "paragraph": "Odkryj magię światła, nadającego Twoim wnętrzom unikalny charakter w zależności od pory dnia.",
+          "header": "MARKI PREMIUM",
+          "paragraph": "Postaw na rozwiązania najlepszych producentów: stolarki Dewro, ceramiki Villeroy & Boch, armatury Hansgrohe oraz AGD Samsung.",
           "images": [
             {
               "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
@@ -965,8 +965,8 @@
           ]
         },
         {
-          "header": "MARKI PREMIUM",
-          "paragraph": "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
+          "header": "NAJLEPSZE MATERIAŁY",
+          "paragraph": "Poczuj jakość: płyty meblowej i blatów Egger, trójwarstwowej deski podłogowej Barlinek czy włoskich plytek Marazzi.",
           "images": [
             {
               "img": "/katowice-1/s6/4/marki-premium-1.jpg",
@@ -991,8 +991,8 @@
           ]
         },
         {
-          "header": "ŚWIATOWA ARCHITEKTURA",
-          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
+          "header": "ŚWIATOWEJ KLASY ARCHITEKTURA",
+          "paragraph": "Zamieszkaj w budynku nagrodzonym prestiżową nagrodą European Property Award.",
           "images": [
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
@@ -1022,18 +1022,22 @@
       "source": "/katowice-1/s7/360V2.mp4",
       "content": {
         "accent_1": "3500",
-        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
-        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
-        "paragraph_3": "Wybierz narożny apartament na XV piętrze ponadczasowego budynku ",
+        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku. Rozumiemy, Rozumiemy, że możesz oczekiwać czegoś o bardziej indywidualnym charakterze.",
+        "optional_paragraph_1": "Apartamentowiec przy",
+        "optional_accent_1": "Sokolskiej 30",
+        "optional_paragraph_2": " to wyjątkowe miejsce w zabudowie ścisłego centrum miasta. Doceń jego unikatowość, stawiając na na jedyną w swoim rodzaju, topową lokalizację, która posiada wszystkie zalety położenia w centrum, przy jednoczesnym wzniesieniu się ponad nie. Wybierz",
+        "optional_accent_2": "otoczenie sukcesu",
+        "optional_paragraph_3": "!",
+        "paragraph_3": "Ulokuj kapitał w nowym, narożnym apartamencie z rynku pierwotnego, naszpikowanym nowoczesnymi rozwiązaniami i technologiami, na XIV piętrze ponadczasowego wieżowca",
         "accent_2": "Sokolska Towers."
       },
-      "header_top": "LIMITOWANY LUKSUS",
-      "header_bottom": "W SERCU MIASTA"
+      "header_top": "Limitowany luksus ",
+      "header_bottom": "w sercu miasta"
     },
     "Footer_1": {
-      "header_top": "UMÓW SIĘ",
-      "header_bottom": "NA PREZENTACJĘ",
-      "oferta": "Katowice 1"
+      "header_top": "Masz więcej",
+      "header_bottom": "pytań?",
+      "oferta": "Katowice 3"
     }
   },
   "Footer_Common": {

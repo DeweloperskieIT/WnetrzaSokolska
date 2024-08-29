@@ -37,7 +37,7 @@ export const InfoBlocks = ({
   return (
     <div
       className={cn(
-        "flex flex-col section-header-gap limited-width",
+        "flex flex-col section-header-gap limited-width w-full",
         className,
         alternativeMobile ? "px-0 " : ""
       )}

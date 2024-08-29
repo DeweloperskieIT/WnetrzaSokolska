@@ -133,6 +133,8 @@ export function ContactForm({
     }
   }
 
+  console.log(oferta);
+
   return (
     <div
       className={cn(
@@ -301,7 +303,10 @@ export function ContactForm({
                   <FormLabel className="text-light text-base">
                     {dict.contact_form.accept_condition_data_read_01}
                     <Link
-                      className="text-accent1 font-bold"
+                      className={cn(
+                        "text-accent1 font-bold",
+                        oferta === "Katowice 3" && "text-accent2"
+                      )}
                       href={"/informacje#klauzula"}
                       target="_blank"
                     >
@@ -310,7 +315,10 @@ export function ContactForm({
                     </Link>
                     {dict.contact_form.accept_condition_data_read_02}
                     <Link
-                      className="text-accent1 font-bold"
+                      className={cn(
+                        "text-accent1 font-bold",
+                        oferta === "Katowice 3" && "text-accent2"
+                      )}
                       href={"/informacje#polityka"}
                       target="_blank"
                     >
@@ -348,7 +356,10 @@ export function ContactForm({
                         <AccordionContent>
                           {dict.contact_form.accept_condition_email_paragraph}
                           <Link
-                            className="text-accent1 font-bold"
+                            className={cn(
+                              "text-accent1 font-bold",
+                              oferta === "Katowice 3" && "text-accent2"
+                            )}
                             href={"/informacje#podmioty"}
                             target="_blank"
                           >
@@ -398,7 +409,10 @@ export function ContactForm({
                         <AccordionContent>
                           {dict.contact_form.accept_condition_phone_paragraph}
                           <Link
-                            className="text-accent1 font-bold"
+                            className={cn(
+                              "text-accent1 font-bold",
+                              oferta === "Katowice 3" && "text-accent2"
+                            )}
                             href={"/informacje#podmioty"}
                             target="_blank"
                           >
@@ -441,7 +455,10 @@ export function ContactForm({
                 </p>
               ) : null}
               <Button
-                className="rounded-none aspect-video w-30 md:w-36 h-auto flex-center gap-2 bg-accent1 hover:bg-darkerGray text-dark text-base  md:text-lg font-bold"
+                className={cn(
+                  "rounded-none aspect-video w-30 md:w-36 h-auto flex-center gap-2 bg-accent1 hover:bg-darkerGray text-dark text-base  md:text-lg font-bold",
+                  oferta === "Katowice 3" && "bg-accent2"
+                )}
                 type="submit"
                 disabled={
                   isSending ? true : status === "success" ? true : false
@@ -460,15 +477,6 @@ export function ContactForm({
           </div>
         </form>
       </Form>
-      {/* <div className="w-full h-full mt-10 flex items-start lg:items-center flex-col lg:flex-row lg:gap-5 pb-5 ">
-        <Button className="text-light px-0 hover:text-accent1 bg-transparent hover:bg-transparent">
-          Polityka prywatności
-        </Button>
-        <span className="hidden lg:visible h-[20px] w-[1px] bg-darkerGray/40"></span>
-        <Button className="text-light px-0 hover:text-accent1 bg-transparent hover:bg-transparent">
-          Dane spółki
-        </Button>
-      </div> */}
     </div>
   );
 }
