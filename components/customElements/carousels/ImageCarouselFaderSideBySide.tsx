@@ -183,7 +183,7 @@ export const ImageCarouselFaderSideBySide = ({
   return (
     <div
       className={cn(
-        "relative w-full bg-websiteBackground2 max-h-svh h-svh !aspect-[1/1] md:!aspect-video min-h-[440px] md:min-h-[520px] lg:min-h-[660px]",
+        "relative w-full bg-websiteBackground2 h-fit md:aspect-video max-h-[65svh]",
         className
       )}
       ref={ref as React.LegacyRef<HTMLDivElement>}
@@ -238,7 +238,7 @@ export const ImageCarouselFaderSideBySide = ({
       {Array.from({ length: images.length / 2 }).map((_, i) => (
         <div
           className={cn(
-            "absolute top-0 left-0 flex flex-col md:flex-row w-full h-full transition-all duration-500",
+            "absolute top-0 left-0 flex flex-col lg:flex-row w-full h-full transition-all duration-500",
             i === currentIndex
               ? `opacity-100 z-[1]
                ${isAnimating && "opacity-10"}
@@ -259,7 +259,7 @@ export const ImageCarouselFaderSideBySide = ({
             width={1366}
             height={768}
             className={cn(
-              "flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover"
+              "flex-1 w-full h-1/2 lg:w-1/2 lg:h-full object-cover"
             )}
           />
           <Image
@@ -272,7 +272,7 @@ export const ImageCarouselFaderSideBySide = ({
             width={1366}
             height={768}
             className={cn(
-              "flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover"
+              "flex-1 w-full h-1/2 lg:w-1/2 lg:h-full object-cover"
             )}
           />
         </div>

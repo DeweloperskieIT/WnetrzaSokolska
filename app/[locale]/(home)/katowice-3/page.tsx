@@ -117,13 +117,15 @@ const page = async ({
           }
         />
         {/* Sixth section - new side by side carousel */}
-        <ImageCarouselFaderSideBySide
-          dotsEnabledOnlyVisible
-          textPlacement="bottom"
-          textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
-          className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
-          images={dict.Katowice_03.image_carousel_fader_01.images}
-        />
+        <FullscreenCarouselContainer>
+          <ImageCarouselFaderSideBySide
+            dotsEnabledOnlyVisible
+            textPlacement="bottom"
+            textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
+            className="h-svh"
+            images={dict.Katowice_03.image_carousel_fader_01.images}
+          />
+        </FullscreenCarouselContainer>
         {/* Fifth Section - Interchangeable images */}
         <InterchangeableImages
           interval={4000}
