@@ -8,12 +8,6 @@ import {
   IconsModule,
   InfoBlocks,
 } from "@/components/customElements/texts-images";
-import {
-  BreathingBackgroundImageData,
-  FooterSectionData,
-  IconsSectionData,
-  InfoBlocksSectionData,
-} from "@/data/content/Landing";
 import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
