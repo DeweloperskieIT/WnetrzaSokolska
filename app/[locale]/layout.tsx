@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Open_Sans as FontSans } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { cn } from "@/lib/utils";
 import { GoogleTagManager } from "@next/third-parties/google";
 import CookieConsentBanner from "@/components/cookies/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Locales } from "./dictionaries";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -88,11 +89,13 @@ export async function generateStaticParams() {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: Locales };
 }>) {
   return (
-    <html lang="pl">
+    <html lang={locale}>
       <head>
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER!} />

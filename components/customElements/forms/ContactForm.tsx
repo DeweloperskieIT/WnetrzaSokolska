@@ -133,8 +133,6 @@ export function ContactForm({
     }
   }
 
-  console.log(oferta);
-
   return (
     <div
       className={cn(
