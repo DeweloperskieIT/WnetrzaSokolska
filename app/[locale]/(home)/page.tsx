@@ -138,7 +138,7 @@ const Home = async ({
               <span className="italic">
                 {dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_02}
                 <br />
-                {dict.Landing_Page.offer_blocks.premieres} 30.08
+                {dict.Landing_Page.offer_blocks.premieres}
               </span>
             </div>
           </div>
@@ -159,7 +159,7 @@ const Home = async ({
               <span className="italic">
                 {dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_02}
                 <br />
-                {dict.Landing_Page.offer_blocks.premieres} 30.08
+                {dict.Landing_Page.offer_blocks.premieres}
               </span>
             </div>
           </div>
