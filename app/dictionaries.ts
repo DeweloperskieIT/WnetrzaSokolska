@@ -12,6 +12,7 @@ export const getDictionary = async (locale: Locales) => {
   if (typeof dictionaryFunction === "function") {
     return dictionaryFunction();
   } else {
-    throw new Error(`dictionaries[${locale}] is not a function`);
+    console.error(`Invalid locale: ${locale}`);
+    return {}; // Return an empty object or handle as needed
   }
 };

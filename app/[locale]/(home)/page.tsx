@@ -12,14 +12,14 @@ import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
-import { getDictionary, Locales } from "@/app/[locale]/dictionaries";
+import { getDictionary, Locales } from "@/app/dictionaries";
 
 const Home = async ({
   params: { locale },
 }: {
   params: { locale: Locales };
 }) => {
-  const dict = await getDictionary(locale);
+  const dict = await getDictionary(locale as Locales);
   return (
     <>
       {/* Sticky HEader main */}

@@ -1,4 +1,4 @@
-import { Locales } from "@/app/[locale]/dictionaries";
+import { Locales } from "@/app/dictionaries";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";

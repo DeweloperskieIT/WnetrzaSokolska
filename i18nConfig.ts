@@ -1,8 +1,10 @@
-import { I18NConfig } from "next/dist/server/config-shared";
+import { Config } from "next-i18n-router/dist/types";
 
-const i18nConfig: I18NConfig = {
+const i18nConfig: Config = {
   locales: ["pl", "en"],
   defaultLocale: "pl",
+  localeCookie: "NEXT_LOCALE",
+  serverSetCookie: "if-empty",
 };
 
 export default i18nConfig;

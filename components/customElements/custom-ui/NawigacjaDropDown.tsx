@@ -46,10 +46,13 @@ export const NawigacjaDropDown = ({
           <RxHamburgerMenu className=" w-6 h-6 md:w-8 md:h-8 object-contain" />
         )}
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="text-center rounded-none">
+      <DropdownMenuContent className="text-center rounded-none bg-dark">
         {links.map(({ link, name }, i) => (
           <div key={i}>
-            <DropdownMenuItem>
+            <DropdownMenuItem
+              asChild
+              className="rounded-none text-light cursor-pointer"
+            >
               <Link
                 href={link}
                 onClick={(e) => {

@@ -27,7 +27,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { Textarea } from "@/components/ui/textarea";
-import { getDictionary, Locales } from "@/app/[locale]/dictionaries";
+import { getDictionary, Locales } from "@/app/dictionaries";
 
 interface ContactFormProps {
   className?: string;

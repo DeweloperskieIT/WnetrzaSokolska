@@ -15,7 +15,7 @@ import {
   TextPlusSingleVideo,
 } from "@/components/customElements/texts-images";
 import { VideoBackground } from "@/components/customElements/video";
-import { getDictionary, Locales } from "@/app/[locale]/dictionaries";
+import { getDictionary, Locales } from "@/app/dictionaries";
 import { ImageCarouselFaderSideBySide } from "@/components/customElements/carousels/ImageCarouselFaderSideBySide";
 
 const page = async ({

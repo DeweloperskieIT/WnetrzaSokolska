@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ContactForm } from "@/components/customElements/forms";
+import Link from "next/link";
 
 export interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -105,27 +106,33 @@ export const Footer = ({
 
         {/* Logotypy */}
         <div className="w-full flex items-center md:items-end justify-evenly flex-col md:flex-row gap-10 h-full max-w-screen-xl self-c">
-          <Image
-            src={"/images/logo2.png"}
-            alt="sokolska towers logo"
-            width={160}
-            height={100}
-            className="object-contain h-auto w-auto"
-          />{" "}
-          <Image
-            src={"/images/mainpage/deweloperskie-logo-jasno-szare.png"}
-            alt="deweloperskie logo"
-            width={100}
-            height={100}
-            className="object-contain h-auto w-auto max-w-[200px] max-h-[80px]"
-          />
-          <Image
-            src={"/images/wnetrzalogo.png"}
-            alt="wnętrza deweloperskie logo"
-            width={300}
-            height={100}
-            className="object-contain max-w-[200px] max-h-[70px] h-auto w-auto"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/images/logo2.png"}
+              alt="sokolska towers logo"
+              width={160}
+              height={100}
+              className="object-contain h-auto w-auto"
+            />
+          </Link>
+          <Link href={"/"}>
+            <Image
+              src={"/images/mainpage/deweloperskie-logo-jasno-szare.png"}
+              alt="deweloperskie logo"
+              width={100}
+              height={100}
+              className="object-contain h-auto w-auto max-w-[200px] max-h-[80px]"
+            />
+          </Link>
+          <Link href={"/"}>
+            <Image
+              src={"/images/wnetrzalogo.png"}
+              alt="wnętrza deweloperskie logo"
+              width={300}
+              height={100}
+              className="object-contain max-w-[200px] max-h-[70px] h-auto w-auto"
+            />
+          </Link>
         </div>
       </div>
       <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">

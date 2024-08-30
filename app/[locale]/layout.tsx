@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { GoogleTagManager } from "@next/third-parties/google";
 import CookieConsentBanner from "@/components/cookies/CookieConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Locales } from "./dictionaries";
+import { Locales } from "../dictionaries";
 
 const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],

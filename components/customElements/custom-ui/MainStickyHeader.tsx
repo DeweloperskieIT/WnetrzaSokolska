@@ -10,6 +10,7 @@ import {
   YoutubeRedirect,
 } from "../buttons";
 import Link from "next/link";
+import { LanguageChanger } from "../buttons/LanguageChanger";
 
 export interface MainStickyHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -62,6 +63,7 @@ export const MainStickyHeader = ({
               { link: "/katowice-2", name: dict.Header.offer_2 },
             ]}
           />
+          <LanguageChanger locale={dict.locale} />
         </div>
       </div>
     </div>
