@@ -2,17 +2,20 @@ import "server-only";
 
 export type Locales = "en" | "pl";
 
-const dictionaries: Record<Locales, () => Promise<any>> = {
-  en: () => import("@/dictionaries/en.json").then((module) => module.default),
-  pl: () => import("@/dictionaries/pl.json").then((module) => module.default),
+// Directly import dictionaries
+import enDict from "@/dictionaries/en.json";
+import plDict from "@/dictionaries/pl.json";
+
+const dictionaries: Record<Locales, any> = {
+  en: enDict,
+  pl: plDict,
 };
 
-export const getDictionary = async (locale: Locales) => {
-  const dictionaryFunction = dictionaries[locale];
-  if (typeof dictionaryFunction === "function") {
-    return dictionaryFunction();
-  } else {
-    console.error(`Invalid locale: ${locale}`);
+export const getDictionary = (locale: Locales) => {
+  const dictionary = dictionaries[locale];
+  if (!dictionary) {
+    console.error(`Dictionary not found for locale: ${locale}`);
     return {}; // Return an empty object or handle as needed
   }
+  return dictionary;
 };

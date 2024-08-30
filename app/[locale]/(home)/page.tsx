@@ -77,6 +77,7 @@ const Home = async ({
               alt="alt"
               src={"/images/mainpage/grid-apartament-1.png"}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
                 "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
@@ -102,6 +103,7 @@ const Home = async ({
               alt="alt"
               src={"/images/mainpage/grid-apartament-2.png"}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
                 "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
@@ -124,6 +126,7 @@ const Home = async ({
               alt="alt"
               src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
                 "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
@@ -144,6 +147,7 @@ const Home = async ({
               alt="alt"
               src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
                 "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
