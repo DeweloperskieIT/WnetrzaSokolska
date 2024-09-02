@@ -179,7 +179,7 @@ export const ImageCarouselFader = ({
   return (
     <div
       className={cn(
-        "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full",
+        "relative w-full bg-websiteBackground2 max-h-svh overflow-hidden h-full lg:max-h-[1024px]",
         className
       )}
       ref={ref as React.LegacyRef<HTMLDivElement>}
