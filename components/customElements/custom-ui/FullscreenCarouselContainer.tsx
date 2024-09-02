@@ -11,7 +11,7 @@ export const FullscreenCarouselContainer = ({
   return (
     <div
       className={cn(
-        "flex flex-col section-header-gap w-full h-full max-h-[1024px]",
+        "flex flex-col section-header-gap w-full h-full",
         className
       )}
     >

@@ -50,7 +50,7 @@ const page = async ({
           icons={dict.Katowice_02.icons_module_01.icons}
         />
         {/* Second Section - Carousel custom slider */}
-        <FullscreenCarouselContainer className="">
+        <FullscreenCarouselContainer className="h-full">
           <SectionHeading
             wideParent
             top={dict.Katowice_02.ImageCarouselCustom_1.header_top}

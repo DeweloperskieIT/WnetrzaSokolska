@@ -98,7 +98,10 @@ export const ImageCarouselCustom = ({
   return (
     <div
       ref={ref}
-      className={cn("relative w-full transition-all duration-500 ", className)}
+      className={cn(
+        "relative w-full transition-all duration-500 max-h-",
+        className
+      )}
       {...rest}
     >
       <PrevNextButtons
@@ -112,7 +115,7 @@ export const ImageCarouselCustom = ({
         handleClickNext={handleClickNext}
         dotsClassName={""}
       />
-      <div className="relative flex justify-center items-center h-full md:translate-y-0 min-h-[300px] translate-x-[10%]">
+      <div className="relative flex justify-center items-center h-full md:translate-y-0 min-h-[300px] translate-x-[10%] max-h-[1024px]">
         <div
           className={cn("flex transition-all duration-500 h-full")}
           style={{
