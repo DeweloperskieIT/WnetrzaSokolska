@@ -106,28 +106,58 @@
       "header_bottom": "YOU DESERVE",
       "images": [
         {
-          "image": "/katowice-2/s3/01.jpg",
-          "alt": "View of the windows from the living room in the evening",
+          "image": "/images/mainpage/carousel/2.jpg",
+          "alt": "image",
           "text": ""
         },
         {
-          "image": "/katowice-2/s3/01.jpg",
-          "alt": "View of the windows from the living room in the evening",
+          "image": "/images/mainpage/carousel/3.jpg",
+          "alt": "image",
           "text": ""
         },
         {
-          "image": "/katowice-2/s3/01.jpg",
-          "alt": "View of the windows from the living room in the evening",
+          "image": "/images/mainpage/carousel/4.jpg",
+          "alt": "image",
           "text": ""
         },
         {
-          "image": "/katowice-2/s3/01.jpg",
-          "alt": "View of the windows from the living room in the evening",
+          "image": "/images/mainpage/carousel/5.jpg",
+          "alt": "image",
           "text": ""
         },
         {
-          "image": "/katowice-2/s3/01.jpg",
-          "alt": "View of the windows from the living room in the evening",
+          "image": "/images/mainpage/carousel/6.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/10.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/12.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/13.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/14.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/15.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/16.jpg",
+          "alt": "image",
           "text": ""
         }
       ]
