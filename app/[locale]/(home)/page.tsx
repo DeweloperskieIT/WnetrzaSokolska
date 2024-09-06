@@ -1,5 +1,6 @@
 import {
   Footer,
+  FullscreenCarouselContainer,
   MainStickyHeader,
   SectionHeading,
 } from "@/components/customElements/custom-ui";
@@ -13,6 +14,14 @@ import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
 import { getDictionary, Locales } from "@/app/dictionaries";
+import { ImageCarouselCustom } from "@/components/customElements/carousels";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Section } from "lucide-react";
 
 const Home = async ({
   params: { locale },
@@ -39,35 +48,31 @@ const Home = async ({
             <h2 className="text-xl md:text-xl font-light max-w-[800px] text-left">
               {dict.Landing_Page.breathing_background_image_01.paragraph}
             </h2>
+            <ul className="informacje-list-bullet-common">
+              <li>
+                {dict.Landing_Page.breathing_background_image_01.list_item_01}
+              </li>
+              <li>
+                {dict.Landing_Page.breathing_background_image_01.list_item_02}
+              </li>
+              <li>
+                {dict.Landing_Page.breathing_background_image_01.list_item_03}
+              </li>
+            </ul>
+            <h3 className="pt-4">
+              {dict.Landing_Page.breathing_background_image_01.subheader}
+            </h3>
+            <p className="text-xl md:text-xl font-light max-w-[800px] text-left">
+              {dict.Landing_Page.breathing_background_image_01.subparagraph}
+            </p>
           </div>
         </BreathingBackgroundImage>
-        {/* Second Section - Icons */}
-        <IconsModule
-          header=""
-          icons={
-            dict.Landing_Page.icons_module_01.icons
-            //   [
-            //   {
-            //     icon: "/images/mainpage/PolemanIcon.png",
-            //     text: dict.Landing_Page.icons_module_01.icon_01_text,
-            //   },
-            //   {
-            //     icon: "/images/mainpage/DangleKeysIcon.png",
-            //     text: dict.Landing_Page.icons_module_01.icon_02_text,
-            //   },
-            //   {
-            //     icon: "/images/mainpage/BuildingIcon.png",
-            //     text: dict.Landing_Page.icons_module_01.icon_03_text,
-            //   },
-            //   {
-            //     icon: "/images/mainpage/BedIcon.png",
-            //     text: dict.Landing_Page.icons_module_01.icon_04_text,
-            //   },
-            // ]
-          }
-        />
-        {/* ??????????????????? */}
 
+        <SectionHeading
+          className="-my-10"
+          top={dict.Landing_Page.offer_blocks.header}
+          wideParent
+        />
         <div className="flex justify-center flex-row flex-wrap gap-10 w-fit h-fit md:padding-element max-w-screen-lg">
           <Link
             href="/katowice-2"
@@ -164,6 +169,57 @@ const Home = async ({
             </div>
           </div>
         </div>
+        {/* Second Section - Icons */}
+        {/* <IconsModule
+          header=""
+          icons={
+            dict.Landing_Page.icons_module_01.icons
+            //   [
+            //   {
+            //     icon: "/images/mainpage/PolemanIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_01_text,
+            //   },
+            //   {
+            //     icon: "/images/mainpage/DangleKeysIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_02_text,
+            //   },
+            //   {
+            //     icon: "/images/mainpage/BuildingIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_03_text,
+            //   },
+            //   {
+            //     icon: "/images/mainpage/BedIcon.png",
+            //     text: dict.Landing_Page.icons_module_01.icon_04_text,
+            //   },
+            // ]
+          }
+        /> */}
+        {/* ??????????????????? */}
+
+        <div className="flex w-full h-fit flex-col gap-10 padding-element limited-width">
+          <SectionHeading
+            top={dict.Landing_Page.company_properties_01.header}
+          />
+          <div>
+            <ul className="informacje-list-bullet-common text-2xl">
+              <li>{dict.Landing_Page.company_properties_01.text_01}</li>
+              <li>{dict.Landing_Page.company_properties_01.text_02}</li>
+              <li>{dict.Landing_Page.company_properties_01.text_03}</li>
+              <li>{dict.Landing_Page.company_properties_01.text_04}</li>
+              <li>{dict.Landing_Page.company_properties_01.text_05}</li>
+              <li>{dict.Landing_Page.company_properties_01.text_06}</li>
+              <li>{dict.Landing_Page.company_properties_01.text_07}</li>
+            </ul>
+          </div>
+        </div>
+
+        <FullscreenCarouselContainer className="h-full">
+          <ImageCarouselCustom
+            className=""
+            aspectCustom="aspect-[9/16]"
+            images={dict.Landing_Page.image_carousel_custom_01.images}
+          />
+        </FullscreenCarouselContainer>
 
         {/* Eigth Section - Info text */}
         <InfoBlocks
@@ -219,12 +275,46 @@ const Home = async ({
             />
           </div>
         </div>
+
+        {/* FAQ */}
+        <div className="w-full h-fit flex flex-col gap-10 limited-width ">
+          <SectionHeading top="FAQ" wideParent />
+          <div className="flex flex-col gap-4 w-full ">
+            <Accordion type="single" collapsible>
+              {dict.Landing_Page.FAQ.map(
+                (
+                  { question, answer }: { question: string; answer: string },
+                  i: number
+                ) => (
+                  <AccordionItem key={i} value={question}>
+                    <AccordionTrigger className="hover:bg-darkerGray/20 h-fit">
+                      <div className="group footer-button-parent h-fit">
+                        <div className="footer-button-secondary-container h-fit py-2">
+                          <div className="footer-button-leftline group-hover:footer-hover-group-color h-fit"></div>
+                          <span className="footer-button-text !no-underline group-hover:!no-underline text-left h-fit">
+                            {question}
+                          </span>
+                        </div>
+                        <span className="footer-button-bottomline group-hover:footer-hover-group-color"></span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="padding-element">
+                      {answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                )
+              )}
+            </Accordion>
+          </div>
+        </div>
+
         {/* footer */}
         <Footer
           dict={dict}
           oferta={dict.Landing_Page.Footer_1.oferta}
           header={
             <SectionHeading
+              wideParent
               className="gap-3 md:gap-2 md:flex hidden"
               top={dict.Landing_Page.Footer_1.header_top}
               bottom={dict.Landing_Page.Footer_1.header_bottom}

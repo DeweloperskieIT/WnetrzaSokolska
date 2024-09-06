@@ -43,7 +43,12 @@
   "Landing_Page": {
     "breathing_background_image_01": {
       "header": "OUR PASSION IS QUALITY",
-      "paragraph": "Designing your own apartment is like cooking a meal: you can spend the evening preparing it yourself, or trust the professionals and enjoy a meal served by a chef."
+      "paragraph": "We are one of the brands of Deweloperskie, providing services such as support for developers, including:",
+      "list_item_01": "Arrangement of developer-standard apartments (Wnętrza Deweloperskie brand)",
+      "list_item_02": "Consulting services",
+      "list_item_03": "ASI Deweloperskie",
+      "subheader": "What do we do?",
+      "subparagraph": "We have arranged and are currently selling 4 apartments in the Sokolska Towers building in Katowice."
     },
     "icons_module_01": {
       "icons": [
@@ -65,8 +70,8 @@
         }
       ]
     },
-
     "offer_blocks": {
+      "header": "See our ready-to-move-in apartments for sale:",
       "see_offer": "Click to see the offer",
       "premieres": "premieres soon",
       "offer_katowice_1": {
@@ -85,6 +90,47 @@
         "paragraph_01": "A modern apartment for those who want everything within reach.",
         "paragraph_02": "Embrace a new perspective"
       }
+    },
+    "company_properties_01": {
+      "header": "What sets us apart?",
+      "text_01": "Ready to move in",
+      "text_02": "Corner apartments on the top floors",
+      "text_03": "Mortgage-eligible, with invoice purchase option",
+      "text_04": "Designed with attention to every detail",
+      "text_05": "Interior design with premium brands - Dewro, Villeroy&Boch, Barlinek, Marazzi",
+      "text_06": "Warranty on finishing works",
+      "text_07": "EV car charger"
+    },
+    "image_carousel_custom_01": {
+      "header_top": "COMFORT",
+      "header_bottom": "YOU DESERVE",
+      "images": [
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "View of the windows from the living room in the evening",
+          "text": ""
+        },
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "View of the windows from the living room in the evening",
+          "text": ""
+        },
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "View of the windows from the living room in the evening",
+          "text": ""
+        },
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "View of the windows from the living room in the evening",
+          "text": ""
+        },
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "View of the windows from the living room in the evening",
+          "text": ""
+        }
+      ]
     },
     "info_blocks_01": {
       "header_top": "REFINED",
@@ -106,6 +152,24 @@
       "header_top": "TIMELESS",
       "header_bottom": "BUILDING"
     },
+    "FAQ": [
+      {
+        "question": "What is included in the price?",
+        "answer": "The buyer acquires an unencumbered property based on a VAT invoice, along with a storage room, a share in the common areas (including the SPA area, gym, reception, and patio), and a warranty on all construction, carpentry, and lacquer services carried out as part of the arrangement process."
+      },
+      {
+        "question": "Does the transaction have to be in euros?",
+        "answer": "No, the sale price can be denominated in PLN."
+      },
+      {
+        "question": "Is there an option to charge an electric car?",
+        "answer": "The buyer can purchase an apartment with a parking space in the garage on level 0, equipped with a full-capacity electric car charging station of 22kW."
+      },
+      {
+        "question": "What are the financing options?",
+        "answer": "The buyer receives an appraisal report for securing a mortgage, allowing the purchase of both the apartment and its furnishings with mortgage funds."
+      }
+    ],
     "Footer_1": {
       "oferta": "Contact",
       "header_top": "SCHEDULE",
@@ -216,6 +280,87 @@
         {
           "heading": "Opt for luxury that puts you at the center",
           "img": "/katowice-1/s3/15.jpg",
+          "alt": "Sokolska Towers building at sunrise"
+        }
+      ]
+    },
+    "image_carousel_custom_01": {
+      "header_top": "KOMFORT, NA KTÓRY",
+      "header_bottom": "ZASŁUGUJESZ",
+      "images": [
+        {
+          "text": "Wrap yourself in luxury",
+          "image": "/katowice-1/s3/01.jpg",
+          "alt": "Living room in the apartment in the evening"
+        },
+        {
+          "text": "Feel at home",
+          "image": "/katowice-1/s3/02.jpg",
+          "alt": "Living room in the apartment during the day"
+        },
+        {
+          "text": "Discover your new living room",
+          "image": "/katowice-1/s3/03.jpg",
+          "alt": "Living room in the apartment during the day, view towards the windows"
+        },
+        {
+          "text": "Maximize the potential of the minimalist kitchen",
+          "image": "/katowice-1/s3/04.jpg",
+          "alt": "Living room in the apartment during the day, view towards the kitchen"
+        },
+        {
+          "text": "Fall asleep among the clouds on the 15th floor",
+          "image": "/katowice-1/s3/05.jpg",
+          "alt": "Bedroom in the apartment during the day"
+        },
+        {
+          "text": "Utilize the potential of a functional layout",
+          "image": "/katowice-1/s3/06.jpg",
+          "alt": "Hallway in the apartment with entrance to the bedroom"
+        },
+        {
+          "text": "A long bath in the evening...",
+          "image": "/katowice-1/s3/07.jpg",
+          "alt": "Fully finished bathroom with bathtub"
+        },
+        {
+          "text": "...a quick shower in the morning",
+          "image": "/katowice-1/s3/08.jpg",
+          "alt": "Fully finished bathroom with shower"
+        },
+        {
+          "text": "Fill up your wardrobe",
+          "image": "/katowice-1/s3/09.jpg",
+          "alt": "Spacious wardrobe"
+        },
+        {
+          "text": "Love your small room",
+          "image": "/katowice-1/s3/10.jpg",
+          "alt": "Functional room during the day"
+        },
+        {
+          "text": "Wrap yourself in luxury",
+          "image": "/katowice-1/s3/11.jpg",
+          "alt": "Kitchen and hallway at sunset"
+        },
+        {
+          "text": "Move in tomorrow",
+          "image": "/katowice-1/s3/12.jpg",
+          "alt": "Living room at sunset"
+        },
+        {
+          "text": "Experience the atmosphere of sunsets on the 15th floor",
+          "image": "/katowice-1/s3/13.jpg",
+          "alt": "View from the apartment window"
+        },
+        {
+          "text": "Move in tomorrow to your dream apartment",
+          "image": "/katowice-1/s3/14.jpg",
+          "alt": "Island in the living room with seating area in the evening"
+        },
+        {
+          "text": "Opt for luxury that puts you at the center",
+          "image": "/katowice-1/s3/15.jpg",
           "alt": "Sokolska Towers building at sunrise"
         }
       ]

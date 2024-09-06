@@ -20,6 +20,7 @@ export interface ImageCarouselCustomProps
   textClassName?: string;
   autoplay?: boolean;
   interval?: number;
+  aspectCustom?: string;
 }
 
 export const ImageCarouselCustom = ({
@@ -28,6 +29,7 @@ export const ImageCarouselCustom = ({
   textClassName,
   autoplay = false,
   interval = 5000,
+  aspectCustom,
   ...rest
 }: ImageCarouselCustomProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -126,7 +128,8 @@ export const ImageCarouselCustom = ({
             <div
               key={i}
               className={cn(
-                "relative flex-shrink-0 flex flex-col items-center justify-start md:justify-end aspect-video"
+                "relative flex-shrink-0 flex flex-col items-center justify-start md:justify-end aspect-video",
+                aspectCustom
               )}
               style={{ width: `80%` }}
             >

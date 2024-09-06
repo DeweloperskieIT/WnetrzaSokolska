@@ -18,7 +18,7 @@ export const WhatsappContact = ({
 }: WhatsappContactProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Whatsapp contact clicked`,
-    eventParams: { number },
+    eventParams: { Number: number },
     runOnce: true, // Will only fire once unless reset
   });
   return (

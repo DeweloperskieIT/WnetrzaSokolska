@@ -43,7 +43,12 @@
   "Landing_Page": {
     "breathing_background_image_01": {
       "header": "NASZĄ PASJĄ JEST JAKOŚĆ",
-      "paragraph": "Aranżacja własnego apartamentu jest jak kolacja: możesz spędzić wieczór przyrządzając ją samodzielnie, albo zaufać profesjonalistom i delektować się posiłkiem serwowanym przez szefa kuchni."
+      "paragraph": "Jesteśmy jedną  z marek Deweloperskie, w ramach której świadczymy usługi m.in. w zakresie wsparcia dla deweloperów, w tym:",
+      "list_item_01": "Aranżacja apartamentów w stanie deweloperskim (marka Wnętrza Deweloperskie)",
+      "list_item_02": "Usługi doradcze",
+      "list_item_03": "ASI Deweloperskie",
+      "subheader": "Co robimy?",
+      "subparagraph": "Zaaranżowaliśmy i aktualnie prowadzimy sprzedaż 4 apartamentów w budynku Sokolska Towers w Katowicach."
     },
     "icons_module_01": {
       "icons": [
@@ -66,6 +71,7 @@
       ]
     },
     "offer_blocks": {
+      "header": "Zobacz nasze gotowe apartamenty na sprzedaż:",
       "see_offer": "Kliknij aby zobaczyć ofertę",
       "premieres": "premiera wkrótce",
       "offer_katowice_1": {
@@ -85,6 +91,80 @@
         "paragraph_02": "Przyjmij nową perspektywę"
       }
     },
+
+    "company_properties_01": {
+      "header": "Co nas wyróżnia?",
+      "text_01": "Gotowe do zamieszkania",
+      "text_02": "Narożne apartamenty na najwyższych piętrach",
+      "text_03": "Kredytowalne, z możliwością zakupu na fakturę",
+      "text_04": "Zaprojektowane z przemyśleniem każdego detalu",
+      "text_05": "Aranżacja wnętrz markami premium - Dewro, Villeroy&Boch, Barlinek, Marazzi",
+      "text_06": "Gwarancja na prace wykończeniowe.",
+      "text_07": "Ładowarka samochodowa EV"
+    },
+
+    "image_carousel_custom_01": {
+      "header_top": "COMFORT",
+      "header_bottom": "YOU DESERVE",
+      "images": [
+        {
+          "image": "/images/mainpage/carousel/2.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/3.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/4.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/5.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/6.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/10.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/12.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/13.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/14.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/15.jpg",
+          "alt": "image",
+          "text": ""
+        },
+        {
+          "image": "/images/mainpage/carousel/16.jpg",
+          "alt": "image",
+          "text": ""
+        }
+      ]
+    },
+
     "info_blocks_01": {
       "header_top": "DOPRACOWANE",
       "header_bottom": "W KAŻDYM CALU",
@@ -105,6 +185,24 @@
       "header_top": "PONADCZASOWY",
       "header_bottom": "BUDYNEK"
     },
+    "FAQ": [
+      {
+        "question": "Co jest zawarte w cenie?",
+        "answer": "Kupujący nabywa wolną od obciążeń nieruchomość w oparciu o fakturę VAT, wraz z komórką lokatorską, udziałem w powierzchni wspólnej (w tym strefie SPA, siłowni, recepcji oraz patio) oraz rękojmią na wszystkie usługi budowlane, stolarskie oraz lakiernicze, realizowane w ramach procesu aranżacyjnego."
+      },
+      {
+        "question": "Czy transakcja musi być w walucie euro?",
+        "answer": "Nie, cena sprzedaży może być denominowana w PLN."
+      },
+      {
+        "question": "Czy jest możliwość ładowania samochodu elektrycznego?",
+        "answer": "Kupujący może kupić apartament wraz z miejscem postojowym w hali garażowej na kondygnacji 0, wyposażonym w pełnowartościową stację ładowania samochodów elektrycznych o mocy 22kW."
+      },
+      {
+        "question": "Jakie są możliwości finansowania?",
+        "answer": "Kupujący otrzymuje operat szacunkowy wykonany na potrzeby zabezpieczenia kredytu hipotecznego, pozwalający na finansowanie zakupu zarówno lokalu, jak i jego wyposażenia środkami kredytu hipotecznego."
+      }
+    ],
     "Footer_1": {
       "oferta": "Kontakt",
       "header_top": "UMÓW SIĘ",
@@ -216,6 +314,87 @@
           "heading": "Postaw na luksus, który stawia Cię w centrum",
           "img": "/katowice-1/s3/15.jpg",
           "alt": "Budynek sokolska towers przy wschodzie słońca"
+        }
+      ]
+    },
+    "image_carousel_custom_01": {
+      "header_top": "KOMFORT, NA KTÓRY",
+      "header_bottom": "ZASŁUGUJESZ",
+      "images": [
+        {
+          "image": "/katowice-1/s3/01.jpg",
+          "alt": "Salon w apartamencie wieczorem",
+          "text": "Otul się luksusem"
+        },
+        {
+          "image": "/katowice-1/s3/02.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia",
+          "text": "Poczuj się jak u siebie w domu"
+        },
+        {
+          "image": "/katowice-1/s3/03.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na okna",
+          "text": "Poznaj swój nowy duży pokój"
+        },
+        {
+          "image": "/katowice-1/s3/04.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na kuchnię",
+          "text": "Wykorzystaj potencjał minimalistycznej kuchni"
+        },
+        {
+          "image": "/katowice-1/s3/05.jpg",
+          "alt": "Sypialnia w apartamencie w ciągu dnia",
+          "text": "Zasypiaj wśród chmur, na XV piętrze"
+        },
+        {
+          "image": "/katowice-1/s3/06.jpg",
+          "alt": "Korytarz w apartamencie z wejściem do sypialni",
+          "text": "Korzystaj z potencjału układu funkcjonalnego"
+        },
+        {
+          "image": "/katowice-1/s3/07.jpg",
+          "alt": "W pełni wykończona łazienka z wanną",
+          "text": "Długa kąpiel wieczorem…"
+        },
+        {
+          "image": "/katowice-1/s3/08.jpg",
+          "alt": "W pełni wykończona łazienka z prysznicem",
+          "text": "… szybki prysznic rano"
+        },
+        {
+          "image": "/katowice-1/s3/09.jpg",
+          "alt": "Przestrzenna garderoba",
+          "text": "Wypełnij swoją garderobę"
+        },
+        {
+          "image": "/katowice-1/s3/10.jpg",
+          "alt": "Pokój funkcjonalny w dzień",
+          "text": "Pokochaj swój mały pokój"
+        },
+        {
+          "image": "/katowice-1/s3/11.jpg",
+          "alt": "Kuchnia i korytarz przy zachodzie słońca",
+          "text": "Otól się luksusem"
+        },
+        {
+          "image": "/katowice-1/s3/12.jpg",
+          "alt": "Salon przy zachodzie słońca",
+          "text": "Zamieszkaj już jutro"
+        },
+        {
+          "image": "/katowice-1/s3/13.jpg",
+          "alt": "Widok z okna apartamentu",
+          "text": "Poznaj klimat zachodów słońca na XV piętrze"
+        },
+        {
+          "image": "/katowice-1/s3/14.jpg",
+          "alt": "Wysepka w salonie zm iejscem siedzącym wieczorem",
+          "text": "Zamieszkaj już jutro w wymarzonym apartamencie"
+        },
+        {
+          "image": "/katowice-1/s3/15.jpg",
+          "alt": "Budynek sokolska towers przy wschodzie słońca",
+          "text": "Postaw na luksus, który stawia Cię w centrum"
         }
       ]
     },

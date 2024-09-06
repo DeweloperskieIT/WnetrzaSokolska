@@ -1,4 +1,7 @@
-import { ImageCarouselFader } from "@/components/customElements/carousels";
+import {
+  ImageCarouselCustom,
+  ImageCarouselFader,
+} from "@/components/customElements/carousels";
 import {
   Footer,
   FullscreenCarouselContainer,
@@ -50,7 +53,7 @@ const page = async ({
           icons={dict.Katowice_01.icons_module_01.icons}
         />
         {/* Second Section - Carousel fader */}
-        <FullscreenCarouselContainer>
+        {/* <FullscreenCarouselContainer>
           <SectionHeading
             wideParent
             top={dict.Katowice_01.image_carousel_fader_01.header_top}
@@ -64,6 +67,20 @@ const page = async ({
             className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
             textPlacement="bottom"
             images={dict.Katowice_01.image_carousel_fader_01.images}
+          />
+        </FullscreenCarouselContainer> */}
+        <FullscreenCarouselContainer className="h-full">
+          <SectionHeading
+            wideParent
+            top={dict.Katowice_01.image_carousel_custom_01.header_top}
+            bottom={dict.Katowice_01.image_carousel_custom_01.header_bottom}
+          />
+          <ImageCarouselCustom
+            className=""
+            textClassName="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
+            autoplay
+            interval={4000}
+            images={dict.Katowice_01.image_carousel_custom_01.images}
           />
         </FullscreenCarouselContainer>
         {/* Third Section - Rzut Mieszkania */}

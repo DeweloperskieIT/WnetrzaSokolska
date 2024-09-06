@@ -26,74 +26,11 @@ export const Footer = ({
 }: FooterProps) => {
   return (
     <div
-      className={cn(
-        "padding-element w-full flex flex-col section-header-gap",
-        className
-      )}
+      className={cn("w-full flex flex-col section-header-gap", className)}
       {...rest}
     >
       {header}
-      <div className="flex flex-col xl:flex-col w-full items-center justify-between gap-10 pb-2">
-        {/*<div className="hidden md:flex basis-1/2 w-full items-center md:items-start gap-20 justify-between flex-col h-full">
-           <div className="flex flex-col gap-4 w-full ">
-            <Accordion type="single" collapsible>
-              <AccordionItem value="item-1">
-                <AccordionTrigger className="hover:bg-darkerGray/20">
-                  <div className="group footer-button-parent">
-                    <div className="footer-button-secondary-container">
-                      <div className="footer-button-leftline group-hover:footer-hover-group-color"></div>
-                      <span className="footer-button-text !no-underline group-hover:!no-underline">
-                        MEDIA SPOŁECZNOŚCIOWE
-                      </span>
-                    </div>
-                    <span className="footer-button-bottomline group-hover:footer-hover-group-color"></span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger>
-                  <div className="group footer-button-parent">
-                    <div className="footer-button-secondary-container">
-                      <div className="footer-button-leftline group-hover:footer-hover-group-color"></div>
-                      <span className="footer-button-text">
-                        POLITYKA PRYWATNOŚCI
-                      </span>
-                    </div>
-                    <span className="footer-button-bottomline group-hover:footer-hover-group-color"></span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger>
-                  <div className="group footer-button-parent">
-                    <div className="footer-button-secondary-container">
-                      <div className="footer-button-leftline group-hover:footer-hover-group-color"></div>
-                      <span className="footer-button-text">
-                        KONTAKT I DANE SPÓŁKI
-                      </span>
-                    </div>
-                    <span className="footer-button-bottomline group-hover:footer-hover-group-color"></span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div> 
-        </div>*/}
+      <div className=" padding-element flex flex-col xl:flex-col w-full items-center justify-between gap-10 pb-2">
         {/* Formularz */}
         <div className="lg:basis-1/2 self-center w-full">
           <ContactForm
@@ -135,7 +72,7 @@ export const Footer = ({
           </Link>
         </div>
       </div>
-      <footer className="text-sm flex flex-col gap-4 pb-4 md:pb-10">
+      <footer className=" padding-element  text-sm flex flex-col gap-4 pb-4 md:pb-10">
         <span className="text-center">
           {dict.Footer_Common.paragraph_1}
           <br />
