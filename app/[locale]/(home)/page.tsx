@@ -69,7 +69,7 @@ const Home = async ({
         </BreathingBackgroundImage>
 
         <SectionHeading
-          className="-my-10"
+          className="md:-my-10 -mb-2"
           top={dict.Landing_Page.offer_blocks.header}
           wideParent
         />
@@ -213,13 +213,13 @@ const Home = async ({
           </div>
         </div>
 
-        <FullscreenCarouselContainer className="h-full">
+        {/*<FullscreenCarouselContainer className="h-full">
           <ImageCarouselCustom
             className=""
             aspectCustom="aspect-[9/16]"
             images={dict.Landing_Page.image_carousel_custom_01.images}
           />
-        </FullscreenCarouselContainer>
+        </FullscreenCarouselContainer>*/}
 
         {/* Eigth Section - Info text */}
         <InfoBlocks
