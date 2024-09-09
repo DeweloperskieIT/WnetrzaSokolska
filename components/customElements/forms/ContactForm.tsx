@@ -141,7 +141,7 @@ export function ContactForm({
       )}
     >
       <div className="hidden md:block">
-        <span className="md:text-light font-bold text-2xl pb-6">
+        <span className="md:text-light text-2xl pb-6">
           {dict.contact_form.title}
         </span>
       </div>

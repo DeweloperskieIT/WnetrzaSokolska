@@ -1,5 +1,6 @@
 import {
   ImageCarouselCustom,
+  ImageCarouselCustomVertical,
   ImageCarouselFader,
 } from "@/components/customElements/carousels";
 import {
@@ -82,6 +83,14 @@ const page = async ({
             interval={4000}
             images={dict.Katowice_01.image_carousel_custom_01.images}
           />
+
+          {/* <ImageCarouselCustomVertical
+            className=""
+            textClassName="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
+            autoplay
+            interval={4000}
+            images={dict.Katowice_01.image_carousel_custom_01.images}
+          /> */}
         </FullscreenCarouselContainer>
         {/* Third Section - Rzut Mieszkania */}
         <RzutMieszkania
@@ -139,6 +148,7 @@ const page = async ({
           dict={dict}
           header={
             <SectionHeading
+              wideParent
               className="gap-3 md:gap-2 md:flex hidden"
               top={dict.Katowice_01.Footer_1.header_top}
               bottom={dict.Katowice_01.Footer_1.header_bottom}

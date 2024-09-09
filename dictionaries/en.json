@@ -43,48 +43,49 @@
   "Landing_Page": {
     "breathing_background_image_01": {
       "header": "OUR PASSION IS QUALITY",
-      "paragraph": "We are one of the brands of Deweloperskie, providing services such as support for developers, including:",
-      "list_item_01": "Arrangement of developer-standard apartments (Wnętrza Deweloperskie brand)",
-      "list_item_02": "Consulting services",
-      "list_item_03": "ASI Deweloperskie",
-      "subheader": "What do we do?",
-      "subparagraph": "We have arranged and are currently selling 4 apartments in the Sokolska Towers building in Katowice."
+      "paragraph_01": "We implement innovative design projects using proprietary furniture solutions that transform properties purchased from the primary market into timeless interiors.",
+      "paragraph_02": "Developer Interiors is one of the brands of a dynamically growing startup in the real estate market, which includes: our own Alternative Investment Fund ASI Developer (PLZASI00388)."
     },
     "icons_module_01": {
       "icons": [
         {
-          "icon": "/images/mainpage/PolemanIcon.png",
-          "text": "Innovative financing model, no down payment required"
-        },
-        {
-          "icon": "/images/mainpage/DangleKeysIcon.png",
-          "text": "Personal transaction advisor"
+          "icon": "/images/mainpage/MapIcon.png",
+          "text": "Katowice"
         },
         {
           "icon": "/images/mainpage/BuildingIcon.png",
-          "text": "Renovation team for custom arrangements"
+          "text": "Sokolska Towers"
         },
         {
-          "icon": "/images/mainpage/BedIcon.png",
-          "text": "Purchase with invoice, no commission or PCC"
+          "icon": "/images/mainpage/plans-icon2.png",
+          "text": "75m2"
+        },
+        {
+          "icon": "/images/mainpage/summit-icon2.png",
+          "text": "Top Floors"
+        },
+        {
+          "icon": "/images/mainpage/tick-icon.png",
+          "text": "New, Finished"
         }
       ]
     },
     "offer_blocks": {
-      "header": "See our ready-to-move-in apartments for sale:",
+      "header_top": "SEE OUR READY",
+      "header_bottom": "APARTMENTS FOR SALE",
       "see_offer": "Click to see the offer",
-      "premieres": "premieres soon",
+      "premieres": "premiere coming soon",
       "offer_katowice_1": {
-        "paragraph_01": "The highest located apartment with a comfortable loggia for those who value uniqueness.",
+        "paragraph_01": "The highest situated apartment with a comfortable loggia for those who value uniqueness.",
         "paragraph_02": "Luxury that sets you apart"
       },
       "offer_katowice_2": {
-        "paragraph_01": "An apartment designed for those who want to take full advantage of Katowice on their own terms.",
-        "paragraph_02": "Luxury that inspires desire"
+        "paragraph_01": "An apartment designed for those who want to enjoy the potential of Katowice on their own terms.",
+        "paragraph_02": "Luxury that sparks desire"
       },
       "offer_katowice_3": {
-        "paragraph_01": "Your small home on the XIV floor, with a spacious living room with kitchen, office, bedroom, laundry room, walk-in closet, and a large storage room on the same floor.",
-        "paragraph_02": "Your oasis of tranquility in the heart of the city"
+        "paragraph_01": "Your small home on the XIV floor, with a spacious living room with kitchen, office, bedroom, laundry room, walk-in closet, and a large storage room on the floor.",
+        "paragraph_02": "Your oasis of peace in the heart of the city"
       },
       "offer_katowice_4": {
         "paragraph_01": "A modern apartment for those who want everything within reach.",
@@ -92,73 +93,98 @@
       }
     },
     "company_properties_01": {
-      "header": "What sets us apart?",
-      "text_01": "Ready to move in",
-      "text_02": "Corner apartments on the top floors",
-      "text_03": "Mortgage-eligible, with invoice purchase option",
-      "text_04": "Designed with attention to every detail",
-      "text_05": "Interior design with premium brands - Dewro, Villeroy&Boch, Barlinek, Marazzi",
-      "text_06": "Warranty on finishing works",
-      "text_07": "EV car charger"
+      "header": "WHAT SETS US APART?",
+      "text_01": "Ready to move in, with a warranty on finishing works",
+      "text_02": "Selected corner units on the top floors",
+      "text_03": "Purchase on VAT invoice from a professional (with liability insurance)",
+      "text_04": "Premium brands (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)",
+      "text_05": "EV car charger"
     },
-    "image_carousel_custom_01": {
-      "header_top": "COMFORT",
-      "header_bottom": "YOU DESERVE",
+    "image_carousel_fader_01": {
       "images": [
         {
-          "image": "/images/mainpage/carousel/2.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/1.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/3.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/2.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/4.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/3.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/5.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/4.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/6.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/5.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/10.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/6.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/12.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/7.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/13.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/8.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/14.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/9.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/15.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/1/10.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+    "image_carousel_fader_02": {
+      "images": [
+        {
+          "img": "/images/mainpage/carousel/2/1.jpg",
+          "alt": "image"
         },
         {
-          "image": "/images/mainpage/carousel/16.jpg",
-          "alt": "image",
-          "text": ""
+          "img": "/images/mainpage/carousel/2/2.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/3.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/4.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/5.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/6.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/7.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/8.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/9.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/10.jpg",
+          "alt": "image"
         }
       ]
     },
@@ -167,15 +193,15 @@
       "header_bottom": "IN EVERY DETAIL",
       "info_01": {
         "header": "TIMELESS INVESTMENTS",
-        "paragraph": "We offer our clients ready-to-move-in premium apartments in the heart of Katowice, distinguished by timeless and versatile design combined with the latest technologies."
+        "paragraph": "We offer our clients ready-to-move-in premium apartments in the heart of Katowice, featuring timeless and universal design combined with the latest technologies."
       },
       "info_02": {
-        "header": "LUXURY WITHIN REACH",
-        "paragraph": "The vision of Wnętrza Deweloperskie involves replicating highly refined design elements across a series of similar apartments, which helps maintain price competitiveness."
+        "header": "LUXURY AT YOUR FINGERTIPS",
+        "paragraph": "The vision of Developer Interiors involves replicating highly refined design elements across a series of similar apartments, which helps maintain price competitiveness."
       },
       "info_03": {
         "header": "QUALITY BACKED BY WARRANTY",
-        "paragraph": "The warranty covers all finishing work carried out by a professional construction team, as well as built-in furniture, lacquered surfaces, iFrame software, and electrical installations for car charging stations."
+        "paragraph": "The warranty covers all finishing works carried out by a professional construction team, as well as furniture installation, lacquered surfaces, iFrame software, and electrical installation for car charging stations."
       }
     },
     "youtube_shorts_01": {
@@ -184,26 +210,26 @@
     },
     "FAQ": [
       {
-        "question": "What is included in the price?",
-        "answer": "The buyer acquires an unencumbered property based on a VAT invoice, along with a storage room, a share in the common areas (including the SPA area, gym, reception, and patio), and a warranty on all construction, carpentry, and lacquer services carried out as part of the arrangement process."
+        "question": "WHAT IS INCLUDED IN THE PRICE?",
+        "answer": "The buyer acquires a property free from encumbrances based on a VAT invoice, including a storage room, a share in common areas (such as the SPA area, gym, reception, and patio), and a warranty for all construction, carpentry, and finishing services carried out during the design process."
       },
       {
-        "question": "Does the transaction have to be in euros?",
+        "question": "MUST THE TRANSACTION BE IN EURO?",
         "answer": "No, the sale price can be denominated in PLN."
       },
       {
-        "question": "Is there an option to charge an electric car?",
-        "answer": "The buyer can purchase an apartment with a parking space in the garage on level 0, equipped with a full-capacity electric car charging station of 22kW."
+        "question": "IS IT POSSIBLE TO CHARGE AN ELECTRIC CAR?",
+        "answer": "The buyer can purchase an apartment with a parking space in the garage on level 0, equipped with a full-fledged electric car charging station with a power of 22kW."
       },
       {
-        "question": "What are the financing options?",
-        "answer": "The buyer receives an appraisal report for securing a mortgage, allowing the purchase of both the apartment and its furnishings with mortgage funds."
+        "question": "WHAT ARE THE FINANCING OPTIONS?",
+        "answer": "The buyer receives an appraisal report for securing a mortgage, allowing for financing the purchase of both the property and its furnishings through a mortgage loan."
       }
     ],
     "Footer_1": {
       "oferta": "Contact",
-      "header_top": "SCHEDULE",
-      "header_bottom": "A PRESENTATION"
+      "header_top": "SCHEDULE A",
+      "header_bottom": "VIEWING"
     }
   },
   "Katowice_01": {

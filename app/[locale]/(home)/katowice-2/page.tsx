@@ -121,6 +121,7 @@ const page = async ({
           dict={dict}
           header={
             <SectionHeading
+              wideParent
               className="gap-3 md:gap-2 md:flex hidden"
               top={dict.Katowice_02.Footer_1.header_top}
               bottom={dict.Katowice_02.Footer_1.header_bottom}

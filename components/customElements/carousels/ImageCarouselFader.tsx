@@ -231,6 +231,17 @@ export const ImageCarouselFader = ({
         </div>
       )}
 
+      <Image
+        placeholder="blur"
+        blurDataURL="/images/blur.png"
+        loading="lazy"
+        src={images[0].img}
+        alt={images[0].alt}
+        fill
+        sizes={sizes}
+        className={cn("opacity-0 !relative aspect-[9/16]")}
+      />
+
       {images.map(({ img, alt }, i) => (
         <Image
           placeholder="blur"
@@ -242,7 +253,7 @@ export const ImageCarouselFader = ({
           fill
           sizes={sizes}
           className={cn(
-            `absolute inset-0 object-cover transition-all duration-500`,
+            `aboslute object-cover w-[105%] transition-all duration-500`,
             i === currentIndex && "opacity-100",
             i === prevIndex && "opacity-10",
             i !== currentIndex && "opacity-0"

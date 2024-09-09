@@ -160,6 +160,7 @@ const page = async ({
           dict={dict}
           header={
             <SectionHeading
+              wideParent
               className="gap-3 md:gap-2 md:flex hidden"
               topClass="text-accent2 font-bold"
               top={dict.Katowice_03.Footer_1.header_top}
