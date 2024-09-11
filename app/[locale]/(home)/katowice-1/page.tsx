@@ -70,7 +70,7 @@ const page = async ({
             images={dict.Katowice_01.image_carousel_fader_01.images}
           />
         </FullscreenCarouselContainer> */}
-        <FullscreenCarouselContainer className="h-full">
+        <FullscreenCarouselContainer>
           <SectionHeading
             wideParent
             top={dict.Katowice_01.image_carousel_custom_01.header_top}

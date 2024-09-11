@@ -271,7 +271,7 @@ export const ImageCarouselCustom = ({
     <div
       ref={ref}
       className={cn(
-        "relative w-full transition-all duration-500 max-h-svh",
+        "relative w-full transition-all h-fit duration-500 max-h-svh",
         className
       )}
       {...rest}
@@ -287,9 +287,9 @@ export const ImageCarouselCustom = ({
         handleClickNext={handleClickNext}
         dotsClassName={""}
       />
-      <div className="relative flex justify-center items-center h-full md:translate-y-0 min-h-[300px] translate-x-[12.5%] max-h-svh xl:max-h-[1024px]">
+      <div className="relative h-auto md:translate-y-0 translate-x-[12.5%] xl:max-h-[1024px] overflow-hidden">
         <div
-          className={cn("flex transition-all duration-500 h-full")}
+          className={cn("flex flex-row transition-all duration-500 ")}
           style={{
             transform: `translateX(-${currentIndex * 75}%)`,
           }}
@@ -298,9 +298,9 @@ export const ImageCarouselCustom = ({
             <div
               key={i}
               className={cn(
-                "relative flex-shrink-0 h-auto flex flex-col items-center justify-center md:justify-end"
+                "relative flex-shrink-0 object-contain flex flex-col items-center justify-center md:justify-end w-[75%]"
               )}
-              style={{ width: `75%` }}
+              // style={{ width: `75%` }}
             >
               <Image
                 src={item.image}
@@ -309,7 +309,7 @@ export const ImageCarouselCustom = ({
                 height={768}
                 sizes="90vw"
                 className={cn(
-                  " object-cover block w-[95%] duration-500 transition-all h-full",
+                  "block w-[95%] duration-500 transition-all h-full",
                   i === currentIndex ? "grayscale-0 " : "grayscale  h-1/2",
                   i === currentIndex - 1 && leftHover && "grayscale-0 h-full",
                   i === currentIndex + 1 && rightHover && "grayscale-0 h-full"
