@@ -287,7 +287,13 @@ export const ImageCarouselCustom = ({
         handleClickNext={handleClickNext}
         dotsClassName={""}
       />
-      <div className="relative h-auto md:translate-y-0 translate-x-[12.5%] xl:max-h-[1024px] overflow-hidden">
+      <div
+        className={cn(
+          "relative mx-auto h-auto translate-y-0  xl:max-h-[1024px] ",
+          "translate-x-[12.5%]"
+          // "overflow-hidden"
+        )}
+      >
         <div
           className={cn("flex flex-row transition-all duration-500 ")}
           style={{
@@ -298,7 +304,7 @@ export const ImageCarouselCustom = ({
             <div
               key={i}
               className={cn(
-                "relative flex-shrink-0 object-contain flex flex-col items-center justify-center md:justify-end w-[75%]"
+                "relative flex-shrink-0 object-contain flex flex-col items-center justify-center w-[75%]"
               )}
               // style={{ width: `75%` }}
             >
@@ -309,7 +315,7 @@ export const ImageCarouselCustom = ({
                 height={768}
                 sizes="90vw"
                 className={cn(
-                  "block w-[95%] duration-500 transition-all h-full",
+                  "block w-[95%] duration-500 transition-all h-full object-cover",
                   i === currentIndex ? "grayscale-0 " : "grayscale  h-1/2",
                   i === currentIndex - 1 && leftHover && "grayscale-0 h-full",
                   i === currentIndex + 1 && rightHover && "grayscale-0 h-full"
@@ -330,13 +336,15 @@ export const ImageCarouselCustom = ({
       </div>
 
       {/* Preload the next image off-screen */}
-      <div style={{ display: "none" }}>
+      <div style={{ display: "none" }} className="w-[75%] h-auto">
         <Image
           src={images[(currentIndex + 1) % images.length].image}
           alt={images[(currentIndex + 1) % images.length].alt}
           width={1920}
           height={768}
           priority
+          loading="eager"
+          className="w-[95%] h-full"
         />
       </div>
     </div>

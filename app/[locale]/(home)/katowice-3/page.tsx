@@ -13,6 +13,7 @@ import {
   RzutMieszkania,
   SpiralPhotos4,
   TextPlusSingleVideo,
+  TextPlusSingleVideoModular,
 } from "@/components/customElements/texts-images";
 import { VideoBackground } from "@/components/customElements/video";
 import { getDictionary, Locales } from "@/app/dictionaries";
@@ -35,7 +36,7 @@ const page = async ({
       <div className="landing-page">
         {/* Video */}
         <VideoBackground
-          src="/katowice-1/s1/Opening-offer-showreel.mp4"
+          src="/universal/video/showreel.mp4"
           className="aspect-[4/3] md:aspect-video max-h-[1024px] h-full md:-mb-10 lg:-mb-20 flex items-end"
         />
         {/* First Section - Icons Module */}
@@ -57,16 +58,15 @@ const page = async ({
           <SectionHeading
             wideParent
             top={dict.Katowice_03.image_carousel_fader_01.header_top}
-            topClass="text-accent2 font-bold"
+            topClass="text-accent2 font-bold md:mb-2"
             bottom={dict.Katowice_03.image_carousel_fader_01.header_bottom}
           />
           <ImageCarouselFader
             autoplay={true}
             duration={6000}
             dotsEnabledOnlyVisible={true}
-            textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
-            className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
-            textPlacement="bottom"
+            // textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
+            className="aspect-[16/9] max-h-[svh]"
             images={dict.Katowice_03.image_carousel_fader_01.images}
           />
         </FullscreenCarouselContainer>
@@ -91,6 +91,20 @@ const page = async ({
             />
           }
         />
+        <PlainParagraphText
+          texts={dict.Katowice_03.rzut_mieszkania_01.texts}
+          className=" md:-mt-16"
+        />
+        {/* EXTRA 4.5 Section - Carousel fader */}
+        <FullscreenCarouselContainer>
+          <ImageCarouselFader
+            autoplay={true}
+            duration={6000}
+            dotsEnabledOnlyVisible={true}
+            className="aspect-[16/9] max-h-[svh]"
+            images={dict.Katowice_03.image_carousel_fader_02.images}
+          />
+        </FullscreenCarouselContainer>
         {/* Fourth Section - Info Texts */}
         <InfoBlocks
           info={dict.Katowice_03.InfoBlocks_1.info}
@@ -105,7 +119,7 @@ const page = async ({
             />
           }
         />
-        {/* Fifth section - Custom text 2 */}
+
         <PlainParagraphText
           texts={dict.Katowice_03.custom_text_section_02.texts}
           header={
@@ -120,28 +134,56 @@ const page = async ({
         <FullscreenCarouselContainer>
           <ImageCarouselFaderSideBySide
             dotsEnabledOnlyVisible
-            textPlacement="bottom"
-            textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
-            className="h-svh"
-            images={dict.Katowice_03.image_carousel_fader_01.images}
+            images={dict.Katowice_03.image_carousel_fader_sidebyside_01.images}
           />
         </FullscreenCarouselContainer>
-        {/* Fifth Section - Interchangeable images */}
+        {/* Fifth section - Custom text 2 */}
+        <PlainParagraphText
+          texts={dict.Katowice_03.custom_text_section_03.texts}
+          header={
+            <SectionHeading
+              topClass="text-accent2 font-bold"
+              top={dict.Katowice_03.custom_text_section_03.header_top}
+              bottom={dict.Katowice_03.custom_text_section_03.header_bottom}
+            />
+          }
+        >
+          <ul className="informacje-list-bullet-common text-xl -mt-10 md:-mt-12">
+            {dict.Katowice_03.custom_text_section_03.list.map(
+              (item: string, i: number) => (
+                <li key={i}>{item}</li>
+              )
+            )}
+          </ul>
+        </PlainParagraphText>
+
+        {/* EXTRA 6.5 Section - Text with headin*/}
+        {/* <PlainParagraphText
+          texts={dict.Katowice_03.custom_text_section_04.texts}
+          header={
+            <SectionHeading
+              topClass="text-accent2 font-bold"
+              top={dict.Katowice_03.custom_text_section_04.header_top}
+              bottom={dict.Katowice_03.custom_text_section_04.header_bottom}
+            />
+          }
+        /> */}
+        {/* Fifth seventh - Interchangeable images */}
         <InterchangeableImages
           interval={4000}
           mode="carousel"
-          elements={dict.Katowice_03.interchangeable_images_01.elements}
+          elements={dict.universal_page_01.interchangeable_images_01.elements}
           header={
             <SectionHeading
               wideParent
               topClass="text-accent2 font-bold"
-              top={dict.Katowice_03.interchangeable_images_01.header_top}
-              bottom={dict.Katowice_03.interchangeable_images_01.header_bottom}
+              top={dict.Katowice_03.interchangeable_header.header_top}
+              bottom={dict.Katowice_03.interchangeable_header.header_bottom}
             />
           }
         />
         {/* Sixth Section - Info with video */}
-        <TextPlusSingleVideo
+        <TextPlusSingleVideoModular
           src={dict.Katowice_03.text_plus_single_video_01.source}
           content={dict.Katowice_03.text_plus_single_video_01.content}
           customAccent="text-accent2"

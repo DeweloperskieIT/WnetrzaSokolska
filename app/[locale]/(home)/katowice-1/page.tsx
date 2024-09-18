@@ -1,8 +1,4 @@
-import {
-  ImageCarouselCustom,
-  ImageCarouselCustomVertical,
-  ImageCarouselFader,
-} from "@/components/customElements/carousels";
+import { ImageCarouselCustom } from "@/components/customElements/carousels";
 import {
   Footer,
   FullscreenCarouselContainer,
@@ -53,23 +49,7 @@ const page = async ({
           }
           icons={dict.Katowice_01.icons_module_01.icons}
         />
-        {/* Second Section - Carousel fader */}
-        {/* <FullscreenCarouselContainer>
-          <SectionHeading
-            wideParent
-            top={dict.Katowice_01.image_carousel_fader_01.header_top}
-            bottom={dict.Katowice_01.image_carousel_fader_01.header_bottom}
-          />
-          <ImageCarouselFader
-            autoplay={true}
-            duration={6000}
-            dotsEnabledOnlyVisible={true}
-            textBackground="bg-gradient-to-t from-dark via-dark/75 to-dark/0"
-            className="md:aspect-[16/9] max-h-[40svh] md:max-h-full h-svh md:h-full"
-            textPlacement="bottom"
-            images={dict.Katowice_01.image_carousel_fader_01.images}
-          />
-        </FullscreenCarouselContainer> */}
+        {/* Second Section - Carousel custom */}
         <FullscreenCarouselContainer>
           <SectionHeading
             wideParent
@@ -107,17 +87,21 @@ const page = async ({
           }
         />
         {/* Fourth Section - Standalone Photos */}
-        <SpiralPhotos4 images={dict.Katowice_01.spiral_photos_01.images} />
+        <SpiralPhotos4
+          images={dict.universal_page_01.section_spiral_01.images}
+        />
         {/* Fifth Section - Interchangeable images */}
         <InterchangeableImages
           interval={4000}
           mode="carousel"
-          elements={dict.Katowice_01.interchangeable_images_01.elements}
+          elements={dict.universal_page_01.interchangeable_images_01.elements}
           header={
             <SectionHeading
               wideParent
-              top={dict.Katowice_01.interchangeable_images_01.header_top}
-              bottom={dict.Katowice_01.interchangeable_images_01.header_bottom}
+              top={dict.universal_page_01.interchangeable_images_01.header_top}
+              bottom={
+                dict.universal_page_01.interchangeable_images_01.header_bottom
+              }
             />
           }
         />

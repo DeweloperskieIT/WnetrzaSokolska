@@ -17,6 +17,7 @@ export interface PrevNextButtonsProps {
   dotsEnabledOnlyVisible?: boolean;
   noHoverGradient?: boolean;
   controlsDisabled?: boolean;
+  visibleButtonsClass?: string;
 }
 
 export const PrevNextButtons = ({
@@ -34,10 +35,12 @@ export const PrevNextButtons = ({
   dotsEnabledOnlyVisible,
   noHoverGradient = false,
   controlsDisabled = false,
+  visibleButtonsClass,
 }: PrevNextButtonsProps) => {
   let items = [];
+
   if (itemsLength && itemsLength != 0) {
-    items = new Array(itemsLength).fill(null);
+    items = new Array(Math.max(0, itemsLength)).fill(null);
   }
 
   const simulateKeyPress = (key: string) => {
@@ -70,51 +73,101 @@ export const PrevNextButtons = ({
   };
 
   return (
-    <div className="absolute w-full h-full  z-20 flex justify-between md:items-center items-end">
+    <div
+      className={cn(
+        "absolute w-full h-full  z-20 flex justify-between md:items-center items-end",
+        visibleButtonsClass
+      )}
+    >
       {!controlsDisabled && (
         <>
-          <button
-            name="previous button"
-            onMouseEnter={() => {
-              if (handleHoverBack) handleHoverBack(true);
-            }}
-            onMouseLeave={() => {
-              if (handleHoverBack) handleHoverBack(false);
-            }}
-            className={cn(
-              commonClassesButton,
-              "bg-gradient-to-l"
-              // visible ? "" : "rounded-r-full"
-            )}
-            onPointerDown={handlePointerDownBack}
-          >
-            <MdOutlineNavigateBefore
-              size={40}
-              className={cn(commonClassesIcon, "")}
-            />
-          </button>
+          {!visible ? (
+            <>
+              <button
+                name="previous button"
+                onMouseEnter={() => {
+                  if (handleHoverBack) handleHoverBack(true);
+                }}
+                onMouseLeave={() => {
+                  if (handleHoverBack) handleHoverBack(false);
+                }}
+                className={cn(
+                  commonClassesButton,
+                  "bg-gradient-to-l"
+                  // visible ? "" : "rounded-r-full"
+                )}
+                onPointerDown={handlePointerDownBack}
+              >
+                <MdOutlineNavigateBefore
+                  size={40}
+                  className={cn(commonClassesIcon, "")}
+                />
+              </button>
 
-          <button
-            name="next button"
-            onMouseEnter={() => {
-              if (handleHoverNext) handleHoverNext(true);
-            }}
-            onMouseLeave={() => {
-              if (handleHoverNext) handleHoverNext(false);
-            }}
-            className={cn(
-              commonClassesButton,
-              "bg-gradient-to-r"
-              // visible ? "" : "rounded-l-full"
-            )}
-            onPointerDown={handlePointerDownNext}
-          >
-            <MdNavigateNext
-              size={40}
-              fill="#000"
-              className={cn(commonClassesIcon, "")}
-            />
-          </button>
+              <button
+                name="next button"
+                onMouseEnter={() => {
+                  if (handleHoverNext) handleHoverNext(true);
+                }}
+                onMouseLeave={() => {
+                  if (handleHoverNext) handleHoverNext(false);
+                }}
+                className={cn(
+                  commonClassesButton,
+                  "bg-gradient-to-r"
+                  // visible ? "" : "rounded-l-full"
+                )}
+                onPointerDown={handlePointerDownNext}
+              >
+                <MdNavigateNext
+                  size={40}
+                  fill="#000"
+                  className={cn(commonClassesIcon, "")}
+                />
+              </button>
+            </>
+          ) : (
+            <>
+              <button
+                name="previous button"
+                onMouseEnter={() => {
+                  if (handleHoverBack) handleHoverBack(true);
+                }}
+                onMouseLeave={() => {
+                  if (handleHoverBack) handleHoverBack(false);
+                }}
+                className={cn("")}
+                onPointerDown={handlePointerDownBack}
+              >
+                <MdOutlineNavigateBefore
+                  size={40}
+                  fill="#000"
+                  className={cn(
+                    "border-2 border-websiteBackground2 hover:border-accent1 opacity-75 hover:opacity-100 transition-all duration-200 bg-accent1 fill-websiteBackground2 hover:bg-websiteBackground2 hover:fill-accent1"
+                  )}
+                />
+              </button>
+
+              <button
+                name="next button"
+                onMouseEnter={() => {
+                  if (handleHoverNext) handleHoverNext(true);
+                }}
+                onMouseLeave={() => {
+                  if (handleHoverNext) handleHoverNext(false);
+                }}
+                className={cn("")}
+                onPointerDown={handlePointerDownNext}
+              >
+                <MdNavigateNext
+                  size={40}
+                  className={cn(
+                    "border-2 border-websiteBackground2 hover:border-accent1 opacity-75  hover:opacity-100 transition-all duration-200 bg-accent1 fill-websiteBackground2 hover:bg-websiteBackground2 hover:fill-accent1"
+                  )}
+                />
+              </button>
+            </>
+          )}
         </>
       )}
 

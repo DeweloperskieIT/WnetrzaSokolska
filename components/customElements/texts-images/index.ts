@@ -6,5 +6,7 @@ export * from "./MonochromeImage";
 export * from "./RzutMieszkania";
 export * from "./SpiralPhotos4";
 export * from "./TextPlusSingleVideo";
+export * from "./TextPlusSingleVideoModular";
 export * from "./BreathingBackgroundImage";
 export * from "./PlainParagraphText";
+export * from "./RzutMieszkaniaCarousel";

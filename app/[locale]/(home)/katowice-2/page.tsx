@@ -12,6 +12,7 @@ import {
   RzutMieszkania,
   SpiralPhotos4,
   TextPlusSingleVideo,
+  TextPlusSingleVideoModular,
 } from "@/components/customElements/texts-images";
 import { VideoBackground } from "@/components/customElements/video";
 import { getDictionary, Locales } from "../../../dictionaries";
@@ -80,22 +81,24 @@ const page = async ({
           }
         />
         {/* Fourth Section - Standalone Photos */}
-        <SpiralPhotos4 images={dict.Katowice_02.spiral_photos_01.images} />
+        <SpiralPhotos4
+          images={dict.universal_page_01.section_spiral_01.images}
+        />
         {/* Fifth Section - Interchangeable images */}
         <InterchangeableImages
           interval={4000}
           mode="carousel"
-          elements={dict.Katowice_02.interchangeable_images_01.elements}
+          elements={dict.universal_page_01.interchangeable_images_01.elements}
           header={
             <SectionHeading
               wideParent
-              top={dict.Katowice_02.interchangeable_images_01.header_top}
-              bottom={dict.Katowice_02.interchangeable_images_01.header_bottom}
+              top={dict.Katowice_02.interchangeable_header.header_top}
+              bottom={dict.Katowice_02.interchangeable_header.header_bottom}
             />
           }
         />
         {/* Sixth Section - Info with video */}
-        <TextPlusSingleVideo
+        {/* <TextPlusSingleVideo
           src={dict.Katowice_02.text_plus_single_video_01.source}
           content={dict.Katowice_02.text_plus_single_video_01.content}
           header={
@@ -103,6 +106,18 @@ const page = async ({
               className=""
               top={dict.Katowice_02.text_plus_single_video_01.header_top}
               bottom={dict.Katowice_02.text_plus_single_video_01.header_bottom}
+            />
+          }
+        /> */}
+        <TextPlusSingleVideoModular
+          src={dict.Katowice_03.text_plus_single_video_01.source}
+          content={dict.Katowice_03.text_plus_single_video_01.content}
+          header={
+            <SectionHeading
+              className=""
+              topClass=" font-bold"
+              top={dict.Katowice_03.text_plus_single_video_01.header_top}
+              bottom={dict.Katowice_03.text_plus_single_video_01.header_bottom}
             />
           }
         />

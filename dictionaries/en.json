@@ -34,7 +34,8 @@
   },
   "Header": {
     "offer_title": "APARTMENTS",
-    "landing_page": "Main page",
+    "landing_page": "About us",
+    "universal": "Apartaments",
     "offer_1": "Apartment 1",
     "offer_2": "Apartment 2",
     "offer_3": "Apartment 3",
@@ -259,90 +260,9 @@
         }
       ]
     },
-    "image_carousel_fader_01": {
+    "image_carousel_custom_01": {
       "header_top": "COMFORT",
       "header_bottom": "YOU DESERVE",
-      "images": [
-        {
-          "heading": "Wrap yourself in luxury",
-          "img": "/katowice-1/s3/01.jpg",
-          "alt": "Living room in the apartment in the evening"
-        },
-        {
-          "heading": "Feel at home",
-          "img": "/katowice-1/s3/02.jpg",
-          "alt": "Living room in the apartment during the day"
-        },
-        {
-          "heading": "Discover your new living room",
-          "img": "/katowice-1/s3/03.jpg",
-          "alt": "Living room in the apartment during the day, view towards the windows"
-        },
-        {
-          "heading": "Maximize the potential of the minimalist kitchen",
-          "img": "/katowice-1/s3/04.jpg",
-          "alt": "Living room in the apartment during the day, view towards the kitchen"
-        },
-        {
-          "heading": "Fall asleep among the clouds on the 15th floor",
-          "img": "/katowice-1/s3/05.jpg",
-          "alt": "Bedroom in the apartment during the day"
-        },
-        {
-          "heading": "Utilize the potential of a functional layout",
-          "img": "/katowice-1/s3/06.jpg",
-          "alt": "Hallway in the apartment with entrance to the bedroom"
-        },
-        {
-          "heading": "A long bath in the evening...",
-          "img": "/katowice-1/s3/07.jpg",
-          "alt": "Fully finished bathroom with bathtub"
-        },
-        {
-          "heading": "...a quick shower in the morning",
-          "img": "/katowice-1/s3/08.jpg",
-          "alt": "Fully finished bathroom with shower"
-        },
-        {
-          "heading": "Fill up your wardrobe",
-          "img": "/katowice-1/s3/09.jpg",
-          "alt": "Spacious wardrobe"
-        },
-        {
-          "heading": "Love your small room",
-          "img": "/katowice-1/s3/10.jpg",
-          "alt": "Functional room during the day"
-        },
-        {
-          "heading": "Wrap yourself in luxury",
-          "img": "/katowice-1/s3/11.jpg",
-          "alt": "Kitchen and hallway at sunset"
-        },
-        {
-          "heading": "Move in tomorrow",
-          "img": "/katowice-1/s3/12.jpg",
-          "alt": "Living room at sunset"
-        },
-        {
-          "heading": "Experience the atmosphere of sunsets on the 15th floor",
-          "img": "/katowice-1/s3/13.jpg",
-          "alt": "View from the apartment window"
-        },
-        {
-          "heading": "Move in tomorrow to your dream apartment",
-          "img": "/katowice-1/s3/14.jpg",
-          "alt": "Island in the living room with seating area in the evening"
-        },
-        {
-          "heading": "Opt for luxury that puts you at the center",
-          "img": "/katowice-1/s3/15.jpg",
-          "alt": "Sokolska Towers building at sunrise"
-        }
-      ]
-    },
-    "image_carousel_custom_01": {
-      "header_top": "KOMFORT, NA KTÓRY",
-      "header_bottom": "ZASŁUGUJESZ",
       "images": [
         {
           "text": "Wrap yourself in luxury",
@@ -431,162 +351,6 @@
         "desktop": "/katowice-1/s4/rzutd.webp"
       }
     },
-    "spiral_photos_01": {
-      "images": [
-        {
-          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
-          "alt": "Shared terrace with garden"
-        },
-        {
-          "img": "/katowice-1/s5/2-portiernia.jpg",
-          "alt": "Reception at the building entrance"
-        },
-        {
-          "img": "/katowice-1/s5/3-wspolna-strefa-spa.jpg",
-          "alt": "Shared SPA area with sauna"
-        },
-        {
-          "img": "/katowice-1/s5/4-wspolna-silownia.jpg",
-          "alt": "Shared gym"
-        }
-      ]
-    },
-    "interchangeable_images_01": {
-      "header_top": "UNIQUE",
-      "header_bottom": "DESIGN",
-      "elements": [
-        {
-          "header": "21ST CENTURY APARTMENT",
-          "paragraph": "Stay ahead of residential construction trends and invest in a property designed with modern technologies in mind.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
-              "alt": "Interior with TV and red lighting"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
-              "alt": "Interior with TV and blue lighting"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
-              "alt": "Interior with TV and green lighting"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
-              "alt": "Interior with interactive photo frame"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
-              "alt": "Interior with interactive photo frame wide view"
-            }
-          ]
-        },
-        {
-          "header": "SPECTACULAR LIGHTING",
-          "paragraph": "Discover the magic of light, giving your interiors a unique character depending on the time of day.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
-              "alt": "Morning lighting in the living room"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
-              "alt": "Evening lighting in the living room"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
-              "alt": "Evening lighting in the living room, blue"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
-              "alt": "Alternative evening lighting in the living room"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
-              "alt": "Alternative evening lighting in the living room on the sofa"
-            }
-          ]
-        },
-        {
-          "header": "COHESIVE INTERIOR",
-          "paragraph": "Choose timeless design, reflected through a series of architecturally cohesive details.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
-              "alt": "View of the finished living room"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
-              "alt": "Close-up of wooden details"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-3.jpg",
-              "alt": "Close-up of a lamp with wooden finishing"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
-              "alt": "Shot of TV wall with wooden finishing"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
-              "alt": "Close-up of a coffee table matching the living room"
-            }
-          ]
-        },
-        {
-          "header": "PREMIUM BRANDS",
-          "paragraph": "Furnishings and materials from the best manufacturers: Dewro woodwork, Villeroy & Boch ceramics, Barlinek three-layer flooring, and Marazzi Italian tiles.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/4/marki-premium-1.jpg",
-              "alt": "Close-up of DEWRO brand door logo"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-2.jpg",
-              "alt": "Shot of finished bathroom with shower"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-3.jpg",
-              "alt": "Shot of finished bathroom with bathtub"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-4.jpg",
-              "alt": "Close-up of wooden floor panels"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-5.jpg",
-              "alt": "Shot of ceiling lighting and air conditioning unit"
-            }
-          ]
-        },
-        {
-          "header": "WORLD-CLASS ARCHITECTURE",
-          "paragraph": "Opt for a timeless building design and live in a building awarded the prestigious European Property Award.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
-              "alt": "Sunset view from Sokolska Towers window"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
-              "alt": "International awards given for the building's exceptional architecture"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
-              "alt": "Sunrise view from Sokolska Towers window"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
-              "alt": "Shot from Sokolska Towers building reception"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
-              "alt": "Drone shot of the shared private terrace in the evening"
-            }
-          ]
-        }
-      ]
-    },
     "text_plus_single_video_01": {
       "source": "/katowice-1/s7/360V2.mp4",
       "content": {
@@ -628,28 +392,28 @@
   },
   "Katowice_02": {
     "icons_module_01": {
-      "header_top": "JOIN THE EXCLUSIVE",
-      "header_bottom": "GROUP OF SOKOLSKA TOWERS OWNERS",
+      "header_top": "JOIN THE COMMUNITY OF",
+      "header_bottom": "PRESTIGIOUS SOKOLSKA TOWERS APARTMENT OWNERS",
       "icons": [
         {
           "icon": "/katowice-1/s2/1.webp",
-          "text": "The highest balcony in the building"
+          "text": "Panoramic View of Katowice from the 13th Floor"
         },
         {
           "icon": "/katowice-1/s2/2.webp",
-          "text": "Apartments in a prime location"
+          "text": "Prime Location of Sokolska Towers"
         },
         {
           "icon": "/katowice-1/s2/3.webp",
-          "text": "World-class architecture"
+          "text": "Lobby with 24/7 Reception and Security"
         },
         {
           "icon": "/katowice-1/s2/4.webp",
-          "text": "Personal transaction advisor"
+          "text": "SPA & Fitness Club Area"
         },
         {
           "icon": "/images/BedIcon.png",
-          "text": "Move in tomorrow"
+          "text": "Ready to Move In"
         }
       ]
     },
@@ -728,167 +492,15 @@
       "header_top": "DISCOVER YOUR NEW",
       "header_bottom": "APARTMENT",
       "price": "399,000 EUR",
-      "area": "75,33",
+      "area": "76,35",
       "images": {
         "mobile": "/katowice-1/s4/rzutm.webp",
         "desktop": "/katowice-1/s4/rzutd.webp"
       }
     },
-    "spiral_photos_01": {
-      "images": [
-        {
-          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
-          "alt": "Shared terrace with garden"
-        },
-        {
-          "img": "/katowice-1/s5/2-portiernia.jpg",
-          "alt": "Reception at the building entrance"
-        },
-        {
-          "img": "/katowice-1/s5/3-wspolna-strefa-spa.jpg",
-          "alt": "Shared SPA area with sauna"
-        },
-        {
-          "img": "/katowice-1/s5/4-wspolna-silownia.jpg",
-          "alt": "Shared gym"
-        }
-      ]
-    },
-    "interchangeable_images_01": {
-      "header_top": "UNIQUE",
-      "header_bottom": "DESIGN",
-      "elements": [
-        {
-          "header": "21ST CENTURY APARTMENT",
-          "paragraph": "Stay ahead of residential construction trends and invest in a property designed with modern technologies in mind.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
-              "alt": "Interior with TV and red lighting"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
-              "alt": "Interior with TV and blue lighting"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
-              "alt": "Interior with TV and green lighting"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
-              "alt": "Interior with interactive photo frame"
-            },
-            {
-              "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
-              "alt": "Interior with interactive photo frame wide view"
-            }
-          ]
-        },
-        {
-          "header": "SPECTACULAR LIGHTING",
-          "paragraph": "Discover the magic of light, giving your interiors a unique character depending on the time of day.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
-              "alt": "Morning lighting in the living room"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
-              "alt": "Evening lighting in the living room"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
-              "alt": "Evening lighting in the living room, blue"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
-              "alt": "Alternative evening lighting in the living room"
-            },
-            {
-              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
-              "alt": "Alternative evening lighting in the living room on the sofa"
-            }
-          ]
-        },
-        {
-          "header": "COHESIVE INTERIOR",
-          "paragraph": "Choose timeless design, reflected through a series of architecturally cohesive details.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
-              "alt": "View of the finished living room"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
-              "alt": "Close-up of wooden details"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-3.jpg",
-              "alt": "Close-up of a lamp with wooden finishing"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
-              "alt": "Shot of TV wall with wooden finishing"
-            },
-            {
-              "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
-              "alt": "Close-up of a coffee table matching the living room"
-            }
-          ]
-        },
-        {
-          "header": "PREMIUM BRANDS",
-          "paragraph": "Furnishings and materials from the best manufacturers: Dewro woodwork, Villeroy & Boch ceramics, Barlinek three-layer flooring, and Marazzi Italian tiles.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/4/marki-premium-1.jpg",
-              "alt": "Close-up of DEWRO brand door logo"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-2.jpg",
-              "alt": "Shot of finished bathroom with shower"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-3.jpg",
-              "alt": "Shot of finished bathroom with bathtub"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-4.jpg",
-              "alt": "Close-up of wooden floor panels"
-            },
-            {
-              "img": "/katowice-1/s6/4/marki-premium-5.jpg",
-              "alt": "Shot of ceiling lighting and air conditioning unit"
-            }
-          ]
-        },
-        {
-          "header": "WORLD-CLASS ARCHITECTURE",
-          "paragraph": "Opt for a timeless building design and live in a building awarded the prestigious European Property Award.",
-          "images": [
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
-              "alt": "Sunset view from Sokolska Towers window"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
-              "alt": "International awards given for the building's exceptional architecture"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
-              "alt": "Sunrise view from Sokolska Towers window"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
-              "alt": "Shot from Sokolska Towers building reception"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
-              "alt": "Drone shot of the shared private terrace in the evening"
-            }
-          ]
-        }
-      ]
+    "interchangeable_header": {
+      "header_top": "PRESTIGIOUS",
+      "header_bottom": "DESIGN"
     },
     "text_plus_single_video_01": {
       "source": "/katowice-1/s7/360V2.mp4",
@@ -933,7 +545,7 @@
   "Katowice_03": {
     "icons_module_01": {
       "header_top": "Peace and comfort in premium standard.",
-      "header_bottom": "Choose a new apartment at Sokolska Towers to be closer to what matters.",
+      "header_bottom": "Choose a new apartment in Sokolska Towers to be closer to what matters.",
       "icons": [
         {
           "icon": "/katowice-3/s2/icon1.png",
@@ -945,206 +557,567 @@
         },
         {
           "icon": "/katowice-3/s2/icon3.png",
-          "text": "Reception, gym, spa area, patio"
+          "text": "Reception, relaxation zone, patio"
         },
         {
           "icon": "/katowice-3/s2/icon4.png",
-          "text": "XIV floor; unique view"
+          "text": "14th floor, spectacular view"
         },
         {
           "icon": "/katowice-3/s2/icon5.png",
-          "text": "Ready to move in on the day of purchase"
+          "text": "Wardrobe, laundry room, storage on the same floor"
         },
         {
           "icon": "/katowice-3/s2/icon6.png",
-          "text": "Monthly fees 988.12 PLN"
+          "text": "Monthly fixed charges 826.77 PLN"
         }
       ]
     },
     "image_carousel_fader_01": {
+      "header_top": "A combination of functionality",
+      "header_bottom": "with timeless style",
+      "images": [
+        {
+          "img": "/katowice-3/carousel1/1.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/2.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/3.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/4.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/5.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/7.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/8.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/9.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/10.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/13.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/14.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/15.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/16.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/17.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/18.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+
+    "image_carousel_fader_02": {
       "header_top": "Feel at home.",
       "header_bottom": "Welcome home.",
       "images": [
         {
-          "heading": "Wrap yourself in luxury",
-          "img": "/katowice-1/s3/01.jpg",
-          "alt": "Living room in the apartment in the evening"
+          "img": "/katowice-3/carousel2/1.jpg",
+          "alt": "image"
         },
         {
-          "heading": "Feel at home",
-          "img": "/katowice-1/s3/02.jpg",
-          "alt": "Living room in the apartment during the day"
+          "img": "/katowice-3/carousel2/2.jpg",
+          "alt": "image"
         },
         {
-          "heading": "Discover your new large room",
-          "img": "/katowice-1/s3/03.jpg",
-          "alt": "Living room in the apartment during the day, window view"
+          "img": "/katowice-3/carousel2/3.jpg",
+          "alt": "image"
         },
         {
-          "heading": "Utilize the potential of the minimalist kitchen",
-          "img": "/katowice-1/s3/04.jpg",
-          "alt": "Living room in the apartment during the day, kitchen view"
+          "img": "/katowice-3/carousel2/4.jpg",
+          "alt": "image"
         },
         {
-          "heading": "Sleep among the clouds on the XV floor",
-          "img": "/katowice-1/s3/05.jpg",
-          "alt": "Bedroom in the apartment during the day"
-        },
-        {
-          "heading": "Make use of the functional layout",
-          "img": "/katowice-1/s3/06.jpg",
-          "alt": "Hallway in the apartment with bedroom entrance"
-        },
-        {
-          "heading": "Long evening bath...",
-          "img": "/katowice-1/s3/07.jpg",
-          "alt": "Fully finished bathroom with bathtub"
-        },
-        {
-          "heading": "... quick morning shower",
-          "img": "/katowice-1/s3/08.jpg",
-          "alt": "Fully finished bathroom with shower"
-        },
-        {
-          "heading": "Fill your wardrobe",
-          "img": "/katowice-1/s3/09.jpg",
-          "alt": "Spacious wardrobe"
-        },
-        {
-          "heading": "Fall in love with your small room",
-          "img": "/katowice-1/s3/10.jpg",
-          "alt": "Functional room in the daytime"
-        },
-        {
-          "heading": "Wrap yourself in luxury",
-          "img": "/katowice-1/s3/11.jpg",
-          "alt": "Kitchen and hallway at sunset"
-        },
-        {
-          "heading": "Move in tomorrow",
-          "img": "/katowice-1/s3/12.jpg",
-          "alt": "Living room at sunset"
-        },
-        {
-          "heading": "Experience sunset views on the XV floor",
-          "img": "/katowice-1/s3/13.jpg",
-          "alt": "View from the apartment window"
-        },
-        {
-          "heading": "Move in tomorrow to your dream apartment",
-          "img": "/katowice-1/s3/14.jpg",
-          "alt": "Island in the living room with seating area in the evening"
+          "img": "/katowice-3/carousel2/5.jpg",
+          "alt": "image"
         }
       ]
     },
+    "image_carousel_fader_sidebyside_01": {
+      "images": [
+        {
+          "img1": "/katowice-3/carousel3/1.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/2.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/3.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/4.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/5.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/6.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/7.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/8.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/9.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/10.jpg",
+          "alt2": "image"
+        }
+      ]
+    },
+
     "custom_text_section_01": {
       "texts": [
-        "This new apartment combines modernity with elegance, creating a space ideal for those who value coherence and the highest standard.",
-        "From selected construction materials, through carefully chosen finishing details, to technologically advanced amenities – all this makes it more than just an apartment; it is a statement of top-class living."
+        "This ready-to-move-in apartment combines modernity with timeless elegance, from carefully selected finishing materials and meticulously chosen details to a range of technological innovations that follow the latest residential building trends."
       ]
     },
     "rzut_mieszkania_01": {
-      "header_top": "Your apartment,",
-      "header_bottom": "Your kingdom",
+      "header_top": "Your peaceful oasis",
+      "header_bottom": "on the 14th floor of Sokolska Towers",
       "price": "420,000 EUR",
       "area": "73.66",
       "images": {
         "mobile": "/katowice-1/s4/rzutm.webp",
         "desktop": "/katowice-1/s4/rzutd.webp"
-      }
+      },
+      "texts": [
+        "Designed with functionality in mind, this apartment offers a wealth of storage space subtly integrated into the furniture layout, complemented by a wardrobe, laundry room, and spacious storage unit right across from the entrance."
+      ]
     },
+
     "InfoBlocks_1": {
       "header_top": "Support in the process",
-      "header_bottom": "of purchase",
+      "header_bottom": "of purchasing",
       "info": [
         {
           "icon": "/katowice-3/s5/icon1.png",
           "header": "Security",
-          "paragraph": "Our legal team will take care of all formalities and transaction security."
+          "paragraph": "Our legal team will handle all formalities and secure the transaction."
         },
         {
           "icon": "/katowice-3/s5/icon2.png",
           "header": "Time-saving",
-          "paragraph": "We will organize the entire purchase process for you and send the necessary documents."
+          "paragraph": "We will organize the entire purchasing process for you and send the necessary documents."
         },
         {
           "icon": "/katowice-3/s5/icon3.png",
           "header": "Financing",
-          "paragraph": "We help obtain financing for the purchase, including options with no down payment."
+          "paragraph": "We assist in obtaining financing for the purchase, even without a down payment."
         }
       ]
     },
     "custom_text_section_02": {
-      "header_top": "Time you can",
-      "header_bottom": "regain",
+      "header_top": "Luxury You",
+      "header_bottom": "Can Afford",
       "texts": [
-        "Every day, we spend up to 2.5 hours commuting to important places. Regain this time by always being on-site.",
-        "The tower features areas exclusively for residents - including a fitness center and spa. Your parking space will also be waiting for you. Within a short walk, you'll find a range of business centers, health, cultural, and shopping facilities. From this location, you'll find it easy to head wherever you want."
+        "With each client's individual situation in mind, we have prepared a range of solutions that enable optimal financing of your purchase, even if you don't currently have all the necessary funds or down payment.",
+        "Thanks to a flexible payment model, you can reserve an apartment today by paying only 10% of its value, with the remaining amount to be paid, for example, after selling your current property."
+      ]
+    },
+    "custom_text_section_03": {
+      "header_top": "Time you can",
+      "header_bottom": "get back",
+      "texts": [
+        "Daily commutes can consume up to 480 hours annually. In September 2024, a rail project will begin that will permanently change the region's transportation map. The next six years will redefine the challenges of north-south travel.",
+        "You can reclaim that time by living in the heart of the city, close to main regional transport routes, business centers, health facilities, cultural and shopping hubs. From this location, you can set off wherever you want with ease. A short walk puts you within reach of everything the city center has to offer.",
+        "Additional location benefits include:"
+      ],
+      "list": [
+        "Private garage space with an electric charger (22 kW),",
+        "24-hour reception with security and monitoring,",
+        "Relaxation zone with sauna included in fixed fees,",
+        "Fitness room,",
+        "Patio."
+      ]
+    },
+    "interchangeable_header": {
+      "header_top": "LIVE IN LUXURY,",
+      "header_bottom": "SURROUNDED BY BEAUTY"
+    },
+
+    "custom_text_section_04": {
+      "header_top": "Limited luxury",
+      "header_bottom": "in the heart of the city",
+      "texts": [
+        "Daily commutes can consume up to 480 hours annually. In September 2024, a rail project will begin that will permanently change the region's transportation map. The next six years will redefine the challenges of north-south travel.",
+        "You can reclaim that time by living in the heart of the city, close to main regional transport routes, business centers, health facilities, cultural and shopping hubs. From this location, you can set off wherever you want with ease. A short walk puts you within reach of everything the city center has to offer.",
+        "Additional location benefits include:"
+      ]
+    },
+
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": [
+        {
+          "plainTexts": [
+            "",
+            " - at least this many apartments have been and will continue to be built in the Katowice Cultural Zone by 2028. If you're looking for a property with a more individual character, our offer might better meet your needs without losing value due to an oversupply of identical apartments in the immediate vicinity."
+          ],
+          "accentTexts": ["3500"]
+        },
+        {
+          "plainTexts": [
+            "The apartment building at ",
+            "is a unique place located in the very center of the city. Appreciate its uniqueness by opting for a one-of-a-kind, prime location that has all the benefits of a central location, while also rising high above street level."
+          ],
+          "accentTexts": ["Sokolska 30 "]
+        },
+        {
+          "plainTexts": [
+            "Invest in a new, corner apartment in a primary market building, equipped with modern solutions and technologies, on the 14th floor of a skyscraper",
+            "that will continue to delight and adorn the Katowice city center."
+          ],
+          "accentTexts": [" Sokolska Towers, "]
+        }
+      ],
+
+      "nope": {
+        "accent_1": "3500",
+        "paragraph_1": "at least this many apartments have been and will continue to be built in the Katowice Cultural Zone by 2028. If you're looking for a property with a more individual character, our offer might better meet your needs without losing value due to an oversupply of identical apartments in the immediate vicinity.",
+        "optional_paragraph_1": "The apartment building at",
+        "optional_accent_1": "Sokolska 30",
+        "optional_paragraph_2": "is a unique place located in the very center of the city. Appreciate its uniqueness by opting for a one-of-a-kind, prime location that has all the benefits of a central location, while also rising high above street level.",
+        "optional_accent_2": "",
+        "optional_paragraph_3": "",
+        "paragraph_3": "Invest in a new, corner apartment in a primary market building, packed with modern solutions and technologies, on the 14th floor of a timeless skyscraper",
+        "accent_2": "Sokolska Towers."
+      },
+      "header_top": "Perspective",
+      "header_bottom": "of the future"
+    },
+    "Footer_1": {
+      "header_top": "Have more",
+      "header_bottom": "questions?",
+      "oferta": "Katowice 3"
+    }
+  },
+  "Footer_Common": {
+    "paragraph_1": "Wnętrza Deweloperskie is a trademark owned by: Deweloperskie P.S.A. with headquarters in Katowice at Murckowska 14c, NIP: 6343022518, REGON: 525018864 KRS: 0001030478",
+    "paragraph_2": "The offer includes luxurious apartments at the prestigious address: ul. Sokolska 30, Katowice. These apartments are located on the top floors of the Sokolska Towers building and are a competitive alternative to penthouse apartments in the Silesian real estate market."
+  },
+
+  "universal_page_01": {
+    "Footer_1": {
+      "header_top": "Have More",
+      "header_bottom": "Questions?",
+      "oferta": "Katowice 3"
+    },
+    "section_icons_01": {
+      "header_top": "FINISHED APARTMENTS",
+      "header_bottom": "ON THE HIGHEST FLOORS OF SOKOLSKA TOWERS",
+      "icons": [
+        {
+          "icon": "/universal/icons/1.png",
+          "text": "New, finished, corner apartments, 75 m² on the 14th-15th floor"
+        },
+        {
+          "icon": "/universal/icons/2.png",
+          "text": "3 rooms, 2 bathrooms, walk-in closet"
+        },
+        {
+          "icon": "/universal/icons/3.png",
+          "text": "Parking space with an EV charger"
+        },
+        {
+          "icon": "/universal/icons/4.png",
+          "text": "1,700,000 PLN (including 8% VAT), no PCC commission"
+        },
+        {
+          "icon": "/universal/icons/5.png",
+          "text": "Reception, relaxation area, fitness, green patio"
+        },
+        {
+          "icon": "/universal/icons/6.png",
+          "text": "Move-in ready on the day of purchase"
+        }
+      ]
+    },
+    "section_carousel_01": {
+      "header_top": "APARTMENTS DESIGNED",
+      "header_bottom": "BY PROFESSIONALS",
+      "images": [
+        {
+          "image": "/universal/carousel1/1.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/2.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/3.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/4.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/5.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/6.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/7.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/8.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/9.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/10.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/11.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/12.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/13.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/14.jpg",
+          "alt": "carousel image"
+        }
+      ]
+    },
+    "section_rzut_carousel_01": {
+      "header_top": "CHOOSE THE APARTMENT",
+      "header_bottom": "PERFECT FOR YOU",
+      "items": [
+        {
+          "mobile": "/universal/rzuty/103mobile.png",
+          "desktop": "/universal/rzuty/103.png",
+          "price": "1 666 666 PLN",
+          "area": "76,35",
+          "floor": "XIII"
+        },
+        {
+          "mobile": "/universal/rzuty/112mobile.png",
+          "desktop": "/universal/rzuty/112.png",
+          "price": "1 666 666 PLN",
+          "area": "75,73",
+          "floor": "XIV"
+        },
+        {
+          "mobile": "/universal/rzuty/117mobile.png",
+          "desktop": "/universal/rzuty/117.png",
+          "price": "1 666 666 PLN",
+          "area": "75,50",
+          "floor": "XIV"
+        },
+        {
+          "mobile": "/universal/rzuty/126mobile.png",
+          "desktop": "/universal/rzuty/126.png",
+          "price": "1 666 666 PLN",
+          "area": "73.66",
+          "floor": "XV"
+        }
+      ]
+    },
+    "section_spiral_01": {
+      "images": [
+        {
+          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
+          "alt": "Shared terrace with garden"
+        },
+        {
+          "img": "/universal/collage/1.jpg",
+          "alt": "Entrance lobby with concierge"
+        },
+        {
+          "img": "/katowice-1/s5/3-wspolna-strefa-spa.jpg",
+          "alt": "Shared SPA area with sauna"
+        },
+        {
+          "img": "/katowice-1/s5/4-wspolna-silownia.jpg",
+          "alt": "Shared gym"
+        }
+      ]
+    },
+    "section_carousel_02": {
+      "header_top": "AMAZING ATMOSPHERE",
+      "header_bottom": "AND A VIEW FEW KNOW",
+      "images": [
+        {
+          "image": "/universal/carousel2/1.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/2.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/3.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/4.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/5.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/6.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+    "section_text_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "header_top": "LIMITED LUXURY",
+      "header_bottom": "IN THE HEART OF THE CITY",
+      "content": [
+        {
+          "plainTexts": [
+            "",
+            " - at least this many apartments will have been built in the Katowice Cultural Zone by 2028."
+          ],
+          "accentTexts": ["3500"]
+        },
+        {
+          "plainTexts": [
+            "A limited number of units in the immediate area",
+            "will not only ensure comfort in the use of your investment but will also secure its value for the future."
+          ],
+          "accentTexts": [" Sokolska 30 "]
+        }
+      ]
+    },
+    "section_info_01": {
+      "header_top": "SMART CHOICE",
+      "header_bottom": "WITHIN YOUR REACH",
+      "info": [
+        {
+          "icon": "/katowice-1/s8/1.webp",
+          "header": "PURCHASE FROM A PROFESSIONAL",
+          "paragraph": "The decision to purchase real estate is one of the most important financial decisions of your life. Choose quality from a professional investor – purchase based on a VAT invoice with a full warranty on interior work."
+        },
+        {
+          "icon": "/katowice-1/s8/2.webp",
+          "header": "PERSONAL TRANSACTION MANAGER",
+          "paragraph": "A premium apartment requires premium service, handled from start to finish by your dedicated transaction manager, who will take care of the formalities for you."
+        },
+        {
+          "icon": "/katowice-1/s8/3.webp",
+          "header": "OVERCOME FINANCIAL BARRIERS",
+          "paragraph": "If you own another property, it can serve as your down payment for a mortgage. Don’t let financial barriers stand in the way of investing in prestige."
+        }
       ]
     },
     "interchangeable_images_01": {
-      "header_top": "Live in luxury,",
-      "header_bottom": "surrounded by beauty",
+      "header_top": "UNIQUE",
+      "header_bottom": "DESIGN",
       "elements": [
         {
-          "header": "SPECTACULAR LIGHTING",
-          "paragraph": "Discover the magic of lighting that gives your interiors a unique character depending on the time of day.",
+          "header": "21ST CENTURY APARTMENT",
+          "paragraph": "Follow the trends in residential construction and invest in a property designed with modern technologies in mind.",
           "images": [
             {
               "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
-              "alt": "Interior with red lighting"
+              "alt": "Interior TV with red lighting"
             },
             {
               "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
-              "alt": "Interior with blue lighting"
+              "alt": "Interior TV with blue lighting"
             },
             {
               "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
-              "alt": "Interior with green lighting"
+              "alt": "Interior TV with green lighting"
             },
             {
               "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
-              "alt": "Interior with interactive photo frame"
+              "alt": "Interior interactive photo frame"
             },
             {
               "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
-              "alt": "Interior with interactive photo frame, wide view"
+              "alt": "Interior interactive photo frame wide shot"
             }
           ]
         },
         {
-          "header": "PREMIUM BRANDS",
-          "paragraph": "Opt for solutions from the best manufacturers: Dewro joinery, Villeroy & Boch ceramics, Hansgrohe fittings, and Samsung appliances.",
+          "header": "SPECTACULAR LIGHTING",
+          "paragraph": "Discover the magic of light, giving your interiors a unique character depending on the time of day.",
           "images": [
             {
               "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
-              "alt": "Morning living room lighting"
+              "alt": "Living room lighting in the morning"
             },
             {
               "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
-              "alt": "Evening living room lighting"
+              "alt": "Living room lighting in the evening"
             },
             {
               "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
-              "alt": "Evening living room lighting, blue"
+              "alt": "Living room lighting blue evening"
             },
             {
               "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
-              "alt": "Evening living room lighting, alternative"
+              "alt": "Living room alternative evening lighting"
             },
             {
               "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
-              "alt": "Evening living room lighting, alternative on the sofa"
+              "alt": "Alternative evening lighting on the couch"
             }
           ]
         },
         {
           "header": "COHESIVE INTERIOR",
-          "paragraph": "Choose timeless design, reflected in a series of cohesive architectural details.",
+          "paragraph": "Choose a timeless design that runs through a range of architecturally cohesive details.",
           "images": [
             {
               "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
-              "alt": "View of the finished living room"
+              "alt": "View of finished living room"
             },
             {
               "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
@@ -1156,7 +1129,7 @@
             },
             {
               "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
-              "alt": "View of TV wall with wooden finish"
+              "alt": "Shot of TV wall with wooden finish"
             },
             {
               "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
@@ -1165,8 +1138,8 @@
           ]
         },
         {
-          "header": "TOP MATERIALS",
-          "paragraph": "Feel the quality: Egger furniture boards and countertops, Barlinek three-layer floorboards, or Marazzi tiles.",
+          "header": "PREMIUM BRANDS",
+          "paragraph": "Furnishings and materials from top manufacturers: Dewro carpentry, Villeroy & Boch ceramics, Barlinek three-layer wooden floors, and Italian Marazzi tiles.",
           "images": [
             {
               "img": "/katowice-1/s6/4/marki-premium-1.jpg",
@@ -1174,11 +1147,11 @@
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-2.jpg",
-              "alt": "Finished bathroom with shower"
+              "alt": "Shot of finished bathroom with shower"
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-3.jpg",
-              "alt": "Finished bathroom with bathtub"
+              "alt": "Shot of finished bathroom with bathtub"
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-4.jpg",
@@ -1186,13 +1159,13 @@
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-5.jpg",
-              "alt": "Ceiling lighting and air conditioning unit"
+              "alt": "Shot of ceiling lighting and air conditioning unit"
             }
           ]
         },
         {
           "header": "WORLD-CLASS ARCHITECTURE",
-          "paragraph": "Live in a building awarded the prestigious European Property Award.",
+          "paragraph": "Choose a timeless building and live in an award-winning structure, recognized with the prestigious European Property Award.",
           "images": [
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
@@ -1200,48 +1173,27 @@
             },
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
-              "alt": "International awards for the building's outstanding architecture"
+              "alt": "International awards given for the outstanding building architecture"
             },
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
-              "alt": "Sunrise view from Sokolska Towers window"
+              "alt": "International awards given for the outstanding building architecture"
             },
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
-              "alt": "View from Sokolska Towers building reception"
+              "alt": "Sunrise view from Sokolska Towers window"
             },
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
-              "alt": "Drone shot of private communal terrace in the evening"
+              "alt": "Shot from the reception of Sokolska Towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-6.jpg",
+              "alt": "Drone shot of the shared private terrace in the evening"
             }
           ]
         }
       ]
-    },
-    "text_plus_single_video_01": {
-      "source": "/katowice-1/s7/360V2.mp4",
-      "content": {
-        "accent_1": "3500",
-        "paragraph_1": "at least that many apartments have been and will be built in the Katowice Cultural Zone by 2028. We understand that you might expect something with a more individual character.",
-        "optional_paragraph_1": "The apartment building at",
-        "optional_accent_1": "Sokolskiej 30",
-        "optional_paragraph_2": "is a unique location in the strict city center. Appreciate its uniqueness by choosing a one-of-a-kind, top-notch location that offers all the advantages of being in the center, while rising above it. Choose",
-        "optional_accent_2": "an environment of success",
-        "optional_paragraph_3": "!",
-        "paragraph_3": "Invest in a new, corner apartment from the primary market, packed with modern solutions and technologies, on the XIV floor of the timeless skyscraper",
-        "accent_2": "Sokolska Towers."
-      },
-      "header_top": "Limited luxury",
-      "header_bottom": "in the heart of the city"
-    },
-    "Footer_1": {
-      "header_top": "Have more",
-      "header_bottom": "questions?",
-      "oferta": "Katowice 3"
     }
-  },
-  "Footer_Common": {
-    "paragraph_1": "Wnętrza Deweloperskie is a trademark owned by: Deweloperskie P.S.A. with headquarters in Katowice at Murckowska 14c, NIP: 6343022518, REGON: 525018864 KRS: 0001030478",
-    "paragraph_2": "The offer includes luxurious apartments at the prestigious address: ul. Sokolska 30, Katowice. These apartments are located on the top floors of the Sokolska Towers building and are a competitive alternative to penthouse apartments in the Silesian real estate market."
   }
 }

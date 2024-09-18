@@ -176,6 +176,10 @@ export const ImageCarouselFader = ({
     }
   };
 
+  let howManyImages = images.length;
+
+  if (howManyImages === null || undefined) return;
+
   return (
     <div
       className={cn(
@@ -193,7 +197,7 @@ export const ImageCarouselFader = ({
         setCurrentIndex={handleManualChange}
         currentIndex={currentIndex}
         visible={buttonsVisible}
-        itemsLength={images.length}
+        itemsLength={howManyImages}
         handleClickBack={handleClickBack}
         handleClickNext={handleClickNext}
       />
@@ -253,7 +257,7 @@ export const ImageCarouselFader = ({
           fill
           sizes={sizes}
           className={cn(
-            `aboslute object-cover w-[105%] transition-all duration-500`,
+            `aboslute object-cover scale-[101%] transition-all duration-500`,
             i === currentIndex && "opacity-100",
             i === prevIndex && "opacity-10",
             i !== currentIndex && "opacity-0"

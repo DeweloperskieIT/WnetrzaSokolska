@@ -9,10 +9,17 @@ import { useIsVisible } from "@/lib/hooks/useIsVisible";
 import { PrevNextButtons } from "@/components/customElements/buttons";
 import { array } from "zod";
 
+export type SideBySideImages = {
+  img1: string;
+  alt1: string;
+  img2: string;
+  alt2: string;
+};
+
 export interface ImageCarouselFaderSideBySideProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  images: ImageAltMergeParagraphWithHeading[];
+  images: SideBySideImages[];
   textPlacement?: "top" | "right" | "bottom" | "left" | undefined;
   textBackground?: string;
   animations?: animationStyle;
@@ -48,7 +55,6 @@ export const ImageCarouselFaderSideBySide = ({
   ...rest
 }: ImageCarouselFaderSideBySideProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [arrayIndex, setArrayIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState<number | undefined>();
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const [isAutoplay, setIsAutoplay] = useState(autoplay);
@@ -56,7 +62,6 @@ export const ImageCarouselFaderSideBySide = ({
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const currentIndexRef = useRef(currentIndex);
-  const currentArrayIndexRef = useRef(arrayIndex);
 
   const ref = useRef() as React.RefObject<HTMLDivElement>;
   const { isIntersecting, disconnectObserver } = useIsVisible(ref);
@@ -83,16 +88,12 @@ export const ImageCarouselFaderSideBySide = ({
     setIsAnimating(true);
     setTextAnimationClass(animations.out);
 
-    const newIndex = (currentIndexRef.current + 2) % (images.length / 2);
-    const newArrayIndex =
-      (currentArrayIndexRef.current + 1) % (images.length / 2);
+    const newIndex = (currentIndexRef.current + 1) % images.length;
     setPrevIndex(currentIndexRef.current);
     currentIndexRef.current = newIndex;
-    currentArrayIndexRef.current = newArrayIndex;
 
     setTimeout(() => {
       setCurrentIndex(newIndex);
-      setArrayIndex(newArrayIndex);
       setTextAnimationClass(animations.in);
 
       setIsAnimating(false);
@@ -107,16 +108,11 @@ export const ImageCarouselFaderSideBySide = ({
 
     const newIndex =
       (currentIndexRef.current - 2 + images.length) % images.length;
-    const newArrayIndex =
-      (currentArrayIndexRef.current + 1) % (images.length / 2);
     setPrevIndex(currentIndexRef.current);
-    setArrayIndex((previous) => previous - (1 % images.length));
     currentIndexRef.current = newIndex;
-    currentArrayIndexRef.current = newArrayIndex;
 
     setTimeout(() => {
       setCurrentIndex(newIndex);
-      setArrayIndex(newArrayIndex);
       setTextAnimationClass(animations.in);
       setIsAnimating(false);
     }, 450);
@@ -183,7 +179,7 @@ export const ImageCarouselFaderSideBySide = ({
   return (
     <div
       className={cn(
-        "relative w-full bg-websiteBackground2 h-fit md:aspect-video max-h-[65svh]",
+        "relative w-full bg-websiteBackground2 h-fit md:aspect-video",
         className
       )}
       ref={ref as React.LegacyRef<HTMLDivElement>}
@@ -195,13 +191,13 @@ export const ImageCarouselFaderSideBySide = ({
         dotsClassName={dotsClassName}
         dotsEnabled={dotsEnabled}
         setCurrentIndex={handleManualChange}
-        currentIndex={arrayIndex}
+        currentIndex={currentIndex}
         visible={buttonsVisible}
-        itemsLength={images.length / 2}
+        itemsLength={images.length}
         handleClickBack={handleClickBack}
         handleClickNext={handleClickNext}
       />
-
+      {/* 
       {textPlacement && (
         <div
           className={cn(
@@ -233,12 +229,37 @@ export const ImageCarouselFaderSideBySide = ({
             )}
           </div>
         </div>
-      )}
+      )} */}
 
-      {Array.from({ length: images.length / 2 }).map((_, i) => (
+      <div className="flex flex-col md:flex-row h-fit opacity-0">
+        <Image
+          placeholder="blur"
+          blurDataURL="/images/blur.png"
+          loading="lazy"
+          src={images[0].img1}
+          alt={images[0].alt1}
+          sizes={sizes}
+          width={1366}
+          height={768}
+          className={cn("flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover")}
+        />
+        <Image
+          placeholder="blur"
+          blurDataURL="/images/blur.png"
+          loading="lazy"
+          src={images[0].img2}
+          alt={images[0].alt2}
+          sizes={sizes}
+          width={1366}
+          height={768}
+          className={cn("flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover")}
+        />
+      </div>
+
+      {images.map((_, i) => (
         <div
           className={cn(
-            "absolute inset-0 top-0 left-0 flex flex-col lg:flex-row w-full h-full transition-all duration-500 !aspect-video",
+            "absolute inset-0 top-0 left-0 flex flex-col md:flex-row w-full h-full transition-all duration-500 !aspect-video",
             i === currentIndex
               ? `opacity-100 z-[1]
                ${isAnimating && "opacity-10"}
@@ -253,26 +274,36 @@ export const ImageCarouselFaderSideBySide = ({
             placeholder="blur"
             blurDataURL="/images/blur.png"
             loading="lazy"
-            src={images[i].img}
-            alt={images[i].alt}
+            src={images[i].img1}
+            alt={images[i].alt1}
             sizes={sizes}
             width={1366}
             height={768}
             className={cn(
-              "flex-1 w-full h-1/2 lg:w-1/2 lg:h-full object-cover"
+              "flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover"
             )}
           />
+          <div
+            className={cn(
+              "absolute",
+              // When in mobile view (images stacked vertically):
+              "inset-x-0 top-1/2 transform -translate-y-1/2 h-[2px] w-full bg-gradient-to-b md:bg-gradient-to-r from-white/0 via-dark/80 to-white/0",
+              // When in desktop view (images side by side):
+              "md:inset-y-0 md:left-1/2 md:transform md:-translate-x-1/2 md:translate-y-0 md:h-full md:w-[2px]"
+            )}
+          ></div>
+
           <Image
             placeholder="blur"
             blurDataURL="/images/blur.png"
             loading="lazy"
-            src={images[i + 1].img}
-            alt={images[i + 1].alt}
+            src={images[i].img2}
+            alt={images[i].alt2}
             sizes={sizes}
             width={1366}
             height={768}
             className={cn(
-              "flex-1 w-full h-1/2 lg:w-1/2 lg:h-full object-cover"
+              "flex-1 w-full h-1/2 md:w-1/2 md:h-full object-cover"
             )}
           />
         </div>

@@ -21,7 +21,7 @@ export const SectionHeading = ({
   return (
     <div
       className={cn(
-        "flex flex-col md:gap-1 w-full",
+        "flex flex-col md:gap-2 w-full",
         wideParent && "section-header-xl-center",
         className
       )}
