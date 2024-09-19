@@ -16,6 +16,7 @@ export interface RzutMieszkaniaProps {
   header?: React.ReactNode;
   locale?: Locales;
   customAccent?: string;
+  floor: string;
 }
 
 export const RzutMieszkania = ({
@@ -26,6 +27,7 @@ export const RzutMieszkania = ({
   header,
   locale = "pl",
   customAccent = "text-accent1",
+  floor,
 }: RzutMieszkaniaProps) => {
   return (
     <div
@@ -59,11 +61,11 @@ export const RzutMieszkania = ({
         <div className="md:absolute md:left-0 md:bottom-0 relative text-2xl text-light flex flex-col gap-6 md:gap-5">
           <div className="flex flex-col md:gap-2">
             <span className={cn("text-xl font-bold", customAccent)}>
-              {locale === "pl" && "POWIERZCHNIA"}
-              {locale === "en" && "AREA"}
+              {locale === "pl" && "POWIERZCHNIA / PIĘTRO"}
+              {locale === "en" && "AREA / FLOOR"}
             </span>
             <span className="text-light font-light text-3xl md:text-3xl">
-              {powierzchnia} m<sup>2</sup>
+              {powierzchnia} m<sup>2</sup> / {floor}
             </span>
           </div>
           <div className="flex flex-col md:gap-2">

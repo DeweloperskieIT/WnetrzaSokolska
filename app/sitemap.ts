@@ -5,8 +5,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://wnetrza.deweloperskie.pl",
       lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+      changeFrequency: "weekly",
+      priority: 0.9,
       alternates: {
         languages: {
           en: "https://wnetrza.deweloperskie.pl/en",
@@ -14,10 +14,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: "https://wnetrza.deweloperskie.pl/oferta",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+      alternates: {
+        languages: {
+          en: "https://wnetrza.deweloperskie.pl/en/oferta",
+        },
+      },
+    },
+    {
       url: "https://wnetrza.deweloperskie.pl/katowice-1",
       lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+      changeFrequency: "weekly",
+      priority: 0.8,
       alternates: {
         languages: {
           en: "https://wnetrza.deweloperskie.pl/en/katowice-1",
@@ -27,11 +38,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://wnetrza.deweloperskie.pl/katowice-2",
       lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
+      changeFrequency: "weekly",
+      priority: 0.8,
       alternates: {
         languages: {
           en: "https://wnetrza.deweloperskie.pl/en/katowice-2",
+        },
+      },
+    },
+    {
+      url: "https://wnetrza.deweloperskie.pl/katowice-3",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+      alternates: {
+        languages: {
+          en: "https://wnetrza.deweloperskie.pl/en/katowice-3",
         },
       },
     },

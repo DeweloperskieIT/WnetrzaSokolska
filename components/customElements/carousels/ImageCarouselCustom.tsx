@@ -323,7 +323,7 @@ export const ImageCarouselCustom = ({
               />
               <h1
                 className={cn(
-                  "absolute bottom-0 p-4 w-[100%] transition-all duration-500 carousel-text-heading",
+                  "absolute bottom-0 p-4 w-[95%]  transition-all duration-500 carousel-text-heading",
                   textClassName,
                   i === currentIndex ? "opacity-100" : "opacity-0"
                 )}

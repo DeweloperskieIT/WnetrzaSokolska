@@ -35,10 +35,10 @@
   "Header": {
     "offer_title": "APARTMENTS",
     "landing_page": "About us",
-    "universal": "Apartaments",
-    "offer_1": "Apartment 1",
-    "offer_2": "Apartment 2",
-    "offer_3": "Apartment 3",
+    "universal": "For everyone",
+    "offer_1": "For him",
+    "offer_2": "For her",
+    "offer_3": "For them",
     "offer_4": "Apartment 4"
   },
   "Landing_Page": {
@@ -344,11 +344,12 @@
     "rzut_mieszkania_01": {
       "header_top": "DISCOVER YOUR NEW",
       "header_bottom": "APARTMENT",
-      "price": "399,000 EUR",
-      "area": "75.20",
+      "price": "1 666 666 PLN",
+      "area": "73.66",
+      "floor": "XV",
       "images": {
-        "mobile": "/katowice-1/s4/rzutm.webp",
-        "desktop": "/katowice-1/s4/rzutd.webp"
+        "mobile": "/universal/rzuty/126mobile.png",
+        "desktop": "/universal/rzuty/126.png"
       }
     },
     "text_plus_single_video_01": {
@@ -362,27 +363,6 @@
       },
       "header_top": "LIMITED LUXURY",
       "header_bottom": "IN THE HEART OF THE CITY"
-    },
-    "InfoBlocks_1": {
-      "header_top": "SMART CHOICE",
-      "header_bottom": "AT YOUR FINGERTIPS",
-      "info": [
-        {
-          "icon": "/katowice-1/s8/1.webp",
-          "header": "PURCHASE FROM A PROFESSIONAL",
-          "paragraph": "The decision to purchase real estate is one of the most important financial decisions of your life. Rely on the quality provided by a professional investor _ make your purchase based on a VAT invoice, with a full warranty on design work."
-        },
-        {
-          "icon": "/katowice-1/s8/2.webp",
-          "header": "PERSONAL TRANSACTION ADVISOR",
-          "paragraph": "A premium apartment requires premium service, provided from start to finish by your assigned transaction advisor, who will handle all the formalities."
-        },
-        {
-          "icon": "/katowice-1/s8/3.webp",
-          "header": "BREAK FINANCIAL BARRIERS",
-          "paragraph": "If you own another property, it can serve as your down payment for a mortgage. Don't let financial barriers stand in the way of investing in prestige."
-        }
-      ]
     },
     "Footer_1": {
       "header_top": "SCHEDULE A",
@@ -491,11 +471,12 @@
     "rzut_mieszkania_01": {
       "header_top": "DISCOVER YOUR NEW",
       "header_bottom": "APARTMENT",
-      "price": "399,000 EUR",
+      "price": "1 666 666 PLN",
       "area": "76,35",
+      "floor": "XIII",
       "images": {
-        "mobile": "/katowice-1/s4/rzutm.webp",
-        "desktop": "/katowice-1/s4/rzutd.webp"
+        "mobile": "/universal/rzuty/103mobile.png",
+        "desktop": "/universal/rzuty/103.png"
       }
     },
     "interchangeable_header": {
@@ -514,27 +495,6 @@
       "header_top": "LIMITED LUXURY",
       "header_bottom": "IN THE HEART OF THE CITY"
     },
-    "InfoBlocks_1": {
-      "header_top": "SMART CHOICE",
-      "header_bottom": "AT YOUR FINGERTIPS",
-      "info": [
-        {
-          "icon": "/katowice-1/s8/1.webp",
-          "header": "PURCHASE FROM A PROFESSIONAL",
-          "paragraph": "The decision to purchase real estate is one of the most important financial decisions of your life. Rely on the quality provided by a professional investor _ make your purchase based on a VAT invoice, with a full warranty on design work."
-        },
-        {
-          "icon": "/katowice-1/s8/2.webp",
-          "header": "PERSONAL TRANSACTION ADVISOR",
-          "paragraph": "A premium apartment requires premium service, provided from start to finish by your assigned transaction advisor, who will handle all the formalities."
-        },
-        {
-          "icon": "/katowice-1/s8/3.webp",
-          "header": "BREAK FINANCIAL BARRIERS",
-          "paragraph": "If you own another property, it can serve as your down payment for a mortgage. Don't let financial barriers stand in the way of investing in prestige."
-        }
-      ]
-    },
     "Footer_1": {
       "header_top": "SCHEDULE A",
       "header_bottom": "PRESENTATION",
@@ -544,8 +504,8 @@
 
   "Katowice_03": {
     "icons_module_01": {
-      "header_top": "Peace and comfort in premium standard.",
-      "header_bottom": "Choose a new apartment in Sokolska Towers to be closer to what matters.",
+      "header_top": "An apartment where you can fit your whole home",
+      "header_bottom": "Choose a finished apartment on the top floors of Sokolska Towers to be closer to what matters",
       "icons": [
         {
           "icon": "/katowice-3/s2/icon1.png",
@@ -553,11 +513,11 @@
         },
         {
           "icon": "/katowice-3/s2/icon2.png",
-          "text": "73.66 m² of space"
+          "text": "75.50 m2 area"
         },
         {
           "icon": "/katowice-3/s2/icon3.png",
-          "text": "Reception, relaxation zone, patio"
+          "text": "In the heart of Katowice"
         },
         {
           "icon": "/katowice-3/s2/icon4.png",
@@ -565,7 +525,7 @@
         },
         {
           "icon": "/katowice-3/s2/icon5.png",
-          "text": "Wardrobe, laundry room, storage on the same floor"
+          "text": "Dressing room, laundry, storage room on the floor"
         },
         {
           "icon": "/katowice-3/s2/icon6.png",
@@ -576,6 +536,9 @@
     "image_carousel_fader_01": {
       "header_top": "A combination of functionality",
       "header_bottom": "with timeless style",
+      "extra_text": [
+        "This move-in ready apartment combines modernity with timeless elegance."
+      ],
       "images": [
         {
           "img": "/katowice-3/carousel1/1.jpg",
@@ -639,10 +602,14 @@
         }
       ]
     },
+    "interchangeable_header": {
+      "header_top": "LIVE IN LUXURY,",
+      "header_bottom": "SURROUNDED BY BEAUTY"
+    },
 
     "image_carousel_fader_02": {
-      "header_top": "Feel at home.",
-      "header_bottom": "Welcome home.",
+      "header_top": "Your oasis of peace",
+      "header_bottom": "on the 14th floor of Sokolska Towers",
       "images": [
         {
           "img": "/katowice-3/carousel2/1.jpg",
@@ -663,6 +630,36 @@
         {
           "img": "/katowice-3/carousel2/5.jpg",
           "alt": "image"
+        }
+      ]
+    },
+    "custom_text_section_01": {
+      "header_top": "Time you can",
+      "header_bottom": "reclaim",
+      "texts": [
+        "Daily commutes can consume up to 480 hours a year. In September 2024, a railway project began that will permanently change the transportation map of the region and redefine the concept of road disruptions in Katowice.",
+        "Apartments on the top floors of Sokolska Towers offer the optimal combination of the benefits of city center living, close to the main transportation routes in the region, with the amenities of high-rise construction, providing comfort above the noise."
+      ],
+      "icons": [
+        {
+          "icon": "/katowice-3/icons2/1.png",
+          "text": "Private parking space with EV charger"
+        },
+        {
+          "icon": "/katowice-3/icons2/2.png",
+          "text": "Reception with 24-hour security and monitoring"
+        },
+        {
+          "icon": "/katowice-3/icons2/3.png",
+          "text": "Relaxation area with sauna included in fixed charges"
+        },
+        {
+          "icon": "/katowice-3/icons2/4.png",
+          "text": "Fitness room, work nook"
+        },
+        {
+          "icon": "/katowice-3/icons2/5.png",
+          "text": "Green patio"
         }
       ]
     },
@@ -700,125 +697,66 @@
         }
       ]
     },
-
-    "custom_text_section_01": {
-      "texts": [
-        "This ready-to-move-in apartment combines modernity with timeless elegance, from carefully selected finishing materials and meticulously chosen details to a range of technological innovations that follow the latest residential building trends."
-      ]
-    },
     "rzut_mieszkania_01": {
-      "header_top": "Your peaceful oasis",
-      "header_bottom": "on the 14th floor of Sokolska Towers",
-      "price": "420,000 EUR",
-      "area": "73.66",
+      "header_top": "Functional",
+      "header_bottom": "layout",
+      "price": "1 666 666 PLN",
+      "area": "75,50",
+      "floor": "XIV",
       "images": {
-        "mobile": "/katowice-1/s4/rzutm.webp",
-        "desktop": "/katowice-1/s4/rzutd.webp"
+        "mobile": "/universal/rzuty/117mobile.png",
+        "desktop": "/universal/rzuty/117.png"
       },
       "texts": [
         "Designed with functionality in mind, this apartment offers a wealth of storage space subtly integrated into the furniture layout, complemented by a wardrobe, laundry room, and spacious storage unit right across from the entrance."
       ]
     },
-
-    "InfoBlocks_1": {
-      "header_top": "Support in the process",
-      "header_bottom": "of purchasing",
-      "info": [
-        {
-          "icon": "/katowice-3/s5/icon1.png",
-          "header": "Security",
-          "paragraph": "Our legal team will handle all formalities and secure the transaction."
-        },
-        {
-          "icon": "/katowice-3/s5/icon2.png",
-          "header": "Time-saving",
-          "paragraph": "We will organize the entire purchasing process for you and send the necessary documents."
-        },
-        {
-          "icon": "/katowice-3/s5/icon3.png",
-          "header": "Financing",
-          "paragraph": "We assist in obtaining financing for the purchase, even without a down payment."
-        }
-      ]
-    },
-    "custom_text_section_02": {
-      "header_top": "Luxury You",
-      "header_bottom": "Can Afford",
-      "texts": [
-        "With each client's individual situation in mind, we have prepared a range of solutions that enable optimal financing of your purchase, even if you don't currently have all the necessary funds or down payment.",
-        "Thanks to a flexible payment model, you can reserve an apartment today by paying only 10% of its value, with the remaining amount to be paid, for example, after selling your current property."
-      ]
-    },
-    "custom_text_section_03": {
-      "header_top": "Time you can",
-      "header_bottom": "get back",
-      "texts": [
-        "Daily commutes can consume up to 480 hours annually. In September 2024, a rail project will begin that will permanently change the region's transportation map. The next six years will redefine the challenges of north-south travel.",
-        "You can reclaim that time by living in the heart of the city, close to main regional transport routes, business centers, health facilities, cultural and shopping hubs. From this location, you can set off wherever you want with ease. A short walk puts you within reach of everything the city center has to offer.",
-        "Additional location benefits include:"
-      ],
-      "list": [
-        "Private garage space with an electric charger (22 kW),",
-        "24-hour reception with security and monitoring,",
-        "Relaxation zone with sauna included in fixed fees,",
-        "Fitness room,",
-        "Patio."
-      ]
-    },
-    "interchangeable_header": {
-      "header_top": "LIVE IN LUXURY,",
-      "header_bottom": "SURROUNDED BY BEAUTY"
-    },
-
-    "custom_text_section_04": {
-      "header_top": "Limited luxury",
-      "header_bottom": "in the heart of the city",
-      "texts": [
-        "Daily commutes can consume up to 480 hours annually. In September 2024, a rail project will begin that will permanently change the region's transportation map. The next six years will redefine the challenges of north-south travel.",
-        "You can reclaim that time by living in the heart of the city, close to main regional transport routes, business centers, health facilities, cultural and shopping hubs. From this location, you can set off wherever you want with ease. A short walk puts you within reach of everything the city center has to offer.",
-        "Additional location benefits include:"
-      ]
-    },
-
     "text_plus_single_video_01": {
       "source": "/katowice-1/s7/360V2.mp4",
       "content": [
         {
           "plainTexts": [
             "",
-            " - at least this many apartments have been and will continue to be built in the Katowice Cultural Zone by 2028. If you're looking for a property with a more individual character, our offer might better meet your needs without losing value due to an oversupply of identical apartments in the immediate vicinity."
+            " - at least that many apartments have been built and will continue to be built in the Katowice Cultural Zone by 2028. The emerging residential areas there are mainly chosen by families with small children."
           ],
           "accentTexts": ["3500"]
         },
         {
           "plainTexts": [
-            "The apartment building at ",
-            "is a unique place located in the very center of the city. Appreciate its uniqueness by opting for a one-of-a-kind, prime location that has all the benefits of a central location, while also rising high above street level."
+            "The primary advantage of Sokolska Towers apartments is their limited number, which will protect the value of your property in the future and also ensure that your view from the window will not be obstructed by further, higher stages of development."
           ],
-          "accentTexts": ["Sokolska 30 "]
+          "accentTexts": [""]
         },
         {
           "plainTexts": [
-            "Invest in a new, corner apartment in a primary market building, equipped with modern solutions and technologies, on the 14th floor of a skyscraper",
-            "that will continue to delight and adorn the Katowice city center."
+            "Lower building density also means better transportation comfort, reducing the time needed to leave the estate."
           ],
-          "accentTexts": [" Sokolska Towers, "]
+          "accentTexts": [""]
         }
       ],
-
-      "nope": {
-        "accent_1": "3500",
-        "paragraph_1": "at least this many apartments have been and will continue to be built in the Katowice Cultural Zone by 2028. If you're looking for a property with a more individual character, our offer might better meet your needs without losing value due to an oversupply of identical apartments in the immediate vicinity.",
-        "optional_paragraph_1": "The apartment building at",
-        "optional_accent_1": "Sokolska 30",
-        "optional_paragraph_2": "is a unique place located in the very center of the city. Appreciate its uniqueness by opting for a one-of-a-kind, prime location that has all the benefits of a central location, while also rising high above street level.",
-        "optional_accent_2": "",
-        "optional_paragraph_3": "",
-        "paragraph_3": "Invest in a new, corner apartment in a primary market building, packed with modern solutions and technologies, on the 14th floor of a timeless skyscraper",
-        "accent_2": "Sokolska Towers."
-      },
-      "header_top": "Perspective",
-      "header_bottom": "of the future"
+      "header_top": "Limited prestige",
+      "header_bottom": "in the heart of the city"
+    },
+    "InfoBlocks_1": {
+      "header_top": "A standard you",
+      "header_bottom": "can afford",
+      "info": [
+        {
+          "icon": "/katowice-3/s5/icon1.png",
+          "header": "Reserve your new home on the 14th floor of Sokolska Towers.",
+          "paragraph": ""
+        },
+        {
+          "icon": "/katowice-3/s5/icon2.png",
+          "header": "If you plan to finance the purchase of a Sokolska Towers apartment through the sale of another property, your apartment will be waiting for you…",
+          "paragraph": ""
+        },
+        {
+          "icon": "/katowice-3/s5/icon3.png",
+          "header": "Want to move in earlier? Ask for details during the presentation.",
+          "paragraph": ""
+        }
+      ]
     },
     "Footer_1": {
       "header_top": "Have more",
@@ -843,11 +781,11 @@
       "icons": [
         {
           "icon": "/universal/icons/1.png",
-          "text": "New, finished, corner apartments, 75 m² on the 14th-15th floor"
+          "text": "New, finished, corner apartments, on the 13th-15th floor"
         },
         {
           "icon": "/universal/icons/2.png",
-          "text": "3 rooms, 2 bathrooms, walk-in closet"
+          "text": "3 rooms, 2 bathrooms, ~75 m2"
         },
         {
           "icon": "/universal/icons/3.png",
@@ -855,7 +793,7 @@
         },
         {
           "icon": "/universal/icons/4.png",
-          "text": "1,700,000 PLN (including 8% VAT), no PCC commission"
+          "text": "1,666,666 PLN (including 8% VAT), no PCC commission"
         },
         {
           "icon": "/universal/icons/5.png",

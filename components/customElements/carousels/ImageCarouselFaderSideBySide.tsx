@@ -107,7 +107,7 @@ export const ImageCarouselFaderSideBySide = ({
     setTextAnimationClass(animations.out);
 
     const newIndex =
-      (currentIndexRef.current - 2 + images.length) % images.length;
+      (currentIndexRef.current - 1 + images.length) % images.length;
     setPrevIndex(currentIndexRef.current);
     currentIndexRef.current = newIndex;
 

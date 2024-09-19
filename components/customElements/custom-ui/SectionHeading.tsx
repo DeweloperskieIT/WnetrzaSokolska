@@ -8,6 +8,8 @@ export interface SectionHeadingProps {
   bottom?: string;
   bottomClass?: string;
   wideParent?: boolean;
+  extra_text?: string[];
+  extra_textClass?: string;
 }
 
 export const SectionHeading = ({
@@ -17,6 +19,8 @@ export const SectionHeading = ({
   bottom,
   bottomClass,
   wideParent = false,
+  extra_text,
+  extra_textClass,
 }: SectionHeadingProps) => {
   return (
     <div
@@ -40,6 +44,12 @@ export const SectionHeading = ({
           {bottom}
         </span>
       )}
+      {extra_text &&
+        extra_text.map((text, i) => (
+          <p key={i} className={cn("pt-10", extra_textClass)}>
+            {text}
+          </p>
+        ))}
     </div>
   );
 };

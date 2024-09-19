@@ -65,7 +65,7 @@ export const MainStickyHeader = ({
               { link: "/oferta", name: dict.Header.universal },
               { link: "/katowice-1", name: dict.Header.offer_1 },
               { link: "/katowice-2", name: dict.Header.offer_2 },
-              // { link: "/katowice-3", name: dict.Header.offer_3 },
+              { link: "/katowice-3", name: dict.Header.offer_3 },
             ]}
           />
           <LanguageChanger locale={dict.locale} />

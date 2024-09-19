@@ -72,6 +72,7 @@ const page = async ({
           cena={dict.Katowice_02.rzut_mieszkania_01.price}
           powierzchnia={dict.Katowice_02.rzut_mieszkania_01.area}
           img={dict.Katowice_02.rzut_mieszkania_01.images}
+          floor={dict.Katowice_02.rzut_mieszkania_01.floor}
           header={
             <SectionHeading
               className=""
@@ -123,11 +124,11 @@ const page = async ({
         />
         {/* Seventh Section - Info text */}
         <InfoBlocks
-          info={dict.Katowice_02.InfoBlocks_1.info}
+          info={dict.universal_page_01.section_info_01.info}
           header={
             <SectionHeading
-              top={dict.Katowice_02.InfoBlocks_1.header_top}
-              bottom={dict.Katowice_02.InfoBlocks_1.header_bottom}
+              top={dict.universal_page_01.section_info_01.header_top}
+              bottom={dict.universal_page_01.section_info_01.header_bottom}
             />
           }
         />

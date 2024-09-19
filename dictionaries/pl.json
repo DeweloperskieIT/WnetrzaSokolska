@@ -35,10 +35,10 @@
   "Header": {
     "offer_title": "APARTAMENTY",
     "landing_page": "O nas",
-    "universal": "Apartamenty",
-    "offer_1": "Apartament 1",
-    "offer_2": "Apartament 2",
-    "offer_3": "Apartament 3",
+    "universal": "Dla każdego",
+    "offer_1": "Dla niej",
+    "offer_2": "Dla niego",
+    "offer_3": "Dla nich",
     "offer_4": "Apartament 4"
   },
   "Landing_Page": {
@@ -94,7 +94,6 @@
         "paragraph_02": "Przyjmij nową perspektywę"
       }
     },
-
     "company_properties_01": {
       "header": "CO NAS WYRÓŻNIA?",
       "text_01": "Gotowe do zamieszkania, z gwarancją na prace wykończeniowe",
@@ -347,11 +346,12 @@
     "rzut_mieszkania_01": {
       "header_top": "POZNAJ SWÓJ NOWY",
       "header_bottom": "APARTAMENT",
-      "price": "399 000 EUR",
-      "area": "75,20",
+      "price": "1 666 666 PLN",
+      "area": "73,66",
+      "floor": "XV",
       "images": {
-        "mobile": "/katowice-1/s4/rzutm.webp",
-        "desktop": "/katowice-1/s4/rzutd.webp"
+        "mobile": "/universal/rzuty/126mobile.png",
+        "desktop": "/universal/rzuty/126.png"
       }
     },
     "text_plus_single_video_01": {
@@ -365,27 +365,6 @@
       },
       "header_top": "LIMITOWANY LUKSUS",
       "header_bottom": "W SERCU MIASTA"
-    },
-    "InfoBlocks_1": {
-      "header_top": "INTELIGENTNY WYBÓR",
-      "header_bottom": "NA WYCIĄGNIĘCIE RĘKI",
-      "info": [
-        {
-          "icon": "/katowice-1/s8/1.webp",
-          "header": "ZAKUP OD PROFESJONALISTY",
-          "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem, dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne."
-        },
-        {
-          "icon": "/katowice-1/s8/2.webp",
-          "header": "INDYWIDUALNY OPIEKUN TRANSAKCJI",
-          "paragraph": "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności."
-        },
-        {
-          "icon": "/katowice-1/s8/3.webp",
-          "header": "PRZEŁAM BARIERY FINANSOWE",
-          "paragraph": "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. Nie pozwól, żeby bariera finansowa stanęła na drodze do inwestycji w prestiż."
-        }
-      ]
     },
     "Footer_1": {
       "header_top": "UMÓW SIĘ",
@@ -494,11 +473,12 @@
     "rzut_mieszkania_01": {
       "header_top": "PRAKTYCZNY",
       "header_bottom": "NA KAŻDYM KROKU",
-      "price": "399 000 EUR",
+      "price": "1 666 666 PLN",
       "area": "76,35",
+      "floor": "XIII",
       "images": {
-        "mobile": "/katowice-2/s4/rzutm.webp",
-        "desktop": "/katowice-2/s4/rzutd.webp"
+        "mobile": "/universal/rzuty/103mobile.png",
+        "desktop": "/universal/rzuty/103.png"
       }
     },
     "interchangeable_header": {
@@ -517,27 +497,6 @@
       "header_top": "LIMITOWANY LUKSUS",
       "header_bottom": "W SERCU MIASTA"
     },
-    "InfoBlocks_1": {
-      "header_top": "INTELIGENTNY WYBÓR",
-      "header_bottom": "NA WYCIĄGNIĘCIE RĘKI",
-      "info": [
-        {
-          "icon": "/katowice-1/s8/1.webp",
-          "header": "ZAKUP OD PROFESJONALISTY",
-          "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne."
-        },
-        {
-          "icon": "/katowice-1/s8/2.webp",
-          "header": "INDYWIDUALNY OPIEKUN TRANSAKCJI",
-          "paragraph": "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności."
-        },
-        {
-          "icon": "/katowice-1/s8/3.webp",
-          "header": "PRESTIŻ, NA KTÓRY CIĘ STAĆ",
-          "paragraph": "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. "
-        }
-      ]
-    },
     "Footer_1": {
       "header_top": "UMÓW SIĘ",
       "header_bottom": "NA PREZENTACJĘ",
@@ -547,8 +506,8 @@
 
   "Katowice_03": {
     "icons_module_01": {
-      "header_top": "Spokój i komfort w standardzie premium.",
-      "header_bottom": "Wybierz nowy apartament w  Sokolska Towers,aby być bliżej tego, co ważne. ",
+      "header_top": "Apartament, w którym pomieścisz cały swój dom",
+      "header_bottom": "Wybierz wykończony apartament  na najwyższych piętrach Sokolska Towers, aby być bliżej tego, co ważne",
       "icons": [
         {
           "icon": "/katowice-3/s2/icon1.png",
@@ -556,11 +515,11 @@
         },
         {
           "icon": "/katowice-3/s2/icon2.png",
-          "text": "73,66 m2 powierzchni"
+          "text": "75,50 m2 powierzchni"
         },
         {
           "icon": "/katowice-3/s2/icon3.png",
-          "text": "Recepcja, strefa relaksu, patio"
+          "text": "W sercu Katowic"
         },
         {
           "icon": "/katowice-3/s2/icon4.png",
@@ -579,6 +538,9 @@
     "image_carousel_fader_01": {
       "header_top": "Połączenie funkcjonalności",
       "header_bottom": "z ponadczasowym stylem ",
+      "extra_text": [
+        "Ten gotowy do zamieszkania apartament stanowi połączenie nowoczesności z ponadczasową elegancją."
+      ],
       "images": [
         {
           "img": "/katowice-3/carousel1/1.jpg",
@@ -642,9 +604,13 @@
         }
       ]
     },
+    "interchangeable_header": {
+      "header_top": "ŻYJ W LUKSUSIE,",
+      "header_bottom": "OTOCZONY PIĘKNEM"
+    },
     "image_carousel_fader_02": {
-      "header_top": "Poczuj się jak u siebie.",
-      "header_bottom": "Witaj w domu.",
+      "header_top": "Twoja oaza spokoju",
+      "header_bottom": "na XIV piętrze Sokolska Towers",
       "images": [
         {
           "img": "/katowice-3/carousel2/1.jpg",
@@ -665,6 +631,36 @@
         {
           "img": "/katowice-3/carousel2/5.jpg",
           "alt": "image"
+        }
+      ]
+    },
+    "custom_text_section_01": {
+      "header_top": "Czas, który możesz",
+      "header_bottom": "odzyskać",
+      "texts": [
+        "Codzienne dojazdy pochłaniają nawet do 480 godzin rocznie. We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach.",
+        "Apartamenty na najwyższych piętrach Sokolska Towers stanowią optymalne połączenie zalet życia w centrum miasta, blisko głównych szlaków komunikacyjnych w regionie, z udogodnieniami budownictwa wysokościowego, oferującymi komfort życia ponad hałasem."
+      ],
+      "icons": [
+        {
+          "icon": "/katowice-3/icons2/1.png",
+          "text": "Prywatne miejsce garażowe z ładowarką EV"
+        },
+        {
+          "icon": "/katowice-3/icons2/2.png",
+          "text": "Recepcja z całodobową ochroną i monitoringiem"
+        },
+        {
+          "icon": "/katowice-3/icons2/3.png",
+          "text": "Strefa relaksu z sauną w cenie  opłat stałych"
+        },
+        {
+          "icon": "/katowice-3/icons2/4.png",
+          "text": "Sala fitness, kącik do pracy"
+        },
+        {
+          "icon": "/katowice-3/icons2/5.png",
+          "text": "Zielone patio"
         }
       ]
     },
@@ -702,80 +698,18 @@
         }
       ]
     },
-    "custom_text_section_01": {
-      "texts": [
-        "Ten gotowy do zamieszkania apartament stanowi połączenie nowoczesności z ponadczasową elegancją, od wyselekcjonowanych materiałów wykończeniowych, przez starannie dobrane detale, po szereg nowinek technologicznych podążających za trendami budownictwa mieszkaniowego."
-      ]
-    },
     "rzut_mieszkania_01": {
-      "header_top": "Twoja oaza spokoju",
-      "header_bottom": "na XIV piętrze Sokolska Towers",
-      "price": "420 000 EUR",
-      "area": "73,66",
+      "header_top": "Układ",
+      "header_bottom": "funkcjonalny",
+      "price": "1 666 666 PLN",
+      "area": "75,50",
+      "floor": "XIV",
       "images": {
-        "mobile": "/katowice-1/s4/rzutm.webp",
-        "desktop": "/katowice-1/s4/rzutd.webp"
+        "mobile": "/universal/rzuty/117mobile.png",
+        "desktop": "/universal/rzuty/117.png"
       },
       "texts": [
         "Projektowany z myślą o funkcjonalności apartament oferuje ogromną ilość przestrzeni do przechowywania, subtelnie wkomponowanej w zabudowę meblową, której uzupełnieniem są garderoba, pralnia oraz pojemna komórka lokatorska naprzeciwko wejścia do lokalu."
-      ]
-    },
-    "InfoBlocks_1": {
-      "header_top": "Wsparcie w procesie",
-      "header_bottom": "zakupu",
-      "info": [
-        {
-          "icon": "/katowice-3/s5/icon1.png",
-          "header": "Bezpieczeństwo",
-          "paragraph": "Nasz zespół prawny zadba o wszelkie formalności oraz zabezpieczenie transakcji"
-        },
-        {
-          "icon": "/katowice-3/s5/icon2.png",
-          "header": "Oszczędność czasu",
-          "paragraph": "Zorganizujemy cały proces zakupu dla Ciebie i wyślemy niezbędne dokumenty."
-        },
-        {
-          "icon": "/katowice-3/s5/icon3.png",
-          "header": "Finansowanie",
-          "paragraph": "Pomagamy zdobyć finansowanie zakupu, także bez wkładu własnego."
-        }
-      ]
-    },
-    "custom_text_section_02": {
-      "header_top": "Luksus na który",
-      "header_bottom": "możesz sobie pozwolić",
-      "texts": [
-        "Z myślą o indywidualnej sytuacji każdego z naszych Klientów przygotowaliśmy szereg rozwiązań pozwalających na optymalne sfinansowanie zakupu, nawet jeśli w tym momencie nie dysponujesz calością potrzebnej gotówki, bądź wkładu własnego.",
-        "Dzięki elastycznemu modelowi rozliczenia, już dziś możesz zarezerwować  apartament wpłacając jedynie 10% jego wartości, a pozostałą kwotę uzupełnisz np. po sprzedaży swojej dotychczasowej nieruchomości."
-      ]
-    },
-    "custom_text_section_03": {
-      "header_top": "Czas, który możesz",
-      "header_bottom": "odzyskać",
-      "texts": [
-        "Codzienne dojazdy pochłaniają nawet do 480 godzin rocznie. We wrześniu 2024 roku rozpoczyna się inwestycja kolejowa, która permanentnie zmieni mapę komunikacyjną regionu. Najbliższe 6 lat zredefiniuje pojęcie utrudnień w poruszaniu się na kierunku północ-południe. ",
-        "Możesz odzyskać ten czas, funkcjonując w sercu miasta, będąc w śródmieściu, blisko głównych szlaków komunikacyjnych w regionie, ośrodków biznesowych, centrów zdrowia, kultury i handlu. Z tego miejsca najłatwiej wyruszysz gdziekolwiek chcesz.  W zasięgu krótkiego spaceru znajduje się oferta całego centrum.   ",
-        "Dodatkowym atutem lokalizacji są: "
-      ],
-      "list": [
-        "prywatne miejsce garażowe z ładowarką elektryczną (22 kW),",
-        "recepcja z całodobową ochroną i monitoringiem,",
-        "strefa relaksu z sauną w cenie opłat stałych,",
-        "sala fitness,",
-        "patio."
-      ]
-    },
-    "interchangeable_header": {
-      "header_top": "ŻYJ W LUKSUSIE,",
-      "header_bottom": "OTOCZONY PIĘKNEM"
-    },
-    "custom_text_section_04": {
-      "header_top": "Limitowany luksus",
-      "header_bottom": "w sercu miasta",
-      "texts": [
-        "Codzienne dojazdy pochłaniają nawet do 480 godzin rocznie. We wrześniu 2024 roku rozpoczyna się inwestycja kolejowa, która permanentnie zmieni mapę komunikacyjną regionu. Najbliższe 6 lat zredefiniuje pojęcie utrudnień w poruszaniu się na kierunku północ-południe.",
-        "Możesz odzyskać ten czas, funkcjonując w sercu miasta, będąc w śródmieściu, blisko głównych szlaków komunikacyjnych w regionie, ośrodków biznesowych, centrów zdrowia, kultury i handlu. Z tego miejsca najłatwiej wyruszysz gdziekolwiek chcesz.  W zasięgu krótkiego spaceru znajduje się oferta całego centrum.",
-        "Dodatkowym atutem lokalizacji są:"
       ]
     },
     "text_plus_single_video_01": {
@@ -784,39 +718,46 @@
         {
           "plainTexts": [
             "",
-            " - przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku. Jeżeli oczekujesz nieruchomości o bardziej indywidualnym charakterze, nasza propozycja może lepiej wpisywać się w Twoje potrzeby, nie tracąc przy tym na wartości w wyniku nadpodaży dokładnie takich samych mieszkań w bezpośredniej okolicy."
+            " - przynajmniej tyle mieszkań powstało i jeszcze powstanie w Katowickiej Strefie Kultury do 2028 roku. Powstające tam blokowiska są wybierane głównie przez rodziny z małymi dziećmi."
           ],
           "accentTexts": ["3500"]
         },
         {
           "plainTexts": [
-            "Apartamentowiec przy ",
-            "to wyjątkowe miejsce w zabudowie ścisłego centrum miasta. Doceń jego unikatowość, stawiając na na jedyną w swoim rodzaju, topową lokalizację, która posiada wszystkie zalety położenia w centrum, przy jednoczesnym wzniesieniu się wysoko powyżej poziomu ulicy."
+            "Podstawową przewagą apartamentów Sokolska Towers jest ich ograniczona ilość, która zabezpieczy wartość Twojej nieruchomości w przyszłości, jak również zabezpieczy widok z Twojego okna, który nie zostanie przysłonięty przez kolejne, wyższe etapy inwestycji."
           ],
-          "accentTexts": ["Sokolskiej 30 "]
+          "accentTexts": [""]
         },
         {
           "plainTexts": [
-            "Ulokuj kapitał w nowym, narożnym apartamencie z rynku pierwotnego, z nowoczesnymi rozwiązaniami i technologiami, na XIV piętrze wieżowca",
-            "który nie przestanie cieszyć oka i zdobić śródmieście Katowic."
+            "Mniejsza gęstość zabudowy to również komfort komunikacyjny, ograniczający czas wyjazdu z osiedla."
           ],
-          "accentTexts": [" Sokolska Towers, "]
+          "accentTexts": [""]
         }
       ],
-
-      "nope": {
-        "accent_1": "3500",
-        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku. Jeżeli oczekujesz nieruchomości o bardziej indywidualnym charakterze, nasza propozycja może lepiej wpisywać się w Twoje potrzeby, nie tracąc przy tym na wartości w wyniku nadpodaży dokładnie takich samych mieszkań w bezpośredniej okolicy.",
-        "optional_paragraph_1": "Apartamentowiec przy",
-        "optional_accent_1": "Sokolskiej 30",
-        "optional_paragraph_2": "to wyjątkowe miejsce w zabudowie ścisłego centrum miasta. Doceń jego unikatowość, stawiając na na jedyną w swoim rodzaju, topową lokalizację, która posiada wszystkie zalety położenia w centrum, przy jednoczesnym wzniesieniu się wysoko powyżej poziomu ulicy.",
-        "optional_accent_2": "",
-        "optional_paragraph_3": "",
-        "paragraph_3": "Ulokuj kapitał w nowym, narożnym apartamencie z rynku pierwotnego, naszpikowanym nowoczesnymi rozwiązaniami i technologiami, na XIV piętrze ponadczasowego wieżowca",
-        "accent_2": "Sokolska Towers."
-      },
-      "header_top": "Perspektywa",
-      "header_bottom": "przyszłości"
+      "header_top": "Limitowany prestiż",
+      "header_bottom": "w sercu miasta"
+    },
+    "InfoBlocks_1": {
+      "header_top": "Standard, na który",
+      "header_bottom": "możesz sobie pozwolić",
+      "info": [
+        {
+          "icon": "/katowice-3/s5/icon1.png",
+          "header": "Zarezerwuj swój nowy dom na XIV piętrze Sokolska Towers.",
+          "paragraph": ""
+        },
+        {
+          "icon": "/katowice-3/s5/icon2.png",
+          "header": "Jeżeli planujesz sfinansować zakup Apartamentu Sokolska Towers ze sprzedaży innej nieruchomości, Twój apartament będzie na Ciebie czekał…",
+          "paragraph": ""
+        },
+        {
+          "icon": "/katowice-3/s5/icon3.png",
+          "header": "Chcesz zamieszkać w nim wcześniej? Zapytaj o szczegóły podczas prezentacji.",
+          "paragraph": ""
+        }
+      ]
     },
     "Footer_1": {
       "header_top": "Masz więcej",
@@ -840,11 +781,11 @@
       "icons": [
         {
           "icon": "/universal/icons/1.png",
-          "text": "Nowe, wykończone, narożne, 75 m2 na XIV-XV piętrze"
+          "text": "Nowe, wykończone, narożne, na XIII-XV piętrze"
         },
         {
           "icon": "/universal/icons/2.png",
-          "text": "3 pokoje 2 łazienki garderoba"
+          "text": "3 pokoje, 2 łazienki, ~75 m2"
         },
         {
           "icon": "/universal/icons/3.png",
@@ -852,7 +793,7 @@
         },
         {
           "icon": "/universal/icons/4.png",
-          "text": "1.700.000 PLN (w tym 8% VAT), bez prowizji PCC"
+          "text": "1.666.666 PLN (w tym 8% VAT), bez prowizji PCC"
         },
         {
           "icon": "/universal/icons/5.png",
@@ -1042,13 +983,13 @@
         },
         {
           "icon": "/katowice-1/s8/2.webp",
-          "header": "INDYWIDUALNY OPIEKUN TRANSAKCJI",
-          "paragraph": "Apartament Premium wymaga obsługi premium, realizowanej od początku do końca przez przypisanego do Ciebie opiekuna transakcji, który weźmie na siebie ciężar formalności."
+          "header": "ZAREZERWUJ SWÓJ APARTAMENT",
+          "paragraph": "Jeżeli planujesz sfinansować zakup Apartamentu Sokolska Towers ze sprzedaży innej nieruchomości, Twój apartament będzie na Ciebie czekał…"
         },
         {
           "icon": "/katowice-1/s8/3.webp",
-          "header": "PRZEŁAM BARIERY FINANSOWE",
-          "paragraph": "Jeśli tylko posiadasz inną nieruchomość, może ona posłużyć za Twój wkład własny do kredytu. Nie pozwól, żeby bariera finansowa stanęła na drodze do inwestycji w prestiż."
+          "header": "5 LAT STANIA W KORKACH",
+          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach."
         }
       ]
     },
@@ -1110,7 +1051,7 @@
         },
         {
           "header": "SPÓJNE WNĘTRZE",
-          "paragraph": "Wybierz ponadczasowy design, przewijający się przez szereg spójnych architektonicznie detali.",
+          "paragraph": "Wybierz nowoczesny design, przewijający się przez szereg spójnych architektonicznie detali.",
           "images": [
             {
               "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
@@ -1162,7 +1103,7 @@
         },
         {
           "header": "ŚWIATOWA ARCHITEKTURA",
-          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w ponadczasowym budynku nagrodzonym prestiżową nagrodą European Property Award.",
+          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w budynku nagrodzonym prestiżową nagrodą European Property Award.",
           "images": [
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
