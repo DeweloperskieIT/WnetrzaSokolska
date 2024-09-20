@@ -9,6 +9,7 @@ import {
   IconsModule,
   InfoBlocks,
   InterchangeableImages,
+  PlainParagraphText,
   RzutMieszkania,
   RzutMieszkaniaCarousel,
   SpiralPhotos4,
@@ -80,6 +81,19 @@ const page = async ({
             />
           }
         />
+        {/* Section 5 - Custom text 1 */}
+        <PlainParagraphText
+          texts={dict.Katowice_03.custom_text_section_01.texts}
+          header={
+            <SectionHeading
+              topClass="font-bold"
+              top={dict.Katowice_03.custom_text_section_01.header_top}
+              bottom={dict.Katowice_03.custom_text_section_01.header_bottom}
+            />
+          }
+        >
+          <IconsModule icons={dict.universal_page_01.custom_icons} />
+        </PlainParagraphText>
         {/* Fourth Section - Standalone Photos */}
         <SpiralPhotos4
           images={dict.universal_page_01.section_spiral_01.images}

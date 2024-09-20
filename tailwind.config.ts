@@ -138,6 +138,10 @@ const config = {
           from: { opacity: "1" },
           to: { opacity: "0.1" },
         },
+        "color-cycle": {
+          "0%, 100%": { color: "#EDECE6" },
+          "50%": { color: "#FACA32" },
+        },
       },
       animation: {
         aurora: "aurora 60s linear infinite",
@@ -145,6 +149,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-element-in": "fade-element-in 0.3s ease-in",
         "fade-element-out": "fade-element-out 0.3s ease-out",
+        "color-cycle": "color-cycle 1s linear infinite",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

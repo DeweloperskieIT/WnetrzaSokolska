@@ -271,7 +271,7 @@ export const ImageCarouselCustom = ({
     <div
       ref={ref}
       className={cn(
-        "relative w-full transition-all h-fit duration-500 max-h-svh",
+        "relative w-full transition-all h-fit duration-500 overflow-hidden",
         className
       )}
       {...rest}
@@ -289,7 +289,7 @@ export const ImageCarouselCustom = ({
       />
       <div
         className={cn(
-          "relative mx-auto h-auto translate-y-0  xl:max-h-[1024px] ",
+          "relative mx-auto h-auto translate-y-0  object-scale-down ",
           "translate-x-[12.5%]"
           // "overflow-hidden"
         )}

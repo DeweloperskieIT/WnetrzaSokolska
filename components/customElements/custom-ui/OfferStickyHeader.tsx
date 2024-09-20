@@ -69,10 +69,13 @@ export const OfferStickyHeader = ({
           </div>
         </div>
 
-        <a className="text-light lg:block hidden" href="tel:+48666000999">
-          +48 666 000 999
-        </a>
         <div className="w-fit flex flex-row justify-evenly items-center h-full gap-6 max-h-5 text-light md:pr-6 xl:pr-0">
+          <a
+            className="text-light text-nowrap lg:block hidden"
+            href="tel:+48666000999"
+          >
+            +48 666 000 999
+          </a>
           <FacebookRedirect fill={customAccent} />
           <InstagramRedirect fill={customAccent} />
           <YoutubeRedirect fill={customAccent} />

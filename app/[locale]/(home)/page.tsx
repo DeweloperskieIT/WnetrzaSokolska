@@ -25,7 +25,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Section } from "lucide-react";
 
 const Home = async ({
   params: { locale },
@@ -45,11 +44,11 @@ const Home = async ({
           interval={4000}
           img="/images/mainpage/deweloperskie-logo-corner-szare.webp"
         >
-          <div className="limited-width flex flex-col gap-4 w-full h-full items-start justify-end pb-6 pt-20 md:py-40 md:pb-20">
+          <div className="limited-width flex flex-col gap-4 w-full h-full items-start justify-end pb-10 py-20">
             <h1 className="text-2xl md:text-5xl">
               {dict.Landing_Page.breathing_background_image_01.header}
             </h1>
-            <h2 className="text-xl font-light max-w-[800px] text-left flex flex-col gap-4">
+            <h2 className="text-xl font-light xl:max-w-[1200px] text-left flex flex-col gap-4">
               <span>
                 {dict.Landing_Page.breathing_background_image_01.paragraph_01}
               </span>
@@ -105,7 +104,7 @@ const Home = async ({
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
@@ -131,7 +130,7 @@ const Home = async ({
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
@@ -154,7 +153,7 @@ const Home = async ({
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
@@ -168,14 +167,17 @@ const Home = async ({
               </span>
             </div>
           </div>
-          <div className="aspect-[4/3] lg:max-w-[48%] h-auto w-full relative flex group items-end">
+          <Link
+            href={"/katowice-3"}
+            className="aspect-[4/3] lg:max-w-[48%] h-auto w-full relative flex group items-end"
+          >
             <Image
               alt="alt"
-              src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
+              src={"/katowice-3/carousel1/14.jpg"}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
               )}
             />
             <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
@@ -185,10 +187,12 @@ const Home = async ({
               <span className="italic">
                 {dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_02}
                 <br />
-                {dict.Landing_Page.offer_blocks.premieres}
+                <span className="text-accent1">
+                  {dict.Landing_Page.offer_blocks.see_offer}
+                </span>
               </span>
             </div>
-          </div>
+          </Link>
         </div>
         {/* ??????????????????? */}
 
@@ -202,7 +206,7 @@ const Home = async ({
               className="size-14"
             />
             <div className="flex flex-col gap-4">
-              <span className="font-bold text-2xl md:text-4xl">
+              <span className="font-light text-2xl md:text-4xl">
                 {dict.Landing_Page.company_properties_01.header}
               </span>
               <ul className="informacje-list-bullet-common text-xl">
@@ -277,7 +281,7 @@ const Home = async ({
               width={0}
             />
             <YouTubeEmbed
-              videoid="7i7Eu6iRRCI"
+              videoid="UEAOTgQZ2ZQ"
               style="width: 270px !important; height: 480px !important; margin: auto; aspectRatio: 9/16"
               height={0}
               width={0}

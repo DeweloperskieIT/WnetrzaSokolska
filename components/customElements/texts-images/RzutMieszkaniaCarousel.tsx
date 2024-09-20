@@ -87,8 +87,9 @@ export const RzutMieszkaniaCarousel = ({
               {locale === "en" && "AREA / FLOOR"}
             </span>
             <span className="text-light font-light text-3xl md:text-3xl">
-              {items[currentIndex].area} m<sup>2</sup> /{" "}
-              {items[currentIndex].floor}
+              {items[currentIndex].area} m<sup>2</sup>
+              {` / `}
+              {items[currentIndex].floor}p.
             </span>
           </div>
           <div className="flex flex-col md:gap-2">

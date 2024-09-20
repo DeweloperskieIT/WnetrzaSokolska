@@ -1,7 +1,7 @@
 {
   "locale": "pl",
   "contact_form": {
-    "title": "Formularz Kontaktowy",
+    "title": "Formularz kontaktowy",
     "title_top": "FORMULARZ",
     "title_bottom": "KONTAKTOWY",
     "name": "Imię",
@@ -67,13 +67,13 @@
         },
 
         {
-          "icon": "/images/mainpage/tick-icon.png",
+          "icon": "/images/DangleKeysIcon.png",
           "text": "Nowe, wykończone"
         }
       ]
     },
     "offer_blocks": {
-      "header_top": "ZOBACZ NASZE GOTOWE",
+      "header_top": "ZOBACZ NASZE WYPOSAŻONE",
       "header_bottom": "APARTAMENTY NA SPRZEDAŻ",
       "see_offer": "Kliknij aby zobaczyć ofertę",
       "premieres": "premiera wkrótce",
@@ -217,10 +217,6 @@
         "answer": "Kupujący nabywa wolną od obciążeń nieruchomość w oparciu o fakturę VAT, wraz z komórką lokatorską, udziałem w powierzchni wspólnej (w tym strefie SPA, siłowni, recepcji oraz patio) oraz rękojmią na wszystkie usługi budowlane, stolarskie oraz lakiernicze, realizowane w ramach procesu aranżacyjnego."
       },
       {
-        "question": "CZY TRANSAKCJA MUSI BYĆ W WALUCIE EURO?",
-        "answer": "Nie, cena sprzedaży może być denominowana w PLN."
-      },
-      {
         "question": "CZY JEST MOŻLIWOŚĆ ŁADOWANIA SAMOCHODU ELEKTRYCZNEGO?",
         "answer": "Kupujący może kupić apartament wraz z miejscem postojowym w hali garażowej na kondygnacji 0, wyposażonym w pełnowartościową stację ładowania samochodów elektrycznych o mocy 22kW."
       },
@@ -294,7 +290,7 @@
         {
           "image": "/katowice-1/s3/06.jpg",
           "alt": "Korytarz w apartamencie z wejściem do sypialni",
-          "text": "Korzystaj z potencjału układu funkcjonalnego"
+          "text": "Korzystaj z potencjału funkcjonalnego układu"
         },
         {
           "image": "/katowice-1/s3/07.jpg",
@@ -319,7 +315,7 @@
         {
           "image": "/katowice-1/s3/11.jpg",
           "alt": "Kuchnia i korytarz przy zachodzie słońca",
-          "text": "Otól się luksusem"
+          "text": "Funkcjonalne rozwiązania"
         },
         {
           "image": "/katowice-1/s3/12.jpg",
@@ -360,7 +356,7 @@
         "accent_1": "3500",
         "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
         "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
-        "paragraph_3": "Wybierz narożny apartament na XV piętrze ponadczasowego budynku ",
+        "paragraph_3": "Wybierz narożny apartament w ponadczasowym budynku ",
         "accent_2": "Sokolska Towers."
       },
       "header_top": "LIMITOWANY LUKSUS",
@@ -391,7 +387,7 @@
         },
         {
           "icon": "/katowice-1/s2/4.webp",
-          "text": "Strefa SPA Fitness-club"
+          "text": "Strefa SPA, Fitness-club"
         },
         {
           "icon": "/images/BedIcon.png",
@@ -421,7 +417,7 @@
         {
           "image": "/katowice-2/s3/04.jpg",
           "alt": "Salon z kuchnią w nocy",
-          "text": "I jego drugie oblicze po zmroku"
+          "text": "i jego drugie oblicze po zmroku"
         },
         {
           "image": "/katowice-2/s3/05.jpg",
@@ -456,7 +452,7 @@
         {
           "image": "/katowice-2/s3/11.jpg",
           "alt": "Wnętrze - salon ze stolikiem i wysepką",
-          "text": "Jadalnia z Twoją małą winiarnią"
+          "text": "Jadalnia z Twoją małą winiarką"
         },
         {
           "image": "/katowice-2/s3/12.jpg",
@@ -510,6 +506,10 @@
       "header_bottom": "Wybierz wykończony apartament  na najwyższych piętrach Sokolska Towers, aby być bliżej tego, co ważne",
       "icons": [
         {
+          "icon": "/katowice-3/s2/icon3.png",
+          "text": "W sercu Katowic"
+        },
+        {
           "icon": "/katowice-3/s2/icon1.png",
           "text": "3 pokoje, 2 łazienki"
         },
@@ -518,12 +518,8 @@
           "text": "75,50 m2 powierzchni"
         },
         {
-          "icon": "/katowice-3/s2/icon3.png",
-          "text": "W sercu Katowic"
-        },
-        {
           "icon": "/katowice-3/s2/icon4.png",
-          "text": "XIV piętro, spektakularny widok"
+          "text": "Spektakularny widok z XIV piętra "
         },
         {
           "icon": "/katowice-3/s2/icon5.png",
@@ -605,7 +601,7 @@
       ]
     },
     "interchangeable_header": {
-      "header_top": "ŻYJ W LUKSUSIE,",
+      "header_top": "Żyj w luksusie,",
       "header_bottom": "OTOCZONY PIĘKNEM"
     },
     "image_carousel_fader_02": {
@@ -635,8 +631,8 @@
       ]
     },
     "custom_text_section_01": {
-      "header_top": "Czas, który możesz",
-      "header_bottom": "odzyskać",
+      "header_top": "Czas, który",
+      "header_bottom": "możesz odzyskać",
       "texts": [
         "Codzienne dojazdy pochłaniają nawet do 480 godzin rocznie. We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach.",
         "Apartamenty na najwyższych piętrach Sokolska Towers stanowią optymalne połączenie zalet życia w centrum miasta, blisko głównych szlaków komunikacyjnych w regionie, z udogodnieniami budownictwa wysokościowego, oferującymi komfort życia ponad hałasem."
@@ -712,7 +708,34 @@
         "Projektowany z myślą o funkcjonalności apartament oferuje ogromną ilość przestrzeni do przechowywania, subtelnie wkomponowanej w zabudowę meblową, której uzupełnieniem są garderoba, pralnia oraz pojemna komórka lokatorska naprzeciwko wejścia do lokalu."
       ]
     },
+
     "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": [
+        {
+          "plainTexts": [
+            "",
+            " - przynajmniej tyle mieszkań powstało i jeszcze powstanie w Katowickiej Strefie Kultury do 2028 roku. Powstające tam blokowiska są wybierane głównie przez rodziny z małymi dziećmi."
+          ],
+          "accentTexts": ["3500"]
+        },
+        {
+          "plainTexts": [
+            "Podstawową przewagą apartamentów Sokolska Towers jest ich ograniczona ilość, która zabezpieczy wartość Twojej nieruchomości w przyszłości, jak również zabezpieczy widok z Twojego okna, który nie zostanie przysłonięty przez kolejne, wyższe etapy inwestycji."
+          ],
+          "accentTexts": [""]
+        },
+        {
+          "plainTexts": [
+            "Mniejsza gęstość zabudowy to również komfort komunikacyjny, ograniczający czas wyjazdu z osiedla."
+          ],
+          "accentTexts": [""]
+        }
+      ],
+      "header_top": "Limitowany prestiż",
+      "header_bottom": "w sercu miasta"
+    },
+    "text_plus_single_vi+deo_01": {
       "source": "/katowice-1/s7/360V2.mp4",
       "content": [
         {
@@ -749,7 +772,7 @@
         },
         {
           "icon": "/katowice-3/s5/icon2.png",
-          "header": "Jeżeli planujesz sfinansować zakup Apartamentu Sokolska Towers ze sprzedaży innej nieruchomości, Twój apartament będzie na Ciebie czekał…",
+          "header": "Jeżeli planujesz sfinansować zakup ze sprzedaży innej nieruchomości, Twój apartament będzie na Ciebie czekał…",
           "paragraph": ""
         },
         {
@@ -781,11 +804,12 @@
       "icons": [
         {
           "icon": "/universal/icons/1.png",
-          "text": "Nowe, wykończone, narożne, na XIII-XV piętrze"
+          "text": "Nowe, wyposażone, na XIII-XV piętrze"
         },
         {
           "icon": "/universal/icons/2.png",
-          "text": "3 pokoje, 2 łazienki, ~75 m2"
+          "text": "3 pokoje, 2 łazienki, ~75 m",
+          "superscript": "2"
         },
         {
           "icon": "/universal/icons/3.png",
@@ -793,7 +817,7 @@
         },
         {
           "icon": "/universal/icons/4.png",
-          "text": "1.666.666 PLN (w tym 8% VAT), bez prowizji PCC"
+          "text": "1.666.666 PLN (w tym 8% VAT)"
         },
         {
           "icon": "/universal/icons/5.png",
@@ -901,6 +925,29 @@
         }
       ]
     },
+
+    "custom_icons": [
+      {
+        "icon": "/universal/icons/sub/1.png",
+        "text": "Prywatne miejsce garażowe z ładowarką EV"
+      },
+      {
+        "icon": "/universal/icons/sub/2.png",
+        "text": "Recepcja z całodobową ochroną i monitoringiem"
+      },
+      {
+        "icon": "/universal/icons/sub/3.png",
+        "text": "Strefa relaksu z sauną w cenie  opłat stałych"
+      },
+      {
+        "icon": "/universal/icons/sub/4.png",
+        "text": "Sala fitness, kącik do pracy"
+      },
+      {
+        "icon": "/universal/icons/sub/5.png",
+        "text": "Zielone patio"
+      }
+    ],
     "section_spiral_01": {
       "images": [
         {
@@ -965,10 +1012,14 @@
         },
         {
           "plainTexts": [
-            "Ograniczona liczba lokali w bezpośrednim otoczeniu",
-            "zapewni nie tylko komfort w użytkowaniu Twojej inwestycji, lecz również zabezpieczy jej wartość w przyszłości."
+            "Postaw na ",
+            ", w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym."
           ],
-          "accentTexts": [" Sokolskiej 30 "]
+          "accentTexts": [" unikatową lokalizację"]
+        },
+        {
+          "plainTexts": ["Wybierz narożny apartament w ponadczasowym budynku "],
+          "accentTexts": ["Sokolska Towers."]
         }
       ]
     },
@@ -982,14 +1033,14 @@
           "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne."
         },
         {
+          "icon": "/katowice-1/s8/3.webp",
+          "header": "5 LAT STANIA W KORKACH",
+          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierając Sokolska Towers, wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!"
+        },
+        {
           "icon": "/katowice-1/s8/2.webp",
           "header": "ZAREZERWUJ SWÓJ APARTAMENT",
           "paragraph": "Jeżeli planujesz sfinansować zakup Apartamentu Sokolska Towers ze sprzedaży innej nieruchomości, Twój apartament będzie na Ciebie czekał…"
-        },
-        {
-          "icon": "/katowice-1/s8/3.webp",
-          "header": "5 LAT STANIA W KORKACH",
-          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach."
         }
       ]
     },

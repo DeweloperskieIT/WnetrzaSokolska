@@ -5,6 +5,7 @@ import React from "react";
 export type LandingPageIcon = {
   icon: string;
   text: string;
+  superscript?: string;
 };
 
 export interface IconsModuleProps {
@@ -23,7 +24,7 @@ export const IconsModule = ({ className, header, icons }: IconsModuleProps) => {
     >
       {header}
       <div className="icon-parentcontainer-class">
-        {icons.map(({ icon, text }, i) => (
+        {icons.map(({ icon, text, superscript }, i) => (
           <div key={i} className="icon-container-class">
             <Image
               src={icon}
@@ -32,7 +33,10 @@ export const IconsModule = ({ className, header, icons }: IconsModuleProps) => {
               height={100}
               className="icon-image-class"
             />
-            <span className="icon-text-class">{text}</span>
+            <span className="icon-text-class">
+              {text}
+              {superscript && <sup>{superscript}</sup>}
+            </span>
           </div>
         ))}
       </div>

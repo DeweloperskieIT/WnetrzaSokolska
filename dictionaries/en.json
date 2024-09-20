@@ -66,7 +66,7 @@
           "text": "Top Floors"
         },
         {
-          "icon": "/images/mainpage/tick-icon.png",
+          "icon": "/images/DangleKeysIcon.png",
           "text": "New, Finished"
         }
       ]
@@ -213,10 +213,6 @@
       {
         "question": "WHAT IS INCLUDED IN THE PRICE?",
         "answer": "The buyer acquires a property free from encumbrances based on a VAT invoice, including a storage room, a share in common areas (such as the SPA area, gym, reception, and patio), and a warranty for all construction, carpentry, and finishing services carried out during the design process."
-      },
-      {
-        "question": "MUST THE TRANSACTION BE IN EURO?",
-        "answer": "No, the sale price can be denominated in PLN."
       },
       {
         "question": "IS IT POSSIBLE TO CHARGE AN ELECTRIC CAR?",
@@ -508,16 +504,16 @@
       "header_bottom": "Choose a finished apartment on the top floors of Sokolska Towers to be closer to what matters",
       "icons": [
         {
+          "icon": "/katowice-3/s2/icon3.png",
+          "text": "In the heart of Katowice"
+        },
+        {
           "icon": "/katowice-3/s2/icon1.png",
           "text": "3 rooms, 2 bathrooms"
         },
         {
           "icon": "/katowice-3/s2/icon2.png",
           "text": "75.50 m2 area"
-        },
-        {
-          "icon": "/katowice-3/s2/icon3.png",
-          "text": "In the heart of Katowice"
         },
         {
           "icon": "/katowice-3/s2/icon4.png",
@@ -748,7 +744,7 @@
         },
         {
           "icon": "/katowice-3/s5/icon2.png",
-          "header": "If you plan to finance the purchase of a Sokolska Towers apartment through the sale of another property, your apartment will be waiting for you…",
+          "header": "If you plan to finance the purchase through the sale of another property, your apartment will be waiting for you…",
           "paragraph": ""
         },
         {
@@ -781,7 +777,7 @@
       "icons": [
         {
           "icon": "/universal/icons/1.png",
-          "text": "New, finished, corner apartments, on the 13th-15th floor"
+          "text": "New, fully furnished, on the 13th-15th floor"
         },
         {
           "icon": "/universal/icons/2.png",
@@ -793,7 +789,7 @@
         },
         {
           "icon": "/universal/icons/4.png",
-          "text": "1,666,666 PLN (including 8% VAT), no PCC commission"
+          "text": "1,666,666 PLN (including 8% VAT)"
         },
         {
           "icon": "/universal/icons/5.png",
@@ -901,6 +897,28 @@
         }
       ]
     },
+    "custom_icons": [
+      {
+        "icon": "/universal/icons/sub/1.png",
+        "text": "Private parking space with EV charger"
+      },
+      {
+        "icon": "/universal/icons/sub/2.png",
+        "text": "Reception with 24-hour security and monitoring"
+      },
+      {
+        "icon": "/universal/icons/sub/3.png",
+        "text": "Relaxation area with sauna included in fixed charges"
+      },
+      {
+        "icon": "/universal/icons/sub/4.png",
+        "text": "Fitness room, work nook"
+      },
+      {
+        "icon": "/universal/icons/sub/5.png",
+        "text": "Green patio"
+      }
+    ],
     "section_spiral_01": {
       "images": [
         {
@@ -959,16 +977,20 @@
         {
           "plainTexts": [
             "",
-            " - at least this many apartments will have been built in the Katowice Cultural Zone by 2028."
+            " - at least that many apartments have been built and will continue to be built in the Katowice Cultural Zone by 2028."
           ],
           "accentTexts": ["3500"]
         },
         {
           "plainTexts": [
-            "A limited number of units in the immediate area",
-            "will not only ensure comfort in the use of your investment but will also secure its value for the future."
+            "Opt for ",
+            ", in an area where thousands of new apartments will not be built, which you would have to compete with on price when selling your property on the secondary market."
           ],
-          "accentTexts": [" Sokolska 30 "]
+          "accentTexts": [" a unique location"]
+        },
+        {
+          "plainTexts": ["Choose a corner apartment in a timeless building "],
+          "accentTexts": ["Sokolska Towers."]
         }
       ]
     },

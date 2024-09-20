@@ -60,7 +60,6 @@ const page = async ({
             top={dict.Katowice_03.image_carousel_fader_01.header_top}
             topClass="text-accent2 font-bold md:mb-2"
             bottom={dict.Katowice_03.image_carousel_fader_01.header_bottom}
-            extra_text={dict.Katowice_03.image_carousel_fader_01.extra_text}
           />
           <ImageCarouselFader
             autoplay={true}
@@ -75,7 +74,14 @@ const page = async ({
         <InterchangeableImages
           interval={4000}
           mode="carousel"
-          elements={dict.universal_page_01.interchangeable_images_01.elements}
+          // elements={dict.universal_page_01.interchangeable_images_01.elements}
+          elements={[
+            dict.universal_page_01.interchangeable_images_01.elements[2],
+            dict.universal_page_01.interchangeable_images_01.elements[3],
+            dict.universal_page_01.interchangeable_images_01.elements[4],
+            dict.universal_page_01.interchangeable_images_01.elements[1],
+            dict.universal_page_01.interchangeable_images_01.elements[0],
+          ]}
           header={
             <SectionHeading
               wideParent

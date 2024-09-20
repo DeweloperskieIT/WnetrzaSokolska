@@ -12,6 +12,7 @@ import {
   RzutMieszkania,
   SpiralPhotos4,
   TextPlusSingleVideo,
+  TextPlusSingleVideoModular,
 } from "@/components/customElements/texts-images";
 import { VideoBackground } from "@/components/customElements/video";
 import { getDictionary, Locales } from "@/app/dictionaries";
@@ -107,14 +108,17 @@ const page = async ({
           }
         />
         {/* Sixth Section - Info with video */}
-        <TextPlusSingleVideo
-          src={dict.Katowice_01.text_plus_single_video_01.source}
-          content={dict.Katowice_01.text_plus_single_video_01.content}
+        <TextPlusSingleVideoModular
+          src={dict.universal_page_01.section_text_video_01.source}
+          content={dict.universal_page_01.section_text_video_01.content}
           header={
             <SectionHeading
               className=""
-              top={dict.Katowice_01.text_plus_single_video_01.header_top}
-              bottom={dict.Katowice_01.text_plus_single_video_01.header_bottom}
+              topClass="font-bold"
+              top={dict.universal_page_01.section_text_video_01.header_top}
+              bottom={
+                dict.universal_page_01.section_text_video_01.header_bottom
+              }
             />
           }
         />

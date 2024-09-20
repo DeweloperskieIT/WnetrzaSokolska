@@ -110,15 +110,18 @@ const page = async ({
             />
           }
         /> */}
+        {/* Sixth Section - Info with video */}
         <TextPlusSingleVideoModular
-          src={dict.Katowice_03.text_plus_single_video_01.source}
-          content={dict.Katowice_03.text_plus_single_video_01.content}
+          src={dict.universal_page_01.section_text_video_01.source}
+          content={dict.universal_page_01.section_text_video_01.content}
           header={
             <SectionHeading
               className=""
-              topClass=" font-bold"
-              top={dict.Katowice_03.text_plus_single_video_01.header_top}
-              bottom={dict.Katowice_03.text_plus_single_video_01.header_bottom}
+              topClass="font-bold"
+              top={dict.universal_page_01.section_text_video_01.header_top}
+              bottom={
+                dict.universal_page_01.section_text_video_01.header_bottom
+              }
             />
           }
         />

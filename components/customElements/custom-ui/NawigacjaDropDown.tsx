@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname } from "next/navigation"; // Import usePathname
 
@@ -31,13 +31,16 @@ export const NawigacjaDropDown = ({
 }: NawigacjaDropDownProps) => {
   const pathname = usePathname(); // Get the current path
 
+  const [isAlreadyClicked, setIsAlreadyClicked] = useState<boolean>(false);
+
   return (
-    <DropdownMenu>
+    <DropdownMenu onOpenChange={() => setIsAlreadyClicked(true)}>
       <DropdownMenuTrigger
         aria-label="Otwórz nawigację"
         className={cn(
-          "w-full h-full flex-center transition-all duration-150 hover:text-accent1 p-1 z-[1]",
-          className
+          "w-full h-full flex-center hover:text-accent1 hover:animate-none p-1 z-[1]",
+          className,
+          isAlreadyClicked ? "animate-none" : "animate-color-cycle"
         )}
       >
         {title ? (
