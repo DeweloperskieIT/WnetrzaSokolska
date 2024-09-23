@@ -49,7 +49,7 @@ export const Footer = ({
               alt="sokolska towers logo"
               width={160}
               height={100}
-              className="object-contain h-auto w-auto"
+              className="object-contain h-auto w-auto opacity-90"
             />
           </Link>
           <Link href={"/"}>

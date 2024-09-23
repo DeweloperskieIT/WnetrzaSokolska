@@ -101,6 +101,10 @@
       "text_04": "Premium brands (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)",
       "text_05": "EV car charger"
     },
+    "post_carousels_header": {
+      "header_top": "Dopracowane",
+      "header_bottom": "W każdym calu"
+    },
     "image_carousel_fader_01": {
       "images": [
         {
@@ -221,6 +225,14 @@
       {
         "question": "WHAT ARE THE FINANCING OPTIONS?",
         "answer": "The buyer receives an appraisal report for securing a mortgage, allowing for financing the purchase of both the property and its furnishings through a mortgage loan."
+      },
+      {
+        "question": "WHEN CAN I MOVE IN?",
+        "answer": "The apartments we offer are fully finished and ready to move in on the day of the notarial deed."
+      },
+      {
+        "question": "CAN I PERSONALIZE THE APARTMENT TO MEET MYSELF?",
+        "answer": "Of course, our arrangement and renovation team will, as a priority, help you make any modifications that will make the apartment even better fit your individual needs and expectations."
       }
     ],
     "Footer_1": {
@@ -314,11 +326,6 @@
           "text": "Wrap yourself in luxury",
           "image": "/katowice-1/s3/11.jpg",
           "alt": "Kitchen and hallway at sunset"
-        },
-        {
-          "text": "Move in tomorrow",
-          "image": "/katowice-1/s3/12.jpg",
-          "alt": "Living room at sunset"
         },
         {
           "text": "Experience the atmosphere of sunsets on the 15th floor",
@@ -557,6 +564,10 @@
           "alt": "image"
         },
         {
+          "img": "/katowice-3/carousel1/6.jpg",
+          "alt": "image"
+        },
+        {
           "img": "/katowice-3/carousel1/7.jpg",
           "alt": "image"
         },
@@ -570,6 +581,14 @@
         },
         {
           "img": "/katowice-3/carousel1/10.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/11.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/12.jpg",
           "alt": "image"
         },
         {
@@ -590,10 +609,6 @@
         },
         {
           "img": "/katowice-3/carousel1/17.jpg",
-          "alt": "image"
-        },
-        {
-          "img": "/katowice-3/carousel1/18.jpg",
           "alt": "image"
         }
       ]
@@ -781,7 +796,7 @@
         },
         {
           "icon": "/universal/icons/2.png",
-          "text": "3 rooms, 2 bathrooms, ~75 m2"
+          "text": "3 rooms, 2 bathrooms, ~75 m<sup>2</sup>"
         },
         {
           "icon": "/universal/icons/3.png",
@@ -827,10 +842,6 @@
         },
         {
           "image": "/universal/carousel1/6.jpg",
-          "alt": "carousel image"
-        },
-        {
-          "image": "/universal/carousel1/7.jpg",
           "alt": "carousel image"
         },
         {

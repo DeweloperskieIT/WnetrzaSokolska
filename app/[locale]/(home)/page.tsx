@@ -25,6 +25,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import DOMPurify from "isomorphic-dompurify";
 
 const Home = async ({
   params: { locale },
@@ -95,6 +96,36 @@ const Home = async ({
         {/* ??????????????????? */}
         <div className="flex justify-between flex-row flex-wrap gap-10 w-fit h-fit max-w-screen-lg padding-element lg:p-0 -mt-10 lg:-mt-24">
           <Link
+            href={"/oferta"}
+            className="aspect-[4/3] lg:max-w-[48%] h-auto w-full relative flex group items-end"
+          >
+            <Image
+              alt="alt"
+              src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className={cn(
+                "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
+              )}
+            />
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(
+                    dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_01
+                  ),
+                }}
+              />
+              <span className="italic">
+                {dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_02}
+                <br />
+                <span className="text-accent1">
+                  {dict.Landing_Page.offer_blocks.see_offer}
+                </span>
+              </span>
+            </div>
+          </Link>
+          <Link
             href="/katowice-2"
             className="aspect-[4/3] lg:max-w-[48%] h-auto w-full relative flex group items-end"
           >
@@ -104,13 +135,17 @@ const Home = async ({
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
-              <span>
-                {dict.Landing_Page.offer_blocks.offer_katowice_2.paragraph_01}
-              </span>
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(
+                    dict.Landing_Page.offer_blocks.offer_katowice_2.paragraph_01
+                  ),
+                }}
+              />
               <span className="italic">
                 {dict.Landing_Page.offer_blocks.offer_katowice_2.paragraph_02}
                 <br />
@@ -130,13 +165,17 @@ const Home = async ({
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
-              <span>
-                {dict.Landing_Page.offer_blocks.offer_katowice_1.paragraph_01}
-              </span>
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(
+                    dict.Landing_Page.offer_blocks.offer_katowice_1.paragraph_01
+                  ),
+                }}
+              />
               <span className="italic">
                 {dict.Landing_Page.offer_blocks.offer_katowice_1.paragraph_02}
                 <br />
@@ -146,44 +185,27 @@ const Home = async ({
               </span>
             </div>
           </Link>
-          <div className="aspect-[4/3] lg:max-w-[48%] h-auto w-full relative flex group items-end">
-            <Image
-              alt="alt"
-              src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className={cn(
-                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
-              )}
-            />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
-              <span className="">
-                {dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_01}
-              </span>
-              <span className="italic">
-                {dict.Landing_Page.offer_blocks.offer_katowice_4.paragraph_02}
-                <br />
-                {dict.Landing_Page.offer_blocks.premieres}
-              </span>
-            </div>
-          </div>
           <Link
             href={"/katowice-3"}
             className="aspect-[4/3] lg:max-w-[48%] h-auto w-full relative flex group items-end"
           >
             <Image
               alt="alt"
-              src={"/katowice-3/carousel1/14.jpg"}
+              src={"/images/mainpage/grid-apartament-3.jpg"}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
-                "aboslute object-cover inset-0 lg:group-hover:opacity-20 transition-all duration-200"
+                "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-6 lg:p-10 lg:pb-12 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/50">
-              <span className="">
-                {dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_01}
-              </span>
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(
+                    dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_01
+                  ),
+                }}
+              />
               <span className="italic">
                 {dict.Landing_Page.offer_blocks.offer_katowice_3.paragraph_02}
                 <br />
@@ -196,7 +218,7 @@ const Home = async ({
         </div>
         {/* ??????????????????? */}
 
-        <div className="flex w-full h-fit flex-col gap-10 limited-width ">
+        <div className="flex w-full h-fit flex-col gap-10 limited-width items-center">
           <div className="bg-dark p-10 flex items-center flex-row gap-10">
             <Image
               alt="icon"
@@ -218,7 +240,14 @@ const Home = async ({
               </ul>
             </div>
           </div>
-          <div className="max-w-screen-lg flex flex-col sm:flex-row gap-6 size-auto sm:aspect-[18/16] self-center">
+        </div>
+
+        <div className="limited-width flex flex-col w-full gap-10 items-center">
+          <SectionHeading
+            top={dict.Landing_Page.post_carousels_header.header_top}
+            bottom={dict.Landing_Page.post_carousels_header.header_bottom}
+          />
+          <div className="max-w-screen-lg flex flex-col sm:flex-row gap-6 size-auto sm:aspect-[18/16] self-center w-full">
             <ImageCarouselFader
               className=""
               autoplay
@@ -233,7 +262,6 @@ const Home = async ({
             />
           </div>
         </div>
-
         {/* Eigth Section - Info text */}
         <InfoBlocks
           info={[
@@ -281,7 +309,7 @@ const Home = async ({
               width={0}
             />
             <YouTubeEmbed
-              videoid="UEAOTgQZ2ZQ"
+              videoid="8D2_gWdpcrk"
               style="width: 270px !important; height: 480px !important; margin: auto; aspectRatio: 9/16"
               height={0}
               width={0}

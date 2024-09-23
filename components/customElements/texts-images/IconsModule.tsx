@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import DOMPurify from "isomorphic-dompurify";
 import Image from "next/image";
 import React from "react";
 
@@ -33,10 +34,19 @@ export const IconsModule = ({ className, header, icons }: IconsModuleProps) => {
               height={100}
               className="icon-image-class"
             />
-            <span className="icon-text-class">
-              {text}
-              {superscript && <sup>{superscript}</sup>}
-            </span>
+            {superscript ? (
+              <span className="icon-text-class">
+                {text}
+                {superscript && <sup>{superscript}</sup>}
+              </span>
+            ) : (
+              <span
+                className="icon-text-class"
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(text),
+                }}
+              />
+            )}
           </div>
         ))}
       </div>

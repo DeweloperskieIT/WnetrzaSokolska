@@ -59,7 +59,7 @@
         },
         {
           "icon": "/images/mainpage/plans-icon2.png",
-          "text": "75m2"
+          "text": "75m<sup>2</sup>"
         },
         {
           "icon": "/images/mainpage/summit-icon2.png",
@@ -78,29 +78,33 @@
       "see_offer": "Kliknij aby zobaczyć ofertę",
       "premieres": "premiera wkrótce",
       "offer_katowice_1": {
-        "paragraph_01": "Najwyżej usytuowany apartament z wygodną loggią dla osób, które cenią sobie wyjątkowość.",
-        "paragraph_02": "Luksus, który Cię wyróżni"
+        "paragraph_01": "",
+        "paragraph_02": "Dla niej"
       },
       "offer_katowice_2": {
-        "paragraph_01": "Apartament zaaranżowany z myślą o osobach, które pragną korzystać z potencjału Katowic na swoich zasadach.",
-        "paragraph_02": "Luksus, który wzbudza pożądanie"
+        "paragraph_01": "",
+        "paragraph_02": "Dla niego"
       },
       "offer_katowice_3": {
-        "paragraph_01": "Twój mały dom na XIV piętrze, z przestronnym salonem z kuchnią, gabinetem, sypialnią, pralnią, garderobą oraz pojemną komórką lokatorską na piętrze.",
-        "paragraph_02": "Twoja oaza spokoju w sercu miasta"
+        "paragraph_01": "",
+        "paragraph_02": "Dla nich"
       },
       "offer_katowice_4": {
-        "paragraph_01": "Nowoczesny apartament dla osób, które chcą mieć wszystko w zasięgu ręki.",
-        "paragraph_02": "Przyjmij nową perspektywę"
+        "paragraph_01": "",
+        "paragraph_02": "Dla Każdego"
       }
     },
     "company_properties_01": {
       "header": "CO NAS WYRÓŻNIA?",
-      "text_01": "Gotowe do zamieszkania, z gwarancją na prace wykończeniowe",
+      "text_01": "Gotowe do zamieszkania, z gwarancją/rękojmią na prace wykończeniowe",
       "text_02": "Wyselekcjonowane narożne lokale na najwyższych piętrach",
       "text_03": "Zakup na fakturę VAT od profesjonalisty (z polisą OC)",
       "text_04": "Marki premium (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)",
       "text_05": "Ładowarka samochodowa EV"
+    },
+    "post_carousels_header": {
+      "header_top": "DOPRACOWANE",
+      "header_bottom": "W KAŻDYM CALU"
     },
     "image_carousel_fader_01": {
       "images": [
@@ -192,8 +196,8 @@
       ]
     },
     "info_blocks_01": {
-      "header_top": "DOPRACOWANE",
-      "header_bottom": "W KAŻDYM CALU",
+      "header_top": "DLACZEGO",
+      "header_bottom": "WNĘTRZA DEWELOPERSKIE?",
       "info_01": {
         "header": "PONADCZASOWE INWESTYCJE",
         "paragraph": "Oferujemy naszym Klientom gotowe do zamieszkania apartamenty segmentu premium w ścisłym centrum Katowic, wyróżniające się ponadczasowym i uniwersalnym designem, połączonym z najnowszymi technologiami."
@@ -204,7 +208,7 @@
       },
       "info_03": {
         "header": "JAKOŚĆ, ZA KTÓRĄ STOI RĘKOJMIA",
-        "paragraph": "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame oraz instalacja elektryczna pod stację ładowania samochodów."
+        "paragraph": "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame a nawet instalacja elektryczna pod stację ładowania samochodów."
       }
     },
     "youtube_shorts_01": {
@@ -222,7 +226,15 @@
       },
       {
         "question": "JAKIE SĄ MOŻLIWOŚCI FINANSOWANIA?",
-        "answer": "Kupujący otrzymuje operat szacunkowy wykonany na potrzeby zabezpieczenia kredytu hipotecznego, pozwalający na finansowanie zakupu zarówno lokalu, jak i jego wyposażenia środkami kredytu hipotecznego."
+        "answer": "Kupujący otrzymuje operat szacunkowy wykonany na potrzeby zabezpieczenia kredytu hipotecznego, pozwalający na finansowanie zakupu zarówno lokalu, jak i jego wyposażenia środkami kredytu hipotecznego. Istnieje też opcja sfinansowania zakupu bez wkładu własnego."
+      },
+      {
+        "question": "KIEDY MOGĘ SIĘ WPROWADZIĆ?",
+        "answer": "Oferowane przez nas apartamenty są w pełni wykończone i gotowe do wprowadzenia już w dniu aktu notarialnego."
+      },
+      {
+        "question": "CZY JESTEM W STANIE SPERSONALIZOWAĆ APARTAMENT POD SIEBIE?",
+        "answer": "Oczywiście, nasz zespół aranżacyjno-remontowy priorytetowo pomoże dokonać wszelkich modyfikacji, dzięki którym apartament jeszcze lepiej wpisze się w Twoje indywidualne potrzeby i oczekiwania"
       }
     ],
     "Footer_1": {
@@ -238,7 +250,7 @@
       "icons": [
         {
           "icon": "/katowice-1/s2/1.webp",
-          "text": "Najwyżej położony balkon w budynku"
+          "text": "Najwyżej położony balkon w&nbsp;budynku"
         },
         {
           "icon": "/katowice-1/s2/2.webp",
@@ -318,11 +330,6 @@
           "text": "Funkcjonalne rozwiązania"
         },
         {
-          "image": "/katowice-1/s3/12.jpg",
-          "alt": "Salon przy zachodzie słońca",
-          "text": "Zamieszkaj już jutro"
-        },
-        {
           "image": "/katowice-1/s3/13.jpg",
           "alt": "Widok z okna apartamentu",
           "text": "Poznaj klimat zachodów słońca na XV piętrze"
@@ -355,7 +362,7 @@
       "content": {
         "accent_1": "3500",
         "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
-        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
+        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, wpływające w przyszłości na wartość Twojej nieruchomości wymuszając konkurencję cenową.",
         "paragraph_3": "Wybierz narożny apartament w ponadczasowym budynku ",
         "accent_2": "Sokolska Towers."
       },
@@ -375,23 +382,23 @@
       "icons": [
         {
           "icon": "/katowice-1/s2/1.webp",
-          "text": "Panorama Katowic z XIII piętra"
+          "text": "Panorama Katowic z&nbsp;XIII&nbsp;piętra"
         },
         {
           "icon": "/katowice-1/s2/2.webp",
-          "text": "Topowa lokalizacja Sokolska Towers"
+          "text": "Topowa lokalizacja Sokolska&nbsp;Towers"
         },
         {
           "icon": "/katowice-1/s2/3.webp",
-          "text": "Lobby z recepcją i ochroną 24/7 "
+          "text": "Lobby z recepcją i&nbsp;ochroną&nbsp;24/7 "
         },
         {
           "icon": "/katowice-1/s2/4.webp",
-          "text": "Strefa SPA, Fitness-club"
+          "text": "Strefa&nbsp;SPA, Fitness-club"
         },
         {
           "icon": "/images/BedIcon.png",
-          "text": "Gotowy do zamieszkania"
+          "text": "Gotowy do&nbsp;zamieszkania"
         }
       ]
     },
@@ -515,7 +522,7 @@
         },
         {
           "icon": "/katowice-3/s2/icon2.png",
-          "text": "75,50 m2 powierzchni"
+          "text": "75,50 ,<sup>2</sup> powierzchni"
         },
         {
           "icon": "/katowice-3/s2/icon4.png",
@@ -559,6 +566,10 @@
           "alt": "image"
         },
         {
+          "img": "/katowice-3/carousel1/6.jpg",
+          "alt": "image"
+        },
+        {
           "img": "/katowice-3/carousel1/7.jpg",
           "alt": "image"
         },
@@ -572,6 +583,14 @@
         },
         {
           "img": "/katowice-3/carousel1/10.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/11.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/12.jpg",
           "alt": "image"
         },
         {
@@ -593,16 +612,12 @@
         {
           "img": "/katowice-3/carousel1/17.jpg",
           "alt": "image"
-        },
-        {
-          "img": "/katowice-3/carousel1/18.jpg",
-          "alt": "image"
         }
       ]
     },
     "interchangeable_header": {
       "header_top": "Żyj w luksusie,",
-      "header_bottom": "OTOCZONY PIĘKNEM"
+      "header_bottom": "otoczony pięknem"
     },
     "image_carousel_fader_02": {
       "header_top": "Twoja oaza spokoju",
@@ -640,19 +655,19 @@
       "icons": [
         {
           "icon": "/katowice-3/icons2/1.png",
-          "text": "Prywatne miejsce garażowe z ładowarką EV"
+          "text": "Prywatne miejsce garażowe z&nbsp;ładowarką&nbsp;EV"
         },
         {
           "icon": "/katowice-3/icons2/2.png",
-          "text": "Recepcja z całodobową ochroną i monitoringiem"
+          "text": "Recepcja z całodobową ochroną i&nbsp;monitoringiem"
         },
         {
           "icon": "/katowice-3/icons2/3.png",
-          "text": "Strefa relaksu z sauną w cenie  opłat stałych"
+          "text": "Strefa relaksu z sauną w&nbsp;cenie opłat stałych"
         },
         {
           "icon": "/katowice-3/icons2/4.png",
-          "text": "Sala fitness, kącik do pracy"
+          "text": "Sala fitness, kącik&nbsp;do&nbsp;pracy"
         },
         {
           "icon": "/katowice-3/icons2/5.png",
@@ -735,32 +750,6 @@
       "header_top": "Limitowany prestiż",
       "header_bottom": "w sercu miasta"
     },
-    "text_plus_single_vi+deo_01": {
-      "source": "/katowice-1/s7/360V2.mp4",
-      "content": [
-        {
-          "plainTexts": [
-            "",
-            " - przynajmniej tyle mieszkań powstało i jeszcze powstanie w Katowickiej Strefie Kultury do 2028 roku. Powstające tam blokowiska są wybierane głównie przez rodziny z małymi dziećmi."
-          ],
-          "accentTexts": ["3500"]
-        },
-        {
-          "plainTexts": [
-            "Podstawową przewagą apartamentów Sokolska Towers jest ich ograniczona ilość, która zabezpieczy wartość Twojej nieruchomości w przyszłości, jak również zabezpieczy widok z Twojego okna, który nie zostanie przysłonięty przez kolejne, wyższe etapy inwestycji."
-          ],
-          "accentTexts": [""]
-        },
-        {
-          "plainTexts": [
-            "Mniejsza gęstość zabudowy to również komfort komunikacyjny, ograniczający czas wyjazdu z osiedla."
-          ],
-          "accentTexts": [""]
-        }
-      ],
-      "header_top": "Limitowany prestiż",
-      "header_bottom": "w sercu miasta"
-    },
     "InfoBlocks_1": {
       "header_top": "Standard, na który",
       "header_bottom": "możesz sobie pozwolić",
@@ -808,8 +797,7 @@
         },
         {
           "icon": "/universal/icons/2.png",
-          "text": "3 pokoje, 2 łazienki, ~75 m",
-          "superscript": "2"
+          "text": "3 pokoje, 2 łazienki, ~75 m<sup>2</sup>"
         },
         {
           "icon": "/universal/icons/3.png",
@@ -855,10 +843,6 @@
         },
         {
           "image": "/universal/carousel1/6.jpg",
-          "alt": "carousel image"
-        },
-        {
-          "image": "/universal/carousel1/7.jpg",
           "alt": "carousel image"
         },
         {
@@ -951,7 +935,7 @@
     "section_spiral_01": {
       "images": [
         {
-          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
+          "img": "/katowice-3/carousel3/3.jpg",
           "alt": "Wpólny taras z ogrodem"
         },
         {
@@ -1035,7 +1019,7 @@
         {
           "icon": "/katowice-1/s8/3.webp",
           "header": "5 LAT STANIA W KORKACH",
-          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierając Sokolska Towers, wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!"
+          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i&nbsp;redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierając Sokolska Towers, wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!"
         },
         {
           "icon": "/katowice-1/s8/2.webp",
@@ -1128,7 +1112,7 @@
         },
         {
           "header": "MARKI PREMIUM",
-          "paragraph": "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy & Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
+          "paragraph": "Wyposażenie oraz materiały najlepszych producentów: stolarka Dewro, ceramika Villeroy&nbsp;&&nbsp;Boch, trójwarstwowa deska podłogowa Barlinek oraz włoskie płytki Marazzi.",
           "images": [
             {
               "img": "/katowice-1/s6/4/marki-premium-1.jpg",
@@ -1154,7 +1138,7 @@
         },
         {
           "header": "ŚWIATOWA ARCHITEKTURA",
-          "paragraph": "Postaw na ponadczasową bryłę budynku i zamieszkaj w budynku nagrodzonym prestiżową nagrodą European Property Award.",
+          "paragraph": "Postaw na ponadczasową bryłę budynku i&nbsp;zamieszkaj w&nbsp;budynku nagrodzonym prestiżową nagrodą European Property Award.",
           "images": [
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",

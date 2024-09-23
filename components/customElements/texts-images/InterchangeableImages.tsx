@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { ImageAlt } from "@/types/customTypes";
 import { ImageCarouselFader } from "@/components/customElements/carousels";
+import DOMPurify from "isomorphic-dompurify";
 
 export type InterchangeableImagesSingleElement = {
   image?: string;
@@ -81,9 +82,10 @@ export const InterchangeableImages = ({
                   "w-full text-lg font-light text-light text-left max-w-[420px]",
                   i % 2 ? "md:text-left" : "md:text-right self-end"
                 )}
-              >
-                {e.paragraph}
-              </span>
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(e.paragraph),
+                }}
+              />
             </div>
             {mode === "single" ? (
               <Image
