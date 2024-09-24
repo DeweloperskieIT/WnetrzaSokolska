@@ -57,7 +57,7 @@ export const BreathingBackgroundImage = ({
   return (
     <div
       className={cn(
-        "w-full h-full transition-[background-size] duration-10000 bg-no-repeat bg-right-top flex-center",
+        "w-full h-full transition-[background-size] duration-10000 bg-no-repeat bg-right-top flex-center relative ",
         className
       )}
       style={{

@@ -315,10 +315,16 @@ export const ImageCarouselCustom = ({
                 height={768}
                 sizes="90vw"
                 className={cn(
-                  "block w-[95%] duration-500 transition-all h-full object-cover",
-                  i === currentIndex ? "grayscale-0 " : "grayscale  h-1/2",
-                  i === currentIndex - 1 && leftHover && "grayscale-0 h-full",
-                  i === currentIndex + 1 && rightHover && "grayscale-0 h-full"
+                  "block w-[95%] duration-500 transition-all h-[300px] md:h-full object-cover",
+                  i === currentIndex
+                    ? "grayscale-0 "
+                    : "grayscale h-[150px] md:h-1/2",
+                  i === currentIndex - 1 &&
+                    leftHover &&
+                    "grayscale-0 h-[300px] md:h-full",
+                  i === currentIndex + 1 &&
+                    rightHover &&
+                    "grayscale-0 h-[300px] md:h-full"
                 )}
               />
               <h1
@@ -344,7 +350,7 @@ export const ImageCarouselCustom = ({
           height={768}
           priority
           loading="eager"
-          className="w-[95%] h-full"
+          className="w-[95%] h-[300px] md:h-full"
         />
       </div>
     </div>

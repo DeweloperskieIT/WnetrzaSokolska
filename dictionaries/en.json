@@ -72,27 +72,28 @@
       ]
     },
     "offer_blocks": {
-      "header_top": "SEE OUR READY",
+      "header_top": "SEE OUR EQUIPPED",
       "header_bottom": "APARTMENTS FOR SALE",
       "see_offer": "Click to see the offer",
       "premieres": "premiere coming soon",
       "offer_katowice_1": {
-        "paragraph_01": "The highest situated apartment with a comfortable loggia for those who value uniqueness.",
-        "paragraph_02": "Luxury that sets you apart"
+        "paragraph_01": "",
+        "paragraph_02": "For Her"
       },
       "offer_katowice_2": {
-        "paragraph_01": "An apartment designed for those who want to enjoy the potential of Katowice on their own terms.",
-        "paragraph_02": "Luxury that sparks desire"
+        "paragraph_01": "",
+        "paragraph_02": "For Him"
       },
       "offer_katowice_3": {
-        "paragraph_01": "Your small home on the XIV floor, with a spacious living room with kitchen, office, bedroom, laundry room, walk-in closet, and a large storage room on the floor.",
-        "paragraph_02": "Your oasis of peace in the heart of the city"
+        "paragraph_01": "",
+        "paragraph_02": "For Them"
       },
       "offer_katowice_4": {
-        "paragraph_01": "A modern apartment for those who want everything within reach.",
-        "paragraph_02": "Embrace a new perspective"
+        "paragraph_01": "",
+        "paragraph_02": "For Everyone"
       }
     },
+
     "company_properties_01": {
       "header": "WHAT SETS US APART?",
       "text_01": "Ready to move in, with a warranty on finishing works",

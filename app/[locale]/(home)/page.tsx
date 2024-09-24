@@ -8,6 +8,8 @@ import {
   BreathingBackgroundImage,
   IconsModule,
   InfoBlocks,
+  InterchangeableImages,
+  SpiralPhotos4,
 } from "@/components/customElements/texts-images";
 import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
@@ -39,7 +41,7 @@ const Home = async ({
       <MainStickyHeader dict={dict} />
       <div className="landing-page">
         {/* First Section - Breathing image */}
-        <BreathingBackgroundImage
+        {/* <BreathingBackgroundImage
           className="bg-darkerGray/90 text-websiteBackground2"
           bgSizes={["50%", "40%"]}
           interval={4000}
@@ -58,7 +60,30 @@ const Home = async ({
               </span>
             </h2>
           </div>
-        </BreathingBackgroundImage>
+        </BreathingBackgroundImage> */}
+
+        <div className="w-full h-fit relative flex padding-element">
+          <Image
+            alt="image"
+            src={"/images/mainpage/backgroundbuilding.jpg"}
+            width={1920}
+            height={1080}
+            className="top-0 left-0 absolute object-cover h-full w-full opacity-35 object-right-top"
+          />
+          <div className="limited-width flex flex-col gap-4 w-full h-full items-start justify-end pb-[60px] pt-[160px] z-10 opacity-85">
+            <h1 className="text-2xl md:text-5xl">
+              {dict.Landing_Page.breathing_background_image_01.header}
+            </h1>
+            <h2 className="text-xl font-light xl:max-w-[1200px] text-left flex flex-col gap-4">
+              <span>
+                {dict.Landing_Page.breathing_background_image_01.paragraph_01}
+              </span>
+              <span>
+                {dict.Landing_Page.breathing_background_image_01.paragraph_02}
+              </span>
+            </h2>
+          </div>
+        </div>
 
         <SectionHeading
           className="md:-my-10 -mb-2"
@@ -69,7 +94,8 @@ const Home = async ({
 
         {/* Second Section - Icons */}
         <IconsModule
-          className="-mt-4 lg:-mt-14 w-full"
+          isBold
+          className="-mt-4 lg:-mt-14 w-full !font-bold"
           header=""
           icons={
             dict.Landing_Page.icons_module_01.icons
@@ -108,7 +134,7 @@ const Home = async ({
                 "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-80 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
               <span
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(
@@ -138,7 +164,7 @@ const Home = async ({
                 "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-80 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
               <span
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(
@@ -168,7 +194,7 @@ const Home = async ({
                 "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-80 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
               <span
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(
@@ -198,7 +224,7 @@ const Home = async ({
                 "aboslute object-cover inset-0 lg:group-hover:opacity-80 transition-all duration-200"
               )}
             />
-            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-0 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
+            <div className="w-full h-fit flex flex-col gap-4 z-[1] p-4 lg:p-6 lg:pb-8 text-xl lg:opacity-80 md:group-hover:opacity-100  transition-all duration-200 bg-dark/75">
               <span
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(
@@ -219,19 +245,19 @@ const Home = async ({
         {/* ??????????????????? */}
 
         <div className="flex w-full h-fit flex-col gap-10 limited-width items-center">
-          <div className="bg-dark p-10 flex items-center flex-row gap-10">
+          <div className="bg-dark p-10 flex items-center flex-col gap-10">
             <Image
               alt="icon"
               src={"/images/mainpage/house-magni-icon.png"}
               width={60}
               height={60}
-              className="size-14"
+              className="size-10 md:size-20"
             />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-6">
               <span className="font-light text-2xl md:text-4xl">
                 {dict.Landing_Page.company_properties_01.header}
               </span>
-              <ul className="informacje-list-bullet-common text-xl">
+              <ul className="informacje-list-bullet-common  text-lg md:text-xl flex flex-col gap-6">
                 <li>{dict.Landing_Page.company_properties_01.text_01}</li>
                 <li>{dict.Landing_Page.company_properties_01.text_02}</li>
                 <li>{dict.Landing_Page.company_properties_01.text_03}</li>
@@ -240,6 +266,7 @@ const Home = async ({
               </ul>
             </div>
           </div>
+          {/* <IconsModule icons={dict.Landing_Page.icons_module_02.icons} /> */}
         </div>
 
         <div className="limited-width flex flex-col w-full gap-10 items-center">
@@ -290,11 +317,16 @@ const Home = async ({
           }
         />
         {/* Section something */}
-        <div className="w-full h-fit relative limited-width flex flex-col gap-10">
+        <div className="w-full h-fit relative flex flex-col gap-10">
           <SectionHeading
+            wideParent
             top={dict.Landing_Page.youtube_shorts_01.header_top}
             bottom={dict.Landing_Page.youtube_shorts_01.header_bottom}
           />
+          {/* Fourth Section - Standalone Photos */}
+          {/* <SpiralPhotos4
+            images={dict.universal_page_01.section_spiral_01.images}
+          /> */}
           <div className="flex flex-row justify-evenly gap-10 flex-wrap size-auto">
             <YouTubeEmbed
               videoid="AdIdKxq-PTs"
@@ -315,6 +347,14 @@ const Home = async ({
               width={0}
             />
           </div>
+          {/* <InterchangeableImages
+            interval={4000}
+            mode="carousel"
+            elements={[
+              dict.universal_page_01.interchangeable_images_01.elements[4],
+            ]}
+            header={""}
+          /> */}
         </div>
 
         {/* FAQ */}
@@ -332,15 +372,23 @@ const Home = async ({
                       <div className="group footer-button-parent h-fit">
                         <div className="footer-button-secondary-container h-fit py-2">
                           <div className="footer-button-leftline group-hover:footer-hover-group-color h-fit"></div>
-                          <span className="footer-button-text !no-underline group-hover:!no-underline text-left h-fit !font-normal">
-                            {question}
-                          </span>
+                          <span
+                            className="footer-button-text !no-underline group-hover:!no-underline text-left h-fit !font-normal"
+                            dangerouslySetInnerHTML={{
+                              __html: DOMPurify.sanitize(question),
+                            }}
+                          />
                         </div>
                         <span className="footer-button-bottomline group-hover:footer-hover-group-color"></span>
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="padding-element">
-                      {answer}
+                      <p
+                        className="text-lg"
+                        dangerouslySetInnerHTML={{
+                          __html: DOMPurify.sanitize(answer),
+                        }}
+                      />
                     </AccordionContent>
                   </AccordionItem>
                 )

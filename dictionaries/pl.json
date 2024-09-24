@@ -75,19 +75,19 @@
     "offer_blocks": {
       "header_top": "ZOBACZ NASZE WYPOSAŻONE",
       "header_bottom": "APARTAMENTY NA SPRZEDAŻ",
-      "see_offer": "Kliknij aby zobaczyć ofertę",
+      "see_offer": "Kliknij, aby zobaczyć ofertę",
       "premieres": "premiera wkrótce",
       "offer_katowice_1": {
         "paragraph_01": "",
-        "paragraph_02": "Dla niej"
+        "paragraph_02": "Dla Niej"
       },
       "offer_katowice_2": {
         "paragraph_01": "",
-        "paragraph_02": "Dla niego"
+        "paragraph_02": "Dla Niego"
       },
       "offer_katowice_3": {
         "paragraph_01": "",
-        "paragraph_02": "Dla nich"
+        "paragraph_02": "Dla Nich"
       },
       "offer_katowice_4": {
         "paragraph_01": "",
@@ -101,6 +101,30 @@
       "text_03": "Zakup na fakturę VAT od profesjonalisty (z polisą OC)",
       "text_04": "Marki premium (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)",
       "text_05": "Ładowarka samochodowa EV"
+    },
+    "icons_module_02": {
+      "icons": [
+        {
+          "icon": "/images/mainpage/MapIcon.png",
+          "text": "Gotowe do zamieszkania, z gwarancją/rękojmią na prace wykończeniowe"
+        },
+        {
+          "icon": "/images/mainpage/BuildingIcon.png",
+          "text": "Wyselekcjonowane narożne lokale na najwyższych piętrach"
+        },
+        {
+          "icon": "/images/mainpage/plans-icon2.png",
+          "text": "Zakup na fakturę VAT od profesjonalisty (z polisą OC)"
+        },
+        {
+          "icon": "/images/mainpage/summit-icon2.png",
+          "text": "Marki premium (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)"
+        },
+        {
+          "icon": "/images/DangleKeysIcon.png",
+          "text": "Ładowarka samochodowa EV"
+        }
+      ]
     },
     "post_carousels_header": {
       "header_top": "DOPRACOWANE",
@@ -204,11 +228,11 @@
       },
       "info_02": {
         "header": "LUKSUS NA WYCIĄGNIĘCIE RĘKI",
-        "paragraph": "Wizja marki Wnętrza Deweloperskie zakłada powielanie bardzo dopracowanych elementów aranżacyjnych w szeregu podobnych mieszkań, co pozwala zachować konkurencyjność cenową."
+        "paragraph": "Wizja marki Wnętrza Deweloperskie zakłada powielanie bardzo dopracowanych elementów aranżacyjnych w szeregu podobnych mieszkań, co pozwala nam stworzyć wyjątkowe wnętrze bez zbędnych wydatków."
       },
       "info_03": {
         "header": "JAKOŚĆ, ZA KTÓRĄ STOI RĘKOJMIA",
-        "paragraph": "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame a nawet instalacja elektryczna pod stację ładowania samochodów."
+        "paragraph": "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame, a nawet instalacja elektryczna pod stację ładowania samochodów."
       }
     },
     "youtube_shorts_01": {
@@ -226,7 +250,7 @@
       },
       {
         "question": "JAKIE SĄ MOŻLIWOŚCI FINANSOWANIA?",
-        "answer": "Kupujący otrzymuje operat szacunkowy wykonany na potrzeby zabezpieczenia kredytu hipotecznego, pozwalający na finansowanie zakupu zarówno lokalu, jak i jego wyposażenia środkami kredytu hipotecznego. Istnieje też opcja sfinansowania zakupu bez wkładu własnego."
+        "answer": "Kupujący otrzymuje operat szacunkowy wykonany na potrzeby zabezpieczenia kredytu hipotecznego, pozwalający na finansowanie zakupu zarówno lokalu, jak i jego wyposażenia środkami z kredytu hipotecznego.<br/>Posiadamy także rozwiązania dla Klientów, którzy nie dysponują w tym momencie wkładem własnym."
       },
       {
         "question": "KIEDY MOGĘ SIĘ WPROWADZIĆ?",
@@ -793,7 +817,7 @@
       "icons": [
         {
           "icon": "/universal/icons/1.png",
-          "text": "Nowe, wyposażone, na XIII-XV piętrze"
+          "text": "Nowe, wyposażone, na&nbsp;XIII-XV piętrze"
         },
         {
           "icon": "/universal/icons/2.png",
@@ -801,11 +825,11 @@
         },
         {
           "icon": "/universal/icons/3.png",
-          "text": "Miejsce parkingowe z ładowarką EV"
+          "text": "Miejsce parkingowe z&nbsp;ładowarką EV"
         },
         {
           "icon": "/universal/icons/4.png",
-          "text": "1.666.666 PLN (w tym 8% VAT)"
+          "text": "1.666.666 PLN (w&nbsp;tym&nbsp;8%&nbsp;VAT)"
         },
         {
           "icon": "/universal/icons/5.png",
@@ -813,7 +837,7 @@
         },
         {
           "icon": "/universal/icons/6.png",
-          "text": "Do zamieszkania w dniu zakupu"
+          "text": "Do zamieszkania w&nbsp;dniu&nbsp;zakupu"
         }
       ]
     },
@@ -1019,7 +1043,7 @@
         {
           "icon": "/katowice-1/s8/3.webp",
           "header": "5 LAT STANIA W KORKACH",
-          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i&nbsp;redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierając Sokolska Towers, wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!"
+          "paragraph": "We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierając Sokolska Towers, wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!"
         },
         {
           "icon": "/katowice-1/s8/2.webp",
