@@ -33,7 +33,8 @@ const page = async ({
       <div className="landing-page text-light">
         {/* Video */}
         <VideoBackground
-          src="/videos/alternativeVideo.mp4"
+          src="/videos/alternativeVideo.webm"
+          type="video/webm"
           className="aspect-[4/3] md:aspect-video max-h-[1024px] h-full md:-mb-10 lg:-mb-20 flex items-end"
         />
         {/* First Section - Icons Module */}
