@@ -303,7 +303,7 @@ const Home = async ({
               <div className="bg-dark/50 hover:bg-dark/25 transition-all duration-150 flex-1 font-light flex flex-col items-center justify-center text-3xl font-bold hover:text-accent1">
                 <Drawer>
                   <DrawerTrigger className="w-full h-full p-10 md:p-6">
-                    UMÓW SIĘ NA PREZENTACJĘ.
+                    {dict.Landing_Page.post_carousels_header.form_button}
                   </DrawerTrigger>
                   <DrawerDescription className="hidden">
                     Formularz Kontaktowy
