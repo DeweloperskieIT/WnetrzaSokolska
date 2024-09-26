@@ -28,6 +28,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import DOMPurify from "isomorphic-dompurify";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { ContactForm } from "@/components/customElements/forms";
 
 const Home = async ({
   params: { locale },
@@ -94,8 +102,9 @@ const Home = async ({
 
         {/* Second Section - Icons */}
         <IconsModule
+          accent="text-accent1"
           isBold
-          className="-mt-4 lg:-mt-14 w-full !font-bold"
+          className="-mt-4 lg:-mt-14 w-full"
           header=""
           icons={
             dict.Landing_Page.icons_module_01.icons
@@ -274,19 +283,47 @@ const Home = async ({
             top={dict.Landing_Page.post_carousels_header.header_top}
             bottom={dict.Landing_Page.post_carousels_header.header_bottom}
           />
-          <div className="max-w-screen-lg flex flex-col sm:flex-row gap-6 size-auto sm:aspect-[18/16] self-center w-full">
+          <div className="max-w-screen-lg h-fit flex flex-col md:flex-row gap-6 size-auto md:aspect-[18/17]  self-center w-full">
             <ImageCarouselFader
-              className=""
+              className="h-full flex-grow"
               autoplay
               duration={6000}
               images={dict.Landing_Page.image_carousel_fader_01.images}
             />
-            <ImageCarouselFader
-              className=""
-              autoplay
-              duration={6000}
-              images={dict.Landing_Page.image_carousel_fader_02.images}
-            />
+            <div className="flex flex-col w-full h-full md:aspect-[1/2] flex-1 gap-6">
+              <div className="flex-1 h-fit">
+                <ImageCarouselFader
+                  className="h-fit max-h-fit aspect-square"
+                  objectFit
+                  autoplay
+                  duration={6000}
+                  images={dict.Landing_Page.image_carousel_fader_02.images}
+                />
+              </div>
+              <div className="bg-dark/50 hover:bg-dark/25 transition-all duration-150 flex-1 font-light flex flex-col items-center justify-center text-3xl font-bold hover:text-accent1">
+                <Drawer>
+                  <DrawerTrigger className="w-full h-full p-10 md:p-6">
+                    UMÓW SIĘ NA PREZENTACJĘ.
+                  </DrawerTrigger>
+                  <DrawerDescription className="hidden">
+                    Formularz Kontaktowy
+                  </DrawerDescription>
+                  <DrawerTitle className="hidden">
+                    Formularz Kontaktowy
+                  </DrawerTitle>
+                  <DrawerContent className="flex-center bg-dark rounded-none max-h-svh">
+                    <div className="max-h-[600px]  md:max-h-svh overflow-auto">
+                      <ContactForm
+                        dict={dict}
+                        sendTo={process.env.OFFERCONTACTDESTINATION}
+                        oferta={"Landing"}
+                        className="pt-6"
+                      />
+                    </div>
+                  </DrawerContent>
+                </Drawer>
+              </div>
+            </div>
           </div>
         </div>
         {/* Eigth Section - Info text */}

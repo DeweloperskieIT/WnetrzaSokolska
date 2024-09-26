@@ -14,6 +14,7 @@ export interface IconsModuleProps {
   header?: React.ReactNode;
   icons: LandingPageIcon[];
   isBold?: boolean;
+  accent?: string;
 }
 
 export const IconsModule = ({
@@ -21,6 +22,7 @@ export const IconsModule = ({
   header,
   icons,
   isBold,
+  accent,
 }: IconsModuleProps) => {
   return (
     <div
@@ -47,7 +49,7 @@ export const IconsModule = ({
               </span>
             ) : (
               <span
-                className={cn("icon-text-class", isBold && "font-bold")}
+                className={cn("icon-text-class", isBold && "font-bold", accent)}
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(text),
                 }}

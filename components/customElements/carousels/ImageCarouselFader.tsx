@@ -24,6 +24,7 @@ export interface ImageCarouselFaderProps
   dotsClassName?: string;
   controlsDisabled?: boolean;
   sizes?: string;
+  objectFit?: boolean;
 }
 
 export const ImageCarouselFader = ({
@@ -44,6 +45,7 @@ export const ImageCarouselFader = ({
   dotsClassName,
   controlsDisabled = false,
   sizes = "100vw",
+  objectFit = false,
   ...rest
 }: ImageCarouselFaderProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -243,7 +245,7 @@ export const ImageCarouselFader = ({
         alt={images[0].alt}
         fill
         sizes={sizes}
-        className={cn("opacity-0 !relative aspect-[9/16]")}
+        className={cn("opacity-0 !relative aspect-[9/16] object-contain ")}
       />
 
       {images.map(({ img, alt }, i) => (
@@ -258,6 +260,7 @@ export const ImageCarouselFader = ({
           sizes={sizes}
           className={cn(
             `aboslute object-cover scale-[101%] transition-all duration-500`,
+            objectFit && "object-fill scale-100",
             i === currentIndex && "opacity-100",
             i === prevIndex && "opacity-10",
             i !== currentIndex && "opacity-0"
