@@ -61,7 +61,7 @@ export const RzutMieszkaniaCarousel = ({
             height={768}
             sizes="(max-width: 768px) 100vw, 10vw"
             className={cn(
-              "block md:hidden max-h-[600px] h-[500px] w-full object-contain px-10",
+              "block md:hidden min-h-[400px] max-h-[400px] h-full w-full object-contain px-10",
               currentIndex != i && "hidden"
             )}
           />
@@ -80,6 +80,12 @@ export const RzutMieszkaniaCarousel = ({
             )}
           />
         ))}
+        <PrevNextButtons
+          handleClickNext={handleNext}
+          handleClickBack={handlePrev}
+          visible
+          visibleButtonsClass="relative md:absolute h-fit md:h-full"
+        />
         <div className="md:absolute md:left-0 md:bottom-0 relative text-2xl text-light flex flex-col gap-6 md:gap-5">
           <div className="flex flex-col md:gap-2">
             <span className={cn("text-xl font-bold", customAccent)}>
@@ -113,12 +119,6 @@ export const RzutMieszkaniaCarousel = ({
             </a>
           </Button> */}
         </div>
-        <PrevNextButtons
-          handleClickNext={handleNext}
-          handleClickBack={handlePrev}
-          visible
-          visibleButtonsClass="relative md:absolute h-fit md:h-full"
-        />
       </div>
     </div>
   );
