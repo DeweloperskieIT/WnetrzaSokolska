@@ -7,6 +7,7 @@ export interface PlainParagraphTextProps {
   texts: string[];
   header?: React.ReactNode;
   children?: React.ReactNode;
+  masterClassName?: string;
 }
 
 export const PlainParagraphText = ({
@@ -15,9 +16,15 @@ export const PlainParagraphText = ({
   textClassName,
   header,
   children,
+  masterClassName,
 }: PlainParagraphTextProps) => {
   return (
-    <div className="flex flex-col section-header-gap limited-width w-full">
+    <div
+      className={cn(
+        "flex flex-col section-header-gap limited-width w-full",
+        masterClassName
+      )}
+    >
       {header}
       <div className={cn("flex flex-col gap-10 md:gap-14", className)}>
         {texts.map((text, i) => (

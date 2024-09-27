@@ -674,7 +674,7 @@
       "header_top": "Czas, który",
       "header_bottom": "możesz odzyskać",
       "texts": [
-        "Codzienne dojazdy pochłaniają średnio 330 godzin rocznie. We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach.",
+        "Codzienne dojazdy pochłaniają średnio 330 godzin rocznie. We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!",
         "Apartamenty na najwyższych piętrach Sokolska Towers stanowią optymalne połączenie zalet życia w centrum miasta, blisko głównych szlaków komunikacyjnych w regionie, z udogodnieniami budownictwa wysokościowego, oferującymi komfort życia ponad hałasem."
       ],
       "icons": [
@@ -688,7 +688,7 @@
         },
         {
           "icon": "/katowice-3/icons2/3.png",
-          "text": "Strefa relaksu z sauną w&nbsp;cenie opłat stałych"
+          "text": "Strefa relaksu z sauną, zielone&nbsp;patio w&nbsp;cenie opłat stałych"
         },
         {
           "icon": "/katowice-3/icons2/4.png",
@@ -696,7 +696,7 @@
         },
         {
           "icon": "/katowice-3/icons2/5.png",
-          "text": "Zielone patio"
+          "text": "Niskie miesięczne koszty&nbsp;stałe"
         }
       ]
     },
@@ -938,23 +938,23 @@
     "custom_icons": [
       {
         "icon": "/universal/icons/sub/1.png",
-        "text": "Prywatne miejsce garażowe z ładowarką EV"
+        "text": "Prywatne miejsce garażowe z&nbsp;ładowarką&nbsp;EV"
       },
       {
         "icon": "/universal/icons/sub/2.png",
-        "text": "Recepcja z całodobową ochroną i monitoringiem"
+        "text": "Recepcja z całodobową ochroną i&nbsp;monitoringiem"
       },
       {
         "icon": "/universal/icons/sub/3.png",
-        "text": "Strefa relaksu z sauną w cenie  opłat stałych"
+        "text": "Strefa relaksu z sauną, zielone&nbsp;patio w&nbsp;cenie opłat stałych"
       },
       {
         "icon": "/universal/icons/sub/4.png",
-        "text": "Sala fitness, kącik do pracy"
+        "text": "Sala fitness, kącik&nbsp;do&nbsp;pracy"
       },
       {
         "icon": "/universal/icons/sub/5.png",
-        "text": "Zielone patio"
+        "text": "Niskie miesięczne koszty&nbsp;stałe"
       }
     ],
     "section_spiral_01": {

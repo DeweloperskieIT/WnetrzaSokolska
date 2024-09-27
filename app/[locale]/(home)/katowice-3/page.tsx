@@ -110,7 +110,7 @@ const page = async ({
 
         {/* Section 5 - Custom text 1 */}
         <PlainParagraphText
-          texts={dict.Katowice_03.custom_text_section_01.texts}
+          texts={[dict.Katowice_03.custom_text_section_01.texts[0]]}
           header={
             <SectionHeading
               topClass="text-accent2 font-bold"
@@ -120,6 +120,9 @@ const page = async ({
           }
         >
           <IconsModule icons={dict.Katowice_03.custom_text_section_01.icons} />
+          <PlainParagraphText
+            texts={[dict.Katowice_03.custom_text_section_01.texts[1]]}
+          />
         </PlainParagraphText>
         {/* Section 6 - new side by side carousel */}
         <FullscreenCarouselContainer>

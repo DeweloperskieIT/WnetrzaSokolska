@@ -83,7 +83,7 @@ const page = async ({
         />
         {/* Section 5 - Custom text 1 */}
         <PlainParagraphText
-          texts={dict.Katowice_03.custom_text_section_01.texts}
+          texts={[dict.Katowice_03.custom_text_section_01.texts[0]]}
           header={
             <SectionHeading
               topClass="font-bold"
@@ -93,6 +93,10 @@ const page = async ({
           }
         >
           <IconsModule icons={dict.universal_page_01.custom_icons} />
+          <PlainParagraphText
+            masterClassName="!p-0"
+            texts={[dict.Katowice_03.custom_text_section_01.texts[1]]}
+          />
         </PlainParagraphText>
         {/* Fourth Section - Standalone Photos */}
         <SpiralPhotos4
