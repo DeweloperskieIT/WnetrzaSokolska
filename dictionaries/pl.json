@@ -68,7 +68,7 @@
 
         {
           "icon": "/images/DangleKeysIcon.png",
-          "text": "Nowe, wykończone"
+          "text": "Nowe, wyposażone"
         }
       ]
     },
@@ -255,7 +255,7 @@
       },
       {
         "question": "KIEDY MOGĘ SIĘ WPROWADZIĆ?",
-        "answer": "Oferowane przez nas apartamenty są w pełni wykończone i gotowe do wprowadzenia już w dniu aktu notarialnego."
+        "answer": "Oferowane przez nas apartamenty są w pełni wyposażone i gotowe do wprowadzenia już w dniu aktu notarialnego."
       },
       {
         "question": "CZY JESTEM W STANIE SPERSONALIZOWAĆ APARTAMENT POD SIEBIE?",
@@ -813,7 +813,7 @@
       "oferta": "Katowice 3"
     },
     "section_icons_01": {
-      "header_top": "WYKOŃCZONE APARTAMENTY",
+      "header_top": "Apartamenty dla wymagających",
       "header_bottom": "NA NAJWYŻSZYCH PIĘTRACH SOKOLSKA TOWERS",
       "icons": [
         {
@@ -826,7 +826,7 @@
         },
         {
           "icon": "/universal/icons/3.png",
-          "text": "Miejsce parkingowe z&nbsp;ładowarką EV"
+          "text": "Miejsce garażowe z&nbsp;ładowarką EV"
         },
         {
           "icon": "/universal/icons/4.png",
@@ -1145,11 +1145,11 @@
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-2.jpg",
-              "alt": "Ujęcie wykończonej łazienki z prysznicem"
+              "alt": "Ujęcie wyposażonej łazienki z prysznicem"
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-3.jpg",
-              "alt": "Ujęcie wykończonej łazienki z wanną"
+              "alt": "Ujęcie wyposażonej łazienki z wanną"
             },
             {
               "img": "/katowice-1/s6/4/marki-premium-4.jpg",
