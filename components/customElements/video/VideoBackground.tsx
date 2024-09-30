@@ -31,6 +31,7 @@ export const VideoBackground = ({
             "inset-0 w-full h-full object-cover pointer-events-none",
             videoClassName
           )}
+          controls={false}
           preload="auto"
           muted
           loop
