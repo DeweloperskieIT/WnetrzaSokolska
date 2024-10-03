@@ -43,6 +43,10 @@ const Home = async ({
   params: { locale: Locales };
 }) => {
   const dict = await getDictionary(locale as Locales);
+  if (!dict) {
+    return;
+  }
+
   return (
     <>
       {/* Sticky HEader main */}
@@ -136,7 +140,7 @@ const Home = async ({
           >
             <Image
               alt="alt"
-              src={"/images/mainpage/grid-sokolska-towers-budynek.jpg"}
+              src={"/mainpage/Dla-kazdego.jpg"}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
@@ -166,7 +170,7 @@ const Home = async ({
           >
             <Image
               alt="alt"
-              src={"/images/mainpage/grid-apartament-1.png"}
+              src={"/mainpage/Dla-niego.jpg"}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
@@ -196,7 +200,7 @@ const Home = async ({
           >
             <Image
               alt="alt"
-              src={"/images/mainpage/grid-apartament-2.png"}
+              src={"/mainpage/Dla-niej.jpg"}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(
@@ -226,7 +230,7 @@ const Home = async ({
           >
             <Image
               alt="alt"
-              src={"/images/mainpage/grid-apartament-3.jpg"}
+              src={"/mainpage/Dla-nich.jpg"}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className={cn(

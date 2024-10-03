@@ -28,14 +28,14 @@ export const VideoBackground = ({
       {!videoError ? (
         <video
           className={cn(
-            "inset-0 w-full h-full object-cover pointer-events-none",
+            "inset-0 w-full h-full object-cover pointer-events-none inline-video",
             videoClassName
           )}
           controls={false}
           preload="auto"
-          muted
           loop
           playsInline
+          muted
           autoPlay
           onError={() => setVideoError(true)}
           {...props}

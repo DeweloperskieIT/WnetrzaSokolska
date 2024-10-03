@@ -283,3 +283,8 @@
     display: none;
   }
 }
+
+.inline-video {
+  /* Prevent iOS fullscreen */
+  -webkit-playsinline: true;
+}

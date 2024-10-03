@@ -95,6 +95,7 @@ export const TextPlusSingleVideoModular = ({
         <video
           muted
           autoPlay
+          playsInline
           loop
           src={src}
           width={600}

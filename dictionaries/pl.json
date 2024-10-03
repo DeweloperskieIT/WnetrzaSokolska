@@ -847,55 +847,75 @@
       "header_bottom": "PRZEZ PROFESJONALISTÓW",
       "images": [
         {
-          "image": "/universal/carousel1/1.jpg",
+          "image": "/universal/carousel1/new/1.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/2.jpg",
+          "image": "/universal/carousel1/new/2.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/3.jpg",
+          "image": "/universal/carousel1/new/3.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/4.jpg",
+          "image": "/universal/carousel1/new/4.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/5.jpg",
+          "image": "/universal/carousel1/new/5.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/6.jpg",
+          "image": "/universal/carousel1/new/7.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/8.jpg",
+          "image": "/universal/carousel1/new/8.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/9.jpg",
+          "image": "/universal/carousel1/new/9.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/10.jpg",
+          "image": "/universal/carousel1/new/10.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/11.jpg",
+          "image": "/universal/carousel1/new/11.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/12.jpg",
+          "image": "/universal/carousel1/new/12.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/13.jpg",
+          "image": "/universal/carousel1/new/13.jpg",
           "alt": "carousel image"
         },
         {
-          "image": "/universal/carousel1/14.jpg",
+          "image": "/universal/carousel1/new/14.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/15.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/16.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/17.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/18.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/19.jpg",
           "alt": "carousel image"
         }
       ]
@@ -960,11 +980,11 @@
     "section_spiral_01": {
       "images": [
         {
-          "img": "/katowice-3/carousel3/3.jpg",
+          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
           "alt": "Wpólny taras z ogrodem"
         },
         {
-          "img": "/universal/collage/1.jpg",
+          "img": "/katowice-1/s5/2-portiernia.jpg",
           "alt": "Portiernia na wejściu do budynku"
         },
         {
@@ -1003,6 +1023,10 @@
         },
         {
           "image": "/universal/carousel2/6.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/7.jpg",
           "alt": "image"
         }
       ]
