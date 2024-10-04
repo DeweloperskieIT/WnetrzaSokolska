@@ -74,7 +74,7 @@ const Home = async ({
           </div>
         </BreathingBackgroundImage> */}
 
-        <div className="w-full h-fit relative flex padding-element">
+        <div className="w-full h-fit relative flex items-center justify-center">
           <Image
             alt="image"
             src={"/images/mainpage/backgroundbuilding.jpg"}
