@@ -301,7 +301,7 @@
       "images": [
         {
           "image": "/katowice-1/s3/01.jpg",
-          "alt": "Salon w apartamencie wieczorem",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na okna",
           "text": "Otul się luksusem"
         },
         {
@@ -311,62 +311,57 @@
         },
         {
           "image": "/katowice-1/s3/03.jpg",
-          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na okna",
-          "text": "Poznaj swój nowy duży pokój"
-        },
-        {
-          "image": "/katowice-1/s3/04.jpg",
           "alt": "Salon w apartamencie w ciągu dnia, ujęcie na kuchnię",
           "text": "Wykorzystaj potencjał minimalistycznej kuchni"
         },
         {
-          "image": "/katowice-1/s3/05.jpg",
-          "alt": "Sypialnia w apartamencie w ciągu dnia",
+          "image": "/katowice-1/s3/04.jpg",
+          "alt": "Zdjęcie sypialni",
           "text": "Zasypiaj wśród chmur, na XV piętrze"
         },
         {
-          "image": "/katowice-1/s3/06.jpg",
+          "image": "/katowice-1/s3/05.jpg",
           "alt": "Korytarz w apartamencie z wejściem do sypialni",
           "text": "Korzystaj z potencjału funkcjonalnego układu"
         },
         {
-          "image": "/katowice-1/s3/07.jpg",
+          "image": "/katowice-1/s3/06.jpg",
           "alt": "W pełni wykończona łazienka z wanną",
           "text": "Długa kąpiel wieczorem…"
         },
         {
-          "image": "/katowice-1/s3/08.jpg",
+          "image": "/katowice-1/s3/07.jpg",
           "alt": "W pełni wykończona łazienka z prysznicem",
           "text": "… szybki prysznic rano"
         },
         {
-          "image": "/katowice-1/s3/09.jpg",
+          "image": "/katowice-1/s3/08.jpg",
           "alt": "Przestrzenna garderoba",
           "text": "Wypełnij swoją garderobę"
         },
         {
-          "image": "/katowice-1/s3/10.jpg",
+          "image": "/katowice-1/s3/09.jpg",
           "alt": "Pokój funkcjonalny w dzień",
           "text": "Pokochaj swój mały pokój"
         },
         {
-          "image": "/katowice-1/s3/11.jpg",
+          "image": "/katowice-1/s3/10.jpg",
           "alt": "Kuchnia i korytarz przy zachodzie słońca",
           "text": "Funkcjonalne rozwiązania"
         },
         {
-          "image": "/katowice-1/s3/13.jpg",
+          "image": "/katowice-1/s3/11.jpg",
           "alt": "Widok z okna apartamentu",
           "text": "Poznaj klimat zachodów słońca na XV piętrze"
         },
         {
-          "image": "/katowice-1/s3/14.jpg",
-          "alt": "Wysepka w salonie zm iejscem siedzącym wieczorem",
+          "image": "/katowice-1/s3/12.jpg",
+          "alt": "Wysepka w salonie z miejscem siedzącym wieczorem",
           "text": "Zamieszkaj już jutro w wymarzonym apartamencie"
         },
         {
-          "image": "/katowice-1/s3/15.jpg",
-          "alt": "Budynek sokolska towers przy wschodzie słońca",
+          "image": "/katowice-1/s3/13.jpg",
+          "alt": "Wysepka w salonie z miejscem siedzącym wieczorem",
           "text": "Postaw na luksus, który stawia Cię w centrum"
         }
       ]
@@ -671,8 +666,8 @@
       ]
     },
     "custom_text_section_01": {
-      "header_top": "Czas, który",
-      "header_bottom": "możesz odzyskać",
+      "header_top": "CZAS, KTÓRY",
+      "header_bottom": "MOŻESZ ODZYSKAĆ",
       "texts": [
         "Codzienne dojazdy pochłaniają średnio 330 godzin rocznie. We wrześniu 2024 roku rozpoczęła się inwestycja kolejowa, która permanentnie zmienia mapę komunikacyjną regionu i redefiniuje pojęcie utrudnień drogowych w Katowicach. Wybierasz wolność od korków, gdyż zawsze jesteś na miejscu!",
         "Apartamenty na najwyższych piętrach Sokolska Towers stanowią optymalne połączenie zalet życia w centrum miasta, blisko głównych szlaków komunikacyjnych w regionie, z udogodnieniami budownictwa wysokościowego, oferującymi komfort życia ponad hałasem."
@@ -813,7 +808,7 @@
       "oferta": "Katowice 3"
     },
     "section_icons_01": {
-      "header_top": "Apartamenty dla wymagających",
+      "header_top": "APARTAMENTY DLA WYMAGAJĄCYCH",
       "header_bottom": "NA NAJWYŻSZYCH PIĘTRACH SOKOLSKA TOWERS",
       "icons": [
         {
@@ -1208,10 +1203,6 @@
             {
               "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
               "alt": "Ujęcie z recepcji budynku sokolska towers"
-            },
-            {
-              "img": "/katowice-1/s6/5/swiatowa-architektura-6.jpg",
-              "alt": "Ujęcie z drona wspólnego prywatnego tarasu wieczorem"
             }
           ]
         }

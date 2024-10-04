@@ -145,7 +145,7 @@ const PrivacyPolicy = () => {
           <span>
             {" "}
             Polityka skierowana jest do użytkowników strony internetowej
-            wnętrza.deweloperskie.pl
+            wnetrza.deweloperskie.pl
           </span>
           <span>
             W Polityce zostały opisane zasady gromadzenia oraz wykorzystywania
@@ -220,7 +220,7 @@ const PrivacyPolicy = () => {
               </li>
               <li>
                 <strong>Serwis</strong> - serwis internetowy prowadzony przez
-                Administratora pod adresem wnętrza.deweloperskie.pl.
+                Administratora pod adresem wnetrza.deweloperskie.pl.
               </li>
               <li>
                 <strong>Użytkownik</strong> - każda osoba fizyczna odwiedzająca

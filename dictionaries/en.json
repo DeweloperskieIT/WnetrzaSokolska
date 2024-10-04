@@ -295,78 +295,73 @@
       ]
     },
     "image_carousel_custom_01": {
-      "header_top": "COMFORT",
-      "header_bottom": "YOU DESERVE",
+      "header_top": "COMFORT YOU WANT",
+      "header_bottom": "YOU DESERVE IT",
       "images": [
         {
-          "text": "Wrap yourself in luxury",
           "image": "/katowice-1/s3/01.jpg",
-          "alt": "Living room in the apartment in the evening"
+          "alt": "Living room in the apartment during the day, shot from the windows",
+          "text": "Wrap yourself in luxury"
         },
         {
-          "text": "Feel at home",
           "image": "/katowice-1/s3/02.jpg",
-          "alt": "Living room in the apartment during the day"
+          "alt": "Living room in the apartment during the day",
+          "text": "Feel at home"
         },
         {
-          "text": "Discover your new living room",
           "image": "/katowice-1/s3/03.jpg",
-          "alt": "Living room in the apartment during the day, view towards the windows"
+          "alt": "The living room in the apartment during the day, shot of the kitchen",
+          "text": "Take advantage of the potential of a minimalist kitchen"
         },
         {
-          "text": "Maximize the potential of the minimalist kitchen",
           "image": "/katowice-1/s3/04.jpg",
-          "alt": "Living room in the apartment during the day, view towards the kitchen"
+          "alt": "Photo of the bedroom",
+          "text": "Fall asleep among the clouds, on the 15th floor"
         },
         {
-          "text": "Fall asleep among the clouds on the 15th floor",
           "image": "/katowice-1/s3/05.jpg",
-          "alt": "Bedroom in the apartment during the day"
+          "alt": "Corridor in the apartment with entrance to the bedroom",
+          "text": "Take advantage of the functional potential of the system"
         },
         {
-          "text": "Utilize the potential of a functional layout",
           "image": "/katowice-1/s3/06.jpg",
-          "alt": "Hallway in the apartment with entrance to the bedroom"
+          "alt": "Fully finished bathroom with a bathtub",
+          "text": "A long bath in the evening…"
         },
         {
-          "text": "A long bath in the evening...",
           "image": "/katowice-1/s3/07.jpg",
-          "alt": "Fully finished bathroom with bathtub"
+          "alt": "Fully finished bathroom with shower",
+          "text": "...a quick shower in the morning"
         },
         {
-          "text": "...a quick shower in the morning",
           "image": "/katowice-1/s3/08.jpg",
-          "alt": "Fully finished bathroom with shower"
+          "alt": "Spacious wardrobe",
+          "text": "Fill your wardrobe"
         },
         {
-          "text": "Fill up your wardrobe",
           "image": "/katowice-1/s3/09.jpg",
-          "alt": "Spacious wardrobe"
+          "alt": "Functional room during the day",
+          "text": "Love your little room"
         },
         {
-          "text": "Love your small room",
           "image": "/katowice-1/s3/10.jpg",
-          "alt": "Functional room during the day"
+          "alt": "Kitchen and corridor at sunset",
+          "text": "Functional solutions"
         },
         {
-          "text": "Wrap yourself in luxury",
           "image": "/katowice-1/s3/11.jpg",
-          "alt": "Kitchen and hallway at sunset"
+          "alt": "View from the apartment window",
+          "text": "Experience the atmosphere of sunsets on the 15th floor"
         },
         {
-          "text": "Experience the atmosphere of sunsets on the 15th floor",
+          "image": "/katowice-1/s3/12.jpg",
+          "alt": "An island in the living room with a place to sit in the evening",
+          "text": "Live in your dream apartment tomorrow"
+        },
+        {
           "image": "/katowice-1/s3/13.jpg",
-          "alt": "View from the apartment window"
-        },
-        {
-          "text": "Move in tomorrow to your dream apartment",
-          "image": "/katowice-1/s3/14.jpg",
-          "alt": "Island in the living room with seating area in the evening"
-        },
-        {
-          "text": "Opt for luxury that puts you at the center",
-          "image": "/katowice-1/s3/15.jpg",
-          "alt": "Sokolska Towers building at sunrise"
+          "alt": "An island in the living room with a place to sit in the evening",
+          "text": "Choose luxury that puts you at the center"
         }
       ]
     },

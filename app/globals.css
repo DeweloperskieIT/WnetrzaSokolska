@@ -97,7 +97,7 @@
   }
 
   .limited-width {
-    @apply padding-element xl:px-0 xl:max-w-screen-xl;
+    @apply padding-element 2xl:px-0 xl:max-w-screen-xl;
   }
 
   .section-header-xl-center {

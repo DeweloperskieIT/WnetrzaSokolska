@@ -6,7 +6,7 @@ const layout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="bg-websiteBackground1 min-h-screen h-svh w-full flex items-center justify-start flex-col">
+    <div className="bg-websiteBackground1 min-h-svh h-svh w-full flex items-center justify-start flex-col">
       {children}
     </div>
   );
