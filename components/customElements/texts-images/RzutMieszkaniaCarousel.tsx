@@ -90,18 +90,21 @@ export const RzutMieszkaniaCarousel = ({
           <div className="flex flex-col md:gap-2">
             <span className={cn("text-xl font-bold", customAccent)}>
               {locale === "pl" && "POWIERZCHNIA / PIĘTRO"}
-              {locale === "en" && "AREA / FLOOR"}
+              {locale === "en" && "ПЛОЩА / ПОВЕРХ"}
+              {locale === "ua" && "ЦІНА"}
             </span>
             <span className="text-light font-light text-3xl md:text-3xl">
               {items[currentIndex].area} m<sup>2</sup>
               {` / `}
-              {items[currentIndex].floor}p.
+              {items[currentIndex].floor}
+              {locale === "ua" ? " поверх" : "p."}
             </span>
           </div>
           <div className="flex flex-col md:gap-2">
             <span className={cn(" text-xl font-bold", customAccent)}>
               {locale === "pl" && "CENA"}
               {locale === "en" && "PRICE"}
+              {locale === "ua" && "ЦІНА"}
             </span>
             <span className="text-light font-light text-3xl md:text-3xl">
               {items[currentIndex].price}

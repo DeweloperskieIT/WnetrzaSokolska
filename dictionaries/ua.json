@@ -1,0 +1,1212 @@
+{
+  "locale": "ua",
+  "contact_form": {
+    "title": "НА ПРЕЗЕНТАЦІЮ",
+    "title_top": "КонтактнІ ",
+    "title_bottom": "дані",
+    "name": "Ім’я*",
+    "name_error": "Будь ласка, вкажіть своє ім'я.",
+    "email": "Адреса email*",
+    "email_error": "Укажіть дійсну електронну адресу.",
+    "telephone": "Телефон",
+    "telephone_error": "Введіть дійсний номер телефону.",
+    "message": "Повідомлення",
+    "required_error": "Обов'язковий.",
+    "message_placeholder": "Домовляйся на презентацію з моїм особистим опікуном операції",
+    "show_condition_button": "Переглянути повний зміст згоди",
+    "hide_condition_button": "Приховати повний зміст згоди",
+    "accept_condition_data": "Згода на обробку даних*",
+    "accept_condition_data_paragraph": "Я даю згоду на обробку вказаних мною персональних даних компанією Deweloperskie Prosta Spółka Akcyjna з зареєстрованим місцезнаходженням у м. Катовіце, вул. Murckowska 14C, 40-265 Katowice, щоб встановити контакт і надати пропозицію наших послуг.",
+    "accept_condition_data_read_01": "Я заявляю, що ознайомилась/вся з правилами обробки моїх персональних даних, які містяться в ",
+    "accept_condition_data_read_02": "та",
+    "accept_condition_data_read_03": "веб-сайту.",
+    "information_clause": "інформаційному застереженні ",
+    "privacy_clause": "політиці конфіденційності ",
+    "list_of_entities": "Lista podmiotów",
+    "accept_condition_email": "Згода на контакт e-mail*",
+    "accept_condition_email_paragraph": "Даю згоду на обробку моїх персональних даних у формі адреси електронної пошти компанією Deweloperskie Prosta Spółka Akcyjna з місцезнаходженням в м. Катовіце, вул. Murckowska 14C, 40-265 Katowice, метою одержання по електронній пошті комерційної інформації (тобто пропозиції, інформації про продукти та послуги), про продукти та послуги, які пропонує Deweloperskie Prosta Spółka Akcyjna з місцезнаходженням в м. Катовіце, вул. Murckowska 14C, 40-265 Katowice та нашими партнерами, чиїми послугами ми користуємось у сфері обороту нерухомим майном: Список суб’єктів",
+    "accept_condition_phone": "Згода на телефонний зв'язок",
+    "accept_condition_phone_paragraph": "Даю згоду на обробку моїх персональних даних у формі адреси номеру телефону компанією Deweloperskie Prosta Spółka Akcyjna з місцезнаходженням в м. Катовіце, вул. Murckowska 14C, 40-265 Katowice, метою одержання по електронній пошті на адресу номеру телефону комерційної інформації (тобто пропозиції, інформації про продукти та послуги), про продукти та послуги, які пропонує Deweloperskie Prosta Spółka Akcyjna з місцезнаходженням в м. Катовіце, вул. Murckowska 14C, 40-265 Katowice та нашими партнерами, чиїми послугами ми користуємось у сфері обороту нерухомим майном: Список суб’єктів",
+    "required_fields": "Поля позначені * обов'язкові.",
+    "form_sent_success": "Форма успішно надіслана",
+    "form_sent_error": "Помилка надсилання форми",
+    "form_send": "Надіслати"
+  },
+  "Header": {
+    "offer_title": "КВАРТИРИ",
+    "landing_page": "про нас",
+    "universal": "Для кожного",
+    "offer_1": "Для неї",
+    "offer_2": "Для нього",
+    "offer_3": "Для них",
+    "offer_4": "Apartament 4"
+  },
+  "Landing_Page": {
+    "breathing_background_image_01": {
+      "header": "НАША ПРИСТРАСТЬ – ЯКІСТЬ",
+      "paragraph_01": "Ми реалізуємо інноваційні проекти інтер’єру, використовуючи власні меблеві рішення, перетворюючи придбані на первинному ринку приміщення в позачасові інтер’єри.",
+      "paragraph_02": "Wnętrza Deweloperskie є одним із брендів стартапу, що динамічно розвивається, на ринку девелопменту, до якого входить, зокрема, власний фонд альтернативних інвестицій ASI Deweloperskie (PLZASI00388)."
+    },
+    "icons_module_01": {
+      "icons": [
+        {
+          "icon": "/images/mainpage/MapIcon.png",
+          "text": "Катовіце"
+        },
+        {
+          "icon": "/images/mainpage/BuildingIcon.png",
+          "text": "Sokolska Towers"
+        },
+        {
+          "icon": "/images/mainpage/plans-icon2.png",
+          "text": "75m<sup>2</sup>"
+        },
+        {
+          "icon": "/images/mainpage/summit-icon2.png",
+          "text": "останні поверхи"
+        },
+
+        {
+          "icon": "/images/DangleKeysIcon.png",
+          "text": "Новий, обладнаний"
+        }
+      ]
+    },
+    "offer_blocks": {
+      "header_top": "ГОТОВІ КВАРТИРИ",
+      "header_bottom": "НА НАЙВИЩИХ ПОВЕРХАХ SOKOLSKA TOWERS",
+      "see_offer": "Натисніть, щоб переглянути пропозицію ",
+      "premieres": "premiera wkrótce",
+      "offer_katowice_1": {
+        "paragraph_01": "",
+        "paragraph_02": "Для неї"
+      },
+      "offer_katowice_2": {
+        "paragraph_01": "",
+        "paragraph_02": "Для нього"
+      },
+      "offer_katowice_3": {
+        "paragraph_01": "",
+        "paragraph_02": "Для них"
+      },
+      "offer_katowice_4": {
+        "paragraph_01": "",
+        "paragraph_02": "Для кожного"
+      }
+    },
+    "company_properties_01": {
+      "header": "ЧИМ НАС ВІДрізняються?",
+      "text_01": "Готова до заселення, з гарантією/гарантією на оздоблювальні роботи",
+      "text_02": "Виділені кутові приміщення на верхніх поверхах",
+      "text_03": "Покупка за накладною ПДВ у професіонала (зі страхуванням відповідальності перед третіми особами)",
+      "text_04": "Преміальні бренди (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)",
+      "text_05": "Автомобільний зарядний пристрій для електромобілів"
+    },
+    "icons_module_02": {
+      "icons": [
+        {
+          "icon": "/images/mainpage/MapIcon.png",
+          "text": "Gotowe do zamieszkania, z gwarancją/rękojmią na prace wykończeniowe"
+        },
+        {
+          "icon": "/images/mainpage/BuildingIcon.png",
+          "text": "Wyselekcjonowane narożne lokale na najwyższych piętrach"
+        },
+        {
+          "icon": "/images/mainpage/plans-icon2.png",
+          "text": "Zakup na fakturę VAT od profesjonalisty (z polisą OC)"
+        },
+        {
+          "icon": "/images/mainpage/summit-icon2.png",
+          "text": "Marki premium (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)"
+        },
+        {
+          "icon": "/images/DangleKeysIcon.png",
+          "text": "Ładowarka samochodowa EV"
+        }
+      ]
+    },
+    "post_carousels_header": {
+      "header_top": "ДОСКОНАЛЕНИЙ",
+      "header_bottom": "В КОЖНОМУ ДЮЙМІ",
+      "form_button": "ЗАПИШІТЬСЯ НА ПРЕЗЕНТАЦІЮ."
+    },
+    "image_carousel_fader_01": {
+      "images": [
+        {
+          "img": "/images/mainpage/carousel/1/1.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/2.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/3.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/4.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/5.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/6.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/7.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/8.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/9.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/1/10.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+
+    "image_carousel_fader_02": {
+      "images": [
+        {
+          "img": "/images/mainpage/carousel/2/1.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/2.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/3.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/4.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/5.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/6.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/7.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/8.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/9.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/images/mainpage/carousel/2/10.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+    "info_blocks_01": {
+      "header_top": "ЧОМУ",
+      "header_bottom": "WNĘTRZA DEWELOPERSKIE?",
+      "info_01": {
+        "header": "ПОЗАЧАСОВІ ІНВЕСТИЦІЇ",
+        "paragraph": "Ми пропонуємо нашим клієнтам готові до заселення квартири преміум-класу в самому центрі Катовіце, які відрізняються позачасовим та універсальним дизайном у поєднанні з новітніми технологіями."
+      },
+      "info_02": {
+        "header": "РОЗКІШ У ВАШИХ ПАЛЬЦІВ",
+        "paragraph": "Бачення бренду Wnętrza Deweloperskie полягає в повторенні дуже вишуканих елементів дизайну в ряді подібних квартир, що дозволяє створити унікальний інтер’єр без зайвих витрат."
+      },
+      "info_03": {
+        "header": "ЯКІСТЬ, ПІДКРИТИЙ ГАРАНТІЄЮ",
+        "paragraph": "Предметом гарантії (гарантії) є всі оздоблювальні роботи, які виконує професійна будівельна бригада, а також розробка меблів, фарбування поверхонь, програмне забезпечення iFrame і навіть електромонтаж для зарядної станції автомобіля."
+      }
+    },
+    "youtube_shorts_01": {
+      "header_top": "ПОЗАЧАСОВА",
+      "header_bottom": "БУДІВЛЯ"
+    },
+    "FAQ": [
+      {
+        "question": "ЩО ВХОДИТЬ У ВАРТІСТЬ?",
+        "answer": "Покупець купує нерухомість без обтяження на підставі податкової накладної разом із складським приміщенням, часткою в загальній площі (включаючи SPA-зону, тренажерний зал, рецепцію та патіо) та гарантією на всі будівельні, теслярські та малярні послуги, виконані як частина процесу аранжування."
+      },
+      {
+        "question": "ЧИ МОЖНА ЗАРЯДИТИ ЕЛЕКТРОМОБІЛЬ?",
+        "answer": "Покупець може придбати квартиру з паркомісцем в гаражі на 0 поверсі, обладнану повноцінною зарядною станцією для електромобілів потужністю 22 кВт."
+      },
+      {
+        "question": "ЯКІ МОЖЛИВОСТІ ФІНАНСУВАННЯ?",
+        "answer": "Покупець отримує оцінку, підготовлену для забезпечення іпотечного кредиту, що дозволяє фінансувати придбання як приміщення, так і його обладнання за рахунок іпотечних коштів.<br />У нас також є рішення для клієнтів, які на даний момент не мають власного внеску."
+      },
+      {
+        "question": "КОЛИ Я МОЖУ ЗАЇХАТИ?",
+        "answer": "Квартири, які ми пропонуємо, повністю обладнані та готові до заселення в день оформлення нотаріального акту."
+      },
+      {
+        "question": "ЧИ МОЖУ Я ПЕРСОНАЛІЗУВАТИ КВАРТИРУ ДЛЯ ЗУСТРІЧІ СОБОЇ?",
+        "answer": "Звичайно, наша команда з облаштування та ремонту, як пріоритет, допоможе вам внести будь-які зміни, які зроблять квартиру ще краще відповідати вашим індивідуальним потребам і очікуванням."
+      }
+    ],
+    "Footer_1": {
+      "oferta": "Kontakt",
+      "header_top": "ДОМОВСЯ",
+      "header_bottom": "НА ПРЕЗЕНТАЦІЮ"
+    }
+  },
+  "Katowice_01": {
+    "icons_module_01": {
+      "header_top": "DOŁĄCZ DO EKSKLUZYWNEGO",
+      "header_bottom": "GRONA WŁAŚCICIELI SOKOLSKA TOWERS",
+      "icons": [
+        {
+          "icon": "/katowice-1/s2/1.webp",
+          "text": "Najwyżej położony balkon w&nbsp;budynku"
+        },
+        {
+          "icon": "/katowice-1/s2/2.webp",
+          "text": "Apartamenty w topowej lokalizacji"
+        },
+        {
+          "icon": "/katowice-1/s2/3.webp",
+          "text": "Światowej klasy architektura"
+        },
+        {
+          "icon": "/katowice-1/s2/4.webp",
+          "text": "Indywidualny opiekun transakcji"
+        },
+        {
+          "icon": "/images/BedIcon.png",
+          "text": "Zamieszkaj już jutro"
+        }
+      ]
+    },
+    "image_carousel_custom_01": {
+      "header_top": "KOMFORT, NA KTÓRY",
+      "header_bottom": "ZASŁUGUJESZ",
+      "images": [
+        {
+          "image": "/katowice-1/s3/01.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na okna",
+          "text": "Otul się luksusem"
+        },
+        {
+          "image": "/katowice-1/s3/02.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia",
+          "text": "Poczuj się jak u siebie w domu"
+        },
+        {
+          "image": "/katowice-1/s3/03.jpg",
+          "alt": "Salon w apartamencie w ciągu dnia, ujęcie na kuchnię",
+          "text": "Wykorzystaj potencjał minimalistycznej kuchni"
+        },
+        {
+          "image": "/katowice-1/s3/04.jpg",
+          "alt": "Zdjęcie sypialni",
+          "text": "Zasypiaj wśród chmur, na XV piętrze"
+        },
+        {
+          "image": "/katowice-1/s3/05.jpg",
+          "alt": "Korytarz w apartamencie z wejściem do sypialni",
+          "text": "Korzystaj z potencjału funkcjonalnego układu"
+        },
+        {
+          "image": "/katowice-1/s3/06.jpg",
+          "alt": "W pełni wykończona łazienka z wanną",
+          "text": "Długa kąpiel wieczorem…"
+        },
+        {
+          "image": "/katowice-1/s3/07.jpg",
+          "alt": "W pełni wykończona łazienka z prysznicem",
+          "text": "… szybki prysznic rano"
+        },
+        {
+          "image": "/katowice-1/s3/08.jpg",
+          "alt": "Przestrzenna garderoba",
+          "text": "Wypełnij swoją garderobę"
+        },
+        {
+          "image": "/katowice-1/s3/09.jpg",
+          "alt": "Pokój funkcjonalny w dzień",
+          "text": "Pokochaj swój mały pokój"
+        },
+        {
+          "image": "/katowice-1/s3/10.jpg",
+          "alt": "Kuchnia i korytarz przy zachodzie słońca",
+          "text": "Funkcjonalne rozwiązania"
+        },
+        {
+          "image": "/katowice-1/s3/11.jpg",
+          "alt": "Widok z okna apartamentu",
+          "text": "Poznaj klimat zachodów słońca na XV piętrze"
+        },
+        {
+          "image": "/katowice-1/s3/12.jpg",
+          "alt": "Wysepka w salonie z miejscem siedzącym wieczorem",
+          "text": "Zamieszkaj już jutro w wymarzonym apartamencie"
+        },
+        {
+          "image": "/katowice-1/s3/13.jpg",
+          "alt": "Wysepka w salonie z miejscem siedzącym wieczorem",
+          "text": "Postaw na luksus, który stawia Cię w centrum"
+        }
+      ]
+    },
+    "rzut_mieszkania_01": {
+      "header_top": "POZNAJ SWÓJ NOWY",
+      "header_bottom": "APARTAMENT",
+      "price": "1 666 666 PLN",
+      "area": "73,66",
+      "floor": "XV",
+      "images": {
+        "mobile": "/universal/rzuty/126mobile.png",
+        "desktop": "/universal/rzuty/126.png"
+      }
+    },
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": {
+        "accent_1": "3500",
+        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
+        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, wpływające w przyszłości na wartość Twojej nieruchomości wymuszając konkurencję cenową.",
+        "paragraph_3": "Wybierz narożny apartament w ponadczasowym budynku ",
+        "accent_2": "Sokolska Towers."
+      },
+      "header_top": "LIMITOWANY LUKSUS",
+      "header_bottom": "W SERCU MIASTA"
+    },
+    "Footer_1": {
+      "header_top": "ДОМОВСЯ",
+      "header_bottom": "НА ПРЕЗЕНТАЦІЮ",
+      "oferta": "Katowice 1"
+    }
+  },
+  "Katowice_02": {
+    "icons_module_01": {
+      "header_top": "DOŁĄCZ DO GRONA WŁAŚCICIELI",
+      "header_bottom": "PRESTIŻOWYCH APARTAMENTÓW SOKOLSKA TOWERS",
+      "icons": [
+        {
+          "icon": "/katowice-1/s2/1.webp",
+          "text": "Panorama Katowic z&nbsp;XIII&nbsp;piętra"
+        },
+        {
+          "icon": "/katowice-1/s2/2.webp",
+          "text": "Topowa lokalizacja Sokolska&nbsp;Towers"
+        },
+        {
+          "icon": "/katowice-1/s2/3.webp",
+          "text": "Lobby z recepcją i&nbsp;ochroną&nbsp;24/7 "
+        },
+        {
+          "icon": "/katowice-1/s2/4.webp",
+          "text": "Strefa&nbsp;SPA, Fitness-club"
+        },
+        {
+          "icon": "/images/BedIcon.png",
+          "text": "Gotowy do&nbsp;zamieszkania"
+        }
+      ]
+    },
+    "ImageCarouselCustom_1": {
+      "header_top": "APARTAMENT",
+      "header_bottom": "KLASY PREMIUM",
+      "images": [
+        {
+          "image": "/katowice-2/s3/01.jpg",
+          "alt": "Widok na okna z salonu wieczorem",
+          "text": "Luksus, który wzbudza pożądanie"
+        },
+        {
+          "image": "/katowice-2/s3/02.jpg",
+          "alt": "Salon, telewizor z kanapą",
+          "text": "Poczuj się jak u siebie w domu"
+        },
+        {
+          "image": "/katowice-2/s3/03.jpg",
+          "alt": "Salon z kuchnią w dzień",
+          "text": "Poznaj swój apartament za dnia…"
+        },
+        {
+          "image": "/katowice-2/s3/04.jpg",
+          "alt": "Salon z kuchnią w nocy",
+          "text": "i jego drugie oblicze po zmroku"
+        },
+        {
+          "image": "/katowice-2/s3/05.jpg",
+          "alt": "Salon, widok na balkon",
+          "text": "Kawa z widokiem na Spodek"
+        },
+        {
+          "image": "/katowice-2/s3/06.jpg",
+          "alt": "Sypialnia, widok z okna w dzień",
+          "text": "Sypialnia wśród chmur, na XIII piętrze"
+        },
+        {
+          "image": "/katowice-2/s3/07.jpg",
+          "alt": "Wnętrze - wejście do sypialni z dużym łóżkiem",
+          "text": "Najbardziej prestiżowe apartamenty narożne"
+        },
+        {
+          "image": "/katowice-2/s3/08.jpg",
+          "alt": "Wnętrze - łazienka z wanną",
+          "text": "Długa kąpiel wieczorem…"
+        },
+        {
+          "image": "/katowice-2/s3/09.jpg",
+          "alt": "Wnętrze - łazienka z pryszniczem",
+          "text": "… szybki prysznic rano"
+        },
+        {
+          "image": "/katowice-2/s3/10.jpg",
+          "alt": "Wnętrze - nowoczesne oświetlenie telewizora",
+          "text": "Wyróżnij się ponadczasowym designem"
+        },
+        {
+          "image": "/katowice-2/s3/11.jpg",
+          "alt": "Wnętrze - salon ze stolikiem i wysepką",
+          "text": "Jadalnia z Twoją małą winiarką"
+        },
+        {
+          "image": "/katowice-2/s3/12.jpg",
+          "alt": "Wnętrze - kuchnia z korytarzem",
+          "text": "Zamieszkaj już jutro w wymarzonym apartamencie"
+        },
+        {
+          "image": "/katowice-2/s3/13.jpg",
+          "alt": "Budynek sokolska towers z zewnątrz na tle zachodu słońca",
+          "text": "Postaw na luksus, który stawia Cię w centrum"
+        }
+      ]
+    },
+    "rzut_mieszkania_01": {
+      "header_top": "PRAKTYCZNY",
+      "header_bottom": "NA KAŻDYM KROKU",
+      "price": "1 666 666 PLN",
+      "area": "76,35",
+      "floor": "XIII",
+      "images": {
+        "mobile": "/universal/rzuty/103mobile.png",
+        "desktop": "/universal/rzuty/103.png"
+      }
+    },
+    "interchangeable_header": {
+      "header_top": "PRESTIŻOWY",
+      "header_bottom": "DESIGN"
+    },
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": {
+        "accent_1": "3500",
+        "paragraph_1": "przynajmniej tyle mieszkań powstało i jeszcze powstanie w katowickiej Strefie Kultury do 2028 roku.",
+        "paragraph_2": "Postaw na unikatową lokalizację, w otoczeniu której nie powstaną tysiące nowych mieszkań, z którymi będziesz musiał konkurować ceną w momencie sprzedaży nieruchomości na rynku wtórnym.",
+        "paragraph_3": "Wybierz narożny apartament na XV piętrze ponadczasowego budynku ",
+        "accent_2": "Sokolska Towers."
+      },
+      "header_top": "LIMITOWANY LUKSUS",
+      "header_bottom": "W SERCU MIASTA"
+    },
+    "Footer_1": {
+      "header_top": "ДОМОВСЯ",
+      "header_bottom": "НА ПРЕЗЕНТАЦІЮ",
+      "oferta": "Katowice 1"
+    }
+  },
+
+  "Katowice_03": {
+    "icons_module_01": {
+      "header_top": "Apartament, w którym pomieścisz cały swój dom",
+      "header_bottom": "Wybierz wykończony apartament  na najwyższych piętrach Sokolska Towers, aby być bliżej tego, co ważne",
+      "icons": [
+        {
+          "icon": "/katowice-3/s2/icon3.png",
+          "text": "W sercu Katowic"
+        },
+        {
+          "icon": "/katowice-3/s2/icon1.png",
+          "text": "3 pokoje, 2 łazienki"
+        },
+        {
+          "icon": "/katowice-3/s2/icon2.png",
+          "text": "75,50 ,<sup>2</sup> powierzchni"
+        },
+        {
+          "icon": "/katowice-3/s2/icon4.png",
+          "text": "Spektakularny widok z XIV piętra "
+        },
+        {
+          "icon": "/katowice-3/s2/icon5.png",
+          "text": "Garderoba, pralnia,  komórka na piętrze"
+        },
+        {
+          "icon": "/katowice-3/s2/icon6.png",
+          "text": "Miesięczne opłaty stałe  826,77 PLN"
+        }
+      ]
+    },
+    "image_carousel_fader_01": {
+      "header_top": "Połączenie funkcjonalności",
+      "header_bottom": "z ponadczasowym stylem ",
+      "extra_text": [
+        "Ten gotowy do zamieszkania apartament stanowi połączenie nowoczesności z ponadczasową elegancją."
+      ],
+      "images": [
+        {
+          "img": "/katowice-3/carousel1/1.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/2.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/3.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/4.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/5.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/6.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/7.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/8.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/9.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/10.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/11.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/12.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/13.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/14.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/15.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/16.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel1/17.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+    "interchangeable_header": {
+      "header_top": "Żyj w luksusie,",
+      "header_bottom": "otoczony pięknem"
+    },
+    "image_carousel_fader_02": {
+      "header_top": "Twoja oaza spokoju",
+      "header_bottom": "na XIV piętrze Sokolska Towers",
+      "images": [
+        {
+          "img": "/katowice-3/carousel2/1.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel2/2.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel2/3.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel2/4.jpg",
+          "alt": "image"
+        },
+        {
+          "img": "/katowice-3/carousel2/5.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+    "custom_text_section_01": {
+      "header_top": "Час, який ",
+      "header_bottom": "можна повернути",
+      "texts": [
+        "Щоденні доїзди займають в середньому 330 годин на рік. У вересні 2024 року розпочалася залізнична інвестиція, яка повністю змінює комунікаційну карту регіону та переосмислює концепцію дорожніх труднощів у Катовіцах. Обираєш свободу від пробок, тому що Ти завжди на місці!",
+        "Квартири на найвищих поверхах Sokolska Towers – це оптимальне поєднання переваг проживання в центрі міста, близькості до основних комунікаційних шляхів регіону, зі зручностями багатоповерхових будівель, які надають комфорт проживання поза шумом."
+      ],
+      "icons": [
+        {
+          "icon": "/katowice-3/icons2/1.png",
+          "text": "Приватне місце в гаражі із зарядкою EV"
+        },
+        {
+          "icon": "/katowice-3/icons2/2.png",
+          "text": "Рецепція з цілодобовою охороною та відеоспостереженням"
+        },
+        {
+          "icon": "/katowice-3/icons2/3.png",
+          "text": "Зона відпочинку з сауною, зелений дворик в фіксованих оплатах"
+        },
+        {
+          "icon": "/katowice-3/icons2/4.png",
+          "text": "Фітнес-зал, місце для роботи"
+        },
+        {
+          "icon": "/katowice-3/icons2/5.png",
+          "text": "Низькі фіксовані місячні оплати"
+        }
+      ]
+    },
+    "image_carousel_fader_sidebyside_01": {
+      "images": [
+        {
+          "img1": "/katowice-3/carousel3/1.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/2.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/3.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/4.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/5.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/6.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/7.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/8.jpg",
+          "alt2": "image"
+        },
+        {
+          "img1": "/katowice-3/carousel3/9.jpg",
+          "alt1": "image",
+          "img2": "/katowice-3/carousel3/10.jpg",
+          "alt2": "image"
+        }
+      ]
+    },
+    "rzut_mieszkania_01": {
+      "header_top": "Układ",
+      "header_bottom": "funkcjonalny",
+      "price": "1 666 666 PLN",
+      "area": "75,50",
+      "floor": "XIV",
+      "images": {
+        "mobile": "/universal/rzuty/117mobile.png",
+        "desktop": "/universal/rzuty/117.png"
+      },
+      "texts": [
+        "Projektowany z myślą o funkcjonalności apartament oferuje ogromną ilość przestrzeni do przechowywania, subtelnie wkomponowanej w zabudowę meblową, której uzupełnieniem są garderoba, pralnia oraz pojemna komórka lokatorska naprzeciwko wejścia do lokalu."
+      ]
+    },
+
+    "text_plus_single_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "content": [
+        {
+          "plainTexts": [
+            "",
+            " - przynajmniej tyle mieszkań powstało i jeszcze powstanie w Katowickiej Strefie Kultury do 2028 roku. Powstające tam blokowiska są wybierane głównie przez rodziny z małymi dziećmi."
+          ],
+          "accentTexts": ["3500"]
+        },
+        {
+          "plainTexts": [
+            "Podstawową przewagą apartamentów Sokolska Towers jest ich ograniczona ilość, która zabezpieczy wartość Twojej nieruchomości w przyszłości, jak również zabezpieczy widok z Twojego okna, który nie zostanie przysłonięty przez kolejne, wyższe etapy inwestycji."
+          ],
+          "accentTexts": [""]
+        },
+        {
+          "plainTexts": [
+            "Mniejsza gęstość zabudowy to również komfort komunikacyjny, ograniczający czas wyjazdu z osiedla."
+          ],
+          "accentTexts": [""]
+        }
+      ],
+      "header_top": "Limitowany prestiż",
+      "header_bottom": "w sercu miasta"
+    },
+    "InfoBlocks_1": {
+      "header_top": "Standard, na który",
+      "header_bottom": "możesz sobie pozwolić",
+      "info": [
+        {
+          "icon": "/katowice-3/s5/icon1.png",
+          "header": "Zarezerwuj swój nowy dom na XIV piętrze Sokolska Towers.",
+          "paragraph": ""
+        },
+        {
+          "icon": "/katowice-3/s5/icon2.png",
+          "header": "Jeżeli planujesz sfinansować zakup ze sprzedaży innej nieruchomości, Twój apartament będzie na Ciebie czekał…",
+          "paragraph": ""
+        },
+        {
+          "icon": "/katowice-3/s5/icon3.png",
+          "header": "Chcesz zamieszkać w nim wcześniej? Zapytaj o szczegóły podczas prezentacji.",
+          "paragraph": ""
+        }
+      ]
+    },
+    "Footer_1": {
+      "header_top": "Masz więcej",
+      "header_bottom": "pytań?",
+      "oferta": "Katowice 3"
+    }
+  },
+  "Footer_Common": {
+    "paragraph_1": "Wnętrza Deweloperskie є брендом, який належить до: Deweloperskie P.S.A. з місцезнаходженням в Катовіцах, вул. Murckowska 14с, Номер податкової ідентифікації (NIP):  6343022518, Реєстр національної економіки (REGON): 525018864, Судовий національний реєстр (KRS): 0001030478",
+    "paragraph_2": "Пропозиція стосується елітних квартир за престижною адресою: вул. Sokolska 30 Katowice, розташованих на останніх поверхах будинку Sokolska Towers, які конкурують з апартаментами класу penthouse на ринку нерухомості Сілезії."
+  },
+  "universal_page_01": {
+    "Footer_1": {
+      "header_top": "Masz więcej",
+      "header_bottom": "pytań?",
+      "oferta": "Katowice 3"
+    },
+    "section_icons_01": {
+      "header_top": "КВАРТИРИ ДЛЯ ВИМОГЛИВИХ ЛЮДЕЙ",
+      "header_bottom": "КВАРТИРИ ДЛЯ ВИМОГЛИВИХ ЛЮДЕЙ",
+      "icons": [
+        {
+          "icon": "/universal/icons/1.png",
+          "text": "Нові, облаштовані, на XIII-XV поверсі"
+        },
+        {
+          "icon": "/universal/icons/2.png",
+          "text": "3 кімнати, 2 ванні, ~75 м<sup>2</sup>"
+        },
+        {
+          "icon": "/universal/icons/3.png",
+          "text": "Паркомісце із зарядкою EV"
+        },
+        {
+          "icon": "/universal/icons/4.png",
+          "text": "1.666.666 PLN (в тому числі 8% ПДВ)"
+        },
+        {
+          "icon": "/universal/icons/5.png",
+          "text": "Рецепція, зона відпочинку, фітнес, зелений дворик"
+        },
+        {
+          "icon": "/universal/icons/6.png",
+          "text": "Рецепція, зона відпочинку, фітнес, зелений дворик"
+        }
+      ]
+    },
+    "section_carousel_01": {
+      "header_top": "КВАРТИРИ ОБЛАШТОВАНІ",
+      "header_bottom": "ПРОФЕСІОНАЛАМИ",
+      "images": [
+        {
+          "image": "/universal/carousel1/new/1.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/2.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/3.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/4.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/5.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/7.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/8.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/9.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/10.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/11.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/12.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/13.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/14.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/15.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/16.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/17.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/18.jpg",
+          "alt": "carousel image"
+        },
+        {
+          "image": "/universal/carousel1/new/19.jpg",
+          "alt": "carousel image"
+        }
+      ]
+    },
+    "section_rzut_carousel_01": {
+      "header_top": "ВИБЕРИ КВАРТИРУ",
+      "header_bottom": "ІДЕАЛЬНУ ДЛЯ СЕБЕ",
+      "items": [
+        {
+          "mobile": "/universal/rzuty/103mobile.png",
+          "desktop": "/universal/rzuty/103.png",
+          "price": "1 666 666 PLN",
+          "area": "76,35",
+          "floor": "XIII"
+        },
+        {
+          "mobile": "/universal/rzuty/112mobile.png",
+          "desktop": "/universal/rzuty/112.png",
+          "price": "1 666 666 PLN",
+          "area": "75,73",
+          "floor": "XIV"
+        },
+        {
+          "mobile": "/universal/rzuty/117mobile.png",
+          "desktop": "/universal/rzuty/117.png",
+          "price": "1 666 666 PLN",
+          "area": "75,50",
+          "floor": "XIV"
+        },
+        {
+          "mobile": "/universal/rzuty/126mobile.png",
+          "desktop": "/universal/rzuty/126.png",
+          "price": "1 666 666 PLN",
+          "area": "73.66",
+          "floor": "XV"
+        }
+      ]
+    },
+
+    "custom_icons": [
+      {
+        "icon": "/universal/icons/sub/1.png",
+        "text": "Приватне місце в гаражі із зарядкою EV"
+      },
+      {
+        "icon": "/universal/icons/sub/2.png",
+        "text": "Рецепція з цілодобовою охороною та відеоспостереженням"
+      },
+      {
+        "icon": "/universal/icons/sub/3.png",
+        "text": "Зона відпочинку з сауною, зелений дворик в фіксованих оплатах"
+      },
+      {
+        "icon": "/universal/icons/sub/4.png",
+        "text": "Фітнес-зал, місце для роботи"
+      },
+      {
+        "icon": "/universal/icons/sub/5.png",
+        "text": "Низькі фіксовані місячні оплати"
+      }
+    ],
+    "section_spiral_01": {
+      "images": [
+        {
+          "img": "/katowice-1/s5/1-wspolny-taras.jpg",
+          "alt": "Wpólny taras z ogrodem"
+        },
+        {
+          "img": "/katowice-1/s5/2-portiernia.jpg",
+          "alt": "Portiernia na wejściu do budynku"
+        },
+        {
+          "img": "/katowice-1/s5/3-wspolna-strefa-spa.jpg",
+          "alt": "Wspólna strefa SPA z sauną"
+        },
+        {
+          "img": "/katowice-1/s5/4-wspolna-silownia.jpg",
+          "alt": "Wspólna siłownia"
+        }
+      ]
+    },
+    "section_carousel_02": {
+      "header_top": "НЕЙМОВІРНА АТМОСФЕРА",
+      "header_bottom": "І ПЕРСПЕКТИВА, ЯКУ ЗНАЮТЬ В ВУЗЬКОМУ КРУЗІ",
+      "images": [
+        {
+          "image": "/universal/carousel2/1.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/2.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/3.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/4.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/5.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/6.jpg",
+          "alt": "image"
+        },
+        {
+          "image": "/universal/carousel2/7.jpg",
+          "alt": "image"
+        }
+      ]
+    },
+    "section_text_video_01": {
+      "source": "/katowice-1/s7/360V2.mp4",
+      "header_top": "ЛІМІТОВАНА РОЗКІШ",
+      "header_bottom": "У СЕРЦІ МІСТА",
+      "content": [
+        {
+          "plainTexts": [
+            "",
+            " - принаймні стільки квартир було побудовано і буде побудовано в Катовіцькій зоні культури до 2028 року."
+          ],
+          "accentTexts": ["3500"]
+        },
+        {
+          "plainTexts": [
+            "Обирай ",
+            ", в оточенні якої не будуть будуватися тисячі нових квартир, з якими Вам доведеться конкурувати ціною при продажі нерухомості на вторинному ринку."
+          ],
+          "accentTexts": ["унікальне місцезнаходження"]
+        },
+        {
+          "plainTexts": ["Обирай кутову квартиру в унікальному будинку "],
+          "accentTexts": ["Sokolska Towers."]
+        }
+      ]
+    },
+    "section_info_01": {
+      "header_top": "ІНТЕЛІГЕНТНИЙ ВИБІР",
+      "header_bottom": "НА ВІДСТАНІ РУКИ",
+      "info": [
+        {
+          "icon": "/katowice-1/s8/1.webp",
+          "header": "КУПІВЛЯ ВІД ПРОФЕСІОНАЛА",
+          "paragraph": "Рішення придбати нерухомість є одним із найважливіших фінансових рішень у Твоєму житті. Зроби ставку на якість яку гарантує професійний інвестор - купуй за накладною з ПДВ, з повною гарантією на внутрішні роботи."
+        },
+        {
+          "icon": "/katowice-1/s8/3.webp",
+          "header": "5 РОКІВ У ПРОБКАХ",
+          "paragraph": "У вересні 2024 року розпочато залізничну інвестицію, яка повністю змінює комунікаційну карту регіону та переосмислює концепцію дорожніх труднощів в Катовіцах. Обираючи Sokolska Towers, Ти обираєш свободу від пробок, адже Ти завжди в центрі!"
+        },
+        {
+          "icon": "/katowice-1/s8/2.webp",
+          "header": "ЗАБРОНЮЙ СВОЮ КВАРТИРУ",
+          "paragraph": "Якщо плануєш сфінансувати покупку квартири Sokolska Towers шляхом продажу іншого нерухомого майна, Твоя квартира чекатиме на Тебе..."
+        }
+      ]
+    },
+    "interchangeable_images_01": {
+      "header_top": "УНІКАЛЬНИЙ",
+      "header_bottom": "ДИЗАЙН",
+      "elements": [
+        {
+          "header": "КВАРТИРА XXI СТОЛІТТЯ",
+          "paragraph": "Прямуй за тенденціями житлового будівництва та інвестуй в нерухомість, проектовану з урахуванням сучасних технологій.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-1.jpg",
+              "alt": "Wnętrze telewizor oświetlenie czerwone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-2.jpg",
+              "alt": "Wnętrze telewizor oświetlenie niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-3.jpg",
+              "alt": "Wnętrze telewizor oświetlenie zielone"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-4.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia"
+            },
+            {
+              "img": "/katowice-1/s6/1/apartament-XXIw-5.jpg",
+              "alt": "Wnętrze interaktywna ramka na zdjęcia szerokie ujęcie"
+            }
+          ]
+        },
+        {
+          "header": "ЕФЕКТНЕ ОСВІТЛЕННЯ",
+          "paragraph": "Відкрий для себе магію світла, яка надає Твоєму інтер’єру унікальний характер залежно від часу доби.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-1.jpg",
+              "alt": "Oświetlenie salonu o poranku"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-2.jpg",
+              "alt": "Oświetlenie salonu wieczorem"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-3.jpg",
+              "alt": "Oświetlenie salonu wieczorem niebieskie"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-4.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne"
+            },
+            {
+              "img": "/katowice-1/s6/2/spektakularne-oswietlenie-5.jpg",
+              "alt": "Oświetlenie salonu wieczorem alternatywne na kanape"
+            }
+          ]
+        },
+        {
+          "header": "ГАРМОНІЙНИЙ ІНТЕР'ЄР",
+          "paragraph": "Обирай сучасний дизайн із низкою архітектурно гармонійних деталей.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-1.jpg",
+              "alt": "Widok na wykońćzony salon"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-2.jpg",
+              "alt": "Zbliżenie na drewniane detale"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-3.jpg",
+              "alt": "Zbliżenie na lampę z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-4.jpg",
+              "alt": "Ujęcie na ścianę telewizora z drewnianym wykończeniem"
+            },
+            {
+              "img": "/katowice-1/s6/3/spojne-wnetrza-5.jpg",
+              "alt": "Zbliżenie na stolik na kawę pasujący do salonu"
+            }
+          ]
+        },
+        {
+          "header": "БРЕНДИ ПРЕМІУМ",
+          "paragraph": "Обладнання та матеріали від найкращих виробників: столярні вироби Dewro, кераміка Villeroy & Boch, тришарова дошка на підлогу Barlinek та італійська плитка Marazzi.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/4/marki-premium-1.jpg",
+              "alt": "Zbliżenie na logo drzwi marki DEWRO"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-2.jpg",
+              "alt": "Ujęcie wyposażonej łazienki z prysznicem"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-3.jpg",
+              "alt": "Ujęcie wyposażonej łazienki z wanną"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-4.jpg",
+              "alt": "Zbliżenie na drewniane panele podłogowe"
+            },
+            {
+              "img": "/katowice-1/s6/4/marki-premium-5.jpg",
+              "alt": "Ujęcie oświetlenia sufitowego i jednostki klimatyzacji"
+            }
+          ]
+        },
+        {
+          "header": "СВІТОВА АРХІТЕКТУРА",
+          "paragraph": "Обирай неймовірну форму будівлі та живи в будинку, нагородженому престижною нагородою European Property Award.",
+          "images": [
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-1.jpg",
+              "alt": "Zachód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-2.jpg",
+              "alt": "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-3.jpg",
+              "alt": "Międzynarodowe nagrody przyznane za wspaniałą architekturze budynku"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-4.jpg",
+              "alt": "Wschód słońca widoczny z okna sokolska towers"
+            },
+            {
+              "img": "/katowice-1/s6/5/swiatowa-architektura-5.jpg",
+              "alt": "Ujęcie z recepcji budynku sokolska towers"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
