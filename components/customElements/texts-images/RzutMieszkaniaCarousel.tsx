@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useState } from "react";
 import { PrevNextButtons } from "../buttons";
+import DOMPurify from "isomorphic-dompurify";
 
 export type RzutItem = {
   mobile: string;
@@ -106,9 +107,12 @@ export const RzutMieszkaniaCarousel = ({
               {locale === "en" && "PRICE"}
               {locale === "ua" && "ЦІНА"}
             </span>
-            <span className="text-light font-light text-3xl md:text-3xl">
-              {items[currentIndex].price}
-            </span>
+            <span
+              className="text-light font-light text-3xl md:text-3xl"
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(items[currentIndex].price),
+              }}
+            />
           </div>
 
           {/* <Button

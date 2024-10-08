@@ -1,5 +1,6 @@
 import { Locales } from "@/app/dictionaries";
 import { cn } from "@/lib/utils";
+import DOMPurify from "isomorphic-dompurify";
 import Image from "next/image";
 import React from "react";
 
@@ -73,9 +74,12 @@ export const RzutMieszkania = ({
               {locale === "pl" && "CENA"}
               {locale === "en" && "PRICE"}
             </span>
-            <span className="text-light font-light text-3xl md:text-3xl">
-              {cena}
-            </span>
+            <span
+              className="text-light font-light text-3xl md:text-3xl"
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(cena),
+              }}
+            />
           </div>
           {/* <Button
             className={cn(
