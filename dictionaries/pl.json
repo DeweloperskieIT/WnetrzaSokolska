@@ -96,7 +96,7 @@
     },
     "company_properties_01": {
       "header": "CO NAS WYRÓŻNIA?",
-      "text_01": "Gotowe do zamieszkania, z gwarancją/rękojmią na prace wykończeniowe",
+      "text_01": "Gotowe do zamieszkania, z gwarancją na prace wykończeniowe",
       "text_02": "Wyselekcjonowane narożne lokale na najwyższych piętrach",
       "text_03": "Zakup na fakturę VAT od profesjonalisty (z polisą OC)",
       "text_04": "Marki premium (Dewro, Villeroy&Boch, Hansgrohe, Barlinek)",
@@ -106,7 +106,7 @@
       "icons": [
         {
           "icon": "/images/mainpage/MapIcon.png",
-          "text": "Gotowe do zamieszkania, z gwarancją/rękojmią na prace wykończeniowe"
+          "text": "Gotowe do zamieszkania, z gwarancją na prace wykończeniowe"
         },
         {
           "icon": "/images/mainpage/BuildingIcon.png",
@@ -233,7 +233,7 @@
       },
       "info_03": {
         "header": "JAKOŚĆ, ZA KTÓRĄ STOI GWARANCJA",
-        "paragraph": "Przedmiotem rękojmi (gwarancji) są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame, a nawet instalacja elektryczna pod stację ładowania samochodów."
+        "paragraph": "Przedmiotem gwarancji są wszystkie prace wykończeniowe, realizowane przez profesjonalną ekipę budowlaną, jak również  zabudowa meblowa, powierzchnie lakiernicze, oprogramowanie iFrame, a nawet instalacja elektryczna pod stację ładowania samochodów."
       }
     },
     "youtube_shorts_01": {
@@ -243,7 +243,7 @@
     "FAQ": [
       {
         "question": "CO JEST ZAWARTE W CENIE?",
-        "answer": "Kupujący nabywa wolną od obciążeń nieruchomość w oparciu o fakturę VAT, wraz z komórką lokatorską, udziałem w powierzchni wspólnej (w tym strefie SPA, siłowni, recepcji oraz patio) oraz rękojmią na wszystkie usługi budowlane, stolarskie oraz lakiernicze, realizowane w ramach procesu aranżacyjnego."
+        "answer": "Kupujący nabywa wolną od obciążeń nieruchomość w oparciu o fakturę VAT, wraz z komórką lokatorską, udziałem w powierzchni wspólnej (w tym strefie SPA, siłowni, recepcji oraz patio) oraz gwarancją na wszystkie usługi budowlane, stolarskie oraz lakiernicze, realizowane w ramach procesu aranżacyjnego."
       },
       {
         "question": "CZY JEST MOŻLIWOŚĆ ŁADOWANIA SAMOCHODU ELEKTRYCZNEGO?",
@@ -1058,7 +1058,7 @@
         {
           "icon": "/katowice-1/s8/1.webp",
           "header": "ZAKUP OD PROFESJONALISTY",
-          "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną rękojmią na prace aranżacyjne."
+          "paragraph": "Decyzja o zakupie nieruchomości jest jedną z najważniejszych decyzji finansowych Twojego życia. Postaw na jakość stojącą za profesjonalnym inwestorem - dokonaj zakupu w oparciu o fakturę VAT, z pełną gwarancją na prace aranżacyjne."
         },
         {
           "icon": "/katowice-1/s8/3.webp",
