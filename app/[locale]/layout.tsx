@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "nieruchomości Katowice",
     "apartamenty Katowice",
     "architektura Katowic",
-    "apartament XXI wieku ",
+    "apartament XXI wieku",
     "strefa kultury",
     "katowicka strefa kultury",
     "666000999",
@@ -47,10 +47,9 @@ export const metadata: Metadata = {
     url: "https://wnetrza.deweloperskie.pl",
     images: [
       {
-        // url: "https://wnetrza.deweloperskie.pl/images/mainpage/deweloperskie-logo-corner-szare.png",
-        url: "https://wnetrza.deweloperskie.pl/favicon/1200-630-max.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://wnetrza.deweloperskie.pl/images/mainpage/deweloperskie-logo-corner-szare.png",
+        width: 800,
+        height: 600,
         alt: "Ponadczasowe apartamenty w Katowicach",
       },
     ],
