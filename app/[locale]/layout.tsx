@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "nieruchomości Katowice",
     "apartamenty Katowice",
     "architektura Katowic",
-    "apartament XXI wieku",
+    "apartament XXI wieku ",
     "strefa kultury",
     "katowicka strefa kultury",
     "666000999",
