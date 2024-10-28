@@ -282,7 +282,7 @@ const Home = async ({
           {/* <IconsModule icons={dict.Landing_Page.icons_module_02.icons} /> */}
         </div>
 
-        <div className="limited-width flex flex-col w-full gap-10 items-center">
+        {/* <div className="limited-width flex flex-col w-full gap-10 items-center">
           <SectionHeading
             top={dict.Landing_Page.post_carousels_header.header_top}
             bottom={dict.Landing_Page.post_carousels_header.header_bottom}
@@ -329,7 +329,7 @@ const Home = async ({
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Eigth Section - Info text */}
         <InfoBlocks
           info={[
