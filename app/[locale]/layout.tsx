@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     url: "https://wnetrza.deweloperskie.pl",
     images: [
       {
-        url: "https://wnetrza.deweloperskie.pl/images/mainpage/deweloperskie-logo-corner-szare.png",
-        width: 800,
-        height: 600,
+        url: "https://wnetrza.deweloperskie.pl/favicon/og.png",
+        width: 900,
+        height: 900,
         alt: "Ponadczasowe apartamenty w Katowicach",
       },
     ],
@@ -60,7 +60,12 @@ export const metadata: Metadata = {
     description:
       "Zamieszkaj w sercu Katowic w luksusowym apartamencie z unikalnym designem. Poznaj naszą ofertę.",
     images: [
-      "https://wnetrza.deweloperskie.pl/images/mainpage/deweloperskie-logo-corner-szare.png",
+      {
+        url: "https://wnetrza.deweloperskie.pl/favicon/og.png",
+        width: 900,
+        height: 900,
+        alt: "Ponadczasowe apartamenty w Katowicach",
+      },
     ],
   },
   icons: {
