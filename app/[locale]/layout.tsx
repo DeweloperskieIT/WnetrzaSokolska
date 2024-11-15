@@ -10,9 +10,14 @@ const fontSans = FontSans({
   weight: ["300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--font-sans",
+  preload: true,
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.wnetrza.deweloperskie.pl"),
+  alternates: {
+    canonical: "./",
+  },
   title: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
   description:
     "Ekskluzywne apartamenty w centrum Katowic. Zamieszkaj w sercu Śląska w luksusowym otoczeniu z dostępem do strefy kultury.",
@@ -104,6 +109,7 @@ export const metadata: Metadata = {
 const jsonLdSchema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
+  alternateName: "Wnętrza Deweloperskie",
   name: "Wnętrza Deweloperskie - Luksusowe Apartamenty w Katowicach",
   description:
     "Ekskluzywne apartamenty na sprzedaż w Katowicach. Zamieszkaj w nowoczesnym apartamencie w centrum Śląska, blisko strefy kultury.",
@@ -161,10 +167,6 @@ export default function RootLayout({
       <head>
         <SpeedInsights />
         <GoogleTagManager gtmId={process.env.GOOGLE_TAG_MANAGER!} />
-        {/* <meta
-          name="google-site-verification"
-          content="I4Cp77QIJW62l_8EIbNJ7AVJxdScvRE_pgMWkHMIuF4"
-        /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}

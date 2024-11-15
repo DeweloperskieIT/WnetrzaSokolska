@@ -23,6 +23,7 @@ const page = async ({
   params: { locale: Locales };
 }) => {
   const dict = await getDictionary(locale);
+
   return (
     <>
       {/* Header */}
