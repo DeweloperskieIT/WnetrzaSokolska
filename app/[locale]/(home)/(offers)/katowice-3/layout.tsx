@@ -20,7 +20,7 @@ const layout = ({
     name: "Apartament w budynku sokolska towers",
     offers: {
       "@type": "Offer",
-      price: "149900",
+      price: "1399999",
       priceCurrency: "PLN",
     },
   };

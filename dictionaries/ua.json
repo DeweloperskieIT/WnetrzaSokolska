@@ -369,7 +369,7 @@
     "rzut_mieszkania_01": {
       "header_top": "POZNAJ SWÓJ NOWY",
       "header_bottom": "APARTAMENT",
-      "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+      "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
       "area": "73,66",
       "floor": "XV",
       "images": {
@@ -496,7 +496,7 @@
     "rzut_mieszkania_01": {
       "header_top": "PRAKTYCZNY",
       "header_bottom": "NA KAŻDYM KROKU",
-      "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+      "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
       "area": "76,35",
       "floor": "XIII",
       "images": {
@@ -732,7 +732,7 @@
     "rzut_mieszkania_01": {
       "header_top": "Układ",
       "header_bottom": "funkcjonalny",
-      "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+      "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
       "area": "75,50",
       "floor": "XIV",
       "images": {
@@ -825,7 +825,7 @@
         },
         {
           "icon": "/universal/icons/4.png",
-          "text": "1.499.900 PLN (в тому числі 8% ПДВ)"
+          "text": "1.399.999 PLN (в тому числі 8% ПДВ)"
         },
         {
           "icon": "/universal/icons/5.png",
@@ -922,28 +922,28 @@
         {
           "mobile": "/universal/rzuty/103mobile.png",
           "desktop": "/universal/rzuty/103.png",
-          "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+          "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
           "area": "76,35",
           "floor": "XIII"
         },
         {
           "mobile": "/universal/rzuty/112mobile.png",
           "desktop": "/universal/rzuty/112.png",
-          "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+          "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
           "area": "75,73",
           "floor": "XIV"
         },
         {
           "mobile": "/universal/rzuty/117mobile.png",
           "desktop": "/universal/rzuty/117.png",
-          "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+          "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
           "area": "75,50",
           "floor": "XIV"
         },
         {
           "mobile": "/universal/rzuty/126mobile.png",
           "desktop": "/universal/rzuty/126.png",
-          "price": "<i><s>1 666 666 PLN</i></s><br/>1 499 900 PLN",
+          "price": "<i><s>1 666 666 PLN</i></s><br/>1 399 999 PLN",
           "area": "73.66",
           "floor": "XV"
         }
