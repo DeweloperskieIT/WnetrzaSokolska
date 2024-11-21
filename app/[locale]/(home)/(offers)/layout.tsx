@@ -1,11 +1,12 @@
 import React from "react";
+import { RealEstateListing, WithContext } from "schema-dts";
 
 const layout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const jsonLdSchema = {
+  const jsonLdSchema: WithContext<RealEstateListing> = {
     "@context": "https://schema.org",
     "@type": "RealEstateListing",
   };

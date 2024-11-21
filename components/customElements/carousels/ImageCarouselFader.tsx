@@ -243,9 +243,9 @@ export const ImageCarouselFader = ({
         loading="lazy"
         src={images[0].img}
         alt={images[0].alt}
-        fill
-        sizes={sizes}
-        className={cn("opacity-0 !relative aspect-[9/16] object-contain ")}
+        width={1000}
+        height={1000}
+        className={cn("opacity-0 size-full")}
       />
 
       {images.map(({ img, alt }, i) => (
