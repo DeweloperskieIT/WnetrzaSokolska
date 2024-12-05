@@ -33,10 +33,10 @@ const page = async ({
   return (
     <>
       {/* Header */}
-      <OfferStickyHeader
+      {/* <OfferStickyHeader
         oferta={dict.universal_page_01.Footer_1.oferta}
         dict={dict}
-      />
+      /> */}
       <div className="landing-page text-light">
         {/* Video */}
         <VideoBackground

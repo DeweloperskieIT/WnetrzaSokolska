@@ -31,7 +31,12 @@ export const EmailContact = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <AiOutlineMail className={cn("header-icon-graphic", fill)} />
+      <AiOutlineMail
+        className={cn(
+          "header-icon-graphic hover:text-accent1 transition-all",
+          fill
+        )}
+      />
     </a>
   );
 };

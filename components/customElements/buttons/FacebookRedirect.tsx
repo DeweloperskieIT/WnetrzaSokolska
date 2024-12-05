@@ -30,7 +30,12 @@ export const FacebookRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiFacebook className={cn("header-icon-graphic", fill)} />
+      <FiFacebook
+        className={cn(
+          "header-icon-graphic hover:text-accent1 transition-all",
+          fill
+        )}
+      />
     </a>
   );
 };

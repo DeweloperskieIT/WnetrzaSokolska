@@ -29,7 +29,12 @@ export const InstagramRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiInstagram className={cn("header-icon-graphic", fill)} />
+      <FiInstagram
+        className={cn(
+          "header-icon-graphic hover:text-accent1 transition-all",
+          fill
+        )}
+      />
     </a>
   );
 };

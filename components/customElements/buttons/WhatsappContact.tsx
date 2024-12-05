@@ -28,7 +28,12 @@ export const WhatsappContact = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FaWhatsapp className={cn("header-icon-graphic", fill)} />
+      <FaWhatsapp
+        className={cn(
+          "header-icon-graphic hover:text-accent1 transition-all",
+          fill
+        )}
+      />
     </a>
   );
 };

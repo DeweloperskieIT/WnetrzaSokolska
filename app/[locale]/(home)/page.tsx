@@ -50,7 +50,7 @@ const Home = async ({
   return (
     <>
       {/* Sticky HEader main */}
-      <MainStickyHeader dict={dict} />
+      {/* <MainStickyHeader dict={dict} /> */}
       <div className="landing-page">
         {/* First Section - Breathing image */}
         {/* <BreathingBackgroundImage

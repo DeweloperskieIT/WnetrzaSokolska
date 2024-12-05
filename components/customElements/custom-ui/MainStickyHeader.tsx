@@ -71,7 +71,6 @@ export const MainStickyHeader = ({
               { link: "/katowice-3", name: dict.Header.offer_3 },
             ]}
           />
-          <LanguageChanger locale={dict.locale} />
         </div>
       </div>
     </div>

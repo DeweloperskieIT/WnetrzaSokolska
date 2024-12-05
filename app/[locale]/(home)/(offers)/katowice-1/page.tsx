@@ -27,10 +27,10 @@ const page = async ({
   return (
     <>
       {/* Header */}
-      <OfferStickyHeader
+      {/* <OfferStickyHeader
         oferta={dict.Katowice_01.Footer_1.oferta}
         dict={dict}
-      />
+      /> */}
       <div className="landing-page">
         {/* Video */}
         <VideoBackground

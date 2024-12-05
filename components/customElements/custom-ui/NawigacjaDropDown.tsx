@@ -38,7 +38,7 @@ export const NawigacjaDropDown = ({
       <DropdownMenuTrigger
         aria-label="Otwórz nawigację"
         className={cn(
-          "w-full h-full flex-center hover:text-accent1 hover:animate-none p-1 z-[1]",
+          "w-full h-full text-light flex-center hover:text-accent1 hover:animate-none p-1 z-[1]",
           className,
           isAlreadyClicked ? "animate-none" : "animate-color-cycle"
         )}

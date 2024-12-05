@@ -29,7 +29,12 @@ export const YoutubeRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiYoutube className={cn("header-icon-graphic", fill)} />
+      <FiYoutube
+        className={cn(
+          "header-icon-graphic hover:text-accent1 transition-all",
+          fill
+        )}
+      />
     </a>
   );
 };
