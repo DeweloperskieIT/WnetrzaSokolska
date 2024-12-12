@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { ParagraphWithHeading } from "@/types/customTypes";
-import { PrevNextButtons } from "../customElements/buttons";
+import PrevNextButtons from "../customElements/buttons/PrevNextButtons";
 
 export const ImagesSlider = ({
   images,
