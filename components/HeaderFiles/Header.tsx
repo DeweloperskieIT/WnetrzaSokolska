@@ -115,7 +115,7 @@ export default Header;
 const HeaderIconMenuData: NavigationMenuIconItems = {
   width: "200px",
   icon: {
-    src: "/images/wnetrzalogo.png",
+    src: "/images/mainpage/wnetrzalogo.png",
     alt: "logo pozyczki deweloperskie",
     height: 100,
     width: 200,
