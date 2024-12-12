@@ -6,13 +6,13 @@ import { useParams } from "next/navigation";
 import HeaderMenu, { NavigationMenuItems } from "./HeaderMenu";
 import HeaderIconMenu, { NavigationMenuIconItems } from "./HeaderIconMenu";
 import { Locales } from "@/app/dictionaries";
-import { NawigacjaDropDown } from "../customElements/custom-ui";
 import EmailContact from "../customElements/buttons/EmailContact";
 import FacebookRedirect from "../customElements/buttons/FacebookRedirect";
 import InstagramRedirect from "../customElements/buttons/InstagramRedirect";
 import LanguageChanger from "../customElements/buttons/LanguageChanger";
 import WhatsappContact from "../customElements/buttons/WhatsappContact";
 import YoutubeRedirect from "../customElements/buttons/YoutubeRedirect";
+import NawigacjaDropDown from "../customElements/custom-ui/NawigacjaDropDown";
 
 type LinkItem = {
   title?: string;

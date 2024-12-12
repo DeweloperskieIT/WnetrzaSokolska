@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 
-export const FullscreenCarouselContainer = ({
+const FullscreenCarouselContainer = ({
   children,
   className,
 }: {
@@ -19,3 +19,5 @@ export const FullscreenCarouselContainer = ({
     </div>
   );
 };
+
+export default FullscreenCarouselContainer;

@@ -13,18 +13,18 @@ import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { usePathname } from "next/navigation"; // Import usePathname
 
-export type LinkName = {
+type LinkName = {
   link: string;
   name: string;
 };
 
-export interface NawigacjaDropDownProps {
+interface NawigacjaDropDownProps {
   title?: string;
   links: LinkName[];
   className?: string;
 }
 
-export const NawigacjaDropDown = ({
+const NawigacjaDropDown = ({
   links,
   title,
   className,
@@ -74,3 +74,4 @@ export const NawigacjaDropDown = ({
     </DropdownMenu>
   );
 };
+export default NawigacjaDropDown;

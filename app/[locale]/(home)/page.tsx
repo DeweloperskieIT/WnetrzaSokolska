@@ -1,5 +1,3 @@
-import { SectionHeading } from "@/components/customElements/custom-ui";
-
 import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
@@ -16,6 +14,7 @@ import DOMPurify from "isomorphic-dompurify";
 import Footer from "@/components/FooterFiles/Footer";
 import IconsModule from "@/components/customElements/texts-images/IconsModule";
 import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
+import SectionHeading from "@/components/customElements/custom-ui/SectionHeading";
 
 const Home = async ({
   params: { locale },

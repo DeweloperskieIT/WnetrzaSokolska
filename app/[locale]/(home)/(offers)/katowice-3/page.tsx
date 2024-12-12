@@ -1,10 +1,9 @@
 import { Locales, getDictionary } from "@/app/dictionaries";
 import ImageCarouselFader from "@/components/customElements/carousels/ImageCarouselFader";
 import ImageCarouselFaderSideBySide from "@/components/customElements/carousels/ImageCarouselFaderSideBySide";
-import {
-  SectionHeading,
-  FullscreenCarouselContainer,
-} from "@/components/customElements/custom-ui";
+import FullscreenCarouselContainer from "@/components/customElements/custom-ui/FullscreenCarouselContainer";
+import SectionHeading from "@/components/customElements/custom-ui/SectionHeading";
+
 import IconsModule from "@/components/customElements/texts-images/IconsModule";
 import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
 import InterchangeableImages from "@/components/customElements/texts-images/InterchangeableImages";
