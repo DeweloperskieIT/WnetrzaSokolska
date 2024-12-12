@@ -73,3 +73,5 @@ const Footer = ({ header, className, oferta, dict, ...rest }: FooterProps) => {
 };
 
 export default Footer;
+
+// plop
