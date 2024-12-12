@@ -3,13 +3,13 @@ import DOMPurify from "isomorphic-dompurify";
 import Image from "next/image";
 import React from "react";
 
-export type LandingPageIcon = {
+type LandingPageIcon = {
   icon: string;
   text: string;
   superscript?: string;
 };
 
-export interface IconsModuleProps {
+interface IconsModuleProps {
   className?: string;
   header?: React.ReactNode;
   icons: LandingPageIcon[];
@@ -17,7 +17,7 @@ export interface IconsModuleProps {
   accent?: string;
 }
 
-export const IconsModule = ({
+const IconsModule = ({
   className,
   header,
   icons,
@@ -61,3 +61,5 @@ export const IconsModule = ({
     </div>
   );
 };
+
+export default IconsModule;

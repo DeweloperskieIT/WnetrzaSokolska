@@ -5,18 +5,20 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 
-export interface EmailContactProps {
+interface EmailContactProps {
   className?: string;
   email?: string;
   params?: string;
   fill?: string;
+  firePixel?: boolean;
 }
 
-export const EmailContact = ({
+const EmailContact = ({
   className,
   email = "wnetrza@deweloperskie.pl",
-  params = "subject=Sokolska%20Towers",
+  params = "Kontakt%20wnetrza.deweloperskie.pl",
   fill,
+  firePixel = false,
 }: EmailContactProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Email Contact Clicked`,
@@ -29,14 +31,11 @@ export const EmailContact = ({
       aria-label="Skontaktuj się z nami na Email"
       href={`mailto:${email}?${params}`}
       className={cn("header-icon-href", className)}
-      onClick={() => fireEvent()}
+      onClick={() => firePixel && fireEvent()}
     >
-      <AiOutlineMail
-        className={cn(
-          "header-icon-graphic hover:text-accent1 transition-all",
-          fill
-        )}
-      />
+      <AiOutlineMail className={cn("header-icon-graphic", fill)} />
     </a>
   );
 };
+
+export default EmailContact;

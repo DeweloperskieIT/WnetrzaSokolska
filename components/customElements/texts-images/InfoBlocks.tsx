@@ -2,13 +2,13 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
-export type InfoBlockItem = {
+type InfoBlockItem = {
   icon?: string;
   header?: string;
   paragraph?: string;
 };
 
-export interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
+interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   backgroundClass?: string;
   headerClass?: string;
@@ -21,7 +21,7 @@ export interface InfoBlocksProps extends React.HTMLAttributes<HTMLDivElement> {
   mobileInfo?: Omit<InfoBlockItem, "icon">[];
 }
 
-export const InfoBlocks = ({
+const InfoBlocks = ({
   className,
   backgroundClass,
   headerClass,
@@ -138,3 +138,5 @@ export const InfoBlocks = ({
     </div>
   );
 };
+
+export default InfoBlocks;

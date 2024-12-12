@@ -4,14 +4,14 @@ import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { FiYoutube } from "react-icons/fi";
-
-export interface YoutubeRedirectProps {
+import { TbBrandYoutubeFilled } from "react-icons/tb";
+interface YoutubeRedirectProps {
   className?: string;
   link?: string;
   fill?: string;
 }
 
-export const YoutubeRedirect = ({
+const YoutubeRedirect = ({
   className,
   link = "https://www.youtube.com/@WnetrzaDeweloperskie",
   fill,
@@ -29,12 +29,11 @@ export const YoutubeRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <FiYoutube
-        className={cn(
-          "header-icon-graphic hover:text-accent1 transition-all",
-          fill
-        )}
+      <TbBrandYoutubeFilled
+        className={cn("header-icon-graphic  hover:fill-accent1", fill)}
       />
     </a>
   );
 };
+
+export default YoutubeRedirect;

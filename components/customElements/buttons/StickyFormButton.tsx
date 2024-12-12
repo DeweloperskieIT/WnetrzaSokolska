@@ -1,17 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ContactForm } from "@/components/customElements/forms";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import ContactForm from "../forms/ContactForm";
 
-export interface StickyFormButtonProps {
+interface StickyFormButtonProps {
   className?: string;
   oferta?: string;
   dict: any;
 }
 
-export const StickyFormButton = ({
+const StickyFormButton = ({
   className,
   oferta,
   dict,
@@ -76,3 +76,5 @@ export const StickyFormButton = ({
     </div>
   );
 };
+
+export default StickyFormButton;

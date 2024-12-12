@@ -2,34 +2,17 @@
 
 import React, { useEffect, useState, ReactNode, useRef } from "react";
 import { cn } from "@/lib/utils";
-import { useParams, usePathname } from "next/navigation";
-import HeaderMenu from "./HeaderMenu";
-import HeaderIconMenu from "./HeaderIconMenu";
-import { BeatLoader } from "react-spinners";
-import Link from "next/link";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-  DialogClose,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@radix-ui/react-label";
-import { Copy } from "lucide-react";
-import { Button } from "../ui/button";
-import { DialogHeader, DialogFooter } from "../ui/dialog";
-import {
-  EmailContact,
-  FacebookRedirect,
-  InstagramRedirect,
-  WhatsappContact,
-  YoutubeRedirect,
-} from "../customElements/buttons";
-import { LanguageChanger } from "../customElements/buttons/LanguageChanger";
+import { useParams } from "next/navigation";
+import HeaderMenu, { NavigationMenuItems } from "./HeaderMenu";
+import HeaderIconMenu, { NavigationMenuIconItems } from "./HeaderIconMenu";
 import { Locales } from "@/app/dictionaries";
 import { NawigacjaDropDown } from "../customElements/custom-ui";
+import EmailContact from "../customElements/buttons/EmailContact";
+import FacebookRedirect from "../customElements/buttons/FacebookRedirect";
+import InstagramRedirect from "../customElements/buttons/InstagramRedirect";
+import LanguageChanger from "../customElements/buttons/LanguageChanger";
+import WhatsappContact from "../customElements/buttons/WhatsappContact";
+import YoutubeRedirect from "../customElements/buttons/YoutubeRedirect";
 
 type LinkItem = {
   title?: string;
@@ -50,11 +33,6 @@ type Props = {
 };
 
 const Header = ({ navigationItems, dict }: Props) => {
-  const [user, setUser] = useState(null);
-  const [checkingUser, setCheckingUser] = useState(
-    process.env.NEXT_PUBLIC_WEBSITE_URL === "http://localhost" ? false : true
-  );
-
   const { locale } = useParams();
 
   const headerRef = useRef<HTMLDivElement | null>(null);
@@ -97,18 +75,16 @@ const Header = ({ navigationItems, dict }: Props) => {
         />
         <nav className="max-w-screen-xl flex flex-col lg:flex-row w-full h-full justify-between gap-0 lg:gap-10 items-center transition-all z-20">
           <div className="w-full h-full flex flex-row gap-4">
-            <HeaderIconMenu disabled />
+            <HeaderIconMenu disabled data={HeaderIconMenuData} />
             <div className="w-full lg:w-fit h-auto flex flex-row gap-4">
               <FacebookRedirect fill="text-light" />
               <InstagramRedirect fill="text-light" />
               <YoutubeRedirect fill="text-light" />
-              <WhatsappContact fill="text-light" />
-              <EmailContact fill="text-light" />
               <LanguageChanger locale={locale as Locales} />
             </div>
           </div>
-          <HeaderMenu className={cn("")} />
-          <div className="w-fit md:pr-12">
+          <HeaderMenu className={cn("")} data={NavigationMenuItemsData} />
+          <div className="w-fit lg:pr-12 self-center">
             <NawigacjaDropDown
               links={[
                 { link: "/", name: dict.Header.landing_page },
@@ -127,9 +103,69 @@ const Header = ({ navigationItems, dict }: Props) => {
 
 export default Header;
 
-// <button
-//   className="p-2 bg-dark text-light w-full text-nowrap hover:text-light hover:bg-dark/80 transition-all"
-//   onClick={() => handleLogoutClick()}
-// >
-//   Wyloguj
-// </button>
+const HeaderIconMenuData: NavigationMenuIconItems = {
+  width: "200px",
+  icon: {
+    src: "/images/wnetrzalogo.png",
+    alt: "logo pozyczki deweloperskie",
+    height: 100,
+    width: 200,
+  },
+  destinations: [
+    {
+      name: "What goes here",
+      destination: "/",
+    },
+  ],
+};
+
+const NavigationMenuItemsData: NavigationMenuItems[] = [
+  {
+    width: "185px",
+    menu: "Deweloperskie",
+    destinations: [
+      {
+        name: "ASI ",
+        destination: "https://www.asi.deweloperskie.pl",
+      },
+      {
+        name: "Pożyczki",
+        destination: "https://www.pozyczki.deweloperskie.pl",
+      },
+      {
+        name: "Wnętrza",
+        destination: "https://www.wnetrza.deweloperskie.pl",
+      },
+      {
+        name: "Doradztwo",
+        destination: "https://www.doradztwo.deweloperskie.pl",
+      },
+      {
+        name: "Marketplace",
+        destination: "https://www.marketplace.deweloperskie.pl",
+      },
+    ],
+  },
+  {
+    width: "160px",
+    menu: "O nas",
+    destinations: [
+      {
+        name: "<strong>Deweloperskie</strong>",
+        destination: "https://www.deweloperskie.pl",
+      },
+      {
+        name: "Nasz zespół",
+        destination: "https://www.deweloperskie.pl/team",
+      },
+      {
+        name: "Blog",
+        destination: "https://www.deweloperskie.pl/blog",
+      },
+      {
+        name: "Kariera",
+        destination: "https://www.deweloperskie.pl/kariera",
+      },
+    ],
+  },
+];

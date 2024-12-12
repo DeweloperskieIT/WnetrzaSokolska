@@ -58,15 +58,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: "https://wnetrza.deweloperskie.pl/informacje",
+      url: "https://wnetrza.deweloperskie.pl/dane-osobowe",
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.1,
-      alternates: {
-        languages: {
-          en: "https://wnetrza.deweloperskie.pl/en/informacje",
-        },
-      },
+    },
+    {
+      url: "https://wnetrza.deweloperskie.pl/polityka-prywatnosci",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.1,
     },
   ];
 }

@@ -1,21 +1,17 @@
-import { ImageCarouselCustom } from "@/components/customElements/carousels";
+import { Locales, getDictionary } from "@/app/dictionaries";
+import ImageCarouselCustom from "@/components/customElements/carousels/ImageCarouselCustom";
 import {
-  Footer,
-  FullscreenCarouselContainer,
-  OfferStickyHeader,
   SectionHeading,
+  FullscreenCarouselContainer,
 } from "@/components/customElements/custom-ui";
-import {
-  IconsModule,
-  InfoBlocks,
-  InterchangeableImages,
-  RzutMieszkania,
-  SpiralPhotos4,
-  TextPlusSingleVideo,
-  TextPlusSingleVideoModular,
-} from "@/components/customElements/texts-images";
-import { VideoBackground } from "@/components/customElements/video";
-import { getDictionary, Locales } from "../../../../dictionaries";
+import IconsModule from "@/components/customElements/texts-images/IconsModule";
+import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
+import InterchangeableImages from "@/components/customElements/texts-images/InterchangeableImages";
+import RzutMieszkania from "@/components/customElements/texts-images/RzutMieszkania";
+import SpiralPhotos4 from "@/components/customElements/texts-images/SpiralPhotos4";
+import TextPlusSingleVideoModular from "@/components/customElements/texts-images/TextPlusSingleVideoModular";
+import VideoBackground from "@/components/customElements/video/VideoBackground";
+import Footer from "@/components/FooterFiles/Footer";
 
 const page = async ({
   params: { locale },
@@ -135,19 +131,6 @@ const page = async ({
               bottom={dict.universal_page_01.section_info_01.header_bottom}
             />
           }
-        />
-        {/* Eighth Section - Footer */}
-        <Footer
-          dict={dict}
-          header={
-            <SectionHeading
-              wideParent
-              className="gap-3 md:gap-2 md:flex hidden"
-              top={dict.Katowice_02.Footer_1.header_top}
-              bottom={dict.Katowice_02.Footer_1.header_bottom}
-            />
-          }
-          oferta="Katowice 2"
         />
       </div>
     </>

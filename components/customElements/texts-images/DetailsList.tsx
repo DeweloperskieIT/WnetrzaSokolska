@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { forwardRef } from "react";
 
-export interface DetailsListProps extends React.HTMLAttributes<HTMLDivElement> {
+interface DetailsListProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   classNameListItems?: string;
   classNameImage?: string;
@@ -10,7 +10,7 @@ export interface DetailsListProps extends React.HTMLAttributes<HTMLDivElement> {
   items?: string[];
 }
 
-export const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
+const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
   (
     { className, classNameListItems, image, classNameImage, items, ...rest },
     ref
@@ -52,3 +52,5 @@ export const DetailsList = forwardRef<HTMLDivElement, DetailsListProps>(
 );
 
 DetailsList.displayName = "DetailsList";
+
+export default DetailsList;

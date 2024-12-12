@@ -6,12 +6,22 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 
+export type NavigationMenuIconItems = {
+  width: string;
+  icon: { src: string; alt: string; width: number; height: number };
+  destinations: {
+    name: string;
+    destination: string;
+  }[];
+};
+
 type Props = {
   className?: string;
   disabled?: boolean;
+  data: NavigationMenuIconItems;
 };
 
-const HeaderIconMenu = ({ className, disabled }: Props) => {
+const HeaderIconMenu = ({ className, disabled, data }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isCurrentlyHovering, setisCurrentlyHovering] = useState(false);
   const isCurrentlyHoveringRef = useRef(false);
@@ -86,14 +96,14 @@ const HeaderIconMenu = ({ className, disabled }: Props) => {
       <div
         className={`bg-dark w-full h-full z-20 absolute min-w-full lg:min-w-0 `}
         style={{
-          width: `${Thingies.width}`,
+          width: `${data.width}`,
         }}
       ></div>
 
       <div
         className={`relative h-full w-full min-w-full lg:min-w-0 flex flex-col lg:block`}
         style={{
-          width: `${Thingies.width}`,
+          width: `${data.width}`,
         }}
       >
         <div
@@ -102,7 +112,7 @@ const HeaderIconMenu = ({ className, disabled }: Props) => {
             disabled && "cursor-default"
           )}
           style={{
-            width: `${Thingies.width}`,
+            width: `${data.width}`,
           }}
           onClick={(e) => {
             e.stopPropagation();
@@ -112,10 +122,10 @@ const HeaderIconMenu = ({ className, disabled }: Props) => {
           onMouseLeave={() => handleMouseLeave()}
         />
         <Image
-          src={Thingies.icon}
-          alt="Website Logo"
-          width={200}
-          height={100}
+          src={data.icon.src}
+          alt={data.icon.alt}
+          width={data.icon.width}
+          height={data.icon.height}
           priority
           className={cn(
             "brightness-[9999] lg:w-full w-[160px] object-scale-down cursor-pointer self-center  text-xl justify-center  duration-300 transition-all text-dark hover:text-dark  h-full flex items-center relative z-20 p-3 text-wrap",
@@ -145,11 +155,11 @@ const HeaderIconMenu = ({ className, disabled }: Props) => {
               isCurrentlyHovering && "rotate-45 translate-y-1/2 "
             )}
           /> */}
-          {Thingies.destinations.map((item, mId) => (
+          {data.destinations.map((item, mId) => (
             <Link
               href={item.destination}
               style={{
-                width: `${Thingies.width}`,
+                width: `${data.width}`,
               }}
               className={cn(
                 "min-w-full lg:min-w-0 px-4 py-2 text-wrap text-center lg:text-left w-full text-base !duration-0 lg:!duration-75 text-light hover:text-accent1 hover:bg-dark transition-all opacity-100 cursor-pointer ",
@@ -167,15 +177,6 @@ const HeaderIconMenu = ({ className, disabled }: Props) => {
   );
 };
 export default HeaderIconMenu;
-
-export type NavigationMenuIconItems = {
-  width: string;
-  icon: string;
-  destinations: {
-    name: string;
-    destination: string;
-  }[];
-};
 
 const Thingies: NavigationMenuIconItems = {
   width: "200px",

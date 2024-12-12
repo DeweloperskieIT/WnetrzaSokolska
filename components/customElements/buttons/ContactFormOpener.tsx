@@ -8,20 +8,20 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import React from "react";
-import { ContactForm } from "../forms/ContactForm";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { PiCallBell } from "react-icons/pi";
+import ContactForm from "../forms/ContactForm";
 
-export interface ContactFormOpenerProps {
+interface ContactFormOpenerProps {
   className?: string;
   oferta?: string;
   dict: any;
   fill?: string;
 }
 
-export const ContactFormOpener = ({
+const ContactFormOpener = ({
   className,
   oferta,
   dict,
@@ -55,3 +55,5 @@ export const ContactFormOpener = ({
     </Drawer>
   );
 };
+
+export default ContactFormOpener;

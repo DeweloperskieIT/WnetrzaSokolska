@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import React, { Dispatch, SetStateAction } from "react";
 import { MdNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 
-export interface PrevNextButtonsProps {
+interface PrevNextButtonsProps {
   handleClickBack?: () => void;
   handleClickNext?: () => void;
   handleHoverBack?: Dispatch<SetStateAction<boolean>>;
@@ -20,7 +20,7 @@ export interface PrevNextButtonsProps {
   visibleButtonsClass?: string;
 }
 
-export const PrevNextButtons = ({
+const PrevNextButtons = ({
   handleClickBack,
   handleClickNext,
   handleHoverBack,
@@ -217,3 +217,5 @@ export const PrevNextButtons = ({
     </div>
   );
 };
+
+export default PrevNextButtons;

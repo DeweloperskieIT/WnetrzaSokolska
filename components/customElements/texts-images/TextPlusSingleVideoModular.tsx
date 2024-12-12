@@ -3,7 +3,7 @@ import React from "react";
 
 type TextContent = [{ plainTexts: string[]; accentTexts: string[] }];
 
-export interface TextPlusSingleVideoModularProps {
+interface TextPlusSingleVideoModularProps {
   className?: string;
   customAccent?: string;
   header?: React.ReactNode;
@@ -12,7 +12,7 @@ export interface TextPlusSingleVideoModularProps {
   videoClassName?: string;
 }
 
-export const TextPlusSingleVideoModular = ({
+const TextPlusSingleVideoModular = ({
   header,
   className,
   customAccent = "text-accent1",
@@ -109,3 +109,5 @@ export const TextPlusSingleVideoModular = ({
     </div>
   );
 };
+
+export default TextPlusSingleVideoModular;

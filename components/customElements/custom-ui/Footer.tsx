@@ -1,29 +1,17 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import Image from "next/image";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ContactForm } from "@/components/customElements/forms";
 import Link from "next/link";
+import ContactForm from "../forms/ContactForm";
 
-export interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
+interface FooterProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   header?: React.ReactNode;
   oferta: string;
   dict: any;
 }
 
-export const Footer = ({
-  header,
-  className,
-  oferta,
-  dict,
-  ...rest
-}: FooterProps) => {
+const Footer = ({ header, className, oferta, dict, ...rest }: FooterProps) => {
   return (
     <div
       className={cn("w-full flex flex-col section-header-gap", className)}
@@ -83,3 +71,5 @@ export const Footer = ({
     </div>
   );
 };
+
+export default Footer;

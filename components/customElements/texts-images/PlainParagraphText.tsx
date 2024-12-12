@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-export interface PlainParagraphTextProps {
+interface PlainParagraphTextProps {
   className?: string;
   textClassName?: string;
   texts: string[];
@@ -10,7 +10,7 @@ export interface PlainParagraphTextProps {
   masterClassName?: string;
 }
 
-export const PlainParagraphText = ({
+const PlainParagraphText = ({
   texts,
   className,
   textClassName,
@@ -37,3 +37,5 @@ export const PlainParagraphText = ({
     </div>
   );
 };
+
+export default PlainParagraphText;

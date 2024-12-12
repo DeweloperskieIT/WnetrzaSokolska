@@ -3,21 +3,20 @@
 import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
 
-interface FacebookRedirectProps {
+interface LinkedInRedirectProps {
   className?: string;
   link?: string;
   fill?: string;
-  firePixel?: boolean;
 }
 
-const FacebookRedirect = ({
+const LinkedInRedirect = ({
   className,
-  link = "https://www.facebook.com/wnetrza.deweloperskie",
+  link = "https://www.linkedin.com/showcase/po%C5%BCyczki-deweloperskie",
   fill,
-  firePixel = false,
-}: FacebookRedirectProps) => {
+}: LinkedInRedirectProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Facebook redirect clicked`,
     eventParams: { link },
@@ -30,13 +29,13 @@ const FacebookRedirect = ({
       href={link}
       target="_blank"
       className={cn("header-icon-href", className)}
-      onClick={() => firePixel && fireEvent()}
+      onClick={() => fireEvent()}
     >
-      <FaFacebookSquare
+      <FaLinkedin
         className={cn("header-icon-graphic hover:fill-accent1", fill)}
       />
     </a>
   );
 };
 
-export default FacebookRedirect;
+export default LinkedInRedirect;

@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
-import { PrevNextButtons } from "../buttons";
 import { ImageTextItem } from "./ImageCarouselCustom";
+import PrevNextButtons from "../buttons/PrevNextButtons";
 
-export interface ImageCarouselCustomVerticalProps
+interface ImageCarouselCustomVerticalProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   images: ImageTextItem[];
@@ -16,7 +16,7 @@ export interface ImageCarouselCustomVerticalProps
   interval?: number;
 }
 
-export const ImageCarouselCustomVertical = ({
+const ImageCarouselCustomVertical = ({
   className,
   images,
   textClassName,
@@ -164,3 +164,5 @@ export const ImageCarouselCustomVertical = ({
     </div>
   );
 };
+
+export default ImageCarouselCustomVertical;

@@ -273,6 +273,9 @@
   .fade-out-bottom {
     @apply animate-fade-up animate-duration-500 animate-ease-in-out animate-reverse;
   }
+  [aria-expanded="true"] .footer-button-bottomline {
+    @apply bg-accent1;
+  }
 }
 
 .form-button {

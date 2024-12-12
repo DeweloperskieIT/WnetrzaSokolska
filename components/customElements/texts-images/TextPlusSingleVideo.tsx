@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-export type VideoTextContent = {
+type VideoTextContent = {
   accent_1: string;
   paragraph_1: string;
   paragraph_2?: string;
@@ -14,7 +14,7 @@ export type VideoTextContent = {
   optional_paragraph_3?: string;
 };
 
-export interface TextPlusSingleVideoProps {
+interface TextPlusSingleVideoProps {
   className?: string;
   customAccent?: string;
   header?: React.ReactNode;
@@ -23,7 +23,7 @@ export interface TextPlusSingleVideoProps {
   videoClassName?: string;
 }
 
-export const TextPlusSingleVideo = ({
+const TextPlusSingleVideo = ({
   header,
   className,
   customAccent = "text-accent1",
@@ -88,3 +88,5 @@ export const TextPlusSingleVideo = ({
     </div>
   );
 };
+
+export default TextPlusSingleVideo;

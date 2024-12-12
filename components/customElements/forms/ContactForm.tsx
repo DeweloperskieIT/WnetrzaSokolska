@@ -36,7 +36,7 @@ interface ContactFormProps {
   dict: any;
 }
 
-export function ContactForm({
+function ContactForm({
   className,
   sendTo = "kontakt@deweloperskie.pl",
   oferta = "Kontakt",
@@ -305,7 +305,7 @@ export function ContactForm({
                         "text-accent1 font-bold",
                         oferta === "Katowice 3" && "text-accent2"
                       )}
-                      href={"/informacje#klauzula"}
+                      href={"/polityka-prywatnosci"}
                       target="_blank"
                     >
                       &nbsp;{dict.contact_form.information_clause}
@@ -317,7 +317,7 @@ export function ContactForm({
                         "text-accent1 font-bold",
                         oferta === "Katowice 3" && "text-accent2"
                       )}
-                      href={"/informacje#polityka"}
+                      href={"/polityka-prywatnosci"}
                       target="_blank"
                     >
                       &nbsp;{dict.contact_form.privacy_clause}&nbsp;
@@ -358,7 +358,7 @@ export function ContactForm({
                               "text-accent1 font-bold",
                               oferta === "Katowice 3" && "text-accent2"
                             )}
-                            href={"/informacje#podmioty"}
+                            href={"/dane-osobowe"}
                             target="_blank"
                           >
                             &nbsp;{dict.contact_form.list_of_entities}
@@ -411,7 +411,7 @@ export function ContactForm({
                               "text-accent1 font-bold",
                               oferta === "Katowice 3" && "text-accent2"
                             )}
-                            href={"/informacje#podmioty"}
+                            href={"/dane-osobowe"}
                             target="_blank"
                           >
                             &nbsp;{dict.contact_form.list_of_entities}
@@ -478,3 +478,5 @@ export function ContactForm({
     </div>
   );
 }
+
+export default ContactForm;

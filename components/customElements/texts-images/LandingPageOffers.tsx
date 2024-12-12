@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export type offer = {
+type offer = {
   left?: string;
   right?: string;
   top?: string;
@@ -16,7 +16,7 @@ export type offer = {
   link?: string;
 };
 
-export interface LandingPageOfferProps {
+interface LandingPageOfferProps {
   className?: string;
   backgroundImage: ImageAlt;
   offers: offer[];

@@ -4,10 +4,10 @@ import { Locales } from "@/app/dictionaries";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useState } from "react";
-import { PrevNextButtons } from "../buttons";
 import DOMPurify from "isomorphic-dompurify";
+import PrevNextButtons from "../buttons/PrevNextButtons";
 
-export type RzutItem = {
+type RzutItem = {
   mobile: string;
   desktop: string;
   price: string;
@@ -15,7 +15,7 @@ export type RzutItem = {
   floor: string;
 };
 
-export interface RzutMieszkaniaCarouselProps {
+interface RzutMieszkaniaCarouselProps {
   className?: string;
   items: RzutItem[];
   header?: React.ReactNode;
@@ -23,7 +23,7 @@ export interface RzutMieszkaniaCarouselProps {
   customAccent?: string;
 }
 
-export const RzutMieszkaniaCarousel = ({
+const RzutMieszkaniaCarousel = ({
   className,
   items,
   header,
@@ -130,3 +130,5 @@ export const RzutMieszkaniaCarousel = ({
     </div>
   );
 };
+
+export default RzutMieszkaniaCarousel;

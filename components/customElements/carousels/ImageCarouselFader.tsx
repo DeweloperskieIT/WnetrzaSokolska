@@ -6,10 +6,9 @@ import { ImageAltMergeParagraphWithHeading } from "@/types/customTypes";
 import { cn } from "@/lib/utils";
 import { animationStyle } from "@/types/customTypes";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
-import { PrevNextButtons } from "@/components/customElements/buttons";
+import PrevNextButtons from "../buttons/PrevNextButtons";
 
-export interface ImageCarouselFaderProps
-  extends React.HTMLAttributes<HTMLDivElement> {
+interface ImageCarouselFaderProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   images: ImageAltMergeParagraphWithHeading[];
   textPlacement?: "top" | "right" | "bottom" | "left" | undefined;
@@ -27,7 +26,7 @@ export interface ImageCarouselFaderProps
   objectFit?: boolean;
 }
 
-export const ImageCarouselFader = ({
+const ImageCarouselFader = ({
   className,
   images,
   textPlacement,
@@ -270,3 +269,5 @@ export const ImageCarouselFader = ({
     </div>
   );
 };
+
+export default ImageCarouselFader;

@@ -48,7 +48,7 @@ const formSchema = z.object({
     .optional(),
 });
 
-export function FormWithFileUpload() {
+function FormWithFileUpload() {
   const [status, setStatus] = useState<"success" | "failure" | null>(null);
   const [isSending, setIsSending] = useState<boolean>(false);
 
@@ -217,3 +217,5 @@ export function FormWithFileUpload() {
     </div>
   );
 }
+
+export default FormWithFileUpload;

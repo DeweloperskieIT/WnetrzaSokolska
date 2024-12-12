@@ -1,26 +1,11 @@
-import {
-  Footer,
-  FullscreenCarouselContainer,
-  MainStickyHeader,
-  SectionHeading,
-} from "@/components/customElements/custom-ui";
-import {
-  BreathingBackgroundImage,
-  IconsModule,
-  InfoBlocks,
-  InterchangeableImages,
-  SpiralPhotos4,
-} from "@/components/customElements/texts-images";
+import { SectionHeading } from "@/components/customElements/custom-ui";
+
 import { cn } from "@/lib/utils";
 import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
 import { getDictionary, Locales } from "@/app/dictionaries";
-import {
-  ImageCarouselCustom,
-  ImageCarouselCustomVertical,
-  ImageCarouselFader,
-} from "@/components/customElements/carousels";
+
 import {
   Accordion,
   AccordionContent,
@@ -28,14 +13,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import DOMPurify from "isomorphic-dompurify";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import { ContactForm } from "@/components/customElements/forms";
+import Footer from "@/components/FooterFiles/Footer";
+import IconsModule from "@/components/customElements/texts-images/IconsModule";
+import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
 
 const Home = async ({
   params: { locale },
@@ -399,7 +379,7 @@ const Home = async ({
         </div>
 
         {/* FAQ */}
-        <div className="w-full h-fit flex flex-col gap-10 limited-width ">
+        <div className="w-full h-fit flex flex-col gap-4 limited-width pb-20">
           <SectionHeading top="FAQ" />
           <div className="flex flex-col gap-4 w-full ">
             <Accordion type="single" collapsible>
@@ -408,24 +388,24 @@ const Home = async ({
                   { question, answer }: { question: string; answer: string },
                   i: number
                 ) => (
-                  <AccordionItem key={i} value={question}>
-                    <AccordionTrigger className="hover:bg-darkerGray/20 h-fit !font-normal">
+                  <AccordionItem key={i} value={question} className="mt-6">
+                    <AccordionTrigger className="hover:bg-darkerGray/20 h-fit !font-normal aria-expanded:text-accent1 ">
                       <div className="group footer-button-parent h-fit">
                         <div className="footer-button-secondary-container h-fit py-2">
                           <div className="footer-button-leftline group-hover:footer-hover-group-color h-fit"></div>
                           <span
-                            className="footer-button-text !no-underline group-hover:!no-underline text-left h-fit !font-normal"
+                            className="w-full pl-5 text-xl peer-aria-expanded:text-accent1  !no-underline group-hover:!no-underline text-left h-fit !font-normal"
                             dangerouslySetInnerHTML={{
                               __html: DOMPurify.sanitize(question),
                             }}
                           />
                         </div>
-                        <span className="footer-button-bottomline group-hover:footer-hover-group-color"></span>
+                        <span className="footer-button-bottomline group-hover:footer-hover-group-color "></span>
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className="padding-element">
+                    <AccordionContent className="padding-element mt-4">
                       <p
-                        className="text-lg"
+                        className="text-lg font-light"
                         dangerouslySetInnerHTML={{
                           __html: DOMPurify.sanitize(answer),
                         }}
@@ -437,20 +417,6 @@ const Home = async ({
             </Accordion>
           </div>
         </div>
-
-        {/* footer */}
-        <Footer
-          dict={dict}
-          oferta={dict.Landing_Page.Footer_1.oferta}
-          header={
-            <SectionHeading
-              wideParent
-              className="gap-3 md:gap-2 md:flex hidden"
-              top={dict.Landing_Page.Footer_1.header_top}
-              bottom={dict.Landing_Page.Footer_1.header_bottom}
-            />
-          }
-        />
       </div>
     </>
   );

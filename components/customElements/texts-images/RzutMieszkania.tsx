@@ -4,12 +4,12 @@ import DOMPurify from "isomorphic-dompurify";
 import Image from "next/image";
 import React from "react";
 
-export type RzutImages = {
+type RzutImages = {
   mobile: string;
   desktop: string;
 };
 
-export interface RzutMieszkaniaProps {
+interface RzutMieszkaniaProps {
   className?: string;
   img: RzutImages;
   powierzchnia: string;
@@ -20,7 +20,7 @@ export interface RzutMieszkaniaProps {
   floor: string;
 }
 
-export const RzutMieszkania = ({
+const RzutMieszkania = ({
   className,
   img,
   powierzchnia,
@@ -96,3 +96,5 @@ export const RzutMieszkania = ({
     </div>
   );
 };
+
+export default RzutMieszkania;

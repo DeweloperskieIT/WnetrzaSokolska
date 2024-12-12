@@ -13,7 +13,7 @@ export type ImageTextItem = {
   text: string;
 };
 
-export interface ImageCarouselCustomProps
+interface ImageCarouselCustomProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   images: ImageTextItem[];
@@ -183,9 +183,9 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
-import { PrevNextButtons } from "../buttons";
+import PrevNextButtons from "../buttons/PrevNextButtons";
 
-export interface ImageCarouselCustomProps
+interface ImageCarouselCustomProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   images: ImageTextItem[];
@@ -194,7 +194,7 @@ export interface ImageCarouselCustomProps
   interval?: number;
 }
 
-export const ImageCarouselCustom = ({
+const ImageCarouselCustom = ({
   className,
   images,
   textClassName,
@@ -356,3 +356,5 @@ export const ImageCarouselCustom = ({
     </div>
   );
 };
+
+export default ImageCarouselCustom;

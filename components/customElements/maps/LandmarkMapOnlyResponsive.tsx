@@ -30,14 +30,13 @@ const demoPins: LocationPin[] = [
   },
 ];
 
-export interface LandmarkMapInfoProps
-  extends React.HTMLAttributes<HTMLDivElement> {
+interface LandmarkMapInfoProps extends React.HTMLAttributes<HTMLDivElement> {
   src?: string;
   locations?: LocationPin[];
   originalDimensions?: [number, number];
 }
 
-export const LandmarkMapOnlyResponsive = forwardRef<
+const LandmarkMapOnlyResponsive = forwardRef<
   HTMLDivElement,
   LandmarkMapInfoProps
 >(
@@ -152,3 +151,5 @@ export const LandmarkMapOnlyResponsive = forwardRef<
 );
 
 LandmarkMapOnlyResponsive.displayName = "LandmarkMapOnlyResponsive";
+
+export default LandmarkMapOnlyResponsive;

@@ -29,73 +29,75 @@ export type PrivacyPolicyProps = {
 
 const generateList = (items: PolicyListItem[]): JSX.Element => {
   return (
-    <ol className="informacje-list-common">
+    <ol className="informacje-list-common !gap-10">
       {items.map((item, index) => (
-        <li key={item.text || index}>
+        <li key={item.text || index} className="text-accent1 font-bold">
           {" "}
           {/* Use item.text or fall back to index */}
           <span
-            className="font-bold"
+            className="font-bold text-accent1"
             dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.text) }}
           />
-          {item.description && (
-            <>
-              {typeof item.description === "string" ? (
-                <>
-                  <br />
-                  <span
+          <div className="text-light font-normal">
+            {item.description && (
+              <>
+                {typeof item.description === "string" ? (
+                  <>
+                    <br />
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: DOMPurify.sanitize(item.description),
+                      }}
+                    />
+                  </>
+                ) : (
+                  item.description.map((text, index) => (
+                    <span
+                      key={text || index}
+                      dangerouslySetInnerHTML={{
+                        __html: DOMPurify.sanitize(text),
+                      }}
+                    />
+                  ))
+                )}
+              </>
+            )}
+            {item.children && item.children.length > 0 && (
+              <ul className="informacje-list-bullet-common">
+                {item.children.map((child, childIndex) => (
+                  <li
+                    key={child.text || childIndex}
                     dangerouslySetInnerHTML={{
-                      __html: DOMPurify.sanitize(item.description),
+                      __html: DOMPurify.sanitize(child.text),
                     }}
                   />
-                </>
-              ) : (
-                item.description.map((text, index) => (
-                  <span
-                    key={text || index}
-                    dangerouslySetInnerHTML={{
-                      __html: DOMPurify.sanitize(text),
-                    }}
-                  />
-                ))
-              )}
-            </>
-          )}
-          {item.children && item.children.length > 0 && (
-            <ul className="informacje-list-bullet-common">
-              {item.children.map((child, childIndex) => (
-                <li
-                  key={child.text || childIndex}
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(child.text),
-                  }}
-                />
-              ))}
-            </ul>
-          )}
-          {item.additionalDescription && (
-            <>
-              {typeof item.additionalDescription === "string" ? (
-                <>
-                  <br />
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: DOMPurify.sanitize(item.additionalDescription),
-                    }}
-                  />
-                </>
-              ) : (
-                item.additionalDescription.map((text, index) => (
-                  <span
-                    key={text || index}
-                    dangerouslySetInnerHTML={{
-                      __html: DOMPurify.sanitize(text),
-                    }}
-                  />
-                ))
-              )}
-            </>
-          )}
+                ))}
+              </ul>
+            )}
+            {item.additionalDescription && (
+              <>
+                {typeof item.additionalDescription === "string" ? (
+                  <>
+                    <br />
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: DOMPurify.sanitize(item.additionalDescription),
+                      }}
+                    />
+                  </>
+                ) : (
+                  item.additionalDescription.map((text, index) => (
+                    <span
+                      key={text || index}
+                      dangerouslySetInnerHTML={{
+                        __html: DOMPurify.sanitize(text),
+                      }}
+                    />
+                  ))
+                )}
+              </>
+            )}
+          </div>
         </li>
       ))}
     </ol>
@@ -126,8 +128,8 @@ const generatePolicySection = ({
   bulletList,
 }: PolicySection): JSX.Element => {
   return (
-    <div id={id} className="informacje-container-common">
-      <span className="informacje-header-common">{header}</span>
+    <div id={id} className="informacje-container-common ">
+      <span className="informacje-header-common text-left">{header}</span>
       {typeof description === "string" ? (
         <span
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }}
@@ -152,7 +154,7 @@ const generatePolicySection = ({
 
 const PrivacyPolicyGenerator: React.FC<PrivacyPolicyProps> = ({ data }) => {
   return (
-    <div className="w-full p-10 padding-element flex flex-col gap-10 bg-dark max-h-screen overflow-y-auto">
+    <div className="w-full flex flex-col gap-10 limited-width pb-10">
       {data.map((PolicySection, index) => (
         <div key={index}>{generatePolicySection(PolicySection)}</div>
       ))}

@@ -2,12 +2,12 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-export interface DownloadCatalogButtonProps {
+interface DownloadCatalogButtonProps {
   className?: string;
   catalogue?: string;
 }
 
-export const DownloadCatalogButton = ({
+const DownloadCatalogButton = ({
   className,
   catalogue = "/documents/Katalog.pdf",
 }: DownloadCatalogButtonProps) => {
@@ -25,3 +25,5 @@ export const DownloadCatalogButton = ({
     </Button>
   );
 };
+
+export default DownloadCatalogButton;

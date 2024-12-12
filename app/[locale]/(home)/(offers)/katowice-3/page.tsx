@@ -1,23 +1,18 @@
-import { ImageCarouselFader } from "@/components/customElements/carousels";
+import { Locales, getDictionary } from "@/app/dictionaries";
+import ImageCarouselFader from "@/components/customElements/carousels/ImageCarouselFader";
+import ImageCarouselFaderSideBySide from "@/components/customElements/carousels/ImageCarouselFaderSideBySide";
 import {
-  Footer,
-  FullscreenCarouselContainer,
-  OfferStickyHeader,
   SectionHeading,
+  FullscreenCarouselContainer,
 } from "@/components/customElements/custom-ui";
-import {
-  IconsModule,
-  InfoBlocks,
-  InterchangeableImages,
-  PlainParagraphText,
-  RzutMieszkania,
-  SpiralPhotos4,
-  TextPlusSingleVideo,
-  TextPlusSingleVideoModular,
-} from "@/components/customElements/texts-images";
-import { VideoBackground } from "@/components/customElements/video";
-import { getDictionary, Locales } from "@/app/dictionaries";
-import { ImageCarouselFaderSideBySide } from "@/components/customElements/carousels/ImageCarouselFaderSideBySide";
+import IconsModule from "@/components/customElements/texts-images/IconsModule";
+import InfoBlocks from "@/components/customElements/texts-images/InfoBlocks";
+import InterchangeableImages from "@/components/customElements/texts-images/InterchangeableImages";
+import PlainParagraphText from "@/components/customElements/texts-images/PlainParagraphText";
+import RzutMieszkania from "@/components/customElements/texts-images/RzutMieszkania";
+import TextPlusSingleVideoModular from "@/components/customElements/texts-images/TextPlusSingleVideoModular";
+import VideoBackground from "@/components/customElements/video/VideoBackground";
+import Footer from "@/components/FooterFiles/Footer";
 
 const page = async ({
   params: { locale },
@@ -179,20 +174,6 @@ const page = async ({
               bottom={dict.Katowice_03.InfoBlocks_1.header_bottom}
             />
           }
-        />
-        {/* Eighth Section - Footer */}
-        <Footer
-          dict={dict}
-          header={
-            <SectionHeading
-              wideParent
-              className="gap-3 md:gap-2 md:flex hidden"
-              topClass="text-accent2 font-bold"
-              top={dict.Katowice_03.Footer_1.header_top}
-              bottom={dict.Katowice_03.Footer_1.header_bottom}
-            />
-          }
-          oferta={dict.Katowice_03.Footer_1.oferta}
         />
       </div>
     </>

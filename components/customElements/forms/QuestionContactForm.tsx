@@ -54,7 +54,7 @@ export interface QuestionContactFormProps {
   disableTitle?: boolean;
 }
 
-export function QuestionContactForm({
+function QuestionContactForm({
   className,
   sendTo = "kontakt@deweloperskie.pl",
   disableTitle = false,
@@ -262,7 +262,7 @@ export function QuestionContactForm({
                     moich danych osobowych zawartych w
                     <Link
                       className="text-accent1"
-                      href={"/informacje#klauzula"}
+                      href={"/polityka-prywatnosci"}
                       target="_blank"
                     >
                       &nbsp;klauzuli informacyjnej&nbsp;
@@ -270,7 +270,7 @@ export function QuestionContactForm({
                     oraz
                     <Link
                       className="text-accent1"
-                      href={"/informacje#polityka"}
+                      href={"/polityka-prywatnosci"}
                       target="_blank"
                     >
                       &nbsp;polityką prywatności&nbsp;
@@ -317,7 +317,7 @@ export function QuestionContactForm({
                           korzystamy w zakresie obrotu nieruchomościami:
                           <Link
                             className="text-accent1"
-                            href={"/informacje#podmioty"}
+                            href={"/dane-osobowe"}
                             target="_blank"
                           >
                             &nbsp;Lista podmiotów&nbsp;
@@ -374,7 +374,7 @@ export function QuestionContactForm({
                           korzystamy w zakresie obrotu nieruchomościami
                           <Link
                             className="text-accent1"
-                            href={"/informacje#podmioty"}
+                            href={"/dane-osobowe"}
                             target="_blank"
                           >
                             &nbsp;Lista podmiotów&nbsp;
@@ -431,3 +431,5 @@ export function QuestionContactForm({
     </div>
   );
 }
+
+export default QuestionContactForm;

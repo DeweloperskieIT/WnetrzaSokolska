@@ -6,8 +6,8 @@ import { ImageAltMergeParagraphWithHeading } from "@/types/customTypes";
 import { cn } from "@/lib/utils";
 import { animationStyle } from "@/types/customTypes";
 import { useIsVisible } from "@/lib/hooks/useIsVisible";
-import { PrevNextButtons } from "@/components/customElements/buttons";
 import { array } from "zod";
+import PrevNextButtons from "../buttons/PrevNextButtons";
 
 export type SideBySideImages = {
   img1: string;
@@ -16,7 +16,7 @@ export type SideBySideImages = {
   alt2: string;
 };
 
-export interface ImageCarouselFaderSideBySideProps
+interface ImageCarouselFaderSideBySideProps
   extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
   images: SideBySideImages[];
@@ -34,7 +34,7 @@ export interface ImageCarouselFaderSideBySideProps
   sizes?: string;
 }
 
-export const ImageCarouselFaderSideBySide = ({
+const ImageCarouselFaderSideBySide = ({
   className,
   images,
   textPlacement,
@@ -338,3 +338,5 @@ export const ImageCarouselFaderSideBySide = ({
     </div>
   );
 };
+
+export default ImageCarouselFaderSideBySide;
