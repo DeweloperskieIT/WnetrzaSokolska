@@ -4,7 +4,7 @@ import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { FiYoutube } from "react-icons/fi";
-import { TbBrandYoutubeFilled } from "react-icons/tb";
+
 interface YoutubeRedirectProps {
   className?: string;
   link?: string;
@@ -13,7 +13,7 @@ interface YoutubeRedirectProps {
 
 const YoutubeRedirect = ({
   className,
-  link = "https://www.youtube.com/@WnetrzaDeweloperskie",
+  link = "https://www.youtube.com/@Deweloperskie",
   fill,
 }: YoutubeRedirectProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
@@ -29,8 +29,11 @@ const YoutubeRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => fireEvent()}
     >
-      <TbBrandYoutubeFilled
-        className={cn("header-icon-graphic  hover:fill-accent1", fill)}
+      <FiYoutube
+        className={cn(
+          "header-icon-graphic text-darkerGray hover:text-accent1",
+          fill
+        )}
       />
     </a>
   );

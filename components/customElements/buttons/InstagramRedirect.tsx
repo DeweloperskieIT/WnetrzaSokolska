@@ -3,7 +3,7 @@
 import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
-import { ImInstagram } from "react-icons/im";
+import { FaInstagram } from "react-icons/fa";
 interface InstagramRedirectProps {
   className?: string;
   link?: string;
@@ -13,7 +13,7 @@ interface InstagramRedirectProps {
 
 const InstagramRedirect = ({
   className,
-  link = "https://www.instagram.com/wnetrza.deweloperskie/",
+  link = "https://www.instagram.com/deweloperskie.pl/",
   fill,
   firePixel = true,
 }: InstagramRedirectProps) => {
@@ -30,8 +30,11 @@ const InstagramRedirect = ({
       className={cn("header-icon-href", className)}
       onClick={() => firePixel && fireEvent()}
     >
-      <ImInstagram
-        className={cn("header-icon-graphic s  hover:fill-accent1", fill)}
+      <FaInstagram
+        className={cn(
+          "header-icon-graphic text-darkerGray hover:text-accent1",
+          fill
+        )}
       />
     </a>
   );

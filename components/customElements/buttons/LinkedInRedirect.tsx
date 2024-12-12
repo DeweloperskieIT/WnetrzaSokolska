@@ -14,7 +14,7 @@ interface LinkedInRedirectProps {
 
 const LinkedInRedirect = ({
   className,
-  link = "https://www.linkedin.com/showcase/po%C5%BCyczki-deweloperskie",
+  link = "https://www.linkedin.com/company/deweloperskiepsa?originalSubdomain=pl",
   fill,
 }: LinkedInRedirectProps) => {
   const { fireEvent, resetFiring } = useFacebookPixelEvent({
@@ -32,7 +32,10 @@ const LinkedInRedirect = ({
       onClick={() => fireEvent()}
     >
       <FaLinkedin
-        className={cn("header-icon-graphic hover:fill-accent1", fill)}
+        className={cn(
+          "header-icon-graphic text-darkerGray hover:text-accent1",
+          fill
+        )}
       />
     </a>
   );

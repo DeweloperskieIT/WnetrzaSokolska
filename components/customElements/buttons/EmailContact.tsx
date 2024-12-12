@@ -15,8 +15,8 @@ interface EmailContactProps {
 
 const EmailContact = ({
   className,
-  email = "wnetrza@deweloperskie.pl",
-  params = "Kontakt%20wnetrza.deweloperskie.pl",
+  email = "pozyczki@deweloperskie.pl",
+  params = `Kontakt%20${process.env.NEXT_PUBLIC_WEBSITE_TITLE}`,
   fill,
   firePixel = false,
 }: EmailContactProps) => {
@@ -33,9 +33,16 @@ const EmailContact = ({
       className={cn("header-icon-href", className)}
       onClick={() => firePixel && fireEvent()}
     >
-      <AiOutlineMail className={cn("header-icon-graphic", fill)} />
+      <AiOutlineMail
+        className={cn(
+          "header-icon-graphic text-darkerGray hover:text-accent1",
+          fill
+        )}
+      />
     </a>
   );
 };
 
 export default EmailContact;
+
+// test

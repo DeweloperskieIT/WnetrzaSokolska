@@ -4,6 +4,7 @@ import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FiFacebook } from "react-icons/fi";
 
 interface FacebookRedirectProps {
   className?: string;
@@ -14,7 +15,7 @@ interface FacebookRedirectProps {
 
 const FacebookRedirect = ({
   className,
-  link = "https://www.facebook.com/wnetrza.deweloperskie",
+  link = "https://www.facebook.com/deweloperskiePL/",
   fill,
   firePixel = false,
 }: FacebookRedirectProps) => {
@@ -33,7 +34,10 @@ const FacebookRedirect = ({
       onClick={() => firePixel && fireEvent()}
     >
       <FaFacebookSquare
-        className={cn("header-icon-graphic hover:fill-accent1", fill)}
+        className={cn(
+          "header-icon-graphic text-darkerGray hover:text-accent1",
+          fill
+        )}
       />
     </a>
   );
