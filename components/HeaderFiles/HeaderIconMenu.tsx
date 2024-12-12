@@ -177,14 +177,3 @@ const HeaderIconMenu = ({ className, disabled, data }: Props) => {
   );
 };
 export default HeaderIconMenu;
-
-const Thingies: NavigationMenuIconItems = {
-  width: "200px",
-  icon: "/images/mainpage/wnetrzalogo.png",
-  destinations: [
-    {
-      name: "What goes here",
-      destination: "/",
-    },
-  ],
-};
