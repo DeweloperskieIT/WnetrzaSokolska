@@ -77,9 +77,18 @@ const Header = ({ navigationItems, dict }: Props) => {
           <div className="w-full h-full flex flex-row gap-4">
             <HeaderIconMenu disabled data={HeaderIconMenuData} />
             <div className="w-full lg:w-fit h-auto flex flex-row gap-4">
-              <FacebookRedirect fill="text-light" />
-              <InstagramRedirect fill="text-light" />
-              <YoutubeRedirect fill="text-light" />
+              <FacebookRedirect
+                link="https://www.facebook.com/wnetrza.deweloperskie"
+                fill="text-light"
+              />
+              <InstagramRedirect
+                link="https://www.instagram.com/wnetrza.deweloperskie/"
+                fill="text-light"
+              />
+              <YoutubeRedirect
+                link="https://www.youtube.com/channel/UCYH04V0iIezlj4ChZKugNQQ"
+                fill="text-light"
+              />
               <LanguageChanger locale={locale as Locales} />
             </div>
           </div>
