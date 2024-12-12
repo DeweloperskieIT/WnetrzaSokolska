@@ -49,44 +49,44 @@ const Footer = ({
 
         {/* Aktualny Footer */}
 
-        <footer className="py-10 px-2 flex flex-col gap-10 w-full items-center text-light">
+        <footer className="py-10 px-2 flex flex-col gap-10 w-full items-center">
           <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between limited-width w-full">
             <div className="flex flex-col items-start gap-2">
               <h3 className="text-accent1 text-left text-xl font-bold">
                 Marki Deweloperskie
               </h3>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://deweloperskie.pl"}
               >
                 Deweloperskie
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://asi.deweloperskie.pl"}
               >
                 ASI Deweloperskie
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://pozyczki.deweloperskie.pl"}
               >
                 Pożyczki Deweloperskie
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://wnetrza.deweloperskie.pl"}
               >
                 Wnętrza Deweloperskie
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://doradztwo.deweloperskie.pl"}
               >
                 Doradztwo Deweloperskie
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://marketplace.deweloperskie.pl"}
               >
                 Marketplace Deweloperskie
@@ -96,51 +96,42 @@ const Footer = ({
               <h3 className="text-accent1 text-left text-xl font-bold">
                 O nas
               </h3>
-              <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
-                href={"/"}
-              >
+              <Link className="text-lg hover:text-accent1 w-fit" href={"/"}>
                 Strona główna
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://deweloperskie.pl/team"}
               >
                 Zespół
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://deweloperskie.pl/kariera"}
               >
                 Kariera
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
-                href={"/#footer"}
-              >
-                Kontakt
-              </Link>
-              <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://pozyczki.deweloperskie.pl/wniosek"}
               >
                 Wniosek pożyczkowy
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://pozyczki.deweloperskie.pl/wniosek-posrednika"}
               >
                 Dla pośrednika
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://deweloperskie.pl/polityka-prywatnosci"}
                 target="_blank"
               >
                 Polityka prywatności
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"https://deweloperskie.pl/rodo"}
                 target="_blank"
               >
@@ -154,18 +145,18 @@ const Footer = ({
               <p className="text-lg ">NIP: 6343022518</p>
               <p className="text-lg ">KRS: 0001030478</p>
               <p className="text-lg ">
-                ul. Murckowska 14C,
+                Al. Murckowska 14C,
                 <br />
                 40-265 Katowice
               </p>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"tel:+48666000999"}
               >
                 +48 666 000 999
               </Link>
               <Link
-                className="text-lg hover:brightness-125 hover:underline w-fit"
+                className="text-lg hover:text-accent1 w-fit"
                 href={"mailto:kontakt@deweloperskie.pl"}
               >
                 kontakt@deweloperskie.pl
@@ -175,19 +166,19 @@ const Footer = ({
                 id="adres"
               >
                 <LinkedInRedirect
-                  fill="text-light size-6"
+                  fill=" size-6"
                   link="https://www.linkedin.com/company/deweloperskiepsa/posts/?feedView=all"
                 />
                 <FacebookRedirect
-                  fill="text-light size-6"
+                  fill="size-6"
                   link="https://www.facebook.com/deweloperskiePL/"
                 />
                 <InstagramRedirect
-                  fill="text-light size-6"
+                  fill=" size-6"
                   link="https://www.instagram.com/deweloperskie.pl/"
                 />
                 <YoutubeRedirect
-                  fill="text-light size-6"
+                  fill=" size-6"
                   link="https://www.youtube.com/@Deweloperskie"
                 />
               </div>
@@ -198,9 +189,9 @@ const Footer = ({
           <Image
             src={FooterLogo}
             alt="Deweloperskie Footer Logo"
-            className="mix-blend-overlay size-24"
+            className="mix-blend-overlay size-20"
           />
-          <p className="text-sm">© Deweloperskie 2025</p>
+          <p className="text-sm pt-4">© Deweloperskie 2025</p>
           <p className="text-sm">Wszystkie prawa zastrzeżone</p>
           <p className="text-sm">
             {`Właścicielem marki ${process.env.NEXT_PUBLIC_WEBSITE_TITLE} jest: `}
@@ -213,3 +204,5 @@ const Footer = ({
 };
 
 export default Footer;
+
+// comment
