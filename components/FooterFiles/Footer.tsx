@@ -49,8 +49,8 @@ const Footer = ({
 
         {/* Aktualny Footer */}
 
-        <footer className="py-10 px-2 flex flex-col gap-10 w-full items-center">
-          <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between limited-width w-full">
+        <footer className="py-10 px-2 flex flex-col gap-10 w-full items-center text-light">
+          <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between limited-width w-full text-light">
             <div className="flex flex-col items-start gap-2">
               <h3 className="text-accent1 text-left text-xl font-bold">
                 Marki Deweloperskie
@@ -92,7 +92,7 @@ const Footer = ({
                 Marketplace Deweloperskie
               </Link>
             </div>{" "}
-            <div className="flex flex-col items-start gap-2">
+            <div className="flex flex-col items-start gap-2 text-light">
               <h3 className="text-accent1 text-left text-xl font-bold">
                 O nas
               </h3>
@@ -138,7 +138,7 @@ const Footer = ({
                 RODO
               </Link>
             </div>
-            <div className="flex flex-col items-start gap-2">
+            <div className="flex flex-col items-start gap-2 text-light">
               <h3 className="text-accent1 text-left text-xl font-bold text-nowrap">
                 Deweloperskie P.S.A.
               </h3>
