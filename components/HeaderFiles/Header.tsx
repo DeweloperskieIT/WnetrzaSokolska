@@ -168,12 +168,16 @@ const NavigationMenuItemsData: NavigationMenuItems[] = [
         destination: "https://www.deweloperskie.pl/team",
       },
       {
+        name: "Kariera",
+        destination: "https://www.deweloperskie.pl/kariera",
+      },
+      {
         name: "Blog",
         destination: "https://www.deweloperskie.pl/blog",
       },
       {
-        name: "Kariera",
-        destination: "https://www.deweloperskie.pl/kariera",
+        name: "Raporty",
+        destination: "https://www.deweloperskie.pl/raporty",
       },
     ],
   },
