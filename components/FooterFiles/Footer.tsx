@@ -27,7 +27,7 @@ const Footer = ({
 }: FooterProps) => {
   return (
     <div
-      className={cn("w-full flex flex-col section-header-gap", className)}
+      className={cn("w-full flex flex-col section-header-gap mt-10", className)}
       {...rest}
     >
       {header}
