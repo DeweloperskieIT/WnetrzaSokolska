@@ -6,13 +6,14 @@ import { useParams } from "next/navigation";
 import HeaderMenu, { NavigationMenuItems } from "./HeaderMenu";
 import HeaderIconMenu, { NavigationMenuIconItems } from "./HeaderIconMenu";
 import { Locales } from "@/app/dictionaries";
-import EmailContact from "../customElements/buttons/EmailContact";
 import FacebookRedirect from "../customElements/buttons/FacebookRedirect";
 import InstagramRedirect from "../customElements/buttons/InstagramRedirect";
 import LanguageChanger from "../customElements/buttons/LanguageChanger";
-import WhatsappContact from "../customElements/buttons/WhatsappContact";
 import YoutubeRedirect from "../customElements/buttons/YoutubeRedirect";
 import NawigacjaDropDown from "../customElements/custom-ui/NawigacjaDropDown";
+import { SidebarProvider, SidebarTrigger } from "../ui/sidebar";
+import HeaderMobileSidebar from "./HeaderMobileSidebar";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 type LinkItem = {
   title?: string;
@@ -58,54 +59,66 @@ const Header = ({ navigationItems, dict }: Props) => {
 
   return (
     <>
-      <div
-        className=""
+      <SidebarProvider
+        defaultOpen={false}
+        className="!min-h-0"
         style={{ height: `${headerHeight !== 0 ? headerHeight : 80}px` }}
-      ></div>
-      <header
-        ref={headerRef}
-        className={cn(
-          " fixed lg:h-[80px] top-0 bg-dark w-full transition-colors lg:px-2  flex items-center justify-center z-50"
-        )}
       >
         <div
+          className=""
+          style={{ height: `${headerHeight !== 0 ? headerHeight : 80}px` }}
+        ></div>
+        <header
+          ref={headerRef}
           className={cn(
-            "absolute w-full h-full bg-dark lg:bg-dark transition-all"
+            " fixed lg:h-[80px] top-0 bg-dark w-full transition-colors lg:px-2  flex items-center justify-center z-50"
           )}
-        />
-        <nav className="max-w-screen-xl flex flex-col lg:flex-row w-full h-full justify-between gap-0 lg:gap-10 items-center transition-all z-20">
-          <div className="w-full h-full flex flex-row gap-4">
-            <HeaderIconMenu disabled data={HeaderIconMenuData} />
-            <div className="w-full lg:w-fit h-auto flex flex-row gap-4">
-              <FacebookRedirect
-                link="https://www.facebook.com/wnetrza.deweloperskie"
-                fill="text-light"
-              />
-              <InstagramRedirect
-                link="https://www.instagram.com/wnetrza.deweloperskie/"
-                fill="text-light"
-              />
-              <YoutubeRedirect
-                link="https://www.youtube.com/channel/UCYH04V0iIezlj4ChZKugNQQ"
-                fill="text-light"
-              />
-              <LanguageChanger locale={locale as Locales} />
+        >
+          <div
+            className={cn(
+              "absolute w-full h-full bg-dark lg:bg-dark transition-all"
+            )}
+          />
+          <nav className="max-w-screen-xl flex flex-col lg:flex-row w-full h-full justify-between gap-0 lg:gap-10 items-center transition-all z-20">
+            <div className="w-full h-full flex flex-row gap-4">
+              <HeaderIconMenu disabled data={HeaderIconMenuData} />
+              <div className="w-full lg:w-fit h-auto flex flex-row gap-4">
+                <FacebookRedirect
+                  link="https://www.facebook.com/wnetrza.deweloperskie"
+                  fill="text-light"
+                />
+                <InstagramRedirect
+                  link="https://www.instagram.com/wnetrza.deweloperskie/"
+                  fill="text-light"
+                />
+                <YoutubeRedirect
+                  link="https://www.youtube.com/channel/UCYH04V0iIezlj4ChZKugNQQ"
+                  fill="text-light"
+                />
+                <LanguageChanger locale={locale as Locales} />
+              </div>
             </div>
-          </div>
-          <HeaderMenu className={cn("")} data={NavigationMenuItemsData} />
-          <div className="w-fit lg:pr-12 self-center">
-            <NawigacjaDropDown
-              links={[
-                { link: "/", name: dict.Header.landing_page },
-                { link: "/oferta", name: dict.Header.universal },
-                { link: "/katowice-1", name: dict.Header.offer_1 },
-                { link: "/katowice-2", name: dict.Header.offer_2 },
-                { link: "/katowice-3", name: dict.Header.offer_3 },
-              ]}
-            />
-          </div>
-        </nav>
-      </header>
+            <HeaderMenu className={cn("")} data={NavigationMenuItemsData} />
+            <div className="w-fit lg:pr-12 self-center">
+              <NawigacjaDropDown
+                links={[
+                  { link: "/", name: dict.Header.landing_page },
+                  { link: "/oferta", name: dict.Header.universal },
+                  { link: "/katowice-1", name: dict.Header.offer_1 },
+                  { link: "/katowice-2", name: dict.Header.offer_2 },
+                  { link: "/katowice-3", name: dict.Header.offer_3 },
+                ]}
+              />
+            </div>
+            <nav className="flex-row gap-2 relative items-center p-2 w-full justify-center lg:hidden flex text-light">
+              <GiHamburgerMenu />
+              <SidebarTrigger className="size-full opacity-0 absolute" />
+              Nawigacja
+            </nav>
+          </nav>
+        </header>
+        <HeaderMobileSidebar data={NavigationMenuItemsData} />
+      </SidebarProvider>
     </>
   );
 };

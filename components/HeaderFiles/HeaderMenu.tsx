@@ -76,7 +76,7 @@ const HeaderMenu = ({ className, data }: Props) => {
     <div
       ref={headerRef}
       className={cn(
-        "relative w-full lg:w-fit h-full justify-evenly flex flex-col lg:flex-row gap-0 lg:gap-2 z-10 ",
+        "relative w-full lg:w-fit h-full justify-evenly flex-col lg:flex-row gap-0 lg:gap-2 z-10 lg:flex hidden",
         className
       )}
     >
@@ -187,7 +187,7 @@ const HeaderMenu = ({ className, data }: Props) => {
             Zadzwoń
           </Link>
           <Link
-            href={"mailto:wnetrza@deweloperskie.pl"}
+            href={"mailto:kontakt@deweloperskie.pl"}
             className={cn(
               "group min-w-full flex gap-2 flex-row  lg:py-2 lg:min-w-0 px-4 pt-2 text-wrap text-center lg:text-left w-full text-base !duration-0 lg:!duration-75 lg:bg-accent1 lg:text-dark lg:hover:text-accent1 lg:hover:bg-dark text-dark border-t-2 border-dark lg:border-none hover:text-accent1 transition-all opacity-100 cursor-pointer mt-2 lg:mt-0",
               selectedMenuId !== data.length ? "scale-y-0" : "scale-y-100"

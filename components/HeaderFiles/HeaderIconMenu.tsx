@@ -128,8 +128,9 @@ const HeaderIconMenu = ({ className, disabled, data }: Props) => {
           height={data.icon.height}
           priority
           className={cn(
-            "brightness-[9999] lg:w-full w-[160px] object-scale-down cursor-pointer self-center  text-xl justify-center  duration-300 transition-all text-dark hover:text-dark  h-full flex items-center relative z-20 p-3 text-wrap",
-            isOpen && " text-dark "
+            "brightness-[9999] lg:w-full  object-scale-down cursor-pointer self-center  text-xl justify-center  duration-300 transition-all text-dark hover:text-dark  h-full flex items-center relative z-20 p-3 text-wrap",
+            isOpen && " text-dark ",
+            `max-h-[75px] w-[${data.width}] max-w-[${data.width}]`
           )}
           onClick={(e) => {
             e.stopPropagation();
