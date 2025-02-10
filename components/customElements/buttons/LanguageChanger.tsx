@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { US, PL } from "country-flag-icons/react/3x2";
+import { US, PL, UA } from "country-flag-icons/react/3x2";
 import LocaleSwitchButton from "./LocaleSwitchButton";
 
 interface LanguageChangerProps {
@@ -25,8 +25,10 @@ const LanguageChanger = ({ className, locale }: LanguageChangerProps) => {
       <DropdownMenuTrigger className={cn("cursor-pointer p-2 z-10", className)}>
         {locale === "pl" ? (
           <PL title="Polish" className="w-6" />
-        ) : (
+        ) : locale === "en" ? (
           <US title="English" className="w-6" />
+        ) : (
+          <UA title="Ukrainian" className="w-6" />
         )}
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-0 bg-dark rounded-none">
@@ -57,6 +59,21 @@ const LanguageChanger = ({ className, locale }: LanguageChangerProps) => {
             disabled={locale === "en" ? true : false}
           >
             <US title="English" className="w-8 hover:!bg-none !bg-none" />
+          </LocaleSwitchButton>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem
+          className={cn(
+            "cursor-pointer rounded-none hover:!bg-none !bg-none",
+            locale === "en" ? "cursor-default" : "cursor-pointer"
+          )}
+          asChild
+        >
+          <LocaleSwitchButton
+            locale="ua"
+            disabled={locale === "ua" ? true : false}
+          >
+            <UA title="Ukrainian" className="w-8 hover:!bg-none !bg-none" />
           </LocaleSwitchButton>
         </DropdownMenuItem>
       </DropdownMenuContent>
