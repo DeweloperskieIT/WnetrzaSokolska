@@ -13,7 +13,6 @@ import { Textarea, TextareaProps } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { RadioItemProps, SelectItemProps } from "@/types/forms";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import { Checkbox } from "../ui/checkbox";
 import { Switch } from "../ui/switch";
 import {
   Accordion,
@@ -30,6 +29,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import { Checkbox } from "../ui/checkbox";
 
 interface FormItemInputProps<T extends FieldValues> {
   control: Control<T>;
