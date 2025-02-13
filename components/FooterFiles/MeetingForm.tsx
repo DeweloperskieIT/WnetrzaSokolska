@@ -95,12 +95,12 @@ const MeetingForm = (props: Props) => {
   return (
     <div
       className={cn(
-        "limited-width  flex-center justify-start flex-col w-full px-6 lg:p-6 md:max-h-full pb-4",
+        "limited-width  flex-center justify-start flex-col w-full px-10 lg:p-6 lg:px-10 md:max-h-full pb-4",
         props.className
       )}
     >
       <h3 className="text-2xl md:text-4xl text-accent1 font-bold w-full text-left pb-10">
-        Umów się na spotkanie.
+        Umów się na spotkanie
       </h3>
       <Form {...form}>
         <form

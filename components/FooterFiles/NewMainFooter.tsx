@@ -14,9 +14,6 @@ const NewMainFooter = (props: Props) => {
   return (
     <div>
       <div className="flex flex-col md:flex-row">
-        <div className="flex-1 flex justify-center  py-10">
-          <MeetingForm />
-        </div>
         <div className="flex-1 bg-[#101010] opacity overflow-clip">
           <Image
             src={"/images/mainpage/wzorek-formularz.svg"}
@@ -25,6 +22,9 @@ const NewMainFooter = (props: Props) => {
             height={700}
             className="size-full object-bottom object-cover filter-gray scale-125"
           />
+        </div>
+        <div className="flex-1 flex md:justify-start  py-10 ">
+          <MeetingForm />
         </div>
       </div>
 
@@ -41,13 +41,13 @@ const NewMainFooter = (props: Props) => {
           ></iframe>
         </div>
         <div className="flex-1 flex flex-col gap-8 justify-between  py-10">
-          <div className="flex flex-col gap-4 p-10">
-            <h3 className="text-2xl md:text-5xl w-full text-left font-bold text-accent1 ">
-              Znajdź Nas
+          <div className="flex flex-col gap-4 px-10">
+            <h3 className="text-2xl md:text-4xl w-full text-left font-bold text-accent1 ">
+              Znajdź nas
             </h3>
             <p className="text-xl text-accent1">Deweloperskie P.S.A.</p>
           </div>
-          <div className="flex flex-col gap-1 text-light text-xl p-10">
+          <div className="flex flex-col gap-1 text-light text-xl px-10">
             <p>NIP: 6343022518</p>
             <p>KRS: 0001030478</p>
             <p>Al. Murckowska 14C, 40-265 Katowice</p>
