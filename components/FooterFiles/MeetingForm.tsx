@@ -54,29 +54,24 @@ const MeetingForm = (props: Props) => {
     setIsSending(true);
 
     // Create FormData to send to the server
-    const formData = new FormData();
-    formData.append("imie", values.imie);
-    formData.append("nazwisko", values.nazwisko);
-    formData.append("email", values.email);
-    formData.append("telefon", values.telefon || "");
-    formData.append("message", values.message || "");
-    formData.append(
-      "zgodaPrzetwarzanieDanych",
-      values.zgodaPrzetwarzanieDanych.toString()
-    );
-    formData.append(
-      "zgodaPrzetwarzanieEmail",
-      values.zgodaPrzetwarzanieEmail.toString()
-    );
-    formData.append(
-      "zgodaPrzetwarzanieTelefon",
-      values.zgodaPrzetwarzanieTelefon.toString()
-    );
+    const formData = {
+      imie: values.imie,
+      nazwisko: values.nazwisko,
+      email: values.email,
+      telefon: values.telefon || "",
+      message: values.message || "",
+      zgodaPrzetwarzanieDanych: values.zgodaPrzetwarzanieDanych,
+      zgodaPrzetwarzanieEmail: values.zgodaPrzetwarzanieEmail,
+      zgodaPrzetwarzanieTelefon: values.zgodaPrzetwarzanieTelefon,
+    };
 
     try {
       const response = await fetch("/api/email/generic", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json", // Ensure the API knows it's JSON
+        },
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
@@ -215,10 +210,10 @@ const MeetingForm = (props: Props) => {
           />
 
           {/* Submit Button */}
-          <div className="flex justify-between gap-6">
+          <div className="flex flex-col justify-between gap-6">
             <Button
               type="submit"
-              disabled={isSending}
+              disabled={isSending || status === "success"}
               className=" self-start px-20 text-xl bg-accent1 rounded-none text-dark hover:brightness-110 hover:bg-accent1 transition-all"
             >
               {isSending ? (
