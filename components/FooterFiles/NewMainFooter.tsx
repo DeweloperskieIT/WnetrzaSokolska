@@ -40,7 +40,7 @@ const NewMainFooter = (props: Props) => {
             className="!grayscale"
           ></iframe>
         </div>
-        <div className="flex-1 flex flex-col gap-8 justify-between  py-10">
+        <div className="flex-1 flex flex-col gap-10 justify-start  py-20">
           <div className="flex flex-col gap-4 px-10">
             <h3 className="text-2xl md:text-4xl w-full text-left font-bold text-accent1 ">
               Znajdź nas
@@ -48,17 +48,17 @@ const NewMainFooter = (props: Props) => {
             <p className="text-xl text-accent1">Deweloperskie P.S.A.</p>
           </div>
           <div className="flex flex-col gap-1 text-light text-xl px-10">
-            <p>NIP: 6343022518</p>
-            <p>KRS: 0001030478</p>
-            <p>Al. Murckowska 14C, 40-265 Katowice</p>
+            <p className="text-xl">NIP: 6343022518</p>
+            <p className="text-xl">KRS: 0001030478</p>
+            <p className="text-xl">Al. Murckowska 14C, 40-265 Katowice</p>
             <Link
-              className=" hover:text-accent1 w-fit"
+              className=" hover:text-accent1 w-fit text-xl"
               href={"tel:+48666000999"}
             >
               +48 666 000 999
             </Link>
             <Link
-              className=" hover:text-accent1 w-fit"
+              className=" hover:text-accent1 w-fit text-xl"
               href={"mailto:kontakt@deweloperskie.pl"}
             >
               kontakt@deweloperskie.pl
