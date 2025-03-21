@@ -134,7 +134,7 @@ const NewMainFooter = (props: Props) => {
             </Link>
             <Link
               className="text-lg hover:text-accent1 w-fit"
-              href={"https://pozyczki.deweloperskie.pl/wniosek-posrednika"}
+              href={"https://pozyczki.deweloperskie.pl/leady"}
             >
               Dla pośrednika
             </Link>
