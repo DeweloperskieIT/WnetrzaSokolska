@@ -23,7 +23,7 @@ const NewMainFooter = (props: Props) => {
             className="size-full object-bottom object-cover filter-gray scale-125"
           />
         </div>
-        <div className="flex-1 flex md:justify-start  py-10 ">
+        <div className="flex-1 flex md:justify-start  py-10 " id="formularz">
           <MeetingForm />
         </div>
       </div>
