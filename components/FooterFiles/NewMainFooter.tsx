@@ -240,7 +240,7 @@ const NewMainFooter = (props: Props) => {
           alt="colorline"
           width={2560}
           height={300}
-          className="absolute w-full -top-1 left-0 right-0 hidden xl:block z-[2]scale-x-110"
+          className="absolute w-full -top-1 left-0 right-0 hidden xl:block z-[2] scale-x-110"
         />
         <Image
           src={FooterLogo}
