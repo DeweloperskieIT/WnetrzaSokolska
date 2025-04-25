@@ -218,12 +218,29 @@ const NewMainFooter = (props: Props) => {
         </div>
       </footer>
       <div className="flex flex-col gap-2 w-full bg-darkerGray items-center p-4 text-dark text-center relative pt-20">
+        {/* Mobile */}
+        <Image
+          src={"/images/graphics/przerwazkoloremtele.svg"}
+          alt="colorline"
+          width={1280}
+          height={300}
+          className="absolute w-full top-1 left-0 right-0 md:hidden block z-[2] scale-x-110"
+        />
+        {/* 16/9 */}
         <Image
           src={"/images/graphics/przerwazkolorem.svg"}
           alt="colorline"
+          width={1280}
+          height={300}
+          className="absolute w-full -top-1 left-0 right-0 md:block hidden xl:hidden  z-[2] scale-x-110"
+        />
+        {/* Ultra wide */}
+        <Image
+          src={"/images/graphics/przerwazkolorem169.svg"}
+          alt="colorline"
           width={2560}
           height={300}
-          className="absolute w-full -top-1 left-0 right-0 z-[2] scale-y-100  scale-x-105"
+          className="absolute w-full -top-1 left-0 right-0 hidden xl:block z-[2]scale-x-110"
         />
         <Image
           src={FooterLogo}
