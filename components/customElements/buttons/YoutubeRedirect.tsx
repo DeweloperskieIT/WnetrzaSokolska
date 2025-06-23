@@ -16,7 +16,7 @@ const YoutubeRedirect = ({
   link = "https://www.youtube.com/@Deweloperskie",
   fill,
 }: YoutubeRedirectProps) => {
-  const { fireEvent, resetFiring } = useFacebookPixelEvent({
+  const { fireEvent } = useFacebookPixelEvent({
     eventName: `Youtube redirect clicked`,
     eventParams: { link },
     runOnce: true, // Will only fire once unless reset

@@ -20,7 +20,7 @@ const EmailContact = ({
   fill,
   firePixel = false,
 }: EmailContactProps) => {
-  const { fireEvent, resetFiring } = useFacebookPixelEvent({
+  const { fireEvent } = useFacebookPixelEvent({
     eventName: `Email Contact Clicked`,
     eventParams: { details: `${email} + ${params}` },
     runOnce: true, // Will only fire once unless reset

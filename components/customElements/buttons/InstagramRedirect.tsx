@@ -17,7 +17,7 @@ const InstagramRedirect = ({
   fill,
   firePixel = true,
 }: InstagramRedirectProps) => {
-  const { fireEvent, resetFiring } = useFacebookPixelEvent({
+  const { fireEvent } = useFacebookPixelEvent({
     eventName: `Instagram redirect clicked`,
     eventParams: { link },
     runOnce: true, // Will only fire once unless reset

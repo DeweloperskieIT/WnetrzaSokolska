@@ -8,7 +8,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import React from "react";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { PiCallBell } from "react-icons/pi";
@@ -22,12 +21,11 @@ interface ContactFormOpenerProps {
 }
 
 const ContactFormOpener = ({
-  className,
   oferta,
   dict,
   fill,
 }: ContactFormOpenerProps) => {
-  const { fireEvent, resetFiring } = useFacebookPixelEvent({
+  const { fireEvent } = useFacebookPixelEvent({
     eventName: `${oferta} Header Contact Clicked`,
     eventParams: { oferta },
     runOnce: true, // Will only fire once unless reset

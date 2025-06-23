@@ -4,7 +4,6 @@ import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { FiLinkedin } from "react-icons/fi";
 
 interface LinkedInRedirectProps {
   className?: string;
@@ -17,7 +16,7 @@ const LinkedInRedirect = ({
   link = "https://www.linkedin.com/company/deweloperskiepsa?originalSubdomain=pl",
   fill,
 }: LinkedInRedirectProps) => {
-  const { fireEvent, resetFiring } = useFacebookPixelEvent({
+  const { fireEvent } = useFacebookPixelEvent({
     eventName: `Facebook redirect clicked`,
     eventParams: { link },
     runOnce: true, // Will only fire once unless reset

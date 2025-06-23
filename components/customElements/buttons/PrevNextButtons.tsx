@@ -49,12 +49,12 @@ const PrevNextButtons = ({
     window.dispatchEvent(event);
   };
 
-  let commonClassesIcon = cn(
+  const commonClassesIcon = cn(
     "rounded-full bg-light fill-dewDark transition-all duration-200 hover:bg-dewPrim base-hover",
     visible ? "" : "hidden"
   );
 
-  let commonClassesButton = cn(
+  const commonClassesButton = cn(
     visible
       ? "m-8 md:m-10"
       : "w-1/4 md:w-1/3 h-full md:rounded-none transition-all duration-400",
@@ -63,12 +63,12 @@ const PrevNextButtons = ({
   );
 
   const handlePointerDownBack = () => {
-    handleClickBack && handleClickBack();
+    if (handleClickBack) handleClickBack();
     simulateKeyPress("ArrowLeft");
   };
 
   const handlePointerDownNext = () => {
-    handleClickNext && handleClickNext();
+    if (handleClickNext) handleClickNext();
     simulateKeyPress("ArrowRight");
   };
 
