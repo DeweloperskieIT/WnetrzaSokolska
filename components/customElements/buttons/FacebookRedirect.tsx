@@ -4,7 +4,7 @@ import useFacebookPixelEvent from "@/lib/hooks/useFacebookPixelEvent";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
-
+import { FiFacebook } from "react-icons/fi";
 
 interface FacebookRedirectProps {
   className?: string;
@@ -19,7 +19,7 @@ const FacebookRedirect = ({
   fill,
   firePixel = false,
 }: FacebookRedirectProps) => {
-  const { fireEvent } = useFacebookPixelEvent({
+  const { fireEvent, resetFiring } = useFacebookPixelEvent({
     eventName: `Facebook redirect clicked`,
     eventParams: { link },
     runOnce: true, // Will only fire once unless reset

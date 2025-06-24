@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Locales } from "@/app/dictionaries";
 import { cn } from "@/lib/utils";
 import {
