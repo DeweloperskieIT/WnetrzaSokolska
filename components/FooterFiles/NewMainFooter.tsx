@@ -235,7 +235,7 @@ const NewMainFooter = (props: Props) => {
         <p className="text-sm">Wszystkie prawa zastrzeżone</p>
         <p className="text-sm">
           {`Właścicielem marki ${process.env.NEXT_PUBLIC_WEBSITE_TITLE} jest: `}
-          Deweloperskie&nbsp;Prosta&nbsp;Spółka&nbsp;Akcyjna
+          Deweloperskie&nbsp;Prosta&nbsp;Spółka&nbsp;Akcyjnasdsds
         </p>
       </div>
     </div>
