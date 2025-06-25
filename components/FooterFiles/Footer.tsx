@@ -50,6 +50,15 @@ const Footer = ({
         {/* Aktualny Footer */}
 
         <footer className="py-10 px-2 flex flex-col gap-10 w-full items-center text-light">
+          <div className="limited-width w-full">
+            <Image
+              src={"/images/mainpage/wnetrzalogo.png"}
+              alt="logo"
+              width={200}
+              height={100}
+              className="self-start filter-white"
+            />
+          </div>
           <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between limited-width w-full text-light">
             <div className="flex flex-col items-start gap-2">
               <h3 className="text-accent1 text-left text-xl font-bold">
@@ -60,6 +69,12 @@ const Footer = ({
                 href={"https://deweloperskie.pl"}
               >
                 Deweloperskie
+              </Link>
+              <Link
+                className="text-lg hover:text-accent1 w-fit"
+                href={"https://retailparki.pl"}
+              >
+                Retail Parki
               </Link>
               <Link
                 className="text-lg hover:text-accent1 w-fit"

@@ -147,6 +147,10 @@ const NavigationMenuItemsData: NavigationMenuItems[] = [
     menu: "Deweloperskie",
     destinations: [
       {
+        name: "Retail Parki",
+        destination: "https://www.retailparki.pl",
+      },
+      {
         name: "ASI ",
         destination: "https://www.asi.deweloperskie.pl",
       },
